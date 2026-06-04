@@ -556,8 +556,8 @@
         <div class="card panel">
           <div class="panel-head">
             <div>
-              <h2>每日報告</h2>
-              <p>保留當日候選、決策、理由同檢討。</p>
+              <h2>實際買賣</h2>
+              <p>只顯示 Luna 真正有買入或賣出嘅交易紀錄。</p>
             </div>
           </div>
           <div id="reportsList" class="list"></div>
@@ -693,7 +693,7 @@
         renderStats();
         renderReports();
         renderPositions();
-        storageStatus.textContent = `本地已儲存 ${state.reports.length} 份報告、${state.positions.length} 個持倉紀錄`;
+        storageStatus.textContent = `本地已儲存 ${state.reports.length} 份內部記錄、${state.positions.length} 個持倉紀錄`;
       }
 
       function renderStats() {
@@ -718,18 +718,21 @@
         setText("returnValue", `${totalReturn >= 0 ? "+" : ""}${totalReturn.toFixed(2)}%`);
         setText("cashFoot", openPositions.length ? `Open 倉位 ${openPositions.length} 隻` : "未有 open 倉位");
         setText("equityFoot", `浮動盈虧 ${formatHKD(openPnl)} / 已實現 ${formatHKD(closedPnl)}`);
-        setText("returnFoot", `${state.reports.length} 份日報，${closedPositions.length} 次已平倉`);
+        const executedReports = state.reports.filter((item) => item.decision === "buy" || item.decision === "sell");
+        setText("returnFoot", `${executedReports.length} 次實際買賣，${closedPositions.length} 次已平倉`);
 
         document.getElementById("returnValue").className = `stat-value ${totalReturn >= 0 ? "pnl-good" : "pnl-bad"}`;
       }
 
       function renderReports() {
-        if (!state.reports.length) {
-          reportsList.innerHTML = `<div class="empty">未有日報。之後會先喺美股開市時段落決策，再喺收市後補檢討。</div>`;
+        const executedReports = state.reports.filter((item) => item.decision === "buy" || item.decision === "sell");
+
+        if (!executedReports.length) {
+          reportsList.innerHTML = `<div class="empty">未有實際買賣。只有我真係買入或賣出，先會喺呢度出現。</div>`;
           return;
         }
 
-        reportsList.innerHTML = state.reports.map((report) => `
+        reportsList.innerHTML = executedReports.map((report) => `
           <article class="report-card">
             <div class="report-top">
               <div>
@@ -739,7 +742,7 @@
                   <span class="chip">${escapeHtml(report.candidateB)}</span>
                 </div>
               </div>
-              <span class="badge ${report.decision === "buy" ? "buy" : "skip"}">${decisionLabel(report.decision)}</span>
+              <span class="badge ${report.decision === "buy" ? "buy" : "closed"}">${decisionLabel(report.decision)}</span>
             </div>
             <p>${escapeHtml(report.reason || "未填寫理由")}</p>
             <div class="mini-grid">
