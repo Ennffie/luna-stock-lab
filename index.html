@@ -267,14 +267,14 @@
         gap: 12px;
       }
 
-      .report-card, .position-card {
+      .report-card, .position-card, .execution-card {
         border: 1px solid var(--line);
         border-radius: 18px;
         padding: 16px;
         background: rgba(255, 255, 255, 0.48);
       }
 
-      .report-top, .position-top {
+      .report-top, .position-top, .execution-top {
         display: flex;
         justify-content: space-between;
         gap: 12px;
@@ -295,6 +295,7 @@
       }
 
       .badge.buy { background: rgba(30, 125, 79, 0.12); color: var(--good); }
+      .badge.hold { background: rgba(31, 111, 120, 0.12); color: var(--accent-2); }
       .badge.skip { background: rgba(102, 95, 86, 0.12); color: var(--muted); }
       .badge.closed { background: rgba(176, 60, 52, 0.12); color: var(--bad); }
 
@@ -331,6 +332,10 @@
         color: var(--ink);
         font-size: 14px;
         margin-top: 3px;
+      }
+
+      .execution-card p {
+        line-height: 1.55;
       }
 
       .pnl-good { color: var(--good); }
@@ -383,7 +388,7 @@
           </div>
           <div>
             <h2>資料狀態</h2>
-            <p id="storageStatus">本地儲存未初始化</p>
+            <p id="storageStatus">本地及 repo 記錄未初始化</p>
           </div>
         </div>
       </section>
@@ -546,11 +551,11 @@
         <div class="card panel">
           <div class="panel-head">
             <div>
-              <h2>持倉與投資情況</h2>
-              <p>一眼睇到 open / closed、投入資金、浮盈浮虧。</p>
+              <h2>自動執行記錄</h2>
+              <p>顯示 market-open 期間真實落地嘅 BUY / SELL / HOLD / NO TRADE 決策，連 size、thesis、risk levels。</p>
             </div>
           </div>
-          <div id="positionsList" class="list"></div>
+          <div id="executionsList" class="list"></div>
         </div>
 
         <div class="card panel">
@@ -563,6 +568,28 @@
           <div id="reportsList" class="list"></div>
         </div>
       </section>
+
+      <section class="grid" style="margin-top: 18px;">
+        <div class="card panel">
+          <div class="panel-head">
+            <div>
+              <h2>持倉與投資情況</h2>
+              <p>一眼睇到 open / closed、投入資金、浮盈浮虧。</p>
+            </div>
+          </div>
+          <div id="positionsList" class="list"></div>
+        </div>
+
+        <div class="card panel">
+          <div class="panel-head">
+            <div>
+              <h2>備註</h2>
+              <p>repo 記錄用作自動交易日誌；localStorage 仍可畀你手動補充分析資料。</p>
+            </div>
+          </div>
+          <div class="empty">收市後只做 review，同步更新當日表現；唔會再補假成交。</div>
+        </div>
+      </section>
     </div>
 
     <script>
@@ -570,11 +597,13 @@
       const STARTING_CAPITAL = 100000;
 
       const state = loadState();
+      const remoteState = { reports: [], positions: [], executions: [] };
 
       const reportForm = document.getElementById("reportForm");
       const positionForm = document.getElementById("positionForm");
       const reportsList = document.getElementById("reportsList");
       const positionsList = document.getElementById("positionsList");
+      const executionsList = document.getElementById("executionsList");
       const storageStatus = document.getElementById("storageStatus");
 
       document.getElementById("reportDate").value = todayLocal();
@@ -690,15 +719,19 @@
       }
 
       function render() {
+        const combinedReports = mergeRecords(remoteState.reports, state.reports);
+        const combinedPositions = mergeRecords(remoteState.positions, state.positions);
         renderStats();
-        renderReports();
-        renderPositions();
-        storageStatus.textContent = `本地已儲存 ${state.reports.length} 份內部記錄、${state.positions.length} 個持倉紀錄`;
+        renderExecutions();
+        renderReports(combinedReports);
+        renderPositions(combinedPositions);
+        storageStatus.textContent = `repo ${remoteState.executions.length} 筆自動執行；本地 ${state.reports.length} 份報告、${state.positions.length} 個持倉`;
       }
 
       function renderStats() {
-        const openPositions = state.positions.filter((item) => item.status === "open");
-        const closedPositions = state.positions.filter((item) => item.status === "closed");
+        const combinedPositions = mergeRecords(remoteState.positions, state.positions);
+        const openPositions = combinedPositions.filter((item) => item.status === "open");
+        const closedPositions = combinedPositions.filter((item) => item.status === "closed");
 
         const invested = openPositions.reduce((sum, item) => sum + item.capitalHKD, 0);
         const openPnl = openPositions.reduce((sum, item) => {
@@ -718,14 +751,47 @@
         setText("returnValue", `${totalReturn >= 0 ? "+" : ""}${totalReturn.toFixed(2)}%`);
         setText("cashFoot", openPositions.length ? `Open 倉位 ${openPositions.length} 隻` : "未有 open 倉位");
         setText("equityFoot", `浮動盈虧 ${formatHKD(openPnl)} / 已實現 ${formatHKD(closedPnl)}`);
-        const executedReports = state.reports.filter((item) => item.decision === "buy" || item.decision === "sell");
+        const combinedReports = mergeRecords(remoteState.reports, state.reports);
+        const executedReports = combinedReports.filter((item) => item.decision === "buy" || item.decision === "sell");
         setText("returnFoot", `${executedReports.length} 次實際買賣，${closedPositions.length} 次已平倉`);
 
         document.getElementById("returnValue").className = `stat-value ${totalReturn >= 0 ? "pnl-good" : "pnl-bad"}`;
       }
 
-      function renderReports() {
-        const executedReports = state.reports.filter((item) => item.decision === "buy" || item.decision === "sell");
+      function renderExecutions() {
+        if (!remoteState.executions.length) {
+          executionsList.innerHTML = `<div class="empty">未有 repo 級自動執行記錄。</div>`;
+          return;
+        }
+
+        executionsList.innerHTML = remoteState.executions.map((item) => `
+          <article class="execution-card">
+            <div class="execution-top">
+              <div>
+                <strong>${escapeHtml(item.date || "")}</strong>
+                <div class="chips">
+                  <span class="chip">${escapeHtml(item.candidateA || "N/A")}</span>
+                  <span class="chip">${escapeHtml(item.candidateB || "N/A")}</span>
+                </div>
+              </div>
+              <span class="badge ${actionBadgeClass(item.action)}">${escapeHtml(item.action || "NO TRADE")}</span>
+            </div>
+            <p>${escapeHtml(item.thesis || item.reason || "未填 thesis")}</p>
+            <div class="mini-grid">
+              <div>執行時間<strong>${escapeHtml(formatExecutionAt(item.executionAt || item.recordedAt))}</strong></div>
+              <div>最終標的<strong>${escapeHtml(item.ticker || "No Trade")}</strong></div>
+              <div>倉位大小<strong>${escapeHtml(formatSize(item.size))}</strong></div>
+              <div>市場風格<strong>${escapeHtml(item.marketMood || "未填")}</strong></div>
+              <div>風險評級<strong>${escapeHtml(formatRisk(item.riskLevels))}</strong></div>
+              <div>執行時段<strong>${escapeHtml(item.executionWindow || "US regular market hours")}</strong></div>
+            </div>
+            <div class="footer-note">${escapeHtml(item.review || item.reason || "未填備註")}</div>
+          </article>
+        `).join("");
+      }
+
+      function renderReports(allReports) {
+        const executedReports = allReports.filter((item) => item.decision === "buy" || item.decision === "sell");
 
         if (!executedReports.length) {
           reportsList.innerHTML = `<div class="empty">未有實際買賣。只有我真係買入或賣出，先會喺呢度出現。</div>`;
@@ -756,13 +822,13 @@
         `).join("");
       }
 
-      function renderPositions() {
-        if (!state.positions.length) {
+      function renderPositions(allPositions) {
+        if (!allPositions.length) {
           positionsList.innerHTML = `<div class="empty">未有持倉。等你第一筆模擬交易落地。</div>`;
           return;
         }
 
-        positionsList.innerHTML = state.positions.map((position) => {
+        positionsList.innerHTML = allPositions.map((position) => {
           const effectiveExit = position.exitPrice ?? position.lastPrice;
           const pnlHKD = ((position.status === "closed" ? effectiveExit : position.lastPrice) - position.entryPrice) * position.quantity * position.fxRate;
           return `
@@ -821,9 +887,55 @@
               : "不出手";
       }
 
+      function actionBadgeClass(value) {
+        const normalized = String(value || "").toLowerCase();
+        if (normalized === "buy") return "buy";
+        if (normalized === "sell") return "closed";
+        if (normalized === "hold") return "hold";
+        return "skip";
+      }
+
       function formatExecutionAt(value) {
         if (!value) return "未填";
         return value.replace("T", " ");
+      }
+
+      function formatRisk(value) {
+        if (!value || typeof value !== "object") return "未填";
+        return Object.entries(value)
+          .map(([key, level]) => `${key}:${level}`)
+          .join(" / ");
+      }
+
+      function formatSize(value) {
+        if (!value || typeof value !== "object") return "未填";
+        const hkd = Number(value.hkd || 0);
+        const shares = Number(value.shares || 0);
+        return `${formatHKD(hkd)} / ${shares.toFixed(2)} 股`;
+      }
+
+      function mergeRecords(primary, secondary) {
+        const byId = new Map();
+        [...secondary, ...primary].forEach((item) => {
+          if (item && item.id) {
+            byId.set(item.id, item);
+          }
+        });
+        return Array.from(byId.values());
+      }
+
+      async function loadRemoteState() {
+        try {
+          const response = await fetch(`./data/executions.json?ts=${Date.now()}`, { cache: "no-store" });
+          if (!response.ok) return;
+          const payload = await response.json();
+          remoteState.reports = Array.isArray(payload.reports) ? payload.reports : [];
+          remoteState.positions = Array.isArray(payload.positions) ? payload.positions : [];
+          remoteState.executions = Array.isArray(payload.executions) ? payload.executions : [];
+          render();
+        } catch {
+          render();
+        }
       }
 
       function setText(id, value) {
@@ -858,6 +970,7 @@
       }
 
       render();
+      loadRemoteState();
     </script>
   </body>
 </html>

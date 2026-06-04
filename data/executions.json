@@ -1,0 +1,36 @@
+{
+  "portfolio": {
+    "currency": "HKD",
+    "startingCapital": 100000,
+    "executionPolicy": "US regular market hours only"
+  },
+  "reports": [],
+  "positions": [],
+  "executions": [
+    {
+      "id": "2026-06-04-market-open-no-trade",
+      "session": "market-open",
+      "date": "2026-06-04",
+      "recordedAt": "2026-06-04T14:59:21Z",
+      "executionAt": "2026-06-04T10:59:21-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": "",
+      "candidateA": "MDB",
+      "candidateB": "VEEV",
+      "marketMood": "risk-on but selective",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "thesis": "No valid long entry was confirmed at 10:59:21 AM EDT. MongoDB remained extended after its May 28 earnings gap, while Veeva's June 4 post-earnings follow-through did not clearly offer a >=2.0 reward-to-risk entry from a valid stop at execution time. There were no existing open positions requiring HOLD or SELL action.",
+      "reason": "Market regime looked supportive, but no candidate cleanly satisfied the full setup plus reward-to-risk rules at execution time, so capital stayed in cash.",
+      "review": "Explicit NO TRADE recorded during regular market hours to preserve process discipline and avoid forcing a late chase entry.",
+      "riskLevels": {
+        "market": "medium",
+        "setup": "high",
+        "portfolio": "low"
+      }
+    }
+  ]
+}
