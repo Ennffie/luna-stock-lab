@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Luna Stock Lab</title>
+    <style>
+      :root {
+        --bg: #f7f3ec;
+        --panel: rgba(255, 252, 247, 0.86);
+        --panel-strong: #fffaf3;
+        --ink: #1d1d1b;
+        --muted: #665f56;
+        --line: rgba(117, 97, 66, 0.18);
+        --accent: #c35f2d;
+        --accent-2: #1f6f78;
+        --good: #1e7d4f;
+        --bad: #b03c34;
+        --shadow: 0 22px 60px rgba(74, 45, 24, 0.12);
+        --radius: 22px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(195, 95, 45, 0.16), transparent 28%),
+          radial-gradient(circle at top right, rgba(31, 111, 120, 0.12), transparent 24%),
+          linear-gradient(180deg, #f8f1e6 0%, var(--bg) 52%, #efe8dc 100%);
+        min-height: 100vh;
+      }
+
+      .shell {
+        width: min(1240px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 40px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 18px;
+        margin-bottom: 18px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(16px);
+      }
+
+      .hero-main {
+        padding: 28px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-main::after {
+        content: "";
+        position: absolute;
+        inset: auto -40px -80px auto;
+        width: 220px;
+        height: 220px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(195, 95, 45, 0.18), transparent 70%);
+      }
+
+      h1, h2, h3, p {
+        margin: 0;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 14px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      .hero-main h1 {
+        font-size: clamp(32px, 5vw, 56px);
+        line-height: 0.95;
+        margin-bottom: 14px;
+      }
+
+      .hero-main p {
+        max-width: 640px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      .hero-side {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .hero-side h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .hero-side p {
+        font-size: 13px;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+
+      .stat {
+        padding: 18px;
+      }
+
+      .stat-label {
+        font-size: 12px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+      }
+
+      .stat-value {
+        font-size: clamp(22px, 3vw, 34px);
+        font-weight: 700;
+      }
+
+      .stat-foot {
+        margin-top: 8px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 18px;
+      }
+
+      .panel {
+        padding: 22px;
+      }
+
+      .panel-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 12px;
+        margin-bottom: 18px;
+      }
+
+      .panel-head h2 {
+        font-size: 22px;
+      }
+
+      .panel-head p {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .field.full {
+        grid-column: 1 / -1;
+      }
+
+      label {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      input, select, textarea, button {
+        font: inherit;
+      }
+
+      input, select, textarea {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--panel-strong);
+        padding: 12px 14px;
+        color: var(--ink);
+      }
+
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      button {
+        border: 0;
+        border-radius: 999px;
+        padding: 12px 18px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 180ms ease, opacity 180ms ease, background 180ms ease;
+      }
+
+      button:hover {
+        transform: translateY(-1px);
+      }
+
+      .primary {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .secondary {
+        background: rgba(31, 111, 120, 0.12);
+        color: var(--accent-2);
+      }
+
+      .ghost {
+        background: rgba(102, 95, 86, 0.1);
+        color: var(--ink);
+      }
+
+      .list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .report-card, .position-card {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.48);
+      }
+
+      .report-top, .position-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        background: rgba(31, 111, 120, 0.1);
+        color: var(--accent-2);
+      }
+
+      .badge.buy { background: rgba(30, 125, 79, 0.12); color: var(--good); }
+      .badge.skip { background: rgba(102, 95, 86, 0.12); color: var(--muted); }
+      .badge.closed { background: rgba(176, 60, 52, 0.12); color: var(--bad); }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .chip {
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: rgba(195, 95, 45, 0.08);
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .mini-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px 14px;
+        margin-top: 12px;
+      }
+
+      .mini-grid div {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .mini-grid strong {
+        display: block;
+        color: var(--ink);
+        font-size: 14px;
+        margin-top: 3px;
+      }
+
+      .pnl-good { color: var(--good); }
+      .pnl-bad { color: var(--bad); }
+
+      .empty {
+        padding: 20px;
+        border: 1px dashed var(--line);
+        border-radius: 18px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .footer-note {
+        margin-top: 18px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 980px) {
+        .hero,
+        .grid,
+        .stats,
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .shell {
+          width: min(100vw - 20px, 1240px);
+          padding-top: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <section class="hero">
+        <div class="card hero-main">
+          <div class="eyebrow">Luna Stock Lab</div>
+          <h1>爆升盤 Dashboard</h1>
+          <p>
+            睇每日候選、買賣紀錄、持倉表現同收市後報告。呢個版本先行本地儲存，
+            快、輕、手機都睇得舒服，之後再接自動資料源。
+          </p>
+        </div>
+        <div class="card hero-side">
+          <div>
+            <h2>運作模式</h2>
+            <p>每日兩隻候選，可買可唔買。所有決策、止蝕、目標位同檢討都會留下痕跡。</p>
+          </div>
+          <div>
+            <h2>資料狀態</h2>
+            <p id="storageStatus">本地儲存未初始化</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="card stat">
+          <div class="stat-label">初始本金</div>
+          <div class="stat-value" id="startingCapital">HK$100,000</div>
+          <div class="stat-foot">固定模擬本金</div>
+        </div>
+        <div class="card stat">
+          <div class="stat-label">現金結餘</div>
+          <div class="stat-value" id="cashValue">HK$100,000</div>
+          <div class="stat-foot" id="cashFoot">未有持倉</div>
+        </div>
+        <div class="card stat">
+          <div class="stat-label">總資產</div>
+          <div class="stat-value" id="equityValue">HK$100,000</div>
+          <div class="stat-foot" id="equityFoot">未有浮動盈虧</div>
+        </div>
+        <div class="card stat">
+          <div class="stat-label">累積回報</div>
+          <div class="stat-value" id="returnValue">0.00%</div>
+          <div class="stat-foot" id="returnFoot">從零開始記分</div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card panel">
+          <div class="panel-head">
+            <div>
+              <h2>新增每日報告</h2>
+              <p>記錄當日兩隻候選、最終決策、系統檢討。</p>
+            </div>
+          </div>
+          <form id="reportForm">
+            <div class="form-grid">
+              <div class="field">
+                <label for="reportDate">日期</label>
+                <input id="reportDate" name="date" type="date" required />
+              </div>
+              <div class="field">
+                <label for="reportDecision">決策</label>
+                <select id="reportDecision" name="decision">
+                  <option value="buy">買</option>
+                  <option value="skip">不買</option>
+                  <option value="watch">觀察</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="candidateA">候選 A</label>
+                <input id="candidateA" name="candidateA" placeholder="例如 AVGO" required />
+              </div>
+              <div class="field">
+                <label for="candidateB">候選 B</label>
+                <input id="candidateB" name="candidateB" placeholder="例如 LULU" required />
+              </div>
+              <div class="field">
+                <label for="pickedTicker">最終揀邊隻</label>
+                <input id="pickedTicker" name="pickedTicker" placeholder="無買可留空" />
+              </div>
+              <div class="field">
+                <label for="reportMood">當日市場風格</label>
+                <input id="reportMood" name="marketMood" placeholder="risk-on / risk-off / AI 領漲" />
+              </div>
+              <div class="field full">
+                <label for="reportReason">理由</label>
+                <textarea id="reportReason" name="reason" placeholder="點解揀呢兩隻，點解買或唔買"></textarea>
+              </div>
+              <div class="field full">
+                <label for="reportReview">收市檢討</label>
+                <textarea id="reportReview" name="review" placeholder="今日邊個因子有效／失效，明日要調整乜"></textarea>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="primary" type="submit">儲存報告</button>
+              <button class="ghost" type="button" id="seedToday">載入今日示例</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="card panel">
+          <div class="panel-head">
+            <div>
+              <h2>新增／更新持倉</h2>
+              <p>可以當買入記錄，亦可以之後更新 last price 或平倉。</p>
+            </div>
+          </div>
+          <form id="positionForm">
+            <input id="positionId" name="id" type="hidden" />
+            <div class="form-grid">
+              <div class="field">
+                <label for="ticker">Ticker</label>
+                <input id="ticker" name="ticker" placeholder="例如 AVGO" required />
+              </div>
+              <div class="field">
+                <label for="status">狀態</label>
+                <select id="status" name="status">
+                  <option value="open">Open</option>
+                  <option value="closed">Closed</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="openedOn">開倉日期</label>
+                <input id="openedOn" name="openedOn" type="date" required />
+              </div>
+              <div class="field">
+                <label for="capitalHKD">投入 HKD</label>
+                <input id="capitalHKD" name="capitalHKD" type="number" min="0" step="0.01" required />
+              </div>
+              <div class="field">
+                <label for="fxRate">匯率 HKD/USD</label>
+                <input id="fxRate" name="fxRate" type="number" min="0" step="0.0001" value="7.8" required />
+              </div>
+              <div class="field">
+                <label for="entryPrice">入場價 USD</label>
+                <input id="entryPrice" name="entryPrice" type="number" min="0" step="0.0001" required />
+              </div>
+              <div class="field">
+                <label for="lastPrice">最新價 USD</label>
+                <input id="lastPrice" name="lastPrice" type="number" min="0" step="0.0001" required />
+              </div>
+              <div class="field">
+                <label for="exitPrice">平倉價 USD</label>
+                <input id="exitPrice" name="exitPrice" type="number" min="0" step="0.0001" />
+              </div>
+              <div class="field">
+                <label for="stopPrice">止蝕 USD</label>
+                <input id="stopPrice" name="stopPrice" type="number" min="0" step="0.0001" />
+              </div>
+              <div class="field">
+                <label for="targetPrice">目標價 USD</label>
+                <input id="targetPrice" name="targetPrice" type="number" min="0" step="0.0001" />
+              </div>
+              <div class="field full">
+                <label for="thesis">Thesis</label>
+                <textarea id="thesis" name="thesis" placeholder="例如：業績後 AI 指引上修，量價齊升"></textarea>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="primary" type="submit">儲存持倉</button>
+              <button class="secondary" type="button" id="resetPosition">清空表單</button>
+              <button class="ghost" type="button" id="exportData">匯出 JSON</button>
+            </div>
+          </form>
+          <div class="footer-note">匯出可做 backup。下個版本可以再駁自動匯價、每日報告推送、圖表。</div>
+        </div>
+      </section>
+
+      <section class="grid" style="margin-top: 18px;">
+        <div class="card panel">
+          <div class="panel-head">
+            <div>
+              <h2>持倉與投資情況</h2>
+              <p>一眼睇到 open / closed、投入資金、浮盈浮虧。</p>
+            </div>
+          </div>
+          <div id="positionsList" class="list"></div>
+        </div>
+
+        <div class="card panel">
+          <div class="panel-head">
+            <div>
+              <h2>每日報告</h2>
+              <p>保留當日候選、決策、理由同檢討。</p>
+            </div>
+          </div>
+          <div id="reportsList" class="list"></div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const STORAGE_KEY = "luna-stock-lab-v1";
+      const STARTING_CAPITAL = 100000;
+
+      const state = loadState();
+
+      const reportForm = document.getElementById("reportForm");
+      const positionForm = document.getElementById("positionForm");
+      const reportsList = document.getElementById("reportsList");
+      const positionsList = document.getElementById("positionsList");
+      const storageStatus = document.getElementById("storageStatus");
+
+      document.getElementById("reportDate").value = todayLocal();
+      document.getElementById("openedOn").value = todayLocal();
+
+      reportForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = Object.fromEntries(new FormData(reportForm).entries());
+        const report = {
+          id: crypto.randomUUID(),
+          date: data.date,
+          decision: data.decision,
+          candidateA: data.candidateA.trim().toUpperCase(),
+          candidateB: data.candidateB.trim().toUpperCase(),
+          pickedTicker: data.pickedTicker.trim().toUpperCase(),
+          marketMood: data.marketMood.trim(),
+          reason: data.reason.trim(),
+          review: data.review.trim(),
+          createdAt: new Date().toISOString(),
+        };
+        state.reports.unshift(report);
+        saveAndRender();
+        reportForm.reset();
+        document.getElementById("reportDate").value = todayLocal();
+      });
+
+      positionForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = Object.fromEntries(new FormData(positionForm).entries());
+        const capitalHKD = Number(data.capitalHKD || 0);
+        const fxRate = Number(data.fxRate || 0);
+        const entryPrice = Number(data.entryPrice || 0);
+        const lastPrice = Number(data.lastPrice || 0);
+        const exitPrice = data.exitPrice ? Number(data.exitPrice) : null;
+        const quantity = fxRate > 0 && entryPrice > 0 ? capitalHKD / (fxRate * entryPrice) : 0;
+
+        const position = {
+          id: data.id || crypto.randomUUID(),
+          ticker: data.ticker.trim().toUpperCase(),
+          status: data.status,
+          openedOn: data.openedOn,
+          capitalHKD,
+          fxRate,
+          entryPrice,
+          lastPrice,
+          exitPrice,
+          stopPrice: data.stopPrice ? Number(data.stopPrice) : null,
+          targetPrice: data.targetPrice ? Number(data.targetPrice) : null,
+          thesis: data.thesis.trim(),
+          quantity,
+          updatedAt: new Date().toISOString(),
+        };
+
+        const index = state.positions.findIndex((item) => item.id === position.id);
+        if (index >= 0) {
+          state.positions[index] = position;
+        } else {
+          state.positions.unshift(position);
+        }
+
+        saveAndRender();
+        resetPositionForm();
+      });
+
+      document.getElementById("resetPosition").addEventListener("click", resetPositionForm);
+
+      document.getElementById("seedToday").addEventListener("click", () => {
+        document.getElementById("reportDate").value = todayLocal();
+        document.getElementById("candidateA").value = "AVGO";
+        document.getElementById("candidateB").value = "LULU";
+        document.getElementById("pickedTicker").value = "AVGO";
+        document.getElementById("reportDecision").value = "buy";
+        document.getElementById("reportMood").value = "AI 強勢，risk-on";
+        document.getElementById("reportReason").value = "AVGO 業績後指引夠硬，LULU 屬高風險業績盤。";
+        document.getElementById("reportReview").value = "如果 AVGO 能守住業績後關鍵位，明日可續抱；LULU 只可細倉觀察。";
+      });
+
+      document.getElementById("exportData").addEventListener("click", () => {
+        const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = `luna-stock-lab-${todayLocal()}.json`;
+        anchor.click();
+        URL.revokeObjectURL(url);
+      });
+
+      function loadState() {
+        try {
+          const saved = localStorage.getItem(STORAGE_KEY);
+          if (!saved) {
+            return { reports: [], positions: [] };
+          }
+          const parsed = JSON.parse(saved);
+          return {
+            reports: Array.isArray(parsed.reports) ? parsed.reports : [],
+            positions: Array.isArray(parsed.positions) ? parsed.positions : [],
+          };
+        } catch {
+          return { reports: [], positions: [] };
+        }
+      }
+
+      function saveAndRender() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        render();
+      }
+
+      function render() {
+        renderStats();
+        renderReports();
+        renderPositions();
+        storageStatus.textContent = `本地已儲存 ${state.reports.length} 份報告、${state.positions.length} 個持倉紀錄`;
+      }
+
+      function renderStats() {
+        const openPositions = state.positions.filter((item) => item.status === "open");
+        const closedPositions = state.positions.filter((item) => item.status === "closed");
+
+        const invested = openPositions.reduce((sum, item) => sum + item.capitalHKD, 0);
+        const openPnl = openPositions.reduce((sum, item) => {
+          return sum + ((item.lastPrice - item.entryPrice) * item.quantity * item.fxRate);
+        }, 0);
+        const closedPnl = closedPositions.reduce((sum, item) => {
+          const exit = item.exitPrice ?? item.lastPrice;
+          return sum + ((exit - item.entryPrice) * item.quantity * item.fxRate);
+        }, 0);
+
+        const cash = STARTING_CAPITAL - invested + closedPositions.reduce((sum, item) => sum + item.capitalHKD, 0) + closedPnl;
+        const equity = cash + invested + openPnl;
+        const totalReturn = ((equity - STARTING_CAPITAL) / STARTING_CAPITAL) * 100;
+
+        setText("cashValue", formatHKD(cash));
+        setText("equityValue", formatHKD(equity));
+        setText("returnValue", `${totalReturn >= 0 ? "+" : ""}${totalReturn.toFixed(2)}%`);
+        setText("cashFoot", openPositions.length ? `Open 倉位 ${openPositions.length} 隻` : "未有 open 倉位");
+        setText("equityFoot", `浮動盈虧 ${formatHKD(openPnl)} / 已實現 ${formatHKD(closedPnl)}`);
+        setText("returnFoot", `${state.reports.length} 份日報，${closedPositions.length} 次已平倉`);
+
+        document.getElementById("returnValue").className = `stat-value ${totalReturn >= 0 ? "pnl-good" : "pnl-bad"}`;
+      }
+
+      function renderReports() {
+        if (!state.reports.length) {
+          reportsList.innerHTML = `<div class="empty">未有日報。今晚美股收市後，第一份報告就會喺度出現。</div>`;
+          return;
+        }
+
+        reportsList.innerHTML = state.reports.map((report) => `
+          <article class="report-card">
+            <div class="report-top">
+              <div>
+                <strong>${escapeHtml(report.date)}</strong>
+                <div class="chips">
+                  <span class="chip">${escapeHtml(report.candidateA)}</span>
+                  <span class="chip">${escapeHtml(report.candidateB)}</span>
+                </div>
+              </div>
+              <span class="badge ${report.decision === "buy" ? "buy" : "skip"}">${decisionLabel(report.decision)}</span>
+            </div>
+            <p>${escapeHtml(report.reason || "未填寫理由")}</p>
+            <div class="mini-grid">
+              <div>最終選擇<strong>${escapeHtml(report.pickedTicker || "No Trade")}</strong></div>
+              <div>市場風格<strong>${escapeHtml(report.marketMood || "未填")}</strong></div>
+            </div>
+            <div class="footer-note">${escapeHtml(report.review || "未填寫收市檢討")}</div>
+          </article>
+        `).join("");
+      }
+
+      function renderPositions() {
+        if (!state.positions.length) {
+          positionsList.innerHTML = `<div class="empty">未有持倉。等你第一筆模擬交易落地。</div>`;
+          return;
+        }
+
+        positionsList.innerHTML = state.positions.map((position) => {
+          const effectiveExit = position.exitPrice ?? position.lastPrice;
+          const pnlHKD = ((position.status === "closed" ? effectiveExit : position.lastPrice) - position.entryPrice) * position.quantity * position.fxRate;
+          return `
+            <article class="position-card">
+              <div class="position-top">
+                <div>
+                  <strong>${escapeHtml(position.ticker)}</strong>
+                  <div class="footer-note">${escapeHtml(position.openedOn)}</div>
+                </div>
+                <span class="badge ${position.status === "closed" ? "closed" : "buy"}">${position.status.toUpperCase()}</span>
+              </div>
+              <div class="mini-grid">
+                <div>投入資金<strong>${formatHKD(position.capitalHKD)}</strong></div>
+                <div>持股數量<strong>${position.quantity.toFixed(2)} 股</strong></div>
+                <div>入場 / 最新<strong>$${position.entryPrice.toFixed(2)} / $${position.lastPrice.toFixed(2)}</strong></div>
+                <div>止蝕 / 目標<strong>${position.stopPrice ? "$" + position.stopPrice.toFixed(2) : "未定"} / ${position.targetPrice ? "$" + position.targetPrice.toFixed(2) : "未定"}</strong></div>
+                <div>浮盈浮虧<strong class="${pnlHKD >= 0 ? "pnl-good" : "pnl-bad"}">${formatHKD(pnlHKD)}</strong></div>
+                <div>平倉價<strong>${position.exitPrice ? "$" + position.exitPrice.toFixed(2) : "未平倉"}</strong></div>
+              </div>
+              <div class="footer-note">${escapeHtml(position.thesis || "未填 thesis")}</div>
+              <div class="actions">
+                <button class="ghost" type="button" onclick="editPosition('${position.id}')">編輯</button>
+              </div>
+            </article>
+          `;
+        }).join("");
+      }
+
+      function resetPositionForm() {
+        positionForm.reset();
+        document.getElementById("positionId").value = "";
+        document.getElementById("openedOn").value = todayLocal();
+        document.getElementById("fxRate").value = "7.8";
+        document.getElementById("status").value = "open";
+      }
+
+      window.editPosition = function (id) {
+        const position = state.positions.find((item) => item.id === id);
+        if (!position) return;
+        for (const [key, value] of Object.entries(position)) {
+          const input = document.getElementById(key);
+          if (input) input.value = value ?? "";
+        }
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+
+      function decisionLabel(value) {
+        return value === "buy" ? "買入" : value === "watch" ? "觀察" : "不買";
+      }
+
+      function setText(id, value) {
+        document.getElementById(id).textContent = value;
+      }
+
+      function formatHKD(value) {
+        return new Intl.NumberFormat("zh-HK", {
+          style: "currency",
+          currency: "HKD",
+          maximumFractionDigits: 0,
+        }).format(value);
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+      }
+
+      function todayLocal() {
+        const now = new Date();
+        const pad = (num) => String(num).padStart(2, "0");
+        return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+      }
+
+      render();
+    </script>
+  </body>
+</html>
