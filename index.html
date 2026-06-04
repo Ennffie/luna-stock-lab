@@ -372,14 +372,14 @@
           <div class="eyebrow">Luna Stock Lab</div>
           <h1>爆升盤 Dashboard</h1>
           <p>
-            睇每日候選、買賣紀錄、持倉表現同收市後報告。呢個版本先行本地儲存，
-            快、輕、手機都睇得舒服，之後再接自動資料源。
+            睇每日候選、買賣紀錄、持倉表現同收市後報告。交易紀錄而家改成只接受
+            美股 regular market hours 內執行，唔再用收市後事後補單。
           </p>
         </div>
         <div class="card hero-side">
           <div>
             <h2>運作模式</h2>
-            <p>每日兩隻候選，可買可唔買。所有決策、止蝕、目標位同檢討都會留下痕跡。</p>
+            <p>每日兩隻候選；只可喺美股開市時段記錄 BUY / SELL / HOLD / NO TRADE。收市後只做結果檢討。</p>
           </div>
           <div>
             <h2>資料狀態</h2>
@@ -416,7 +416,7 @@
           <div class="panel-head">
             <div>
               <h2>新增每日報告</h2>
-              <p>記錄當日兩隻候選、最終決策、系統檢討。</p>
+              <p>記錄當日兩隻候選、盤中最終決策、收市後檢討。</p>
             </div>
           </div>
           <form id="reportForm">
@@ -429,9 +429,18 @@
                 <label for="reportDecision">決策</label>
                 <select id="reportDecision" name="decision">
                   <option value="buy">買</option>
-                  <option value="skip">不買</option>
-                  <option value="watch">觀察</option>
+                  <option value="sell">賣</option>
+                  <option value="hold">持有</option>
+                  <option value="no_trade">不出手</option>
                 </select>
+              </div>
+              <div class="field">
+                <label for="executionAt">執行時間</label>
+                <input id="executionAt" name="executionAt" type="datetime-local" required />
+              </div>
+              <div class="field">
+                <label for="executionWindow">執行時段</label>
+                <input id="executionWindow" name="executionWindow" value="US regular market hours" readonly />
               </div>
               <div class="field">
                 <label for="candidateA">候選 A</label>
@@ -529,7 +538,7 @@
               <button class="ghost" type="button" id="exportData">匯出 JSON</button>
             </div>
           </form>
-          <div class="footer-note">匯出可做 backup。下個版本可以再駁自動匯價、每日報告推送、圖表。</div>
+          <div class="footer-note">匯出可做 backup。交易紀錄建議只填 regular hours 成交價；收市後報告唔應新增假成交。</div>
         </div>
       </section>
 
@@ -569,6 +578,7 @@
       const storageStatus = document.getElementById("storageStatus");
 
       document.getElementById("reportDate").value = todayLocal();
+      document.getElementById("executionAt").value = marketExecutionLocal();
       document.getElementById("openedOn").value = todayLocal();
 
       reportForm.addEventListener("submit", (event) => {
@@ -578,6 +588,8 @@
           id: crypto.randomUUID(),
           date: data.date,
           decision: data.decision,
+          executionAt: data.executionAt,
+          executionWindow: data.executionWindow,
           candidateA: data.candidateA.trim().toUpperCase(),
           candidateB: data.candidateB.trim().toUpperCase(),
           pickedTicker: data.pickedTicker.trim().toUpperCase(),
@@ -590,6 +602,8 @@
         saveAndRender();
         reportForm.reset();
         document.getElementById("reportDate").value = todayLocal();
+        document.getElementById("executionAt").value = marketExecutionLocal();
+        document.getElementById("executionWindow").value = "US regular market hours";
       });
 
       positionForm.addEventListener("submit", (event) => {
@@ -638,6 +652,7 @@
         document.getElementById("candidateB").value = "LULU";
         document.getElementById("pickedTicker").value = "AVGO";
         document.getElementById("reportDecision").value = "buy";
+        document.getElementById("executionAt").value = marketExecutionLocal();
         document.getElementById("reportMood").value = "AI 強勢，risk-on";
         document.getElementById("reportReason").value = "AVGO 業績後指引夠硬，LULU 屬高風險業績盤。";
         document.getElementById("reportReview").value = "如果 AVGO 能守住業績後關鍵位，明日可續抱；LULU 只可細倉觀察。";
@@ -710,7 +725,7 @@
 
       function renderReports() {
         if (!state.reports.length) {
-          reportsList.innerHTML = `<div class="empty">未有日報。今晚美股收市後，第一份報告就會喺度出現。</div>`;
+          reportsList.innerHTML = `<div class="empty">未有日報。之後會先喺美股開市時段落決策，再喺收市後補檢討。</div>`;
           return;
         }
 
@@ -729,7 +744,9 @@
             <p>${escapeHtml(report.reason || "未填寫理由")}</p>
             <div class="mini-grid">
               <div>最終選擇<strong>${escapeHtml(report.pickedTicker || "No Trade")}</strong></div>
+              <div>執行時間<strong>${escapeHtml(formatExecutionAt(report.executionAt))}</strong></div>
               <div>市場風格<strong>${escapeHtml(report.marketMood || "未填")}</strong></div>
+              <div>執行時段<strong>${escapeHtml(report.executionWindow || "US regular market hours")}</strong></div>
             </div>
             <div class="footer-note">${escapeHtml(report.review || "未填寫收市檢討")}</div>
           </article>
@@ -777,6 +794,8 @@
         document.getElementById("openedOn").value = todayLocal();
         document.getElementById("fxRate").value = "7.8";
         document.getElementById("status").value = "open";
+        document.getElementById("executionAt").value = marketExecutionLocal();
+        document.getElementById("executionWindow").value = "US regular market hours";
       }
 
       window.editPosition = function (id) {
@@ -790,7 +809,18 @@
       };
 
       function decisionLabel(value) {
-        return value === "buy" ? "買入" : value === "watch" ? "觀察" : "不買";
+        return value === "buy"
+          ? "買入"
+          : value === "sell"
+            ? "賣出"
+            : value === "hold"
+              ? "持有"
+              : "不出手";
+      }
+
+      function formatExecutionAt(value) {
+        if (!value) return "未填";
+        return value.replace("T", " ");
       }
 
       function setText(id, value) {
@@ -818,6 +848,10 @@
         const now = new Date();
         const pad = (num) => String(num).padStart(2, "0");
         return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+      }
+
+      function marketExecutionLocal() {
+        return `${todayLocal()}T21:35`;
       }
 
       render();
