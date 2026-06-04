@@ -4,7 +4,51 @@
     "startingCapital": 100000,
     "executionPolicy": "US regular market hours only"
   },
-  "reports": [],
+  "reports": [
+    {
+      "id": "2026-06-04-post-close-review",
+      "date": "2026-06-04",
+      "decision": "no_trade",
+      "executionAt": "2026-06-04T16:00:00-04:00",
+      "executionWindow": "Post-close review only - no trade execution allowed",
+      "candidateA": "MDB",
+      "candidateB": "VEEV",
+      "pickedTicker": "",
+      "marketMood": "mixed; selective software strength but post-earnings divergence",
+      "reason": "Luna already recorded NO TRADE during US regular market hours at 10:59:21 AM EDT on June 4, 2026. After the closing bell, the system may review outcomes and update records only; no new BUY or SELL decision can be created or executed post-close.",
+      "review": "June 4, 2026 close review: MDB closed at $380.05 (+3.18%) while VEEV closed at $176.87 (-5.12%). SPY closed at $598.17 (-0.73%) and QQQ closed at $529.23 (-0.83%). The no-trade decision held up: MDB was still extended after its prior earnings gap, and VEEV failed to offer a valid long continuation after earnings. End-of-day P&L stayed flat at HK$0 realized / HK$0 unrealized, with total equity unchanged at HK$100,000.",
+      "createdAt": "2026-06-04T20:20:00Z",
+      "reviewOnly": true,
+      "eodPrices": {
+        "MDB": {
+          "close": 380.05,
+          "change": 11.71,
+          "changePct": 3.18
+        },
+        "VEEV": {
+          "close": 176.87,
+          "change": -9.54,
+          "changePct": -5.12
+        },
+        "SPY": {
+          "close": 598.17,
+          "change": -4.42,
+          "changePct": -0.73
+        },
+        "QQQ": {
+          "close": 529.23,
+          "change": -4.44,
+          "changePct": -0.83
+        }
+      },
+      "pnl": {
+        "realizedHKD": 0,
+        "unrealizedHKD": 0,
+        "equityHKD": 100000,
+        "cashHKD": 100000
+      }
+    }
+  ],
   "positions": [],
   "executions": [
     {
@@ -25,7 +69,7 @@
       },
       "thesis": "No valid long entry was confirmed at 10:59:21 AM EDT. MongoDB remained extended after its May 28 earnings gap, while Veeva's June 4 post-earnings follow-through did not clearly offer a >=2.0 reward-to-risk entry from a valid stop at execution time. There were no existing open positions requiring HOLD or SELL action.",
       "reason": "Market regime looked supportive, but no candidate cleanly satisfied the full setup plus reward-to-risk rules at execution time, so capital stayed in cash.",
-      "review": "Explicit NO TRADE recorded during regular market hours to preserve process discipline and avoid forcing a late chase entry.",
+      "review": "Explicit NO TRADE recorded during regular market hours to preserve process discipline and avoid forcing a late chase entry. Post-close review on June 4, 2026 confirmed no execution was allowed after the bell; MDB finished at $380.05 and VEEV at $176.87, so the portfolio remained 100% cash into the close.",
       "riskLevels": {
         "market": "medium",
         "setup": "high",

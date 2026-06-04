@@ -561,8 +561,8 @@
         <div class="card panel">
           <div class="panel-head">
             <div>
-              <h2>實際買賣</h2>
-              <p>只顯示 Luna 真正有買入或賣出嘅交易紀錄。</p>
+              <h2>每日決策與收市檢討</h2>
+              <p>顯示每日最終決策，包括 BUY / SELL / HOLD / NO TRADE，同埋收市後 review。</p>
             </div>
           </div>
           <div id="reportsList" class="list"></div>
@@ -791,14 +791,12 @@
       }
 
       function renderReports(allReports) {
-        const executedReports = allReports.filter((item) => item.decision === "buy" || item.decision === "sell");
-
-        if (!executedReports.length) {
-          reportsList.innerHTML = `<div class="empty">未有實際買賣。只有我真係買入或賣出，先會喺呢度出現。</div>`;
+        if (!allReports.length) {
+          reportsList.innerHTML = `<div class="empty">未有每日決策記錄。</div>`;
           return;
         }
 
-        reportsList.innerHTML = executedReports.map((report) => `
+        reportsList.innerHTML = allReports.map((report) => `
           <article class="report-card">
             <div class="report-top">
               <div>
@@ -808,7 +806,7 @@
                   <span class="chip">${escapeHtml(report.candidateB)}</span>
                 </div>
               </div>
-              <span class="badge ${report.decision === "buy" ? "buy" : "closed"}">${decisionLabel(report.decision)}</span>
+              <span class="badge ${actionBadgeClass(report.decision)}">${decisionLabel(report.decision)}</span>
             </div>
             <p>${escapeHtml(report.reason || "未填寫理由")}</p>
             <div class="mini-grid">
