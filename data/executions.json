@@ -1,80 +1,99 @@
 {
-  "portfolio": {
-    "currency": "HKD",
-    "startingCapital": 100000,
-    "executionPolicy": "US regular market hours only"
-  },
+  "generatedAt": "2026-06-06T04:20:00+08:00",
+  "startingCapital": 100000,
+  "cash": 97173.982,
+  "equity": 97173.982,
+  "totalReturn": -2.8260179999999964,
   "reports": [
     {
-      "id": "2026-06-04-post-close-review",
+      "id": "report-20260605",
+      "date": "2026-06-05",
+      "decision": "sell",
+      "executionAt": "2026-06-05T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "COIN",
+      "candidateB": "HOOD",
+      "pickedTicker": "COIN",
+      "marketMood": "SPY 偏強但 QQQ 轉弱，BTC 跌至 62.1K，crypto proxy 壓力未消",
+      "reason": "COIN 現價 164.13 美元，遠低於持倉止蝕 182.40，美股開市後按硬止蝕規則直接減倉離場。HOOD 雖然高開轉強，但未有完成 rules-based catalyst 驗證，唔開新倉。",
+      "review": "2026-06-05 美股收市：COIN 收 151.25（較賣出價 164.13 再跌 7.85%），HOOD 收 82.45。今日盤中唯一執行係開市後止蝕賣出 COIN，之後無再開倉；美股 regular hours 已完結，收市後只做檢討，不允許新增 BUY / SELL。"
+    },
+    {
+      "id": "report-20250604",
       "date": "2026-06-04",
-      "decision": "no_trade",
-      "executionAt": "2026-06-04T16:00:00-04:00",
-      "executionWindow": "Post-close review only - no trade execution allowed",
-      "candidateA": "MDB",
-      "candidateB": "VEEV",
-      "pickedTicker": "",
-      "marketMood": "mixed; selective software strength but post-earnings divergence",
-      "reason": "Luna already recorded NO TRADE during US regular market hours at 10:59:21 AM EDT on June 4, 2026. After the closing bell, the system may review outcomes and update records only; no new BUY or SELL decision can be created or executed post-close.",
-      "review": "June 4, 2026 close review: MDB closed at $380.05 (+3.18%) while VEEV closed at $176.87 (-5.12%). SPY closed at $598.17 (-0.73%) and QQQ closed at $529.23 (-0.83%). The no-trade decision held up: MDB was still extended after its prior earnings gap, and VEEV failed to offer a valid long continuation after earnings. End-of-day P&L stayed flat at HK$0 realized / HK$0 unrealized, with total equity unchanged at HK$100,000.",
-      "createdAt": "2026-06-04T20:20:00Z",
-      "reviewOnly": true,
-      "eodPrices": {
-        "MDB": {
-          "close": 380.05,
-          "change": 11.71,
-          "changePct": 3.18
-        },
-        "VEEV": {
-          "close": 176.87,
-          "change": -9.54,
-          "changePct": -5.12
-        },
-        "SPY": {
-          "close": 598.17,
-          "change": -4.42,
-          "changePct": -0.73
-        },
-        "QQQ": {
-          "close": 529.23,
-          "change": -4.44,
-          "changePct": -0.83
-        }
-      },
-      "pnl": {
-        "realizedHKD": 0,
-        "unrealizedHKD": 0,
-        "equityHKD": 100000,
-        "cashHKD": 100000
-      }
+      "decision": "buy",
+      "executionAt": "2026-06-04T21:35",
+      "executionWindow": "US regular market hours",
+      "candidateA": "COIN",
+      "candidateB": "MSTR",
+      "pickedTicker": "COIN",
+      "marketMood": "crypto 板塊弱勢，BTC 回落",
+      "reason": "COIN 喺 $192 有技術支持，計劃短線反彈至 $211.20 (+10%)。選 MSTR 做候選因為同屬 crypto proxy。",
+      "review": "入市後 COIN 持續受壓，2026-06-04 收市價 164.13，已跌穿止蝕位 182.40；下一個 regular-hours session 必須優先執行風控，唔應再用主觀理由延後止蝕。"
     }
   ],
-  "positions": [],
+  "positions": [
+    {
+      "id": "pos-coin-20250604",
+      "ticker": "COIN",
+      "status": "closed",
+      "openedOn": "2026-06-04",
+      "capitalHKD": 19468.8,
+      "fxRate": 7.8,
+      "entryPrice": 192.0,
+      "lastPrice": 151.25,
+      "exitPrice": 164.13,
+      "stopPrice": 182.4,
+      "targetPrice": 211.2,
+      "thesis": "2026-06-05 開市後按硬止蝕規則平倉，避免繼續承受 crypto proxy 弱勢。收市後 COIN 再跌到 151.25，證明止蝕執行正確；但市場已收，唔允許再作新買賣決定。",
+      "quantity": 13,
+      "updatedAt": "2026-06-06T04:20:00+08:00"
+    }
+  ],
   "executions": [
     {
-      "id": "2026-06-04-market-open-no-trade",
-      "session": "market-open",
-      "date": "2026-06-04",
-      "recordedAt": "2026-06-04T14:59:21Z",
-      "executionAt": "2026-06-04T10:59:21-04:00",
+      "id": "exec-coin-20260605-sell",
+      "date": "2026-06-05",
+      "action": "sell",
+      "ticker": "COIN",
+      "executionAt": "2026-06-05T21:35:00+08:00",
       "executionWindow": "US regular market hours",
-      "action": "NO TRADE",
-      "ticker": "",
-      "candidateA": "MDB",
-      "candidateB": "VEEV",
-      "marketMood": "risk-on but selective",
+      "candidateA": "COIN",
+      "candidateB": "HOOD",
       "size": {
-        "hkd": 0,
-        "shares": 0
+        "hkd": 16642.782,
+        "shares": 13
       },
-      "thesis": "No valid long entry was confirmed at 10:59:21 AM EDT. MongoDB remained extended after its May 28 earnings gap, while Veeva's June 4 post-earnings follow-through did not clearly offer a >=2.0 reward-to-risk entry from a valid stop at execution time. There were no existing open positions requiring HOLD or SELL action.",
-      "reason": "Market regime looked supportive, but no candidate cleanly satisfied the full setup plus reward-to-risk rules at execution time, so capital stayed in cash.",
-      "review": "Explicit NO TRADE recorded during regular market hours to preserve process discipline and avoid forcing a late chase entry. Post-close review on June 4, 2026 confirmed no execution was allowed after the bell; MDB finished at $380.05 and VEEV at $176.87, so the portfolio remained 100% cash into the close.",
+      "marketMood": "大市分化，crypto 弱勢延續",
       "riskLevels": {
-        "market": "medium",
-        "setup": "high",
-        "portfolio": "low"
-      }
+        "position": "high",
+        "market": "high",
+        "stop": "triggered"
+      },
+      "thesis": "COIN 報價 164.13 美元，已明顯失守 182.40 止蝕，必須按系統規則先止損；HOOD 雖強，但未有足夠 catalyst / volume 驗證，不開新倉。",
+      "review": "盤初執行硬止蝕，2026-06-05 收市後確認 COIN 收 151.25、HOOD 收 82.45；今日其後無再開新 trade，收市後亦不得補做 BUY / SELL。"
+    },
+    {
+      "id": "exec-coin-20250604",
+      "date": "2026-06-04",
+      "action": "buy",
+      "ticker": "COIN",
+      "executionAt": "2026-06-04T21:35",
+      "executionWindow": "US regular market hours",
+      "candidateA": "COIN",
+      "candidateB": "MSTR",
+      "size": {
+        "hkd": 19468.8,
+        "shares": 13
+      },
+      "marketMood": "crypto 板塊弱勢",
+      "riskLevels": {
+        "position": "medium",
+        "market": "high",
+        "stop": "strict"
+      },
+      "thesis": "COIN 喺 $192 技術支持位，短線反彈至 $211.20，止蝕 $182.40。",
+      "review": "入市後即跌；2026-06-04 收市 164.13，2026-06-05 開市即按規則止蝕。需要檢討入場過早、逆勢接 crypto proxy 反彈嘅問題。"
     }
   ]
 }
