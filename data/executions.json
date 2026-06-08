@@ -1,10 +1,23 @@
 {
-  "generatedAt": "2026-06-06T04:20:00+08:00",
+  "generatedAt": "2026-06-09T04:20:00+08:00",
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260608",
+      "date": "2026-06-08",
+      "decision": "no_trade",
+      "executionAt": "2026-06-08T21:35:12+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "NVDA",
+      "candidateB": "CRWD",
+      "pickedTicker": "",
+      "marketMood": "broad risk-off；上周五科技股急挫後，今日開市只做防守",
+      "reason": "09:35 ET 執行時段有候選，但冇一隻達到可即時落單嘅 breakout 質量。NVDA 雖有 2026-06-01 官方 GTC Taipei AI catalyst，但最新可核實收市價係 2026-06-05 報 205.10 美元、單日跌 6.20%；CRWD 雖於 2026-06-03 公布強勁 FY27 Q1 業績、上調指引兼宣布 stock split，但最新可核實收市價係 2026-06-05 報 671.02 美元、單日跌 6.68%。同日 QQQ 收 705.06、跌 4.80%，而 VIX 跳升 39.7% 至 21.51，反映 risk appetite 明顯收縮。喺呢個 backdrop 之下，v1 規則唔支持喺 market open 追新 long，所以明確記錄 NO TRADE。",
+      "review": "2026-06-08 美股收市：NVDA 收 208.64 美元（較 2026-06-05 收市 205.10 升 1.73%），CRWD 收 658.79 美元（較 671.02 跌 1.82%），QQQ 收 716.07（較 705.06 升 1.56%）。Luna 已於同日 09:35 ET regular-hours 規則內記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。按規則，美股已於 2026-06-08 16:00 EDT 收市，收市後只可做 review，不允許新增或補做交易決定。"
+    },
     {
       "id": "report-20260605",
       "date": "2026-06-05",
@@ -51,6 +64,28 @@
     }
   ],
   "executions": [
+    {
+      "id": "exec-20260608-no-trade",
+      "date": "2026-06-08",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-08T21:35:12+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "NVDA",
+      "candidateB": "CRWD",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "broad risk-off；上周五科技股急挫後，今日開市只做防守",
+      "riskLevels": {
+        "position": "none",
+        "market": "high",
+        "stop": "n/a"
+      },
+      "thesis": "今日 market-open 候選集中喺有 catalyst 嘅 AI / security 強股，但盤面未見可執行 long setup。NVDA 有 2026-06-01 官方 AI catalyst，CRWD 有 2026-06-03 官方業績 beat + raise + stock split catalyst；不過最新可核實參考係 2026-06-05 收市時 NVDA 跌 6.20%、CRWD 跌 6.68%、QQQ 跌 4.80%，而 VIX 升至 21.51。risk-off backdrop 未解除，未滿足 breakout / close-in-range / reward-to-risk 要求，因此系統決策係 NO TRADE。",
+      "review": "2026-06-08 09:35 ET 已按 market-open 規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-08 16:00 ET 收市，NVDA 收 208.64、CRWD 收 658.79、QQQ 收 716.07；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
+    },
     {
       "id": "exec-coin-20260605-sell",
       "date": "2026-06-05",
