@@ -1,10 +1,36 @@
 {
-  "generatedAt": "2026-06-09T04:20:00+08:00",
+  "generatedAt": "2026-06-11T04:20:00+08:00",
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260610",
+      "date": "2026-06-10",
+      "decision": "no_trade",
+      "executionAt": "2026-06-10T21:36:08+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "CBRL",
+      "candidateB": "SMCI",
+      "pickedTicker": "",
+      "marketMood": "CPI hot 後偏 risk-off；指數低開，AI 硬件受壓，消費股 short squeeze 單點爆發",
+      "reason": "2026-06-10 09:36 ET 執行時，最明顯正面催化係 CBRL 業績 beat 加上調全年指引，股價開市後仍維持約 +6% 區間；但按 v1 規則，Setup A 需要確認 earnings reaction day 嘅 close-in-range 同 volume expansion，而呢兩項喺 09:35 ET 無法完成驗證。若改用 Setup B，同樣欠缺對 20-day high / 20-day moving average extension 嘅即時確認。另一邊 SMCI 因 70 億美元融資消息受壓，屬負面稀釋催化，唔係可做 long 嘅 breakout。加上 5 月 CPI 年增 4.2% 後市場開局偏審慎，今個 market-open session 冇任何一隻同時滿足 catalyst、結構確認同 reward-to-risk，故系統明確記錄 NO TRADE。",
+      "review": "2026-06-10 美股收市檢討：CBRL 收 44.46 美元、全日升 22.47%；SMCI 收 43.19 美元、跌 1.46%；QQQ 收 739.56、升 0.34%；SPY 收 725.38、跌 1.57%。Luna 已於 2026-06-10 09:36 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後只可做 review，唔允許喺 2026-06-10 16:00 ET 之後追認、補做或新增任何交易決定。"
+    },
+    {
+      "id": "report-20260609",
+      "date": "2026-06-09",
+      "decision": "no_trade",
+      "executionAt": "2026-06-09T21:35:49+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MRVL",
+      "candidateB": "APLD",
+      "pickedTicker": "",
+      "marketMood": "risk-on 但偏追價；chips / AI data center 繼續反彈，開市質量唔夠靚",
+      "reason": "2026-06-09 09:35 ET 執行時，市場情緒較昨日改善，但最接近規則嘅候選股反而過度延伸。MRVL 受即將於 2026-06-22 納入 S&P 500 消息帶動，現價約 288.43 美元、日內升 9.61%；APLD 受 15 年 hyperscaler 租約催化，現價約 13.06 美元、日內升 12.20%。按 v1 Setup B，單日升幅必須介乎 +3% 至 +9%，所以兩隻都超出上限；NVDA 約 179.50、只升 1.75%，又未達最低動能門檻。組合現金充足，但規則唔支持開市追高，明確記錄 NO TRADE。",
+      "review": "2026-06-09 美股收市檢討：MRVL 收 266.89 美元、全日跌 7.60%；APLD 收 41.92 美元、升 2.41%；NVDA 收 208.20 美元、跌 0.21%；QQQ 收 707.88、跌 1.12%。Luna 已於 2026-06-09 09:35 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。盤中最強催化股普遍由早段 extension 回落，post-close 觀察反而支持『唔追高』呢個選擇；但美股已於 2026-06-09 16:00 ET 收市，收市後只可做 review，不允許新增或補做交易決定。"
+    },
     {
       "id": "report-20260608",
       "date": "2026-06-08",
@@ -64,6 +90,50 @@
     }
   ],
   "executions": [
+    {
+      "id": "exec-20260610-no-trade",
+      "date": "2026-06-10",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-10T21:36:08+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "CBRL",
+      "candidateB": "SMCI",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "CPI hot 後偏 risk-off；指數低開，AI 硬件受壓，消費股 short squeeze 單點爆發",
+      "riskLevels": {
+        "position": "none",
+        "market": "high",
+        "stop": "n/a"
+      },
+      "thesis": "09:36 ET 開市執行時段內，CBRL 係最突出嘅正催化股，業績 beat 並上調全年指引，盤初升幅約落喺 v1 Setup B 允許區間附近；但本系統要做 rules-based long，仍需確認 earnings reaction day 嘅 volume expansion、close-in-range，以及價格相對 20-day high / 20-day moving average 嘅結構，喺 09:35 ET 未夠完整。SMCI 則因 70 億美元融資與潛在稀釋壓力急跌，唔屬可買 breakout。配合今朝 CPI 4.2% 後偏 risk-off 嘅 macro backdrop，現金倉位應維持防守，所以今次 market-open 決策係 NO TRADE。",
+      "review": "2026-06-10 09:36 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-10 16:00 ET 收市，CBRL 收 44.46（+22.47%）、SMCI 收 43.19（-1.46%）、QQQ 收 739.56（+0.34%）、SPY 收 725.38（-1.57%）；候選股只有 CBRL 單點爆發，其餘大市 breadth 仍偏弱，事後都唔足以推翻開市時段嘅風控判斷。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
+    },
+    {
+      "id": "exec-20260609-no-trade",
+      "date": "2026-06-09",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-09T21:35:49+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MRVL",
+      "candidateB": "APLD",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "risk-on 但偏追價；半導體延續反彈，唔適合開市追 breakout",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "今朝 market-open 最強 catalyst 名單集中喺 MRVL 同 APLD。MRVL 因將於 2026-06-22 納入 S&P 500 而續強，APLD 因 15 年 hyperscaler 租約消息而急升；但 09:35 ET 參考價顯示 MRVL 約 +9.61%、APLD 約 +12.20%，均高於 Setup B 容許嘅 +9% 上限，屬過度延伸。另一方面，NVDA 約 +1.75%，動能又未到可買標準。市場環境唔算差，但冇一隻同時滿足催化、升幅區間同 reward-to-risk，故系統決策係 NO TRADE。",
+      "review": "2026-06-09 09:35 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-09 16:00 ET 收市，MRVL 收 266.89（-7.60%）、APLD 收 41.92（+2.41%）、NVDA 收 208.20（-0.21%）、QQQ 收 707.88（-1.12%）；候選股由早段過熱轉為收市回落，驗證本日不追 breakout 係合理。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
+    },
     {
       "id": "exec-20260608-no-trade",
       "date": "2026-06-08",
