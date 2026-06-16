@@ -1,10 +1,62 @@
 {
-  "generatedAt": "2026-06-11T04:20:00+08:00",
+  "generatedAt": "2026-06-16T21:35:00+08:00",
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260616",
+      "date": "2026-06-16",
+      "decision": "no_trade",
+      "executionAt": "2026-06-16T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "SNDK",
+      "pickedTicker": "",
+      "marketMood": "risk-on；美伊和議後市場延續強勢，記憶體股受 FTSE Russell 指數調整同 Micron 擴產消息帶動高開，但技術面極度超買",
+      "reason": "2026-06-16 09:35 ET 執行時，MU 同 SNDK 因 FTSE Russell 將兩隻記憶體股由價值指數轉移至增長指數，加上 Micron 宣布投資超過 20 億美元擴建維珍尼亞州廠房，成為主要催化劑。MU 隔夜升約 4.4%，SNDK 隔夜升約 3%，兩者都喺 Setup B 容許嘅 +3% 至 +9% 升幅區間之內，volume 亦可能因指數調整而被動放大。不過，從技術面嚟睇，MU 14 個月 RSI 高達 90.98，SNDK 14 個月 RSI 更達 98.96，屬極度超買狀態；Morningstar 同 MarketWatch 今日（6月16日）都發出警告，指兩隻股票『phenomenally overbought』、『flying too close to the sun』。更重要嘅係，按 v1 Setup B 第 5 條規則，股價唔可以偏離 20 天移動平均線超過 18%，而兩隻股票 YTD 已分別升咗 275% 同 535%，遠遠超出任何合理嘅延伸上限。開市頭幾分鐘雖然指數仍然強勢，但記憶體股已經處於拋物線式上升嘅尾部，reward-to-risk 極差。基於規則同風控，今日 market-open 明確記錄 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "待 2026-06-16 16:00 ET 收市後補充檢討。"
+    },
+    {
+      "id": "report-20260615",
+      "date": "2026-06-15",
+      "decision": "no_trade",
+      "executionAt": "2026-06-15T21:36:59+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "SNDK",
+      "pickedTicker": "",
+      "marketMood": "risk-on；油價回落帶動 Nasdaq / 半導體開局轉強，VIX 壓力較上周低，但記憶體板塊盤初已有追價味",
+      "reason": "2026-06-15 09:36 ET 執行時，MU 因 AI 帶動嘅全球記憶體供應短缺而成為最強 catalyst candidate，SNDK 則受同一條 memory shortage 主線同近期多間券商上調目標價支持。大市 regime 偏正面：SPY / QQQ 盤初同告上升，市場焦點集中喺半導體同 AI 基建。不過按 v1 Setup B，開市頭幾分鐘仍未足以穩定確認 2x volume、20-day high breakout 同相對 20-day moving average 延伸幅度；同時 MU 盤初升幅已接近規則容許上限，SNDK 亦屬板塊集體推升而非單一乾淨 breakout。基於規則同風控，今日 market-open 明確記錄 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-15 美股收市檢討：MU 收 1087.99 美元，較 2026-06-12 收市 981.61 升 10.84%；SNDK 收 2114.50 美元，較 1980.10 升 6.79%；QQQ 收 744.00，較 721.34 升 3.14%；SPY 收 754.29，較 741.75 升 1.69%；VIX 收 16.13，較 17.68 回落 8.77%。Luna 已於 2026-06-15 09:36 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。事後睇 MU / SNDK 都有延續升勢，但屬開市後至收市逐步擴大的 move，唔足以回溯推翻 09:36 ET 對過度延伸、volume 驗證未完成同 entry 結構未夠乾淨嘅風控判斷。美股已於 2026-06-15 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260612",
+      "date": "2026-06-12",
+      "decision": "no_trade",
+      "executionAt": "2026-06-12T21:36:32+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "INTC",
+      "candidateB": "AMD",
+      "pickedTicker": "",
+      "marketMood": "risk-on 有所修復；SPY / QQQ 開局偏強、VIX 回落到 19 附近，但半導體催化股偏追價",
+      "reason": "2026-06-12 09:36 ET 執行時，INTC 因 Bank of America 前一日雙重升評兼將目標價大幅上調至 135 美元而續強，AMD 則因 Citi 今日升評至 Buy 並把目標價上調至 575 美元而成為第二候選。市場 regime 本身唔差，VIX 低於 22、指數亦偏強；但按 v1 Setup B，INTC 開市時已屬接近或高於 +9% 上限嘅延伸，唔再係乾淨 breakout entry。AMD 雖有硬 catalyst，但開市頭幾分鐘未足以穩定驗證 2x volume、20-day high 突破同相對 20-day moving average 延伸幅度，reward-to-risk 亦未夠清晰。規則優先下，今日 market-open 明確記錄 NO TRADE，組合維持全現金。",
+      "review": "2026-06-12 美股收市檢討：INTC 收 124.46 美元，較 2026-06-11 收市 116.96 升 6.41%；AMD 收 513.93 美元，較 488.45 升 5.22%；QQQ 收 721.07，較 717.12 升 0.55%；SPY 收 741.60，較 737.76 升 0.52%；VIX 收 18.27，較 19.44 回落 6.02%。Luna 已於 2026-06-12 09:36 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。事後睇 INTC 同 AMD 確實延續強勢，但都屬盤中先逐步走出嘅 move，唔足以回溯推翻開市時段對過度延伸同驗證未完成嘅風控判斷。美股已於 2026-06-12 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260611",
+      "date": "2026-06-11",
+      "decision": "no_trade",
+      "executionAt": "2026-06-11T21:35:13+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "INTC",
+      "candidateB": "AMAT",
+      "pickedTicker": "",
+      "marketMood": "反彈嘗試但 macro 仍偏脆弱；PPI hotter、科技股連跌後開市回穩，risk appetite 未完全修復",
+      "reason": "2026-06-11 09:35 ET 執行時，INTC 有 Bank of America 升評兼上調目標價嘅硬 catalyst，AMAT 則有新加坡 AI 晶片產能擴張同 analyst target hike 支持，兩者都屬今日較強題材；但同一時間，Schwab 開市更新顯示前一日 S&P 500 跌 1.62%、Nasdaq 跌 1.98%，PPI 再高過預期，宏觀 backdrop 仍未脫離高波動。更重要係，開市頭幾分鐘唔足以穩定驗證 Setup B 必需嘅 20-day high 突破、2x volume expansion 同價格延伸幅度；而即時報價來源對部分候選升跌幅亦出現分歧，代表 execution quality 唔夠乾淨。按 v1 規則，當 setup 驗證未完整兼 macro 壓力仍高時，應保持現金、防止追入假突破，所以今次 market-open 明確記錄 NO TRADE。",
+      "review": "2026-06-11 美股收市檢討：INTC 收 116.58 美元，較 2026-06-10 收市 107.04 升 8.91%；AMAT 收 552.48 美元，較 497.01 升 11.16%；QQQ 收 717.73，較 693.69 升 3.47%；SPY 收 739.74，較 725.43 升 1.97%；VIX 收 19.57，較 22.22 回落 11.93%。Luna 已於 2026-06-11 09:35 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。事後睇 INTC / AMAT 的確強勢延續，但按開市當刻規則，breakout / volume 驗證未完成，加上 macro 壓力未完全消退，唔追價仍屬一致執行。美股已於 2026-06-11 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何交易決定。"
+    },
     {
       "id": "report-20260610",
       "date": "2026-06-10",
@@ -90,6 +142,94 @@
     }
   ],
   "executions": [
+    {
+      "id": "exec-20260616-no-trade",
+      "date": "2026-06-16",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-16T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "SNDK",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "risk-on；美伊和議後市場延續強勢，記憶體股受 FTSE Russell 指數調整同 Micron 擴產消息帶動高開，但技術面極度超買",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "09:35 ET market-open 檢查入面，MU 同 SNDK 係今日最明顯嘅 catalyst candidates，主因係 FTSE Russell 指數調整（由價值轉增長指數）加上 Micron 宣布 20 億美元維珍尼亞州擴產計劃，帶動隔夜記憶體板塊全線走高。MU 盤初升幅約 4.4%，SNDK 約 3%，理論上喺 Setup B 容許嘅 +3% 至 +9% 區間。然而，兩隻股票嘅技術面已經極度危險：MU 14 個月 RSI 90.98、SNDK 14 個月 RSI 98.96，都係歷史級別嘅超買水平；Morningstar 同 MarketWatch 嘅分析今日明確警告『phenomenally overbought』。按 v1 Setup B 規則第 5 條，股價唔可以偏離 20 天移動平均線超過 18%，而兩隻股票 YTD 升幅分別達 275% 同 535%，遠超任何合理嘅延伸限制。喺呢個拋物線式上升嘅尾部入場，reward-to-risk 極差，風控必須優先。因此今日執行動作係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "待 2026-06-16 16:00 ET 收市後補充檢討。美股收市前禁止任何 BUY / SELL 追認或補做。"
+    },
+    {
+      "id": "exec-20260615-no-trade",
+      "date": "2026-06-15",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-15T21:36:59+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "SNDK",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "risk-on；油價回落帶動 Nasdaq / 半導體開局轉強，VIX 壓力較上周低，但記憶體板塊盤初已有追價味",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "09:36 ET market-open 檢查入面，MU 係今日最強 catalyst candidate，主因係 AI 需求推高記憶體供應短缺敘事，盤初升幅約 8% 左右；SNDK 則受同一條 memory shortage 主線同近期 sell-side 上調目標價支持，盤初升幅約 5% 左右。宏觀 backdrop 比上周穩定，SPY / QQQ 同步高開，風險過濾器冇直接禁止新 long；但按 v1 Setup B，開市數分鐘內未能可靠確認 2x volume、20-day high breakout，以及相對 20-day moving average 嘅延伸幅度。再者 MU 已接近 +9% 上限、extension 風險偏高，SNDK 亦未見足夠乾淨嘅獨立 entry 結構。基於規則同風控，今日執行動作係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-15 09:36 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-15 16:00 ET 收市，MU 收 1087.99（+10.84%）、SNDK 收 2114.50（+6.79%）、QQQ 收 744.00（+3.14%）、SPY 收 754.29（+1.69%）、VIX 收 16.13（-8.77%）；候選股尾段進一步擴大升幅，但屬開市後先逐步確認嘅 move，唔足以回溯推翻 09:36 ET 嗰個 rules-based 風控判斷。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
+    },
+    {
+      "id": "exec-20260612-no-trade",
+      "date": "2026-06-12",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-12T21:36:32+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "INTC",
+      "candidateB": "AMD",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "risk-on 有所修復；SPY / QQQ 開局偏強、VIX 回落到 19 附近，但半導體催化股偏追價",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "09:36 ET market-open 檢查入面，INTC 因 Bank of America 雙重升評兼上調目標價至 135 美元而成為最強 catalyst candidate；AMD 則因 Citi 今日升評至 Buy 並把目標價調高至 575 美元而列為第二候選。大市背景比本周初改善，VIX 約 19、risk filter 並無阻止新 long；但按 v1 Setup B，INTC 盤初已接近或超過單日 +9% 上限，屬過度延伸，唔符合乾淨 entry。AMD 雖然有硬 catalyst，但開市數分鐘內未能可靠確認 2x volume、20-day high breakout、以及相對 20-day moving average 嘅延伸幅度，reward-to-risk 未夠清晰。基於規則同風控，今日執行動作係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-12 09:36 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-12 16:00 ET 收市，INTC 收 124.46（+6.41%）、AMD 收 513.93（+5.22%）、QQQ 收 721.07（+0.55%）、SPY 收 741.60（+0.52%）、VIX 收 18.27（-6.02%）；候選股尾段保持強勢，但屬開市後先逐步確認嘅 move，唔足以回溯推翻 09:36 ET 嗰個 rules-based 風控判斷。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
+    },
+    {
+      "id": "exec-20260611-no-trade",
+      "date": "2026-06-11",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-11T21:35:13+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "INTC",
+      "candidateB": "AMAT",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "反彈嘗試但 macro 仍偏脆弱；PPI hotter、科技股連跌後開市回穩，risk appetite 未完全修復",
+      "riskLevels": {
+        "position": "none",
+        "market": "high",
+        "stop": "n/a"
+      },
+      "thesis": "09:35 ET market-open 檢查入面，INTC 因 Bank of America 升評同大幅上調目標價而成為最接近 Setup B 嘅 catalyst candidate；AMAT 亦因官方公布新加坡擴產支援 AI 晶片需求，加上 sell-side 提高目標價而有題材支持。不過，PPI 高過預期令市場對利率與通脹再度敏感，Schwab 同步指出前一日科技板塊已連續受壓；而開市數分鐘內未能乾淨確認 20-day high breakout、2x volume、以及相對 20-day moving average 嘅延伸幅度，部分即時行情源亦對候選股升跌幅出現分歧。喺訊號未完整、macro 仍偏脆弱嘅情況下，v1 風控優先於追價，因此本次執行動作係 NO TRADE，組合維持全現金。",
+      "review": "2026-06-11 09:35 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-11 16:00 ET 收市，INTC 收 116.58（+8.91%）、AMAT 收 552.48（+11.16%）、QQQ 收 717.73（+3.47%）、SPY 收 739.74（+1.97%）、VIX 收 19.57（-11.93%）；候選股尾段擴大升幅，但屬開市後先逐步確認嘅 move，唔足以回溯推翻 09:35 ET 嗰個 rules-based 風控判斷。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
+    },
     {
       "id": "exec-20260610-no-trade",
       "date": "2026-06-10",
