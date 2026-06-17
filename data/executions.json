@@ -1,5 +1,8 @@
 {
-  "generatedAt": "2026-06-17T21:35:00+08:00",
+  "generatedAt": "2026-06-18T04:20:00+08:00",
+  "closeReportFor": "2026-06-17",
+  "closeReportMode": true,
+  "note": "Post-close report generated after US regular market hours close (2026-06-17 16:00 ET / 2026-06-18 04:20 HKT). No post-close trade execution is allowed. All BUY/SELL decisions must be recorded during 09:30–16:00 ET only.",
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
