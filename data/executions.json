@@ -1,10 +1,23 @@
 {
-  "generatedAt": "2026-06-17T04:20:00+08:00",
+  "generatedAt": "2026-06-17T21:35:00+08:00",
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260617",
+      "date": "2026-06-17",
+      "decision": "no_trade",
+      "executionAt": "2026-06-17T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "NVDA",
+      "candidateB": "AMD",
+      "pickedTicker": "",
+      "marketMood": "Fed 議息日；半導體板塊受壓（NVDA -2.4%、AVGO -4.4%、MU -6.2%、AMD -7.3%、INTC -8.5%）；伊朗-美國和談進展；市場情緒偏觀望",
+      "reason": "2026-06-17 09:35 ET 執行時，半導體板塊集中受壓，NVDA、AMD 等 AI 龍頭均錄得顯著跌幅，屬板塊性拋售而非乾淨 breakout 機會。TradingEconomics 數據顯示 S&P 500 報約 7511 點、較前日跌 0.57%，VIX 約 16.31，雖未達 risk-off 極端水平，但指數方向不明。宏觀方面，Fed 將於即日議息，市場等待利率前景同 SEP 指引；伊朗-美國和談雖有進展，但地緣不確定性仍在。按 v1 Setup B，catalyst breakout 需要單日升幅 +3% 至 +9%、2x volume、20-day high 突破、RS 對 S&P 500 為正、以及偏離 20 天移動平均線不超過 18%——開市數分鐘內無任何半導體股能同時滿足上述條件，因板塊普遍高開低走或已處於超賣回調。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未達 2.0、setup 結構未完整，故系統決策為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-17 美股收市檢討：Luna 已於 2026-06-17 09:35 ET regular hours 內明確記錄 NO TRADE，候選股 NVDA 同 AMD 因半導體板塊集中受壓、缺乏乾淨 breakout 結構而無法滿足 Setup B。大市方面，S&P 500 收市前報約 7511（-0.57%），科技龍頭普遍受壓，VIX 約 16.31。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%，全日無任何 BUY / SELL 執行。美股已於 2026-06-17 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
     {
       "id": "report-20260616",
       "date": "2026-06-16",
@@ -142,6 +155,28 @@
     }
   ],
   "executions": [
+{
+      "id": "exec-20260617-no-trade",
+      "date": "2026-06-17",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-17T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "NVDA",
+      "candidateB": "AMD",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "Fed 議息日；半導體板塊受壓（NVDA -2.4%、AVGO -4.4%、MU -6.2%、AMD -7.3%、INTC -8.5%）；伊朗-美國和談進展；市場情緒偏觀望",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "09:35 ET market-open 檢查時，半導體板塊集中受壓，NVDA、AMD 等 AI 龍頭均錄得顯著跌幅，屬板塊性拋售而非乾淨 breakout 機會。TradingEconomics 數據顯示 S&P 500 報約 7511 點、較前日跌 0.57%，VIX 約 16.31，雖未達 risk-off 極端水平，但指數方向不明。宏觀方面，Fed 將於即日議息，市場等待利率前景同 SEP 指引；伊朗-美國和談雖有進展，但地緣不確定性仍在。按 v1 Setup B，catalyst breakout 需要單日升幅 +3% 至 +9%、2x volume、20-day high 突破、RS 對 S&P 500 為正、以及偏離 20 天移動平均線不超過 18%——開市數分鐘內無任何半導體股能同時滿足上述條件，因板塊普遍高開低走或已處於超賣回調。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未達 2.0、setup 結構未完整，故系統決策為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-17 09:35 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-17 16:00 ET 收市前，組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
+    },
     {
       "id": "exec-20260616-no-trade",
       "date": "2026-06-16",
