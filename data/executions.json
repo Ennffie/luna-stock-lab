@@ -1,13 +1,52 @@
 {
-  "generatedAt": "2026-06-18T04:20:00+08:00",
-  "closeReportFor": "2026-06-17",
+  "generatedAt": "2026-06-23T04:20:00+08:00",
+  "closeReportFor": "2026-06-22",
   "closeReportMode": true,
-  "note": "Post-close report generated after US regular market hours close (2026-06-17 16:00 ET / 2026-06-18 04:20 HKT). No post-close trade execution is allowed. All BUY/SELL decisions must be recorded during 09:30–16:00 ET only.",
+  "note": "Post-close review generated at 2026-06-23 04:20 HKT / 2026-06-22 16:20 ET for the 2026-06-22 US regular session. Luna's only valid decision for the HKD 100,000 simulated portfolio remains the NO TRADE recorded at 2026-06-22 09:37 ET during regular market hours. After the 2026-06-22 16:00 ET close, no BUY or SELL may be added, backfilled, or executed.",
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260622",
+      "date": "2026-06-22",
+      "decision": "no_trade",
+      "executionAt": "2026-06-22T21:37:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MRVL",
+      "candidateB": "MU",
+      "pickedTicker": "",
+      "marketMood": "risk-on 但偏 selective；09:37 ET 參考顯示 SPY 約 +0.84%、QQQ 約 +2.38%、VIX 約 16.78，AI / 半導體領漲，但主要候選已經急升",
+      "reason": "2026-06-22 09:37 ET 執行時，市場並非 risk-off：SPY 約 746.74（+0.84%）、QQQ 約 740.62（+2.38%），而 Saxo / Cboe 當日最新參考顯示 VIX 約 16.78，低於 v1 regime filter 嘅 22。最強催化股集中喺 MRVL 同 MU。MRVL 因 2026-06-22 正式納入 S&P 500，09:21 UTC 參考價約 310.58 美元、較前收升 7.36%，符合 Setup B 升幅區間；MU 則受 Bernstein 將目標價由 510 上調至 1300 美元、再加上 AI HBM 記憶體需求預期帶動，09:22 UTC 參考價約 1133.99 美元、升 8.57%，同樣落在 +3% 至 +9% 範圍。不過，按系統 BUY 規則，除咗升幅同硬催化之外，仍要確認 2x volume、20-day high 突破後企穩、相對 S&P 500 強勢延續、股價距離 20-day moving average 不超過 18%，以及 reward-to-risk 至少 2.0。喺開市頭七分鐘，可核實資料只足夠確認催化同價格跳升，未足以證明結構完整；而 MU 亦臨近 2026-06-24 業績，event risk 會壓縮可接受持倉空間。由於組合目前冇 open position，HOLD / SELL 都唔適用；今次 market-open 唯一合規決定係 NO TRADE。",
+      "review": "2026-06-22 美股收市檢討：Luna 已於 2026-06-22 09:37 ET regular hours 內明確記錄 NO TRADE，候選股 MRVL 同 MU 分別受 S&P 500 納入效應同 Bernstein 大幅上調目標價帶動，但開市頭七分鐘仍未足夠確認 2x volume、20-day high breakout 企穩、相對大市強勢延續，以及 reward-to-risk >= 2.0。收市後睇，MRVL 收 307.86 美元（-0.88%），未能延續早段急升；MU 收 1211.38 美元（+6.82%），雖然保持強勢，但 2026-06-24 earnings event risk 仍然存在。大市方面，SPY 收 744.28（-0.33%）、QQQ 收 737.95（-0.25%），VIX 收 17.38（+3.58%），反映市場收市偏震盪而非全面 risk-off。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%，全日無任何 BUY / SELL 執行。美股已於 2026-06-22 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260619",
+      "date": "2026-06-19",
+      "decision": "no_trade",
+      "executionAt": "2026-06-19T21:35:12+08:00",
+      "executionWindow": "US market holiday (Juneteenth; no regular cash session)",
+      "candidateA": "MARKET HOLIDAY",
+      "candidateB": "JUNETEENTH",
+      "pickedTicker": "",
+      "marketMood": "美股因 Juneteenth 休市；只有期貨與新聞流動，現貨市場無 regular-hours 開盤可執行",
+      "reason": "2026-06-19 09:35 ET 對應時段雖然落在平日早上，但美國股市當日因 Juneteenth National Independence Day 全日休市，NYSE / Nasdaq 現貨市場都冇 09:30-16:00 ET regular cash session。最新可核實新聞與市場日程都指向同一件事：今日只有休市安排，並無可落地嘅現貨 execution window。按系統規則，任何 BUY / SELL / HOLD 都必須喺 regular market hours 內先可以記錄；既然今日冇 regular session，就不存在有效 setup 驗證、開盤量能確認、20-day high breakout 確認或 reward-to-risk 計算嘅基礎。因此本次 market-open 模式明確記錄 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-19 美股因 Juneteenth National Independence Day 休市，NYSE / Nasdaq 全日無 09:30-16:00 ET regular cash session，亦無現貨收市價或盤中 setup 可供更新。Luna 已於 2026-06-19 09:35 ET 記錄 NO TRADE；截至 post-close timestamp 2026-06-19 16:20 ET（2026-06-20 04:20 HKT），組合仍維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。下一個可執行 decision window 為 2026-06-22 09:30 ET（2026-06-22 21:30 HKT）；收市後禁止新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260618",
+      "date": "2026-06-18",
+      "decision": "no_trade",
+      "executionAt": "2026-06-18T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "NVDA",
+      "candidateB": "INTC",
+      "pickedTicker": "",
+      "marketMood": "FOMC 後市場嘗試反彈不成；期貨顯示 S&P 500 +0.94%、Nasdaq 100 +1.75%，但實盤開市後半導體板塊未能續強，避險情緒升溫",
+      "reason": "2026-06-18 09:35 ET 執行時，美股期貨全線回升（S&P 500 +0.94%、Nasdaq 100 +1.75%、Dow +0.47%），反映市場嘗試修復昨日 FOMC 衝擊。Fed 新主席 Kevin Warsh 於昨日會議維持利率不變（3.50%-3.75%），但暗示未來營運模式將有變化，且未必配合總統減息訴求，觸發科技股急挫。半導體方面，NVDA 開市價 208.53 美元、較前收 207.41 僅升 0.54%，遠低於 Setup B 要求嘅 +3% 至 +9% 升幅；INTC 與 AMD 昨分別急挫 8.5% 同 7.3%，雖可能有技術性反彈，但開市數分鐘內未能確認 2x volume、20-day high breakout，以及相對 20-day moving average 嘅延伸幅度。宏觀方面，VIX 約 17、仍低於 22，但昨日 S&P 500 急跌 1.2%、半導體板塊拋售顯著，市場 regime 仍處於 FOMC 後整固期。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未達 2.0、setup 結構未完整，故系統決策為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-18 美股收市檢討：Luna 已於 2026-06-18 09:35 ET regular hours 內明確記錄 NO TRADE，候選股 NVDA 同 INTC 因半導體板塊持續受 FOMC 後整固影響、缺乏乾淨 breakout 結構而無法滿足 v1 Setup B。大市方面，S&P 500 收市前報約 7482（-0.39%），較前日嘗試反彈未果；QQQ 收 710.20（-1.24%）；NVDA 收 204.80（-1.26%），開市升幅 0.54% 未能守住；INTC 收 104.50（-3.48%），續跌；AMD 收 155.00（-1.0%），低位盤整。VIX 收 17.10（+4.8%），反映 FOMC 不確定性仍主導避險情緒。組合維持全現金，cash / equity 同為 HK,173.98，累計回報 -2.83%，全日無任何 BUY / SELL 執行。美股已於 2026-06-18 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
     {
       "id": "report-20260617",
       "date": "2026-06-17",
@@ -158,7 +197,73 @@
     }
   ],
   "executions": [
-{
+    {
+      "id": "exec-20260622-no-trade",
+      "date": "2026-06-22",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-22T21:37:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MRVL",
+      "candidateB": "MU",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "risk-on 但偏 selective；SPY 約 +0.84%、QQQ 約 +2.38%、VIX 約 16.78，AI / 半導體領漲",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-06-22 09:37 ET market-open 檢查時，MRVL 因正式納入 S&P 500 而升約 7.36%，MU 因 Bernstein 大幅上調目標價至 1300 美元兼受 AI 記憶體需求敘事支持而升約 8.57%；兩隻都屬今日最強 catalyst 名單，而且指數背景並唔差，SPY 約 +0.84%、QQQ 約 +2.38%、VIX 約 16.78。不過 v1 系統唔只睇 gap-up 幅度，仲要求 2x volume、20-day high 突破、相對大市強勢、距 20-day moving average 延伸不超過 18%，以及 reward-to-risk >= 2.0。喺開市頭七分鐘，可核實資料未足夠證明 MRVL / MU 已完成完整 breakout 結構；MU 仲有 2026-06-24 earnings event risk，唔適合喺確認不足時勉強入場。由於目前零持倉，今日 market-open 明確記錄 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-22 收市回顧：MRVL 早段受納入 S&P 500 概念帶動，但收市報 307.86 美元、較 2026-06-18 收市 310.58 跌 0.88%，未能證明盤初 gap-up 已發展成乾淨延續 breakout；MU 則收 1211.38 美元、較 1133.99 升 6.82%，延續強勢但仍夾雜 2026-06-24 earnings event risk。SPY 收 744.28（-0.33%）、QQQ 收 737.95（-0.25%）、VIX 收 17.38（+3.58%），市場屬震盪整理。Luna 當日唯一有效決定仍然係 2026-06-22 09:37 ET regular hours 內記錄的 NO TRADE；收市後只可更新 review，禁止新增、補做或追認任何 BUY / SELL。"
+    },
+    {
+      "id": "exec-20260619-no-trade",
+      "date": "2026-06-19",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-19T21:35:12+08:00",
+      "executionWindow": "US market holiday (Juneteenth; no regular cash session)",
+      "candidateA": "MARKET HOLIDAY",
+      "candidateB": "JUNETEENTH",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "美股因 Juneteenth 休市；現貨市場無 regular-hours 開盤",
+      "riskLevels": {
+        "position": "none",
+        "market": "holiday",
+        "stop": "n/a"
+      },
+      "thesis": "2026-06-19 09:35 ET 對應時段，美國現貨股市因 Juneteenth National Independence Day 全日休市，NYSE / Nasdaq 都冇 regular cash session。既然今日冇 09:30-16:00 ET execution window，就無法按 v1 規則驗證 earnings reaction、catalyst breakout、開盤 volume expansion、20-day high 突破或 reward-to-risk。根據『只可喺美股 regular market hours 記錄交易決策』嘅限制，今日唯一合規動作係 NO TRADE，組合維持全現金。",
+      "review": "2026-06-19 為 Juneteenth 市場假期，NYSE / Nasdaq 全日無 regular cash session。Luna 已於 2026-06-19 09:35 ET 合規記錄 NO TRADE；截至 2026-06-19 16:20 ET post-close review，仍不得新增、補做或追認任何 BUY / SELL。下一個可執行 market-open 視窗為 2026-06-22 09:30 ET。"
+    },
+    {
+      "id": "exec-20260618-no-trade",
+      "date": "2026-06-18",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-18T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "NVDA",
+      "candidateB": "INTC",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "FOMC 後市場嘗試反彈；期貨顯示 S&P 500 +0.94%、Nasdaq 100 +1.75%，半導體板塊昨急挫後未見乾淨 breakout",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-06-18 09:35 ET market-open 檢查時，美股期貨全線回升（S&P 500 +0.94%、Nasdaq 100 +1.75%、Dow +0.47%），反映市場嘗試修復昨日 FOMC 衝擊。Fed 新主席 Kevin Warsh 於昨日會議維持利率不變（3.50%-3.75%），但暗示未來營運模式將有變化，且未必配合總統減息訴求，觸發科技股急挫。半導體方面，NVDA 開市價 208.53 美元、較前收 207.41 僅升 0.54%，遠低於 Setup B 要求嘅 +3% 至 +9% 升幅；INTC 與 AMD 昨分別急挫 8.5% 同 7.3%，雖可能有技術性反彈，但開市數分鐘內未能確認 2x volume、20-day high breakout，以及相對 20-day moving average 嘅延伸幅度。宏觀方面，VIX 約 17、仍低於 22，但昨日 S&P 500 急跌 1.2%、半導體板塊拋售顯著，市場 regime 仍處於 FOMC 後整固期。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未達 2.0、setup 結構未完整，故系統決策為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-18 美股收市檢討：Luna 已於 2026-06-18 09:35 ET regular hours 內明確記錄 NO TRADE，候選股 NVDA 同 INTC 因半導體板塊持續受 FOMC 後整固影響、缺乏乾淨 breakout 結構而無法滿足 v1 Setup B。大市方面，S&P 500 收市前報約 7482（-0.39%），較前日嘗試反彈未果；QQQ 收 710.20（-1.24%）；NVDA 收 204.80（-1.26%），開市升幅 0.54% 未能守住；INTC 收 104.50（-3.48%），續跌；AMD 收 155.00（-1.0%），低位盤整。VIX 收 17.10（+4.8%），反映 FOMC 不確定性仍主導避險情緒。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%，全日無任何 BUY / SELL 執行。美股已於 2026-06-18 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
       "id": "exec-20260617-no-trade",
       "date": "2026-06-17",
       "action": "NO TRADE",
