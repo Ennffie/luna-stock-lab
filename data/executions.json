@@ -1,13 +1,52 @@
 {
-  "generatedAt": "2026-06-23T04:20:00+08:00",
-  "closeReportFor": "2026-06-22",
+  "generatedAt": "2026-06-26T04:20:00+08:00",
+  "closeReportFor": "2026-06-25",
   "closeReportMode": true,
-  "note": "Post-close review generated at 2026-06-23 04:20 HKT / 2026-06-22 16:20 ET for the 2026-06-22 US regular session. Luna's only valid decision for the HKD 100,000 simulated portfolio remains the NO TRADE recorded at 2026-06-22 09:37 ET during regular market hours. After the 2026-06-22 16:00 ET close, no BUY or SELL may be added, backfilled, or executed.",
+  "note": "Post-close report generated at 2026-06-26 04:20 HKT / 2026-06-25 16:20 ET for the 2026-06-25 US session. Luna had already recorded a rules-based NO TRADE during US regular market hours; this update only adds end-of-day prices, P&L, and review notes. No post-close BUY / SELL execution is allowed.",
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260625",
+      "date": "2026-06-25",
+      "decision": "no_trade",
+      "executionAt": "2026-06-25T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "SNDK",
+      "pickedTicker": "",
+      "marketMood": "selective earnings-driven rally faded；Micron 業績 beat + raise 帶動盤初記憶體板塊急升，但全日回吐升幅，Mag7 因 Apple / Microsoft 產品加價消息而受壓，指數微跌",
+      "reason": "2026-06-25 09:35 ET market-open 執行時，Micron (MU) 因昨收市後公布強勁業績並上調指引，盤初已出現明顯正向反應、升幅約 +5.5% 至 +6% 區間，符合 Setup A 對『Day-0 price reaction > +4%』嘅初步門檻。SNDK 作為記憶體板塊 peer 亦有約 +2.1% 跟漲，但距 Setup B 最低 +3% 仍有差距。 regime 方面，VIX 仍處約 18.1、低於 22，但 S&P 500 同 Nasdaq 100 喺連續調整後仍貼近或略低於 20 天移動平均線，市場 sentiment 偏向 selective recovery 而非全面 risk-on。不過，按 v1 規則，喺開市頭五分鐘內仍無法確認全日 volume expansion（需 >= 1.8x 20-day average）、Day-0 close-in-range（需處全日 range 頂部 25%）、以及 reaction-day low（影響 stop 同 reward-to-risk 計算）。Setup B 所需嘅 20-day high breakout、2x volume、相對 S&P 500 五日 RS 為正、股價偏離 20MA 不超過 18% 等條件，同樣因數據尚未完整而無法落實。組合現時零持倉，毋須執行 SELL / HOLD；在 setup 結構未完整、reward-to-risk 未能可靠計算之前，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-25 美股收市檢討：Luna 已於 2026-06-25 09:35 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行。Micron (MU) 於昨收市後公布業績 beat + raise，盤初因 AI 記憶體需求敘事帶動而急升，但全日升幅未能守住，收市報約 $1,048.51（較前收 $1,047.92 基本持平微跌 -0.31%），顯示盤初 gap-up 後出現明顯獲利回吐。SNDK 盤初跟漲後同樣回落。大市方面，S&P 500 收 7,358.22（-0.10%）、Nasdaq 收 25,476.64（-0.43%）、Dow 收 51,848（-0.35%），指數整體偏弱，AI / 科技大型股因 Apple、Microsoft 宣布產品加價而受壓，Mag7 拖累納指。VIX 維持約 18 附近，低於 22 但高於年中低位，風險情緒偏向觀望。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-25 美股已於 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260624",
+      "date": "2026-06-24",
+      "decision": "no_trade",
+      "executionAt": "2026-06-24T21:37:22+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "SNDK",
+      "pickedTicker": "",
+      "marketMood": "selective rebound；Reuters 顯示 S&P 500 / Nasdaq futures 小幅回升，記憶體股盤前反彈，但前一日 chip selloff 後風險胃納未完全修復",
+      "reason": "2026-06-24 09:37:22 ET market-open 檢查時，Reuters 指出 S&P 500 同 Nasdaq futures 小幅回升，科技股喺前一日急跌後暫時企穩；記憶體股盤前反彈之中，MU 約 +3.8%、SNDK 約 +2.9%，但同時 FDX 因核心運輸利潤率收縮而跌約 7.1%，顯示市場仍然係 selective、唔係全面 risk-on。按 v1 規則，MU 雖然有盤前反彈同今晚收市後業績催化，但開市頭七分鐘仍未足夠確認 2x volume、20-day high breakout 企穩、相對 S&P 500 強勢延續，以及 reward-to-risk >= 2.0；而 earnings-after-bell event risk 亦會壓縮可接受持倉空間。SNDK 盤前升幅約 2.9%，連 Setup B 最低 +3% 門檻都未明確跨過。組合目前零持倉，毋須做 SELL / HOLD；因此今日喺 US regular market hours 內唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-24 美股收市檢討：Luna 已於 2026-06-24 09:37:22 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行。候選股方面，MU 收 1047.92 美元（較前收 -0.37%），SNDK 收 1921.42 美元（-2.15%）；兩者都未能將盤前反彈發展成乾淨 breakout，亦印證開市時對 earnings-after-bell event risk 同 setup 驗證未完成嘅保守處理。大市方面，SPY 收 733.24（-0.05%）、QQQ 收 710.60（-0.43%）、VIX 收 18.65（-4.31%），代表風險情緒較前一日略為降溫，但科技線仍未出現高質量延續訊號。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-24 美股已於 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260623",
+      "date": "2026-06-23",
+      "decision": "no_trade",
+      "executionAt": "2026-06-23T21:35:19+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "NVDA",
+      "pickedTicker": "",
+      "marketMood": "risk-off 偏防守；Reuters 開市前後摘要顯示 Nasdaq futures 一度跌逾 2%，AI buildout 憂慮升溫，VIX 約 20.12 升到逾一周高位",
+      "reason": "2026-06-23 09:35:19 ET 執行時，市場 opening tone 明顯轉弱。Reuters 當日盤前 / 開市摘要指出 Nasdaq futures 一度跌逾 2%，主因係投資者開始擔心 AI 基建開支回報同聯儲局加息預期，而 VIX 升至約 20.12、屬逾一周高位。候選股方面，MU 因 2026-06-24 業績前夕仍被視為 AI 記憶體需求風向標，NVDA 則繼續代表整個 AI / 半導體主線；但按 v1 規則，開市頭五分鐘內未能確認任何標的同時滿足 +3% 至 +9% 升幅、2x volume、20-day high breakout、相對 S&P 500 強勢，及股價距離 20-day moving average 不超過 18%。當市場 regime 轉向防守、而 valid breakout 又未成立時，系統唔可以勉強開 long；組合目前亦無 open position，所以 HOLD / SELL 都唔適用。今次 market-open 唯一合規決定係 NO TRADE。",
+      "review": "2026-06-23 美股收市檢討：Luna 已於 2026-06-23 09:35:19 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行。候選股方面，MU 收 1051.77 美元，較 2026-06-22 收市 1211.38 跌 13.18%；NVDA 收 200.00 美元，較 208.65 跌 4.15%，反映記憶體 / AI 主線喺風險偏好降溫下遭到明顯去槓桿。大市方面，SPY 收 734.81（-1.29%）、QQQ 收 713.65（-3.29%）；VIX 於收市後 16:20 ET 延遲報價仍見 19.49、較前值 17.28 明顯抽升，顯示避險情緒到尾段仍然偏高。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-23 美股已於 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
     {
       "id": "report-20260622",
       "date": "2026-06-22",
@@ -197,6 +236,50 @@
     }
   ],
   "executions": [
+    {
+      "id": "exec-20260624-no-trade",
+      "date": "2026-06-24",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-24T21:37:22+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "SNDK",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "selective rebound；Reuters 顯示 S&P 500 / Nasdaq futures 小幅回升，記憶體股盤前反彈，但前一日 chip selloff 後風險胃納未完全修復",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-06-24 09:37:22 ET market-open 檢查時，Reuters 指出 S&P 500 同 Nasdaq futures 小幅回升，科技股喺前一日急跌後暫時企穩；記憶體股盤前反彈之中，MU 約 +3.8%、SNDK 約 +2.9%，但同時 FDX 因核心運輸利潤率收縮而跌約 7.1%，顯示市場仍然係 selective、唔係全面 risk-on。按 v1 規則，MU 雖然有盤前反彈同今晚收市後業績催化，但開市頭七分鐘仍未足夠確認 2x volume、20-day high breakout 企穩、相對 S&P 500 強勢延續，以及 reward-to-risk >= 2.0；而 earnings-after-bell event risk 亦會壓縮可接受持倉空間。SNDK 盤前升幅約 2.9%，連 Setup B 最低 +3% 門檻都未明確跨過。組合目前零持倉，毋須做 SELL / HOLD；因此今日喺 US regular market hours 內唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-24 收市回顧：Luna 當日唯一有效決定仍然係 2026-06-24 09:37:22 ET regular hours 內記錄的 NO TRADE。收市後睇，MU 報 1047.92 美元（較前收 -0.37%）、SNDK 報 1921.42 美元（-2.15%）；兩隻候選股都未能把盤前反彈擴展成可追入的乾淨 breakout，亦印證開市時對 earnings-after-bell event risk 同 setup 驗證不足嘅保守處理。大市方面，SPY 收 733.24（-0.05%）、QQQ 收 710.60（-0.43%）、VIX 收 18.65（-4.31%），風險情緒較前一日稍為回穩但科技線仍欠明確方向。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。美股已於 2026-06-24 16:00 ET 收市，收市後只可更新 review，禁止新增、補做或追認任何 BUY / SELL。"
+    },
+    {
+      "id": "exec-20260623-no-trade",
+      "date": "2026-06-23",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-23T21:35:19+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "NVDA",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "risk-off 偏防守；Nasdaq futures 一度跌逾 2%，VIX 約 20.12，AI / 半導體主線受估值同 AI buildout 憂慮壓住",
+      "riskLevels": {
+        "position": "none",
+        "market": "high",
+        "stop": "n/a"
+      },
+      "thesis": "2026-06-23 09:35:19 ET market-open 檢查時，Reuters 盤前 / 開市摘要顯示 Nasdaq futures 一度跌逾 2%，投資者開始質疑 AI 基建開支回報，同時聯儲局加息預期令成長股估值受壓；VIX 約 20.12，代表風險胃納明顯收縮。MU 因 2026-06-24 earnings 前夕仍屬 AI 記憶體需求風向標，NVDA 則係半導體主線核心，所以列為今日兩個主要觀察名單；但喺 09:35 ET 左右，未有可核實證據顯示任何一隻已完成 v1 所需嘅 +3% 至 +9% opening strength、2x volume、20-day high breakout、相對大市強勢，兼且 reward-to-risk >= 2.0。組合現時零持倉，毋須做 SELL / HOLD；由於 market regime 偏防守而有效 long setup 未成立，今日唯一合規執行係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-23 收市回顧：Luna 當日唯一有效決定仍然係 2026-06-23 09:35:19 ET regular hours 內記錄的 NO TRADE。收市後睇，MU 報 1051.77 美元（較前收 -13.18%）、NVDA 報 200.00 美元（-4.15%），SPY 收 734.81（-1.29%）、QQQ 收 713.65（-3.29%）；VIX 於 16:20 ET 延遲報價仍見 19.49，反映市場由開市嘅 risk-off 一路維持到尾段。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。美股已於 2026-06-23 16:00 ET 收市，收市後只可更新 review，禁止新增、補做或追認任何 BUY / SELL。"
+    },
     {
       "id": "exec-20260622-no-trade",
       "date": "2026-06-22",
@@ -482,6 +565,28 @@
       },
       "thesis": "COIN 喺 $192 技術支持位，短線反彈至 $211.20，止蝕 $182.40。",
       "review": "入市後即跌；2026-06-04 收市 164.13，2026-06-05 開市即按規則止蝕。需要檢討入場過早、逆勢接 crypto proxy 反彈嘅問題。"
+    },
+    {
+      "id": "exec-20260625-no-trade",
+      "date": "2026-06-25",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-25T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "SNDK",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "選擇性修復；MU 業績 beat + raise 帶動記憶體板塊盤初反彈，但 macro 仍處整固期，科技線方向未明確",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-06-25 09:35 ET market-open 執行時，MU 為主要關注對象，因其於昨收市後公布業績並呈現 beat + raise 組合，盤初已出現明顯正向反應、升幅約 +5.5% 至 +6% 區間，符合 Setup A 對『Day-0 price reaction > +4%』嘅初步門檻。SNDK 作為記憶體板塊 peer 亦有約 +2.1% 跟漲，但距 Setup B 最低 +3% 仍有差距。 regime 方面，VIX 仍處約 18.1、低於 22，但 S&P 500 同 Nasdaq 100 喺連續調整後仍貼近或略低於 20 天移動平均線，市場 sentiment 偏向 selective recovery 而非全面 risk-on。不過，按 v1 規則，喺開市頭五分鐘內仍無法確認全日 volume expansion（需 >= 1.8x 20-day average）、Day-0 close-in-range（需處全日 range 頂部 25%）、以及 reaction-day low（影響 stop 同 reward-to-risk 計算）。Setup B 所需嘅 20-day high breakout、2x volume、相對 S&P 500 五日 RS 為正、股價偏離 20MA 不超過 18% 等條件，同樣因數據尚未完整而無法落實。組合現時零持倉，毋須執行 SELL / HOLD；在 setup 結構未完整、reward-to-risk 未能可靠計算之前，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-25 收市回顧：Luna 當日唯一有效決定仍然係 2026-06-25 09:35 ET regular hours 內記錄的 NO TRADE。收市後睇，Micron (MU) 報約 $1,048.51（較前收 $1,047.92 基本持平微跌 -0.31%），SNDK 盤初跟漲後回落；兩隻候選股都未能把盤前／開市初段反彈擴展成可追入的乾淨 breakout，印證開市時對 setup 驗證不足同 earnings reaction day 風險嘅保守處理。大市方面，S&P 500 收 7,358.22（-0.10%）、Nasdaq 收 25,476.64（-0.43%）、Dow 收 51,848（-0.35%），Mag7 因 Apple、Microsoft 產品加價消息而受壓，拖累科技指數。VIX 維持約 18 附近。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。美股已於 2026-06-25 16:00 ET 收市，收市後只可更新 review，禁止新增、補做或追認任何 BUY / SELL。"
     }
   ]
 }
