@@ -1,13 +1,96 @@
 {
-  "generatedAt": "2026-06-26T04:20:00+08:00",
-  "closeReportFor": "2026-06-25",
+  "generatedAt": "2026-07-03T04:20:00+08:00",
+  "closeReportFor": "2026-07-02",
   "closeReportMode": true,
-  "note": "Post-close report generated at 2026-06-26 04:20 HKT / 2026-06-25 16:20 ET for the 2026-06-25 US session. Luna had already recorded a rules-based NO TRADE during US regular market hours; this update only adds end-of-day prices, P&L, and review notes. No post-close BUY / SELL execution is allowed.",
+  "note": "Post-close review recorded at 2026-07-03 04:20:00 HKT / 2026-07-02 16:20:00 ET for the 2026-07-02 US session. Luna had already recorded NO TRADE at 2026-07-02 09:35:00 ET during US regular market hours, and no post-close BUY / SELL execution is allowed. End-of-day review only: Dow +0.3%, S&P 500 -0.6% (~7,438), Nasdaq -1.4%; SMCI continued weakness ~$26.99, SNDK -12.37%; simulated portfolio stayed all cash at HK$97,173.98, total return -2.83%. Next trading day: Monday July 6, 2026 (Friday July 3 is Independence Day observed market holiday).",
+  "marketSummary": {
+    "date": "2026-07-02",
+    "dowChange": "+0.3%",
+    "sp500Change": "-0.6%",
+    "sp500Level": "~7,438",
+    "nasdaqChange": "-1.4%",
+    "vix": "~17-18",
+    "jobsReport": "Unemployment 4.2% (vs 4.3% forecast); cooler reading broke 3-month hot streak",
+    "keyTheme": "Chip sell-off continued; Fed Chair Kevin Warsh urged data-dependent approach; pre-holiday thin session"
+  },
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260702",
+      "date": "2026-07-02",
+      "decision": "no_trade",
+      "action": "NO_TRADE",
+      "ticker": "",
+      "size": 0,
+      "executionAt": "2026-07-02T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "COIN",
+      "candidateB": "SMCI",
+      "pickedTicker": "",
+      "marketMood": "pre-holiday session；S&P 500 ~7,514 (+0.41%)、VIX ~16.6（低於 regime filter 22），指數微升但個股異動缺乏可核實硬催化；ADP/失業金數據已公布，市場等待明日非農",
+      "thesis": "2026-07-02 09:35 ET market-open 執行時，Yahoo Finance 開市 snapshot（09:32 ET）顯示 S&P 500 報 7,514.21（+0.41%），VIX 約 16.60（多個來源確認），regime 非 risk-off。個股異動中 COIN +5.73%、SMCI +3.63% 屬較明顯漲幅，但按 v1 Setup B，開市頭五分鐘內未能核實硬 catalyst（如 analyst target hike、產品/合作/監管 announcement）、未能確認 2x volume expansion、20-day high breakout 企穩、相對 S&P 500 五日 RS 為正，以及股價偏離 20-day MA 不超過 18%。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未能可靠計算 >= 2.0。組合目前零持倉，毋須 SELL / HOLD。因此 2026-07-02 US regular market hours 內，唯一合規決定係 NO_TRADE，HKD 100,000 模擬組合維持全現金。Post-close review 將於收市後更新收市價、P&L 同市場檢討。",
+      "riskLevels": {
+        "marketRegime": "neutral (VIX ~16.6 < 22; S&P +0.41% but 20-day MA confirmation unavailable)",
+        "setupValidation": "INCOMPLETE: volume/20-day-high/RS/extension unverified; no hard catalyst confirmed",
+        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used)"
+      },
+      "review": "2026-07-02 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-02 09:35:00 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，大市走勢印證開市時嘅謹慎判斷：Dow 微升 +0.3%，但 S&P 500 跌 0.6%（收約 7,438）、Nasdaq 跌 1.4%，科技線持續受壓。晶片股賣壓延續，SNDK 大跌 12.37%，SMCI 由開市初段嘅 +3.63% 轉為最終收市約 $26.99（較前收 $27.65 進一步回落），COIN 作為 crypto proxy 亦跟隨板塊弱勢。非農前哨嘅 ADP/失業金數據已於週三公布，而今日（週四）出爐嘅 6 月失業率 4.2% 低過預期 4.3%，屬稍為降溫嘅就業數據；Fed 主席 Kevin Warsh 繼續強調數據依賴路徑，令市場對減息預期維持觀望。由於明日（7 月 3 日）為 Independence Day observed 市場假期，美股唔開市，下一個可執行 decision window 為 2026-07-06 09:30 ET。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-07-02 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260701",
+      "date": "2026-07-01",
+      "decision": "no_trade",
+      "executionAt": "2026-07-01T21:35:12+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "KLAC",
+      "candidateB": "VRT",
+      "pickedTicker": "",
+      "marketMood": "selective tech / chip rebound；VIX 仍低但大市開局偏軟，資金集中喺少數 AI / 半導體基建強股",
+      "reason": "2026-07-01 09:35:12 ET market-open 執行時，可核實 opening snapshot 顯示大市唔算 risk-off，但亦未形成乾淨 broad breakout：Yahoo Finance chart data 顯示 S&P 500 約報 7451.99，較前一日 7499.36 回落，VIX 約 16.81、仍低於 v1 regime filter 嘅 22。今日最接近 Setup B 嘅候選係 KLA (KLAC) 同 Vertiv (VRT)。MarketWatch 即時 movers snippet 顯示 KLAC 約 +8.38%、VRT 約 +9.07%；其中 VRT 已貼近甚至略高過 v1 容許嘅 +9% 上限，追入空間非常窄。KLAC 雖然受 stock split / capital return 題材支持，但喺開市頭五分鐘仍未有足夠可核實資料證明 2x volume、20-day high breakout 企穩、相對 S&P 500 五日 RS，以及股價距 20-day moving average 不超過 18%；reward-to-risk 亦未能可靠計到 >= 2.0。組合目前零持倉，毋須 SELL / HOLD，因此今日唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-07-01 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-01 09:35:12 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，候選股 KLA (KLAC) 收 266.19 美元（較前收 301.71 跌 11.77%），Vertiv (VRT) 收 311.42 美元（較前收 334.82 跌 6.99%）；兩隻都由開局強勢轉為明顯回吐，印證 09:35 ET 當刻唔追高、等待 breakout 結構同 reward-to-risk 確認係正確處理。大市方面，SPY 收 745.76（-0.14%）、QQQ 收 725.23（-1.52%）、VIX 收 16.59（+0.85%），顯示科技線尾段偏弱，未形成可推翻早段判斷嘅 broad breakout。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-07-01 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260630",
+      "date": "2026-06-30",
+      "decision": "no_trade",
+      "executionAt": "2026-06-30T21:37:43+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "APD",
+      "candidateB": "FSLR",
+      "pickedTicker": "",
+      "marketMood": "selective bounce；premarket leaders 以個股跳空為主，但半導體 / AI 核心股未同步轉強，bubble 風險討論未散",
+      "reason": "2026-06-30 09:37:43 ET market-open 執行時，可核實 opening 資料顯示今日最強 premarket leaders 主要係個股式跳空，而唔係高質量 broad breakout。MarketWatch 06/30/2026 premarket leaders 顯示 JLL 約 +12.96%、ENPH 約 +11.46%、RRX 約 +7.99%、APD 約 +7.49%、FSLR 約 +3.46%；其中最強兩隻 JLL 同 ENPH 已經明顯高過 v1 Setup B 容許嘅 +9% 上限，屬過度延伸。若退而觀察仍留喺 +3% 至 +9% 區間內嘅 APD 同 FSLR，開市頭七分鐘又未見到可可靠核實嘅硬 catalyst、2x volume、20-day high breakout 企穩、相對 S&P 500 五日 RS，以及 reward-to-risk >= 2.0。另一方面，Most Active 清單入面嘅 AI / 半導體主線股動能偏弱：NVDA 約 +0.52%、MU 約 -0.57%、INTC 約 +0.20%、AVGO 約 +0.95%、QCOM 約 +0.31%，未有任何一隻達到可執行 breakout 標準。再加上 Reuters 06/30/2026 關於 tech / chip bubble fears 嘅報道提到 BofA bubble risk indicator 對半導體約 0.91、科技約 0.82，代表估值與情緒風險仍高。組合目前零持倉，毋須 SELL / HOLD；因此今日 market-open 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-30 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-06-30 09:37:43 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，候選股 Air Products & Chemicals (APD) 收 293.06 美元（較前收 271.35 升 8.00%），First Solar (FSLR) 收 235.96 美元（較前收 232.80 升 1.36%）；大市方面，SPY 收 746.52（+0.74%）、QQQ 收 736.40（+1.70%）、VIX 收 17.65（-4.13%）。即使 APD 最終收得強，09:37 ET 當刻仍未有足夠可核實資料證明硬 catalyst、2x volume、20-day high breakout 企穩與 reward-to-risk >= 2.0，所以唔可以用收市結果倒推補做交易。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-30 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260629",
+      "date": "2026-06-29",
+      "decision": "no_trade",
+      "executionAt": "2026-06-29T21:39:36+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "CMCSA",
+      "candidateB": "VRDN",
+      "pickedTicker": "",
+      "marketMood": "broad rebound 但 breakout 質量一般；中東降溫帶動指數反彈，惟 AI spending 擔憂未散，資金集中喺事件驅動個股",
+      "reason": "2026-06-29 09:39:36 ET market-open 執行時，Reuters 可核實資訊顯示，中東局勢降溫帶動風險情緒回暖，08:23 ET 時 S&P 500 futures 約升 0.84%，Nasdaq 100 futures 約升 1.17%，大市屬反彈開局而非 risk-off。今日最明顯兩個 opening catalyst 係 Comcast (CMCSA) 同 Viridian Therapeutics (VRDN)：CMCSA 因宣布分拆 NBCUniversal 與 Sky，盤前約升 22.5%；VRDN 因 FDA 批准甲狀腺眼病藥物，盤前約升 10.6%。不過按 v1 Setup B，單日升幅必須介乎 +3% 至 +9%，兩者都已明顯超出可接受追入帶，屬過度延伸；另一隻較受關注嘅 SpaceX 只升約 1.8%，又未達最低動能門檻。加上 Reuters 同文指出 AI spending 憂慮仍令半導體與 Mag 7 情緒未完全修復，Apple 盤前偏弱，代表今日更似 headline-driven bounce 而非高質量 broad breakout day。組合目前零持倉，毋須執行 SELL / HOLD；在冇任何標的同時滿足 catalyst、升幅區間、結構確認同 reward-to-risk >= 2.0 之下，今日唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-29 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-06-29 09:39:36 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。按 2026-06-29 16:20 ET 左右可核實收市後 snapshot，候選股 Comcast (CMCSA) 約報 24.34 美元、Viridian Therapeutics (VRDN) 約報 18.90 美元；兩隻都明顯低過即日高位（CMCSA 29.00、VRDN 20.56），代表盤前 / 開局催化雖強，但延伸過度後未能守住高位，印證開市時『唔追過度 gap-up』嘅處理。大市方面，SPY 收 741.00，QQQ 約報 723.60，風險情緒較開局改善，但仍未形成足以推翻早段判斷嘅高質量 broad breakout。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-29 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260626",
+      "date": "2026-06-26",
+      "decision": "no_trade",
+      "executionAt": "2026-06-26T21:39:01+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "QCOM",
+      "candidateB": "AMAT",
+      "pickedTicker": "",
+      "marketMood": "tech-led rebound 但輪動急；Micron / Qualcomm 帶動 AI 情緒修復，同時 Sandisk / Marvell 出現明顯獲利回吐，屬 selective risk-on 而非全面 breakout day",
+      "reason": "2026-06-26 09:35:09 ET market-open 執行時，Reuters / Yahoo Finance / Barron's 可核實資訊顯示，美股期貨因 Micron 同 Qualcomm 嘅樂觀展望而回穩，AI / 半導體情緒較前幾日改善。今日最接近 v1 Setup B 嘅兩個候選係 Qualcomm (QCOM) 同 Applied Materials (AMAT)：QCOM 因 investor day 上調長期目標、擴展 AI data center 故事兼傳出 Meta 為主要客戶，盤前約升 3.8% 至 4.5%；AMAT 則受 AI 封裝合作消息同 analyst 正面評級帶動，盤前約升 4.9% 至 7% 區間，兩者表面上都落在 +3% 至 +9% 催化升幅帶。不過按 v1 規則，09:35 ET 仍未足以可靠確認 2x volume、20-day high breakout 企穩、相對 S&P 500 五日 RS、股價距離 20-day moving average 不超過 18%，以及最重要嘅 reward-to-risk >= 2.0。更關鍵係，同一時間 Barron's snippets 顯示 Sandisk 約跌 5.1%、Marvell 約跌 4.6%，反映資金對高beta AI 贏家仍然有明顯派發，市場係 selective rotation 多過 broad risk-on。組合目前零持倉，毋須執行 SELL / HOLD；在結構未完整、風險回報未夠清晰之前，今日唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-26 美股收市檢討：Luna 當日唯一有效決定仍然係 2026-06-26 09:35:09 ET 喺 US regular market hours 內記錄嘅 NO TRADE；之後全日無任何 BUY / SELL 執行。收市後睇，Qualcomm (QCOM) 收 189.39 美元（-7.57%），Applied Materials (AMAT) 收 626.84 美元（-6.16%），兩隻候選最終都由盤前／開局強勢轉為明顯回吐，印證開市時對 breakout 驗證未完成、reward-to-risk 未夠清晰同 selective rotation 風險嘅保守處理。大市方面，SPY 收 733.31（-0.13%）、QQQ 收 705.73（-1.49%）、VIX 約 18.57（-1.70%）；科技線偏弱，並未發展成 broad risk-on 延續。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-26 美股已於 16:00 ET 收市，post-close 只可更新 review，同步 end-of-day prices 與 P&L；不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
     {
       "id": "report-20260625",
       "date": "2026-06-25",
@@ -236,6 +319,94 @@
     }
   ],
   "executions": [
+    {
+      "id": "exec-20260701-no-trade",
+      "date": "2026-07-01",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-07-01T21:35:12+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "KLAC",
+      "candidateB": "VRT",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "selective tech / chip rebound；VIX 仍低但大市開局偏軟，資金集中喺少數 AI / 半導體基建強股",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-07-01 09:35:12 ET market-open 執行時，S&P 500 約報 7451.99、低過前一日收市 7499.36，而 VIX 約 16.81，代表 market regime 未到 risk-off，但 opening breadth 亦未算全面 risk-on。今日最接近可做 breakout 嘅兩個標的係 KLAC 同 VRT：MarketWatch movers snippet 顯示 KLAC 約 +8.38%、VRT 約 +9.07%。VRT 已經貼近甚至略高過 v1 Setup B 上限，屬邊緣過度延伸；KLAC 雖有硬題材，但喺開市頭五分鐘仍未有足夠可核實資料證明 2x volume、20-day high breakout 企穩、五日相對強勢同 20MA 延伸幅度合規，更未能可靠確認 reward-to-risk >= 2.0。組合零持倉，唔存在 HOLD / SELL 場景，因此執行動作為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-07-01 market-open execution 已完成，當前只記錄 regular-hours 開盤決策；post-close review 要等美股收市後先可更新。收市前禁止補做、追價或追認任何 BUY / SELL。"
+    },
+    {
+      "id": "exec-20260630-no-trade",
+      "date": "2026-06-30",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-30T21:37:43+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "APD",
+      "candidateB": "FSLR",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "selective bounce；premarket leaders 以個股跳空為主，但半導體 / AI 核心股未同步轉強，bubble 風險討論未散",
+      "riskLevels": {
+        "position": "none",
+        "market": "high",
+        "stop": "n/a"
+      },
+      "thesis": "2026-06-30 09:37:43 ET market-open 執行時，MarketWatch 06/30/2026 premarket leaders 顯示 JLL 約 +12.96%、ENPH 約 +11.46%、RRX 約 +7.99%、APD 約 +7.49%、FSLR 約 +3.46%。最強兩隻 JLL 同 ENPH 已明顯高於 v1 Setup B 嘅 +9% 上限，屬過度延伸；而仍留喺可接受升幅帶內嘅 APD 同 FSLR，喺開市頭七分鐘又未有足夠可核實資料證明硬 catalyst、2x volume、20-day high breakout、相對 S&P 500 強勢同 reward-to-risk >= 2.0。同步睇 Most Active，AI / 半導體主線股只見 NVDA 約 +0.52%、MU 約 -0.57%、INTC 約 +0.20%、AVGO 約 +0.95%、QCOM 約 +0.31%，代表核心風險偏好未形成可買 breakout。再加上 Reuters 06/30/2026 關於 tech / chip bubble fears 嘅報道提到 BofA bubble risk indicator 對半導體約 0.91、科技約 0.82，風險回報仍然唔吸引。組合零持倉，執行動作為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-30 美股收市檢討：Luna 當日唯一有效決定仍然係 2026-06-30 09:37:43 ET 喺 US regular market hours 內記錄嘅 NO TRADE；之後全日無任何 BUY / SELL 執行。收市後 snapshot 顯示 APD 收 293.06 美元（+8.00%）、FSLR 收 235.96 美元（+1.36%）、SPY 收 746.52（+0.74%）、QQQ 收 736.40（+1.70%）、VIX 收 17.65（-4.13%）。APD 最終保持強勢，但呢個結果只可作為 review，唔可以回溯推翻 09:37 ET 對 setup 驗證不足、過度延伸風險同 reward-to-risk 未清晰嘅規則判斷。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-30 美股已於 16:00 ET 收市；post-close 只可更新 review、價格與 end-of-day P&L，禁止新增、補做或追認任何 BUY / SELL。"
+    },
+    {
+      "id": "exec-20260629-no-trade",
+      "date": "2026-06-29",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-29T21:39:36+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "CMCSA",
+      "candidateB": "VRDN",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "broad rebound 但 breakout 質量一般；中東降溫帶動指數反彈，惟 AI spending 擔憂未散，資金集中喺事件驅動個股",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-06-29 09:39:36 ET market-open 執行時，Reuters 顯示中東局勢降溫令 S&P 500 futures 約升 0.84%、Nasdaq 100 futures 約升 1.17%，市場屬 headline-driven rebound。最強兩個硬催化股係 Comcast (CMCSA) 同 Viridian Therapeutics (VRDN)：前者因分拆 NBCUniversal / Sky 盤前約升 22.5%，後者因 FDA 批准新藥盤前約升 10.6%。但按 v1 Setup B，兩隻都高過 +9% 上限，屬過度延伸；SpaceX 因獲納入 Nasdaq 100 只升約 1.8%，則未達最低 +3% 動能門檻。再加上 AI spending 憂慮未散、Apple 盤前偏弱，未見 broad risk-on breakout 結構，因此今日無合規 long setup。組合零持倉，執行動作為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-29 09:39:36 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。到 2026-06-29 16:20 ET post-close 為止，組合仍然全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%；候選股高開後回落，支持維持 NO TRADE。收市後只可更新 review、價格與 end-of-day P&L，禁止補做任何 BUY / SELL。"
+    },
+    {
+      "id": "exec-20260626-no-trade",
+      "date": "2026-06-26",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-06-26T21:39:01+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "QCOM",
+      "candidateB": "AMAT",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "tech-led rebound 但輪動急；Micron / Qualcomm 帶動 AI 情緒修復，同時 Sandisk / Marvell 出現明顯獲利回吐，屬 selective risk-on 而非全面 breakout day",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-06-26 09:35:09 ET market-open 執行時，Reuters / Yahoo Finance / Barron's 可核實資訊顯示，美股期貨因 Micron 同 Qualcomm 嘅樂觀展望而回穩，AI / 半導體情緒較前幾日改善。今日最接近 v1 Setup B 嘅兩個候選係 Qualcomm (QCOM) 同 Applied Materials (AMAT)：QCOM 因 investor day 上調長期目標、擴展 AI data center 故事兼傳出 Meta 為主要客戶，盤前約升 3.8% 至 4.5%；AMAT 則受 AI 封裝合作消息同 analyst 正面評級帶動，盤前約升 4.9% 至 7% 區間，兩者表面上都落在 +3% 至 +9% 催化升幅帶。不過按 v1 規則，09:35 ET 仍未足以可靠確認 2x volume、20-day high breakout 企穩、相對 S&P 500 五日 RS、股價距離 20-day moving average 不超過 18%，以及最重要嘅 reward-to-risk >= 2.0。更關鍵係，同一時間 Barron's snippets 顯示 Sandisk 約跌 5.1%、Marvell 約跌 4.6%，反映資金對高beta AI 贏家仍然有明顯派發，市場係 selective rotation 多過 broad risk-on。組合目前零持倉，毋須執行 SELL / HOLD；在結構未完整、風險回報未夠清晰之前，今日唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "review": "2026-06-26 美股收市檢討：Luna 當日唯一有效決定仍然係 2026-06-26 09:35:09 ET 喺 US regular market hours 內記錄嘅 NO TRADE；之後全日無任何 BUY / SELL 執行。收市後睇，Qualcomm (QCOM) 收 189.39 美元（-7.57%），Applied Materials (AMAT) 收 626.84 美元（-6.16%），兩隻候選最終都由盤前／開局強勢轉為明顯回吐，印證開市時對 breakout 驗證未完成、reward-to-risk 未夠清晰同 selective rotation 風險嘅保守處理。大市方面，SPY 收 733.31（-0.13%）、QQQ 收 705.73（-1.49%）、VIX 約 18.57（-1.70%）；科技線偏弱，並未發展成 broad risk-on 延續。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-26 美股已於 16:00 ET 收市，post-close 只可更新 review，同步 end-of-day prices 與 P&L；不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
     {
       "id": "exec-20260624-no-trade",
       "date": "2026-06-24",
