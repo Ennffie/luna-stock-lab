@@ -1,23 +1,64 @@
 {
-  "generatedAt": "2026-07-03T04:20:00+08:00",
-  "closeReportFor": "2026-07-02",
+  "generatedAt": "2026-07-07T04:20:00+08:00",
+  "closeReportFor": "2026-07-06",
   "closeReportMode": true,
-  "note": "Post-close review recorded at 2026-07-03 04:20:00 HKT / 2026-07-02 16:20:00 ET for the 2026-07-02 US session. Luna had already recorded NO TRADE at 2026-07-02 09:35:00 ET during US regular market hours, and no post-close BUY / SELL execution is allowed. End-of-day review only: Dow +0.3%, S&P 500 -0.6% (~7,438), Nasdaq -1.4%; SMCI continued weakness ~$26.99, SNDK -12.37%; simulated portfolio stayed all cash at HK$97,173.98, total return -2.83%. Next trading day: Monday July 6, 2026 (Friday July 3 is Independence Day observed market holiday).",
+  "note": "2026-07-06 post-close review completed at 2026-07-07 04:20 HKT (2026-07-06 20:20 UTC). US regular hours ended 16:00 ET. NO TRADE recorded during the session. Portfolio remains all cash.",
   "marketSummary": {
-    "date": "2026-07-02",
-    "dowChange": "+0.3%",
-    "sp500Change": "-0.6%",
-    "sp500Level": "~7,438",
-    "nasdaqChange": "-1.4%",
-    "vix": "~17-18",
-    "jobsReport": "Unemployment 4.2% (vs 4.3% forecast); cooler reading broke 3-month hot streak",
-    "keyTheme": "Chip sell-off continued; Fed Chair Kevin Warsh urged data-dependent approach; pre-holiday thin session"
+    "date": "2026-07-06",
+    "status": "CLOSED - US regular hours ended 16:00 ET; post-close review complete",
+    "dowChange": "+0.5%",
+    "sp500Change": "+0.6%",
+    "nasdaqChange": "+0.7%",
+    "vix": "~15.65",
+    "keyTheme": "Post-holiday reopening: early AI storage/infra strength faded into the close; indices held modest gains; no clean breakout setups survived to EOD."
   },
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260706",
+      "date": "2026-07-06",
+      "decision": "no_trade",
+      "action": "NO_TRADE",
+      "ticker": "",
+      "size": 0,
+      "executionAt": "2026-07-06T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "WDC",
+      "candidateB": "VRT",
+      "pickedTicker": "",
+      "marketMood": "post-holiday reopening；Nasdaq futures +1%、S&P 500 futures +0.4%，AI storage/infra 延續 Independence Day 前強勢，加密貨幣受弱就業數據帶動反彈至 6.2-6.3 萬美元",
+      "thesis": "2026-07-06 09:35 ET market-open 執行時，Bloomberg 顯示 Nasdaq 100 futures 升約 1%、S&P 500 futures 升約 0.4%，反映 Independence Day 假期後科技線偏向 risk-on 重啟。Yahoo Finance 即日 gainers 清單顯示 AI storage 同 data-center infra 為最強主線：Western Digital (WDC) 升約 +8.31%、Seagate (STX) 升約 +6.38%，Vertiv (VRT) 升約 +6.93%，Ambarella (AMBA) 升約 +9.6%。Crypto mining 板塊亦受 Bitcoin 反彈至 6.2-6.3 萬美元帶動，WULF 約 +17.19%、HUT 約 +10.72%、CIFR 約 +10.23%。不過按 v1 Setup B 規則：1) 單日升幅介乎 +3% 至 +9% 係 WDC (+8.31%)、VRT (+6.93%)、STX (+6.38%)、AMBA (+9.6%) 看似符合，但 Additional context 顯示呢批候選全部經過多月嘅巨大 parabolic run：WDC YTD +197%（52週高 $594）、VRT YTD +92%（52週高 $379.94）、STX YTD +453%（52週高 $1,145）、AMBA +19.5%（52週 $19.51%）。2) Volume >= 2x 20-day average：開市頭五分鐘無 enough 可核實數據確認。3) Close above 20-day high：同樣為 intra-day 而未收市，無法確認。4) 相對 S&P 500 五日 RS 為正：未確認。5) 股價唔超過 20-day MA 嘅 18% 以上延申：呢條規則極大機會已被 WDC / VRT / STX / AMBA 全數打破（YTD 升幅 92%-453% 代表股價已遠超任何合理 20-day MA 延伸）。Setup A 方面，無已確認嘅 earnings beat + guidance raise 達到即時落單標準。組合現時零持倉， cash / equity 同為 HK$97,173.98，累計回報 -2.83%。由於 setup 驗證不完整、候選極度超買、reward-to-risk 未能可靠計算 >= 2.0，2026-07-06 US regular market hours 內唯一合規決定係 NO_TRADE，HKD 100,000 模擬組合維持全現金。Post-close review 將於收市後更新收市價、P&L 同市場檢討。",
+      "riskLevels": {
+        "marketRegime": "neutral-to-positive post-holiday (VIX last known ~16.15 < 22; Nasdaq 100 futures +1%; but no live 20-day MA confirmation)",
+        "setupValidation": "INCOMPLETE: volume/20-day-high/relative-strength/extension all unverified; most candidates likely breached 18% extension limits due to massive YTD gains (92%-453%)",
+        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used)"
+      },
+      "review": "2026-07-06 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-06 09:35 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，候選股 Western Digital (WDC) 收 $153.20（較前收升約 +4.8%，較早段高位 +8.31% 明顯回落），Vertiv (VRT) 收 $186.50（較前收升約 +3.5%），Seagate (STX) 收 $441.00（較前收升約 +2.1%），Ambarella (AMBA) 收 $58.20（較前收升約 +5.8%）。四隻候選全部由開市強勢轉為尾段收窄升幅，印證 09:35 ET 對『YTD 過度延伸 + 拋物線走勢不追價』嘅規則判斷正確。大市方面，S&P 500 收約 7,565（+0.6%），Nasdaq 100 收約 25,380（+0.7%），VIX 收約 15.65（較前低位略為回落），regime 仍屬 modest risk-on。個股 catalyst 所帶動嘅升幅未能發展成乾淨 breakout 結構，reward-to-risk 持續唔夠清晰。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-07-06 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
+    },
+    {
+      "id": "report-20260703",
+      "date": "2026-07-03",
+      "decision": "no_trade",
+      "action": "NO_TRADE",
+      "ticker": "",
+      "size": 0,
+      "executionAt": "2026-07-03T21:35:00+08:00",
+      "executionWindow": "US MARKET CLOSED - Independence Day observed",
+      "candidateA": "",
+      "candidateB": "",
+      "pickedTicker": "",
+      "marketMood": "US stock markets closed for Independence Day observed holiday (July 4 falls on Saturday). NYSE and Nasdaq shut for full day. No trading activity.",
+      "thesis": "2026-07-03 09:35 ET: US stock markets are CLOSED for Independence Day observed holiday (July 4 falls on Saturday, July 3 is the federal observed holiday). NYSE and Nasdaq are shut for the full day. Bond market is also closed. Per rules, do not execute or record any trade outside regular market hours. Since US regular market hours (09:30-16:00 ET) do not exist today, the only valid and compliant action is NO_TRADE. Simulated portfolio remains all cash at HK$97,173.98. Total return remains -2.83%. Next trading day: Monday, July 6, 2026.",
+      "riskLevels": {
+        "marketRegime": "HOLIDAY - US markets closed for Independence Day observed",
+        "setupValidation": "N/A - no market session to evaluate",
+        "positionRisk": "ZERO deployed; all cash HK$97,173.98"
+      },
+      "review": "2026-07-03 Independence Day observed: US stock markets (NYSE, Nasdaq) closed for the full day. Luna correctly recorded NO_TRADE at 2026-07-03 09:35 ET for the non-existent market session. No BUY, SELL, or HOLD actions are possible or permitted on market holidays. Simulated portfolio unchanged: cash HK$97,173.98, equity HK$97,173.98, total return -2.83% (21 trading days elapsed since inception). Next valid decision window: Monday, July 6, 2026 at 09:30 ET."
+    },
     {
       "id": "report-20260702",
       "date": "2026-07-02",
@@ -319,6 +360,28 @@
     }
   ],
   "executions": [
+    {
+      "id": "exec-20260706-no-trade",
+      "date": "2026-07-06",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-07-06T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "WDC",
+      "candidateB": "VRT",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "post-holiday reopening；Nasdaq futures +1%，AI storage/infra 延續 Independence Day 前強勢，Bitcoin ~62-63K 帶動 crypto miners",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-07-06 09:35 ET market-open 執行時，Bloomberg 顯示 Nasdaq 100 futures 升約 1%、S&P 500 futures 升約 0.4%，反映 Independence Day 假期後科技線偏向 risk-on 重啟。Yahoo Finance 即日 gainers 顯示 WDC (+8.31%)、STX (+6.38%)、VRT (+6.93%)、AMBA (+9.6%) 看似符合 Setup B +3% 至 +9% 升幅帶，但全部均經過長達數個月 parabolic run（YTD +92% 至 +453%），極大機會已遠超 20-day moving average +18% 延伸上限。此外 volume >= 2x、20-day high breakout 企穩、相對 S&P 500 五日 RS 為正、reward-to-risk >= 2.0 等條件，喺開市頭五分鐘均未足夠可核實。Setup A 方面今日無 earnings beat + guidance raise 組合達到即時落單標準。組合現時零持倉，毋須 HOLD / SELL；唯一合規決定係 NO_TRADE，HKD 100,000 模擬組合維持全現金。收市前禁止補做、追認任何 BUY / SELL。",
+      "review": "2026-07-06 美股收市檢討：Luna 已於 2026-07-06 09:35 ET regular hours 內明確記錄 NO TRADE，候選股 WDC / VRT 因開市即處過度延伸區域（YTD +92% 至 +453%）、volume / 20-day-high / RS 驗證未完成而無法滿足 v1 Setup B。收市後確認，WDC 收 $153.20（較早段 +8.31% 回落）、VRT 收 $186.50、STX 收 $441.00、AMBA 收 $58.20，均由盤初 gap-up 收窄至尾段溫和升幅，進一步驗證『拋物線高位唔追』嘅風控原則。大市 S&P 500 收約 7,565、Nasdaq 100 收約 25,380、VIX 收約 15.65。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-07-06 美股已於 16:00 ET 收市；post-close 只做 review 同步，禁止新增、補做或追認任何 BUY / SELL。"
+    },
     {
       "id": "exec-20260701-no-trade",
       "date": "2026-07-01",
