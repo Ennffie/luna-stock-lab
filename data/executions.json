@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-07-07T21:42:00+08:00",
-  "closeReportFor": null,
-  "closeReportMode": false,
-  "note": "2026-07-07 market-open execution completed at 2026-07-07 21:42 HKT (2026-07-07 09:42 ET). US regular hours (09:30-16:00 ET) confirmed. NO TRADE recorded due to insufficient volume expansion on candidate setups. Portfolio remains all cash.",
+  "generatedAt": "2026-07-08T04:20:00+08:00",
+  "closeReportFor": "2026-07-07",
+  "closeReportMode": true,
+  "note": "2026-07-07 post-close review completed at 2026-07-08 04:20 HKT (2026-07-07 20:20 UTC). US regular hours ended 16:00 ET. NO TRADE recorded during the session. Portfolio remains all cash.",
   "marketSummary": {
-    "date": "2026-07-06",
+    "date": "2026-07-07",
     "status": "CLOSED - US regular hours ended 16:00 ET; post-close review complete",
-    "dowChange": "+0.5%",
-    "sp500Change": "+0.6%",
-    "nasdaqChange": "+0.7%",
-    "vix": "~15.65",
-    "keyTheme": "Post-holiday reopening: early AI storage/infra strength faded into the close; indices held modest gains; no clean breakout setups survived to EOD."
+    "dowChange": "+0.4%",
+    "sp500Change": "+0.7%",
+    "nasdaqChange": "+1.1%",
+    "vix": "~15.2",
+    "keyTheme": "Indices extended post-holiday gains on calm volume; gap-up candidates DOCN and FISV faded into the close on anemic volume, confirming the no-trade stance."
   },
   "startingCapital": 100000,
   "cash": 97173.982,
@@ -36,7 +36,7 @@
         "setupValidation": "INCOMPLETE: volume severely deficient on all candidates (DOCN ~0.08x avg, FISV ~0.24x avg; both fail >=2x requirement). 20-day-high, RS vs SPX, extension, and reward-to-risk unverified at market open.",
         "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK.74 (not used)"
       },
-      "review": "2026-07-07 market-open execution review: NO TRADE recorded at 09:42 ET as volume expansion criteria failed across watched candidates. SpaceX joins Nasdaq-100 today; SK Hynix $29B US listing later this week; Samsung update expected; Fed minutes Wednesday. Post-close review to be updated after 16:00 ET."
+      "review": "2026-07-07 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-07 09:42 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。候選股 DigitalOcean (DOCN) 開市初段報約 $142.60（+8.58%），但全日成交極度淡靜（最終 volume 仍僅約 0.3x 日均至 ~1.25M vs 4.18M avg），升幅於午後顯著收窄，收市報約 $138.20（+5.2%），未守住 20-day high breakout；Fiserv (FISV) 同樣由開市約 $55.03（+6.28%）回落至收市約 $53.80（+3.9%），反映低成交量 gap-up 缺乏 follow-through。兩者均未達成 Setup B 所要求嘅 2x volume expansion 同乾淨收市結構，印證 09:42 ET 當刻『成交量不達標即不追入』嘅處理。大市方面，S&P 500 收報約 7,543（+0.80%），Nasdaq 收約 26,180（+1.35%），Dow 續創新高，VIX 收約 15.2（-2.5%），regime 仍維持 modest risk-on。Topic to watch：SK Hynix US listing、Samsung 更新、Fed minutes（週三）。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。⚠️ 2026-07-07 美股已於 16:00 ET 收市；post-close review 只允許更新紀錄、end-of-day prices 同 review notes，嚴禁新增、補做或追認任何 BUY / SELL 交易決定。"
     },
     {
       "id": "report-20260706",
