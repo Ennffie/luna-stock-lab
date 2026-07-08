@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-08T04:20:00+08:00",
-  "closeReportFor": "2026-07-07",
+  "generatedAt": "2026-07-09T04:20:00+08:00",
+  "closeReportFor": "2026-07-08",
   "closeReportMode": true,
-  "note": "2026-07-07 post-close review completed at 2026-07-08 04:20 HKT (2026-07-07 20:20 UTC). US regular hours ended 16:00 ET. NO TRADE recorded during the session. Portfolio remains all cash.",
+  "note": "2026-07-08 US market post-close review completed at 16:20 ET (2026-07-09 04:20 HKT). NO TRADE decision recorded at 09:35 ET during regular hours; zero positions executed throughout session. Portfolio remains all cash at HK$97,173.98. Total return: -2.83%. No retroactive BUY/SELL permitted.",
   "marketSummary": {
     "date": "2026-07-07",
     "status": "CLOSED - US regular hours ended 16:00 ET; post-close review complete",
@@ -360,6 +360,27 @@
       "marketMood": "crypto 板塊弱勢，BTC 回落",
       "reason": "COIN 喺 $192 有技術支持，計劃短線反彈至 $211.20 (+10%)。選 MSTR 做候選因為同屬 crypto proxy。",
       "review": "入市後 COIN 持續受壓，2026-06-04 收市價 164.13，已跌穿止蝕位 182.40；下一個 regular-hours session 必須優先執行風控，唔應再用主觀理由延後止蝕。"
+    },
+    {
+      "id": "report-20260708",
+      "date": "2026-07-08",
+      "decision": "no_trade",
+      "action": "NO_TRADE",
+      "ticker": "",
+      "size": 0,
+      "executionAt": "2026-07-08T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "AMAT",
+      "pickedTicker": "",
+      "marketMood": "Semiconductor/AI sector under pressure; Samsung disappointed despite record profits; Oracle collapsed on AI capex fears; equipment/memory names resilient but extended; chip jitters keeping Nasdaq futures soft; VIX nudging higher; Strait of Hormuz supply risk keeping oil bid.",
+      "thesis": "2026-07-08 09:35 ET market-open 執行時，US regular market hours (09:30–16:00 ET) 確認有效。Samsung Electronics 於 07/07 收市後公布歷史級 Q2 業績（營運利潤預估同比暴增 19 倍），但仍未滿足市場對 AI 基建 ROCE 嘅極高預期，觸發 Kospi 急跌近 5% 並蔓延至全球芯片股。Oracle (ORCL) 盤前暴跌逾 8%，雖然上季 EPS $2.11 與收入 $192 億雙雙 beat 預期，但 FY2026 AI 數據中心資本開支攀升至約 556.6 億美元，兼預告 FY2027 仍需大規模融資支撐雲基建擴張，引發市場對 AI 回報周期嘅擔憂。此負面背景下，半導體設備同記憶體股盤前顯示相對韌性：Micron (MU) 受 HBM / DRAM 供應緊張敘事支持盤前升近 3%；Applied Materials (AMAT)、Lam Research (LRCX)、KLA (KLAC) 各有 3–4% 升幅，催化劑包括多間券商上調目標價，並引用 AI 驅動晶圓廠資本開支周期仍處於上行趨勢。然而按 v1 Setup B 規則，喺 09:35 ET 開市頭五分鐘內仍未能可靠確認 (1) 盤前升幅會否在正式交易時段維持；(2) 成交量 ≥2x 20-day average；(3) 收市企穩於 20-day high 之上；(4) 相對 S&P 500 五日 RS 為正——半導體核心股受 Samsung / Oracle 拖累，Nasdaq futures 偏弱，RS 極大機會不達標；(5) 20-day moving average 延申不超過 18% 嘅限制——呢批設備/記憶體股經過數個月拋物線式上升，YTD 仍處於三位數增幅區間，极大概率已超出延伸上限。Setup A 方面，今日無新鮮業績 beat + guidance raise 組合達到即時落單標準。組合目前零持倉，毋須 SELL / HOLD。在 macro / sector backdrop 偏負面、setup 結構未完整、reward-to-risk 未能可靠計算 ≥2.0 的情況下，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "riskLevels": {
+        "marketRegime": "Mixed-to-negative for chips/AI; S&P/Dow resilient but Nasdaq weighed; VIX ticking up from sub-16; Samsung/Oracle disappointments amplify AI-spending-skepticism narrative; no broad risk-on confirmation despite modest semi-equipment gains",
+        "setupValidation": "INCOMPLETE: premarket-derived +3% to +4% gains in MU/AMAT/LRCX/KLAC not yet confirmed with 2x volume, 20-day-high breakout, positive RS, and safe MA extension at market open; sector headwinds from Samsung/Oracle create asymmetric risk",
+        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used); cash HK$97,173.98"
+      },
+      "review": "2026-07-08 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-08 09:35 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。候選股 Micron (MU) 盤前升近 3%，但開市後受 Samsung / Oracle 引發嘅芯片股擔憂拖累，升幅顯著收窄，收市報約 $1,039.50（-0.75%）；Applied Materials (AMAT) 收約 $610.80（+0.45%）、Lam Research (LRCX) 收約 $1,125.30（+0.32%）、KLA (KLAC) 收約 $305.40（+0.38%），全部未能守住盤前 3–4% 嘅強勢，印證『premarket 升幅會 fade』同『芯片憂慮下 RS 唔達標』嘅規則判斷正確。Oracle (ORCL) 全日受壓，收約 $164.80（較前收跌約 9.2%），確認 AI capex 擔憂主導市場情緒。大市方面，Dow 微升 +0.15%、S&P 500 收約 7,528（-0.08%），但 Nasdaq 收約 25,910（-0.78%），VIX 收約 16.80（+10.5%），反映芯片弱勢帶動科技指數跑輸。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。⚠️ 2026-07-08 美股已於 16:00 ET 收市；post-close review 只允許更新紀錄、end-of-day prices 同 P&L，嚴禁新增、補做或追認任何 BUY / SELL 交易決定。下一個決策窗口：2026-07-09 09:30 ET（若市場正常開市）。"
     }
   ],
   "positions": [
@@ -864,6 +885,28 @@
       },
       "thesis": "2026-06-25 09:35 ET market-open 執行時，MU 為主要關注對象，因其於昨收市後公布業績並呈現 beat + raise 組合，盤初已出現明顯正向反應、升幅約 +5.5% 至 +6% 區間，符合 Setup A 對『Day-0 price reaction > +4%』嘅初步門檻。SNDK 作為記憶體板塊 peer 亦有約 +2.1% 跟漲，但距 Setup B 最低 +3% 仍有差距。 regime 方面，VIX 仍處約 18.1、低於 22，但 S&P 500 同 Nasdaq 100 喺連續調整後仍貼近或略低於 20 天移動平均線，市場 sentiment 偏向 selective recovery 而非全面 risk-on。不過，按 v1 規則，喺開市頭五分鐘內仍無法確認全日 volume expansion（需 >= 1.8x 20-day average）、Day-0 close-in-range（需處全日 range 頂部 25%）、以及 reaction-day low（影響 stop 同 reward-to-risk 計算）。Setup B 所需嘅 20-day high breakout、2x volume、相對 S&P 500 五日 RS 為正、股價偏離 20MA 不超過 18% 等條件，同樣因數據尚未完整而無法落實。組合現時零持倉，毋須執行 SELL / HOLD；在 setup 結構未完整、reward-to-risk 未能可靠計算之前，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
       "review": "2026-06-25 收市回顧：Luna 當日唯一有效決定仍然係 2026-06-25 09:35 ET regular hours 內記錄的 NO TRADE。收市後睇，Micron (MU) 報約 $1,048.51（較前收 $1,047.92 基本持平微跌 -0.31%），SNDK 盤初跟漲後回落；兩隻候選股都未能把盤前／開市初段反彈擴展成可追入的乾淨 breakout，印證開市時對 setup 驗證不足同 earnings reaction day 風險嘅保守處理。大市方面，S&P 500 收 7,358.22（-0.10%）、Nasdaq 收 25,476.64（-0.43%）、Dow 收 51,848（-0.35%），Mag7 因 Apple、Microsoft 產品加價消息而受壓，拖累科技指數。VIX 維持約 18 附近。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。美股已於 2026-06-25 16:00 ET 收市，收市後只可更新 review，禁止新增、補做或追認任何 BUY / SELL。"
+    },
+    {
+      "id": "exec-20260708-no-trade",
+      "date": "2026-07-08",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-07-08T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "AMAT",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "Semiconductor sector under pressure after Samsung's blowout Q2 earnings failed to satisfy sky-high AI expectations on 07/07; Oracle plunged >8% post-earnings on AI capex/financing concerns; broader AI spending jitters persist; Dow/S&P resilient but Nasdaq weighed by chip/AI names; VIX edges higher; geopolitical risk from Strait of Hormuz after tanker strike.",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium-high",
+        "stop": "n/a"
+      },
+      "thesis": "2026-07-08 09:35 ET market-open execution during confirmed US regular hours (09:30–16:00 ET). Samsung Electronics' record Q2 operating profit (estimated 19-fold YoY surge) reported after US close on 07/07 failed to allay AI-spending-excess concerns, triggering a ~5% drop in Kospi and spreading chip-selling pressure globally. Oracle (ORCL) fell >8% premarket after beating EPS/revenue but shocking the market with fiscal 2026 AI capex climbing to ~$55.66B and plans for more financing in FY2027, raising questions about AI infrastructure ROI. Against this backdrop, several semiconductor equipment/memory names showed relative strength in the premarket/overnight: Micron (MU) up nearly 3% on continued HBM/DRAM tightness narrative; Applied Materials (AMAT), Lam Research (LRCX), and KLA (KLAC) each up 3–4% on analyst target hikes citing AI-driven wafer fab capex uptrend. However, at 09:35 ET these candidates still fail v1 Setup B verification: (1) daily gain is premarket-derived and may fade into the regular session; (2) open auction volume not yet confirmed as ≥2x 20-day average; (3) close ≥20-day high cannot be verified at market open; (4) 5-day RS vs S&P 500 unconfirmed in opening minutes, and with Nasdaq futures pointing lower due to chip/AI selloff, RS is suspect; (5) these names are historically extended after multi-month parabolic moves (AMAT / LRCX / KLAC YTD still up triple digits), making the 20-day MA +18% extension cap likely already breached. Setup A requires an earnings beat + guidance raise with a clean Day-0 reaction; no such fresh earnings catalyst is available at market open. With total portfolio exposure at zero and no open positions triggering SELL or HOLD, the only rules-compliant action during regular hours is NO TRADE. The HK$100,000 simulated portfolio remains 100% cash at HK$97,173.98. Post-close review to be conducted after 16:00 ET; retroactive additions of BUY or SELL are prohibited.",
+      "review": "2026-07-08 US session post-close review completed. Luna's sole valid decision remains the NO TRADE recorded at 09:35 ET within US regular hours; no BUY / SELL was executed at any point during the session. Premarket +3% to +4% gains in semiconductor equipment/memory names (MU / AMAT / LRCX / KLAC) did not hold into the close, confirming the 09:35 ET assessment that premarket strength would fade and that relative-strength and risk/reward requirements were unlikely to be met amid chip-sector weakness. MU closed ~$1,039.50 (-0.75%), AMAT ~$610.80 (+0.45%), LRCX ~$1,125.30 (+0.32%), KLAC ~$305.40 (+0.38%); Oracle (ORCL) closed ~$164.80 (-9.2%), validating the AI-capex-concern narrative. Market summary: Dow +0.15%, S&P 500 ~7,528 (-0.08%), Nasdaq ~25,910 (-0.78%), VIX ~16.80 (+10.5%). The HK$100,000 simulated portfolio remains 100% cash at HK$97,173.98; total return stays at -2.83%. ⚠️ US regular market hours ended at 16:00 ET on 2026-07-08. This post-close update records EOD prices, P&L, and review notes only; no retroactive or post-close BUY / SELL decisions are permitted under system rules. Next decision window: 2026-07-09 09:30 ET if the market opens normally."
     }
   ]
 }
