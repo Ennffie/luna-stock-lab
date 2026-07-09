@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T04:20:00+08:00",
+  "generatedAt": "2026-07-09T13:41:07.440Z",
   "closeReportFor": "2026-07-08",
   "closeReportMode": true,
   "note": "2026-07-08 US market post-close review completed at 16:20 ET (2026-07-09 04:20 HKT). NO TRADE decision recorded at 09:35 ET during regular hours; zero positions executed throughout session. Portfolio remains all cash at HK$97,173.98. Total return: -2.83%. No retroactive BUY/SELL permitted.",
@@ -17,6 +17,27 @@
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260709",
+      "date": "2026-07-09",
+      "decision": "no_trade",
+      "action": "NO_TRADE",
+      "ticker": "",
+      "size": 0,
+      "executionAt": "2026-07-09T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "ANET",
+      "candidateB": "LRCX",
+      "pickedTicker": "",
+      "marketMood": "Semiconductor/AI sector mixed post-Samsung/Oracle; ANET showing +4.27% relative strength near 52-week high, LRCX premarket +5% faded to +2.15% at open; VIX ticking up from sub-16; selective risk-on in networking/AI infra",
+      "thesis": "2026-07-09 09:35 ET market-open 執行時，US regular market hours (09:30–16:00 ET) 確認有效。Yahoo Finance live snapshot 顯示 Arista Networks (ANET) 報 $188.75（+4.27%），盤中最高觸及 $189.82、貼近 52-week high，屬 AI data-center networking 主線中嘅相對強勢股；Lam Research (LRCX) 開市報 $333.15（+2.15%），但 premarket 曾高見 $349.91（+5.03%），出現明顯 premarket-to-open fade。大市 backdrop 方面，半導體/AI 板塊仍然受 Samsung Electronics 業績未達超高預期同 Oracle AI capex 擔憂所拖累，不過 networking/AI infra 分支（ANET、少量 data-center 相關）顯示資金有选择性流入。按 v1 Setup B 規則評估：(1) 單日升幅 +3% 至 +9%：ANET +4.27% 符合，LRCX +2.15% 未達最低 +3% 門檻，NVDA +3.65%（前收 $196.93，開市約 $204.12）亦符合；(2) 成交量 >= 2x 20-day average：ANET 開市約 8 分鐘 volume 僅 ~1.52M，對比 avg volume 9.79M，僅約 0.15x，嚴重不足；LRCX volume ~7.98M 對比 avg 11.16M，約 0.71x，未達標；NVDA volume ~145.8M 對比 avg 159.5M，約 0.91x，同樣不足；(3) 20-day high breakout 企穩：ANET 雖觸及 52-week high，但缺乏 volume 支持，屬 low-conviction breakout；(4) 相對 S&P 500 五日 RS 為正：半導體板塊整體受壓情況下，RS 極大機會偏弱；(5) 股價偏離 20-day MA 不超過 18%：ANET YTD +44%、距 52-week high 極近，延申風險偏高。reward-to-risk 因 volume 缺失同 sector 分化而無法可靠計算 >= 2.0。Setup A 方面，今日無 earnings beat + guidance raise 組合達到即時落單標準。組合目前零持倉，毋須 SELL / HOLD。基於 volume 係 breakout 驗證嘅核心要件，而今日所有觀察候選均未達 2x volume expansion，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
+      "riskLevels": {
+        "marketRegime": "Mixed-to-positive selective (ANET +4.27% showing relative strength, but semi/AI sector still digesting Samsung/Oracle concerns; VIX nudging up from ~16.8; no broad risk-on confirmation)",
+        "setupValidation": "INCOMPLETE: ANET volume ~0.15x avg (fail >=2x), LRCX volume ~0.71x avg (fail >=2x), NVDA volume ~0.91x avg (fail >=2x). 20-day-high breakout unconfirmed due to volume deficiency; RS vs SPX likely negative for semi peers; reward-to-risk unverifiable >= 2.0",
+        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used); cash HK$97,173.98"
+      },
+      "review": "2026-07-09 美股已於 09:35 ET 開市；market-open execution mode 已完成 NO TRADE 記錄。Post-close review 將於 16:00 ET 收市後更新收市價、P&L 同市場檢討。"
+    },
     {
       "id": "report-20260707",
       "date": "2026-07-07",
@@ -391,7 +412,7 @@
       "openedOn": "2026-06-04",
       "capitalHKD": 19468.8,
       "fxRate": 7.8,
-      "entryPrice": 192.0,
+      "entryPrice": 192,
       "lastPrice": 151.25,
       "exitPrice": 164.13,
       "stopPrice": 182.4,
@@ -402,6 +423,28 @@
     }
   ],
   "executions": [
+    {
+      "id": "exec-20260709-no-trade",
+      "date": "2026-07-09",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-07-09T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "ANET",
+      "candidateB": "LRCX",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "Semiconductor/AI sector mixed post-Samsung/Oracle; ANET +4.27% near 52-week high showing relative strength, LRCX premarket +5% faded to +2.15% open; selective risk-on in networking/AI infra",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-07-09 09:35 ET market-open execution during confirmed US regular hours (09:30–16:00 ET). ANET at $188.75 (+4.27%, near 52-week high $189.82) is the strongest candidate with hard AI data-center networking catalyst; LRCX opened at $333.15 (+2.15%) after premarket fade from +5.03%; NVDA at ~$204.12 (+3.65%). All three fail the critical volume requirement: ANET ~1.52M vs 9.79M avg (~0.15x), LRCX ~7.98M vs 11.16M avg (~0.71x), NVDA ~145.8M vs 159.5M avg (~0.91x). Without >=2x 20-day average volume expansion, breakout structure cannot be validated. 20-day high breakout for ANET is unconfirmed due to anemic volume. Relative strength vs S&P 500 likely negative for semi peers given sector backdrop. ANET YTD +44% and near 52-week high raises extension risk. Setup A has no valid earnings beat + guidance raise candidate. Portfolio has zero open positions; no HOLD / SELL required. Rules-based final decision: NO TRADE. Simulated portfolio remains all-cash at HK$97,173.98. No position risk deployed.",
+      "review": "2026-07-09 market-open execution completed at 09:35 ET during US regular hours. NO TRADE decision recorded due to volume deficiency across all observed candidates. Post-close review to be conducted after 16:00 ET; no retroactive trade additions permitted."
+    },
     {
       "id": "exec-20260707-no-trade",
       "date": "2026-07-07",
