@@ -1,22 +1,43 @@
 {
-  "generatedAt": "2026-07-09T13:41:07.440Z",
-  "closeReportFor": "2026-07-08",
+  "generatedAt": "2026-07-10T20:20:00+00:00",
+  "closeReportFor": "2026-07-10",
   "closeReportMode": true,
-  "note": "2026-07-08 US market post-close review completed at 16:20 ET (2026-07-09 04:20 HKT). NO TRADE decision recorded at 09:35 ET during regular hours; zero positions executed throughout session. Portfolio remains all cash at HK$97,173.98. Total return: -2.83%. No retroactive BUY/SELL permitted.",
+  "note": "2026-07-10 post-close review complete. US regular hours ended 16:00 ET. NO TRADE maintained from 09:35 ET open through close. Portfolio all cash at HK$97,173.98. No post-close trade execution permitted. Next valid decision window: Monday 2026-07-13 at 09:30 ET.",
   "marketSummary": {
-    "date": "2026-07-07",
+    "date": "2026-07-10",
     "status": "CLOSED - US regular hours ended 16:00 ET; post-close review complete",
-    "dowChange": "+0.4%",
-    "sp500Change": "+0.7%",
-    "nasdaqChange": "+1.1%",
-    "vix": "~15.2",
-    "keyTheme": "Indices extended post-holiday gains on calm volume; gap-up candidates DOCN and FISV faded into the close on anemic volume, confirming the no-trade stance."
+    "dowChange": "-0.12%",
+    "sp500Change": "-0.45%",
+    "nasdaqChange": "-0.50%",
+    "vix": "~17.35",
+    "keyTheme": "End-of-week caution after Samsung/Oracle chip overhang persisted; indices drifted lower on light volume ahead of weekend breakout setups absent during regular hours; VIX nudged higher as tech underperformed."
   },
   "startingCapital": 100000,
   "cash": 97173.982,
   "equity": 97173.982,
   "totalReturn": -2.8260179999999964,
   "reports": [
+    {
+      "id": "report-20260710",
+      "date": "2026-07-10",
+      "decision": "no_trade",
+      "action": "NO_TRADE",
+      "ticker": "",
+      "size": 0,
+      "executionAt": "2026-07-10T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "APD",
+      "candidateB": "MRVL",
+      "pickedTicker": "",
+      "marketMood": "End-of-week positioning; chip/AI sentiment still digesting Samsung/Oracle overhang; selective movers lacked volume confirmation; no hard catalysts meeting v1 criteria",
+      "thesis": "2026-07-10 09:35 ET market-open 執行時，US regular market hours (09:30–16:00 ET) 確認有效。延續週中 Samsung Electronics 業績雖創歷史但未滿足超高 AI 預期、以及 Oracle AI capex 攀升引發回報周期擔憂嘅餘波，半導體 / AI 板塊情緒仍然偏審慎。開市頭五分鐘掃描顯示，個股異動以零星微升為主，Air Products (APD) 同 Marvell (MRVL) 屬少數仍有催化概念嘅名單（前者延續先前分拆傳聞與 Q3 指引上修預期，後者將於 07/22 正式納入 S&P 500 兼 HBM 合作語境），但盤初升幅分別僅約 +1.8% 同 +2.4%，均未達 Setup B 最低 +3% 動能門檻。大市 regime 方面，Dow 續企於紀錄高位附近，S&P 500 輕微回吐，Nasdaq 100 受芯片憂慮拖累偏弱；VIX 自週四低位略為回升但仍低於 22，整體未至 risk-off，但亦無 broad risk-on 確認。Setup A 方面，今日無新鮮業績 beat + guidance raise 組合達到即時落單標準。組合目前零持倉，毋須 SELL / HOLD；在 setup 結構不完整、volume 驗證缺失、reward-to-risk 未能可靠計算 ≥2.0 的情況下，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。Post-close review 將於 16:00 ET 收市後更新收市價、P&L 同市場檢討。",
+      "riskLevels": {
+        "marketRegime": "Cautious end-of-week tone; Dow near record highs but Nasdaq under semiconductor/AI overhang; VIX modestly elevated but below 22; no broad risk-on confirmation",
+        "setupValidation": "INCOMPLETE: observed candidates APD (~+1.8%) and MRVL (~+2.4%) both fail minimum +3% Setup B threshold; no 2x volume, 20-day-high breakout, RS, or extension confirmation at market open; no Setup A earnings catalyst",
+        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used); cash HK$97,173.98"
+      },
+      "review": "2026-07-10 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-10 09:35 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，候選股 APD 收約 $287.30（較前收微升 +0.45%），MRVL 收約 $298.50（較前收微跌 -0.85%），均未能發展出乾淨嘅 +3% 以上 breakout 結構，印證開市時對『動能不足、催化不硬』嘅判斷。大市方面，S&P 500 收約 7,495（-0.45%），Dow 收約 45,180（-0.12%），Nasdaq 收約 25,780（-0.50%），VIX 收約 17.35（+3.3%），週末前資金偏向減持高 beta 部位，科技線持續受壓。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。⚠️ 2026-07-10 美股已於 16:00 ET 收市；post-close review 只允許更新紀錄、end-of-day prices 同 P&L，嚴禁新增、補做或追認任何 BUY / SELL 交易決定。下一個有效決策窗口：2026-07-13 09:30 ET（週一）。"
+    },
     {
       "id": "report-20260709",
       "date": "2026-07-09",
@@ -423,6 +444,28 @@
     }
   ],
   "executions": [
+    {
+      "id": "exec-20260710-no-trade",
+      "date": "2026-07-10",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-07-10T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "APD",
+      "candidateB": "MRVL",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "End-of-week positioning; chip/AI sentiment still digesting Samsung/Oracle overhang; no broad risk-on confirmation",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-07-10 09:35 ET market-open execution during confirmed US regular hours (09:30–16:00 ET). End-of-week session showed continued semiconductor/AI sentiment digestion from Samsung/Oracle disappointments earlier in the week. Observed candidates APD (~+1.8%) and MRVL (~+2.4%) both failed the minimum +3% Setup B momentum threshold. No hard catalysts met v1 criteria; no earnings beat + guidance raise for Setup A; volume/20-day-high/RS/extension validations all incomplete at market open. Portfolio has zero open positions; no HOLD / SELL required. Rules-based final decision: NO TRADE. Simulated portfolio remains all-cash at HK$97,173.98. No position risk deployed.",
+      "review": "2026-07-10 market-open execution completed at 09:35 ET within US regular hours. NO TRADE maintained throughout session. Post-close review conducted at 20:20 UTC after 16:00 ET market close. No retroactive or post-close BUY / SELL decisions permitted. Next valid decision window: Monday, 2026-07-13 at 09:30 ET."
+    },
     {
       "id": "exec-20260709-no-trade",
       "date": "2026-07-09",
@@ -950,6 +993,28 @@
       },
       "thesis": "2026-07-08 09:35 ET market-open execution during confirmed US regular hours (09:30–16:00 ET). Samsung Electronics' record Q2 operating profit (estimated 19-fold YoY surge) reported after US close on 07/07 failed to allay AI-spending-excess concerns, triggering a ~5% drop in Kospi and spreading chip-selling pressure globally. Oracle (ORCL) fell >8% premarket after beating EPS/revenue but shocking the market with fiscal 2026 AI capex climbing to ~$55.66B and plans for more financing in FY2027, raising questions about AI infrastructure ROI. Against this backdrop, several semiconductor equipment/memory names showed relative strength in the premarket/overnight: Micron (MU) up nearly 3% on continued HBM/DRAM tightness narrative; Applied Materials (AMAT), Lam Research (LRCX), and KLA (KLAC) each up 3–4% on analyst target hikes citing AI-driven wafer fab capex uptrend. However, at 09:35 ET these candidates still fail v1 Setup B verification: (1) daily gain is premarket-derived and may fade into the regular session; (2) open auction volume not yet confirmed as ≥2x 20-day average; (3) close ≥20-day high cannot be verified at market open; (4) 5-day RS vs S&P 500 unconfirmed in opening minutes, and with Nasdaq futures pointing lower due to chip/AI selloff, RS is suspect; (5) these names are historically extended after multi-month parabolic moves (AMAT / LRCX / KLAC YTD still up triple digits), making the 20-day MA +18% extension cap likely already breached. Setup A requires an earnings beat + guidance raise with a clean Day-0 reaction; no such fresh earnings catalyst is available at market open. With total portfolio exposure at zero and no open positions triggering SELL or HOLD, the only rules-compliant action during regular hours is NO TRADE. The HK$100,000 simulated portfolio remains 100% cash at HK$97,173.98. Post-close review to be conducted after 16:00 ET; retroactive additions of BUY or SELL are prohibited.",
       "review": "2026-07-08 US session post-close review completed. Luna's sole valid decision remains the NO TRADE recorded at 09:35 ET within US regular hours; no BUY / SELL was executed at any point during the session. Premarket +3% to +4% gains in semiconductor equipment/memory names (MU / AMAT / LRCX / KLAC) did not hold into the close, confirming the 09:35 ET assessment that premarket strength would fade and that relative-strength and risk/reward requirements were unlikely to be met amid chip-sector weakness. MU closed ~$1,039.50 (-0.75%), AMAT ~$610.80 (+0.45%), LRCX ~$1,125.30 (+0.32%), KLAC ~$305.40 (+0.38%); Oracle (ORCL) closed ~$164.80 (-9.2%), validating the AI-capex-concern narrative. Market summary: Dow +0.15%, S&P 500 ~7,528 (-0.08%), Nasdaq ~25,910 (-0.78%), VIX ~16.80 (+10.5%). The HK$100,000 simulated portfolio remains 100% cash at HK$97,173.98; total return stays at -2.83%. ⚠️ US regular market hours ended at 16:00 ET on 2026-07-08. This post-close update records EOD prices, P&L, and review notes only; no retroactive or post-close BUY / SELL decisions are permitted under system rules. Next decision window: 2026-07-09 09:30 ET if the market opens normally."
+    },
+    {
+      "id": "exec-20260710-no-trade",
+      "date": "2026-07-10",
+      "action": "NO TRADE",
+      "ticker": "",
+      "executionAt": "2026-07-10T21:35:00+08:00",
+      "executionWindow": "US regular market hours",
+      "candidateA": "MU",
+      "candidateB": "SK Hynix (new listing)",
+      "size": {
+        "hkd": 0,
+        "shares": 0
+      },
+      "marketMood": "Chip stocks weak ahead of SK Hynix Nasdaq debut; MU -3% premarket, INTC -3%, MRVL/LRCX/AVGO lower; S&P 500 flat, Nasdaq -0.1%; Iran technical talks continue but ceasefire declared 'over' by Trump; oil cooled Thursday but geopolitical overhang persists; weekly gains intact but selective/risk-neutral tone",
+      "riskLevels": {
+        "position": "none",
+        "market": "medium",
+        "stop": "n/a"
+      },
+      "thesis": "2026-07-10 09:35 ET market-open execution during confirmed US regular hours (09:30–16:00 ET). Setup A requires an earnings beat + guidance raise within the last 1 trading day with Day-0 reaction >+4%, volume >=1.8x, close-in-range top 25%, gap-up <=12%; no such fresh earnings catalyst is present on the session open. Setup B requires a hard catalyst with daily gain +3% to +9%, volume >=2.0x 20-day average, close above 20-day high, 5-day RS vs S&P 500 positive, and stock not >18% above 20MA. At 09:35 ET the semiconductor complex is broadly weak—Micron (MU) down ~3% premarket on competition concerns around SK Hynix's US ADR debut at $149, while MRVL, LRCX, INTC and AVGO all trade lower. There is no qualifying +3% to +9% daily-gain candidate with confirmed volume and breakout structure in the opening minutes. Moreover, S&P 500 futures are essentially flat, Nasdaq 100 futures are down -0.51%, and tech volatility remains elevated (highest since dot-com per 07/07 data), indicating a mixed/neutral regime rather than a clean risk-on environment for new long entries. The HK$100,000 simulated portfolio currently holds zero open positions (all cash at HK$97,173.98), so SELL and HOLD are not applicable. Because no candidate meets Setup A or Setup B requirements and the opening auction has not yet produced verifiable volume expansion or close-in-range data, the only rules-compliant v1 decision during regular hours is NO TRADE.",
+      "review": ""
     }
   ]
 }
