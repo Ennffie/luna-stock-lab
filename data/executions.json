@@ -1,1020 +1,362 @@
 {
-  "generatedAt": "2026-07-10T20:20:00+00:00",
-  "closeReportFor": "2026-07-10",
-  "closeReportMode": true,
-  "note": "2026-07-10 post-close review complete. US regular hours ended 16:00 ET. NO TRADE maintained from 09:35 ET open through close. Portfolio all cash at HK$97,173.98. No post-close trade execution permitted. Next valid decision window: Monday 2026-07-13 at 09:30 ET.",
-  "marketSummary": {
-    "date": "2026-07-10",
-    "status": "CLOSED - US regular hours ended 16:00 ET; post-close review complete",
-    "dowChange": "-0.12%",
-    "sp500Change": "-0.45%",
-    "nasdaqChange": "-0.50%",
-    "vix": "~17.35",
-    "keyTheme": "End-of-week caution after Samsung/Oracle chip overhang persisted; indices drifted lower on light volume ahead of weekend breakout setups absent during regular hours; VIX nudged higher as tech underperformed."
-  },
-  "startingCapital": 100000,
-  "cash": 97173.982,
-  "equity": 97173.982,
-  "totalReturn": -2.8260179999999964,
-  "reports": [
-    {
-      "id": "report-20260710",
-      "date": "2026-07-10",
-      "decision": "no_trade",
-      "action": "NO_TRADE",
-      "ticker": "",
-      "size": 0,
-      "executionAt": "2026-07-10T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "APD",
-      "candidateB": "MRVL",
-      "pickedTicker": "",
-      "marketMood": "End-of-week positioning; chip/AI sentiment still digesting Samsung/Oracle overhang; selective movers lacked volume confirmation; no hard catalysts meeting v1 criteria",
-      "thesis": "2026-07-10 09:35 ET market-open 執行時，US regular market hours (09:30–16:00 ET) 確認有效。延續週中 Samsung Electronics 業績雖創歷史但未滿足超高 AI 預期、以及 Oracle AI capex 攀升引發回報周期擔憂嘅餘波，半導體 / AI 板塊情緒仍然偏審慎。開市頭五分鐘掃描顯示，個股異動以零星微升為主，Air Products (APD) 同 Marvell (MRVL) 屬少數仍有催化概念嘅名單（前者延續先前分拆傳聞與 Q3 指引上修預期，後者將於 07/22 正式納入 S&P 500 兼 HBM 合作語境），但盤初升幅分別僅約 +1.8% 同 +2.4%，均未達 Setup B 最低 +3% 動能門檻。大市 regime 方面，Dow 續企於紀錄高位附近，S&P 500 輕微回吐，Nasdaq 100 受芯片憂慮拖累偏弱；VIX 自週四低位略為回升但仍低於 22，整體未至 risk-off，但亦無 broad risk-on 確認。Setup A 方面，今日無新鮮業績 beat + guidance raise 組合達到即時落單標準。組合目前零持倉，毋須 SELL / HOLD；在 setup 結構不完整、volume 驗證缺失、reward-to-risk 未能可靠計算 ≥2.0 的情況下，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。Post-close review 將於 16:00 ET 收市後更新收市價、P&L 同市場檢討。",
-      "riskLevels": {
-        "marketRegime": "Cautious end-of-week tone; Dow near record highs but Nasdaq under semiconductor/AI overhang; VIX modestly elevated but below 22; no broad risk-on confirmation",
-        "setupValidation": "INCOMPLETE: observed candidates APD (~+1.8%) and MRVL (~+2.4%) both fail minimum +3% Setup B threshold; no 2x volume, 20-day-high breakout, RS, or extension confirmation at market open; no Setup A earnings catalyst",
-        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used); cash HK$97,173.98"
-      },
-      "review": "2026-07-10 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-10 09:35 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，候選股 APD 收約 $287.30（較前收微升 +0.45%），MRVL 收約 $298.50（較前收微跌 -0.85%），均未能發展出乾淨嘅 +3% 以上 breakout 結構，印證開市時對『動能不足、催化不硬』嘅判斷。大市方面，S&P 500 收約 7,495（-0.45%），Dow 收約 45,180（-0.12%），Nasdaq 收約 25,780（-0.50%），VIX 收約 17.35（+3.3%），週末前資金偏向減持高 beta 部位，科技線持續受壓。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。⚠️ 2026-07-10 美股已於 16:00 ET 收市；post-close review 只允許更新紀錄、end-of-day prices 同 P&L，嚴禁新增、補做或追認任何 BUY / SELL 交易決定。下一個有效決策窗口：2026-07-13 09:30 ET（週一）。"
-    },
-    {
-      "id": "report-20260709",
-      "date": "2026-07-09",
-      "decision": "no_trade",
-      "action": "NO_TRADE",
-      "ticker": "",
-      "size": 0,
-      "executionAt": "2026-07-09T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "ANET",
-      "candidateB": "LRCX",
-      "pickedTicker": "",
-      "marketMood": "Semiconductor/AI sector mixed post-Samsung/Oracle; ANET showing +4.27% relative strength near 52-week high, LRCX premarket +5% faded to +2.15% at open; VIX ticking up from sub-16; selective risk-on in networking/AI infra",
-      "thesis": "2026-07-09 09:35 ET market-open 執行時，US regular market hours (09:30–16:00 ET) 確認有效。Yahoo Finance live snapshot 顯示 Arista Networks (ANET) 報 $188.75（+4.27%），盤中最高觸及 $189.82、貼近 52-week high，屬 AI data-center networking 主線中嘅相對強勢股；Lam Research (LRCX) 開市報 $333.15（+2.15%），但 premarket 曾高見 $349.91（+5.03%），出現明顯 premarket-to-open fade。大市 backdrop 方面，半導體/AI 板塊仍然受 Samsung Electronics 業績未達超高預期同 Oracle AI capex 擔憂所拖累，不過 networking/AI infra 分支（ANET、少量 data-center 相關）顯示資金有选择性流入。按 v1 Setup B 規則評估：(1) 單日升幅 +3% 至 +9%：ANET +4.27% 符合，LRCX +2.15% 未達最低 +3% 門檻，NVDA +3.65%（前收 $196.93，開市約 $204.12）亦符合；(2) 成交量 >= 2x 20-day average：ANET 開市約 8 分鐘 volume 僅 ~1.52M，對比 avg volume 9.79M，僅約 0.15x，嚴重不足；LRCX volume ~7.98M 對比 avg 11.16M，約 0.71x，未達標；NVDA volume ~145.8M 對比 avg 159.5M，約 0.91x，同樣不足；(3) 20-day high breakout 企穩：ANET 雖觸及 52-week high，但缺乏 volume 支持，屬 low-conviction breakout；(4) 相對 S&P 500 五日 RS 為正：半導體板塊整體受壓情況下，RS 極大機會偏弱；(5) 股價偏離 20-day MA 不超過 18%：ANET YTD +44%、距 52-week high 極近，延申風險偏高。reward-to-risk 因 volume 缺失同 sector 分化而無法可靠計算 >= 2.0。Setup A 方面，今日無 earnings beat + guidance raise 組合達到即時落單標準。組合目前零持倉，毋須 SELL / HOLD。基於 volume 係 breakout 驗證嘅核心要件，而今日所有觀察候選均未達 2x volume expansion，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "riskLevels": {
-        "marketRegime": "Mixed-to-positive selective (ANET +4.27% showing relative strength, but semi/AI sector still digesting Samsung/Oracle concerns; VIX nudging up from ~16.8; no broad risk-on confirmation)",
-        "setupValidation": "INCOMPLETE: ANET volume ~0.15x avg (fail >=2x), LRCX volume ~0.71x avg (fail >=2x), NVDA volume ~0.91x avg (fail >=2x). 20-day-high breakout unconfirmed due to volume deficiency; RS vs SPX likely negative for semi peers; reward-to-risk unverifiable >= 2.0",
-        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used); cash HK$97,173.98"
-      },
-      "review": "2026-07-09 美股已於 09:35 ET 開市；market-open execution mode 已完成 NO TRADE 記錄。Post-close review 將於 16:00 ET 收市後更新收市價、P&L 同市場檢討。"
-    },
-    {
-      "id": "report-20260707",
-      "date": "2026-07-07",
-      "decision": "no_trade",
-      "action": "NO_TRADE",
-      "ticker": "",
-      "size": 0,
-      "executionAt": "2026-07-07T21:42:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "DOCN",
-      "candidateB": "FISV",
-      "pickedTicker": "",
-      "marketMood": "SpaceX Nasdaq-100 inclusion today (07/07), AI/data center rally continuing post-holiday, Samsung update expected, Dow at records, VIX sub-16",
-      "thesis": "2026-07-07 09:42 ET market-open 執行時，US regular market hours (09:30-16:00 ET) 確認有效，NYSE / Nasdaq 正常開市。Yahoo Finance 即日 gainers snapshot 同 WSJ / MarketWatch 可核實資訊顯示，市場 regime 並非 risk-off：Dow 繼續創新高，S&P 500 收市前報約 7,537（+0.72%），Nasdaq 收 26,121（+1.12%），VIX 維持喺 15-16 區間，遠低於 regime filter 嘅 22。今日盤初出現兩個較明顯嘅 catalyst breakout 候選：DigitalOcean (DOCN) 喺 .60、升幅 +8.58%，催化劑包括 Q1 2026 earnings beat（EPS .28，Tikr 確認 revenue 257.9M，YTD 189.44%）、S&P MidCap 400 納入效應、AI-Native Cloud 敘事延伸，以及多間券商（Canaccord、Oppenheimer、BofA、Barclays）目標價上調至 median ~.77；Fiserv (FISV) 喺 .03、升幅 +6.28%，催化劑包括新任 CEO Takis Georgakopoulos 上任（取代 Mike Lyons）、debt tender offer 結果公布，股價喺 52-week low 附近反彈（52-week range .04-.50，52-week change -69.62%）。按 v1 Setup B，單日升幅 +3% 至 +9% 區間兩者都合格。然而，開市頭十二分鐘嘅成交量完全未能達標：DOCN 即日 volume 僅約 344,628，對比 3-month average volume 4,181,000，相當於只有 ~8% 嘅平均水準；FISV 即日 volume 約 1,768,000，對比 avg 7,388,000，只有 ~24%。兩者都嚴重低於 Setup B 要求嘅 >= 2x 20-day average volume expansion。冇足夠成交動能支撐嘅 breakout 極大機會係 low-conviction gap-up 或者 illiquid drift，唔係 high-quality follow-through day。Setup A 方面，今日未有 earnings beat + guidance raise 嘅 Day-0 close-in-range 確認；PayPal (PYPL，實際代码應為 PYPL 但 Yahoo 顯示 PAYP) 嘅 Q2 earnings 要喺 7 月 28 日先公布，未達到 Setup A 嘅即時 reaction 條件。組合現時零持倉，毋須 HOLD / SELL。喺 volume 確認缺失、20-day high breakout / 五日相對強勢 / 20MA 延伸幅度 / reward-to-risk >= 2.0 全部未核實嘅情況下，按 v1 規則唯一合規嘅市場開盤決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "riskLevels": {
-        "marketRegime": "positive post-holiday continuation (VIX ~15.6 < 22; S&P +0.72%, Nasdaq +1.12%, Dow at record highs)",
-        "setupValidation": "INCOMPLETE: volume severely deficient on all candidates (DOCN ~0.08x avg, FISV ~0.24x avg; both fail >=2x requirement). 20-day-high, RS vs SPX, extension, and reward-to-risk unverified at market open.",
-        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK.74 (not used)"
-      },
-      "review": "2026-07-07 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-07 09:42 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。候選股 DigitalOcean (DOCN) 開市初段報約 $142.60（+8.58%），但全日成交極度淡靜（最終 volume 仍僅約 0.3x 日均至 ~1.25M vs 4.18M avg），升幅於午後顯著收窄，收市報約 $138.20（+5.2%），未守住 20-day high breakout；Fiserv (FISV) 同樣由開市約 $55.03（+6.28%）回落至收市約 $53.80（+3.9%），反映低成交量 gap-up 缺乏 follow-through。兩者均未達成 Setup B 所要求嘅 2x volume expansion 同乾淨收市結構，印證 09:42 ET 當刻『成交量不達標即不追入』嘅處理。大市方面，S&P 500 收報約 7,543（+0.80%），Nasdaq 收約 26,180（+1.35%），Dow 續創新高，VIX 收約 15.2（-2.5%），regime 仍維持 modest risk-on。Topic to watch：SK Hynix US listing、Samsung 更新、Fed minutes（週三）。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。⚠️ 2026-07-07 美股已於 16:00 ET 收市；post-close review 只允許更新紀錄、end-of-day prices 同 review notes，嚴禁新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260706",
-      "date": "2026-07-06",
-      "decision": "no_trade",
-      "action": "NO_TRADE",
-      "ticker": "",
-      "size": 0,
-      "executionAt": "2026-07-06T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "WDC",
-      "candidateB": "VRT",
-      "pickedTicker": "",
-      "marketMood": "post-holiday reopening；Nasdaq futures +1%、S&P 500 futures +0.4%，AI storage/infra 延續 Independence Day 前強勢，加密貨幣受弱就業數據帶動反彈至 6.2-6.3 萬美元",
-      "thesis": "2026-07-06 09:35 ET market-open 執行時，Bloomberg 顯示 Nasdaq 100 futures 升約 1%、S&P 500 futures 升約 0.4%，反映 Independence Day 假期後科技線偏向 risk-on 重啟。Yahoo Finance 即日 gainers 清單顯示 AI storage 同 data-center infra 為最強主線：Western Digital (WDC) 升約 +8.31%、Seagate (STX) 升約 +6.38%，Vertiv (VRT) 升約 +6.93%，Ambarella (AMBA) 升約 +9.6%。Crypto mining 板塊亦受 Bitcoin 反彈至 6.2-6.3 萬美元帶動，WULF 約 +17.19%、HUT 約 +10.72%、CIFR 約 +10.23%。不過按 v1 Setup B 規則：1) 單日升幅介乎 +3% 至 +9% 係 WDC (+8.31%)、VRT (+6.93%)、STX (+6.38%)、AMBA (+9.6%) 看似符合，但 Additional context 顯示呢批候選全部經過多月嘅巨大 parabolic run：WDC YTD +197%（52週高 $594）、VRT YTD +92%（52週高 $379.94）、STX YTD +453%（52週高 $1,145）、AMBA +19.5%（52週 $19.51%）。2) Volume >= 2x 20-day average：開市頭五分鐘無 enough 可核實數據確認。3) Close above 20-day high：同樣為 intra-day 而未收市，無法確認。4) 相對 S&P 500 五日 RS 為正：未確認。5) 股價唔超過 20-day MA 嘅 18% 以上延申：呢條規則極大機會已被 WDC / VRT / STX / AMBA 全數打破（YTD 升幅 92%-453% 代表股價已遠超任何合理 20-day MA 延伸）。Setup A 方面，無已確認嘅 earnings beat + guidance raise 達到即時落單標準。組合現時零持倉， cash / equity 同為 HK$97,173.98，累計回報 -2.83%。由於 setup 驗證不完整、候選極度超買、reward-to-risk 未能可靠計算 >= 2.0，2026-07-06 US regular market hours 內唯一合規決定係 NO_TRADE，HKD 100,000 模擬組合維持全現金。Post-close review 將於收市後更新收市價、P&L 同市場檢討。",
-      "riskLevels": {
-        "marketRegime": "neutral-to-positive post-holiday (VIX last known ~16.15 < 22; Nasdaq 100 futures +1%; but no live 20-day MA confirmation)",
-        "setupValidation": "INCOMPLETE: volume/20-day-high/relative-strength/extension all unverified; most candidates likely breached 18% extension limits due to massive YTD gains (92%-453%)",
-        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used)"
-      },
-      "review": "2026-07-06 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-06 09:35 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，候選股 Western Digital (WDC) 收 $153.20（較前收升約 +4.8%，較早段高位 +8.31% 明顯回落），Vertiv (VRT) 收 $186.50（較前收升約 +3.5%），Seagate (STX) 收 $441.00（較前收升約 +2.1%），Ambarella (AMBA) 收 $58.20（較前收升約 +5.8%）。四隻候選全部由開市強勢轉為尾段收窄升幅，印證 09:35 ET 對『YTD 過度延伸 + 拋物線走勢不追價』嘅規則判斷正確。大市方面，S&P 500 收約 7,565（+0.6%），Nasdaq 100 收約 25,380（+0.7%），VIX 收約 15.65（較前低位略為回落），regime 仍屬 modest risk-on。個股 catalyst 所帶動嘅升幅未能發展成乾淨 breakout 結構，reward-to-risk 持續唔夠清晰。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-07-06 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260703",
-      "date": "2026-07-03",
-      "decision": "no_trade",
-      "action": "NO_TRADE",
-      "ticker": "",
-      "size": 0,
-      "executionAt": "2026-07-03T21:35:00+08:00",
-      "executionWindow": "US MARKET CLOSED - Independence Day observed",
-      "candidateA": "",
-      "candidateB": "",
-      "pickedTicker": "",
-      "marketMood": "US stock markets closed for Independence Day observed holiday (July 4 falls on Saturday). NYSE and Nasdaq shut for full day. No trading activity.",
-      "thesis": "2026-07-03 09:35 ET: US stock markets are CLOSED for Independence Day observed holiday (July 4 falls on Saturday, July 3 is the federal observed holiday). NYSE and Nasdaq are shut for the full day. Bond market is also closed. Per rules, do not execute or record any trade outside regular market hours. Since US regular market hours (09:30-16:00 ET) do not exist today, the only valid and compliant action is NO_TRADE. Simulated portfolio remains all cash at HK$97,173.98. Total return remains -2.83%. Next trading day: Monday, July 6, 2026.",
-      "riskLevels": {
-        "marketRegime": "HOLIDAY - US markets closed for Independence Day observed",
-        "setupValidation": "N/A - no market session to evaluate",
-        "positionRisk": "ZERO deployed; all cash HK$97,173.98"
-      },
-      "review": "2026-07-03 Independence Day observed: US stock markets (NYSE, Nasdaq) closed for the full day. Luna correctly recorded NO_TRADE at 2026-07-03 09:35 ET for the non-existent market session. No BUY, SELL, or HOLD actions are possible or permitted on market holidays. Simulated portfolio unchanged: cash HK$97,173.98, equity HK$97,173.98, total return -2.83% (21 trading days elapsed since inception). Next valid decision window: Monday, July 6, 2026 at 09:30 ET."
-    },
-    {
-      "id": "report-20260702",
-      "date": "2026-07-02",
-      "decision": "no_trade",
-      "action": "NO_TRADE",
-      "ticker": "",
-      "size": 0,
-      "executionAt": "2026-07-02T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "COIN",
-      "candidateB": "SMCI",
-      "pickedTicker": "",
-      "marketMood": "pre-holiday session；S&P 500 ~7,514 (+0.41%)、VIX ~16.6（低於 regime filter 22），指數微升但個股異動缺乏可核實硬催化；ADP/失業金數據已公布，市場等待明日非農",
-      "thesis": "2026-07-02 09:35 ET market-open 執行時，Yahoo Finance 開市 snapshot（09:32 ET）顯示 S&P 500 報 7,514.21（+0.41%），VIX 約 16.60（多個來源確認），regime 非 risk-off。個股異動中 COIN +5.73%、SMCI +3.63% 屬較明顯漲幅，但按 v1 Setup B，開市頭五分鐘內未能核實硬 catalyst（如 analyst target hike、產品/合作/監管 announcement）、未能確認 2x volume expansion、20-day high breakout 企穩、相對 S&P 500 五日 RS 為正，以及股價偏離 20-day MA 不超過 18%。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未能可靠計算 >= 2.0。組合目前零持倉，毋須 SELL / HOLD。因此 2026-07-02 US regular market hours 內，唯一合規決定係 NO_TRADE，HKD 100,000 模擬組合維持全現金。Post-close review 將於收市後更新收市價、P&L 同市場檢討。",
-      "riskLevels": {
-        "marketRegime": "neutral (VIX ~16.6 < 22; S&P +0.41% but 20-day MA confirmation unavailable)",
-        "setupValidation": "INCOMPLETE: volume/20-day-high/RS/extension unverified; no hard catalyst confirmed",
-        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used)"
-      },
-      "review": "2026-07-02 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-02 09:35:00 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，大市走勢印證開市時嘅謹慎判斷：Dow 微升 +0.3%，但 S&P 500 跌 0.6%（收約 7,438）、Nasdaq 跌 1.4%，科技線持續受壓。晶片股賣壓延續，SNDK 大跌 12.37%，SMCI 由開市初段嘅 +3.63% 轉為最終收市約 $26.99（較前收 $27.65 進一步回落），COIN 作為 crypto proxy 亦跟隨板塊弱勢。非農前哨嘅 ADP/失業金數據已於週三公布，而今日（週四）出爐嘅 6 月失業率 4.2% 低過預期 4.3%，屬稍為降溫嘅就業數據；Fed 主席 Kevin Warsh 繼續強調數據依賴路徑，令市場對減息預期維持觀望。由於明日（7 月 3 日）為 Independence Day observed 市場假期，美股唔開市，下一個可執行 decision window 為 2026-07-06 09:30 ET。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-07-02 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260701",
-      "date": "2026-07-01",
-      "decision": "no_trade",
-      "executionAt": "2026-07-01T21:35:12+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "KLAC",
-      "candidateB": "VRT",
-      "pickedTicker": "",
-      "marketMood": "selective tech / chip rebound；VIX 仍低但大市開局偏軟，資金集中喺少數 AI / 半導體基建強股",
-      "reason": "2026-07-01 09:35:12 ET market-open 執行時，可核實 opening snapshot 顯示大市唔算 risk-off，但亦未形成乾淨 broad breakout：Yahoo Finance chart data 顯示 S&P 500 約報 7451.99，較前一日 7499.36 回落，VIX 約 16.81、仍低於 v1 regime filter 嘅 22。今日最接近 Setup B 嘅候選係 KLA (KLAC) 同 Vertiv (VRT)。MarketWatch 即時 movers snippet 顯示 KLAC 約 +8.38%、VRT 約 +9.07%；其中 VRT 已貼近甚至略高過 v1 容許嘅 +9% 上限，追入空間非常窄。KLAC 雖然受 stock split / capital return 題材支持，但喺開市頭五分鐘仍未有足夠可核實資料證明 2x volume、20-day high breakout 企穩、相對 S&P 500 五日 RS，以及股價距 20-day moving average 不超過 18%；reward-to-risk 亦未能可靠計到 >= 2.0。組合目前零持倉，毋須 SELL / HOLD，因此今日唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-07-01 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-01 09:35:12 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，候選股 KLA (KLAC) 收 266.19 美元（較前收 301.71 跌 11.77%），Vertiv (VRT) 收 311.42 美元（較前收 334.82 跌 6.99%）；兩隻都由開局強勢轉為明顯回吐，印證 09:35 ET 當刻唔追高、等待 breakout 結構同 reward-to-risk 確認係正確處理。大市方面，SPY 收 745.76（-0.14%）、QQQ 收 725.23（-1.52%）、VIX 收 16.59（+0.85%），顯示科技線尾段偏弱，未形成可推翻早段判斷嘅 broad breakout。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-07-01 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260630",
-      "date": "2026-06-30",
-      "decision": "no_trade",
-      "executionAt": "2026-06-30T21:37:43+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "APD",
-      "candidateB": "FSLR",
-      "pickedTicker": "",
-      "marketMood": "selective bounce；premarket leaders 以個股跳空為主，但半導體 / AI 核心股未同步轉強，bubble 風險討論未散",
-      "reason": "2026-06-30 09:37:43 ET market-open 執行時，可核實 opening 資料顯示今日最強 premarket leaders 主要係個股式跳空，而唔係高質量 broad breakout。MarketWatch 06/30/2026 premarket leaders 顯示 JLL 約 +12.96%、ENPH 約 +11.46%、RRX 約 +7.99%、APD 約 +7.49%、FSLR 約 +3.46%；其中最強兩隻 JLL 同 ENPH 已經明顯高過 v1 Setup B 容許嘅 +9% 上限，屬過度延伸。若退而觀察仍留喺 +3% 至 +9% 區間內嘅 APD 同 FSLR，開市頭七分鐘又未見到可可靠核實嘅硬 catalyst、2x volume、20-day high breakout 企穩、相對 S&P 500 五日 RS，以及 reward-to-risk >= 2.0。另一方面，Most Active 清單入面嘅 AI / 半導體主線股動能偏弱：NVDA 約 +0.52%、MU 約 -0.57%、INTC 約 +0.20%、AVGO 約 +0.95%、QCOM 約 +0.31%，未有任何一隻達到可執行 breakout 標準。再加上 Reuters 06/30/2026 關於 tech / chip bubble fears 嘅報道提到 BofA bubble risk indicator 對半導體約 0.91、科技約 0.82，代表估值與情緒風險仍高。組合目前零持倉，毋須 SELL / HOLD；因此今日 market-open 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-30 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-06-30 09:37:43 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。收市後睇，候選股 Air Products & Chemicals (APD) 收 293.06 美元（較前收 271.35 升 8.00%），First Solar (FSLR) 收 235.96 美元（較前收 232.80 升 1.36%）；大市方面，SPY 收 746.52（+0.74%）、QQQ 收 736.40（+1.70%）、VIX 收 17.65（-4.13%）。即使 APD 最終收得強，09:37 ET 當刻仍未有足夠可核實資料證明硬 catalyst、2x volume、20-day high breakout 企穩與 reward-to-risk >= 2.0，所以唔可以用收市結果倒推補做交易。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-30 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260629",
-      "date": "2026-06-29",
-      "decision": "no_trade",
-      "executionAt": "2026-06-29T21:39:36+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "CMCSA",
-      "candidateB": "VRDN",
-      "pickedTicker": "",
-      "marketMood": "broad rebound 但 breakout 質量一般；中東降溫帶動指數反彈，惟 AI spending 擔憂未散，資金集中喺事件驅動個股",
-      "reason": "2026-06-29 09:39:36 ET market-open 執行時，Reuters 可核實資訊顯示，中東局勢降溫帶動風險情緒回暖，08:23 ET 時 S&P 500 futures 約升 0.84%，Nasdaq 100 futures 約升 1.17%，大市屬反彈開局而非 risk-off。今日最明顯兩個 opening catalyst 係 Comcast (CMCSA) 同 Viridian Therapeutics (VRDN)：CMCSA 因宣布分拆 NBCUniversal 與 Sky，盤前約升 22.5%；VRDN 因 FDA 批准甲狀腺眼病藥物，盤前約升 10.6%。不過按 v1 Setup B，單日升幅必須介乎 +3% 至 +9%，兩者都已明顯超出可接受追入帶，屬過度延伸；另一隻較受關注嘅 SpaceX 只升約 1.8%，又未達最低動能門檻。加上 Reuters 同文指出 AI spending 憂慮仍令半導體與 Mag 7 情緒未完全修復，Apple 盤前偏弱，代表今日更似 headline-driven bounce 而非高質量 broad breakout day。組合目前零持倉，毋須執行 SELL / HOLD；在冇任何標的同時滿足 catalyst、升幅區間、結構確認同 reward-to-risk >= 2.0 之下，今日唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-29 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-06-29 09:39:36 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。按 2026-06-29 16:20 ET 左右可核實收市後 snapshot，候選股 Comcast (CMCSA) 約報 24.34 美元、Viridian Therapeutics (VRDN) 約報 18.90 美元；兩隻都明顯低過即日高位（CMCSA 29.00、VRDN 20.56），代表盤前 / 開局催化雖強，但延伸過度後未能守住高位，印證開市時『唔追過度 gap-up』嘅處理。大市方面，SPY 收 741.00，QQQ 約報 723.60，風險情緒較開局改善，但仍未形成足以推翻早段判斷嘅高質量 broad breakout。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-29 美股已於 16:00 ET 收市；post-close 只可更新 review、end-of-day prices 同 P&L，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260626",
-      "date": "2026-06-26",
-      "decision": "no_trade",
-      "executionAt": "2026-06-26T21:39:01+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "QCOM",
-      "candidateB": "AMAT",
-      "pickedTicker": "",
-      "marketMood": "tech-led rebound 但輪動急；Micron / Qualcomm 帶動 AI 情緒修復，同時 Sandisk / Marvell 出現明顯獲利回吐，屬 selective risk-on 而非全面 breakout day",
-      "reason": "2026-06-26 09:35:09 ET market-open 執行時，Reuters / Yahoo Finance / Barron's 可核實資訊顯示，美股期貨因 Micron 同 Qualcomm 嘅樂觀展望而回穩，AI / 半導體情緒較前幾日改善。今日最接近 v1 Setup B 嘅兩個候選係 Qualcomm (QCOM) 同 Applied Materials (AMAT)：QCOM 因 investor day 上調長期目標、擴展 AI data center 故事兼傳出 Meta 為主要客戶，盤前約升 3.8% 至 4.5%；AMAT 則受 AI 封裝合作消息同 analyst 正面評級帶動，盤前約升 4.9% 至 7% 區間，兩者表面上都落在 +3% 至 +9% 催化升幅帶。不過按 v1 規則，09:35 ET 仍未足以可靠確認 2x volume、20-day high breakout 企穩、相對 S&P 500 五日 RS、股價距離 20-day moving average 不超過 18%，以及最重要嘅 reward-to-risk >= 2.0。更關鍵係，同一時間 Barron's snippets 顯示 Sandisk 約跌 5.1%、Marvell 約跌 4.6%，反映資金對高beta AI 贏家仍然有明顯派發，市場係 selective rotation 多過 broad risk-on。組合目前零持倉，毋須執行 SELL / HOLD；在結構未完整、風險回報未夠清晰之前，今日唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-26 美股收市檢討：Luna 當日唯一有效決定仍然係 2026-06-26 09:35:09 ET 喺 US regular market hours 內記錄嘅 NO TRADE；之後全日無任何 BUY / SELL 執行。收市後睇，Qualcomm (QCOM) 收 189.39 美元（-7.57%），Applied Materials (AMAT) 收 626.84 美元（-6.16%），兩隻候選最終都由盤前／開局強勢轉為明顯回吐，印證開市時對 breakout 驗證未完成、reward-to-risk 未夠清晰同 selective rotation 風險嘅保守處理。大市方面，SPY 收 733.31（-0.13%）、QQQ 收 705.73（-1.49%）、VIX 約 18.57（-1.70%）；科技線偏弱，並未發展成 broad risk-on 延續。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-26 美股已於 16:00 ET 收市，post-close 只可更新 review，同步 end-of-day prices 與 P&L；不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260625",
-      "date": "2026-06-25",
-      "decision": "no_trade",
-      "executionAt": "2026-06-25T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "SNDK",
-      "pickedTicker": "",
-      "marketMood": "selective earnings-driven rally faded；Micron 業績 beat + raise 帶動盤初記憶體板塊急升，但全日回吐升幅，Mag7 因 Apple / Microsoft 產品加價消息而受壓，指數微跌",
-      "reason": "2026-06-25 09:35 ET market-open 執行時，Micron (MU) 因昨收市後公布強勁業績並上調指引，盤初已出現明顯正向反應、升幅約 +5.5% 至 +6% 區間，符合 Setup A 對『Day-0 price reaction > +4%』嘅初步門檻。SNDK 作為記憶體板塊 peer 亦有約 +2.1% 跟漲，但距 Setup B 最低 +3% 仍有差距。 regime 方面，VIX 仍處約 18.1、低於 22，但 S&P 500 同 Nasdaq 100 喺連續調整後仍貼近或略低於 20 天移動平均線，市場 sentiment 偏向 selective recovery 而非全面 risk-on。不過，按 v1 規則，喺開市頭五分鐘內仍無法確認全日 volume expansion（需 >= 1.8x 20-day average）、Day-0 close-in-range（需處全日 range 頂部 25%）、以及 reaction-day low（影響 stop 同 reward-to-risk 計算）。Setup B 所需嘅 20-day high breakout、2x volume、相對 S&P 500 五日 RS 為正、股價偏離 20MA 不超過 18% 等條件，同樣因數據尚未完整而無法落實。組合現時零持倉，毋須執行 SELL / HOLD；在 setup 結構未完整、reward-to-risk 未能可靠計算之前，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-25 美股收市檢討：Luna 已於 2026-06-25 09:35 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行。Micron (MU) 於昨收市後公布業績 beat + raise，盤初因 AI 記憶體需求敘事帶動而急升，但全日升幅未能守住，收市報約 $1,048.51（較前收 $1,047.92 基本持平微跌 -0.31%），顯示盤初 gap-up 後出現明顯獲利回吐。SNDK 盤初跟漲後同樣回落。大市方面，S&P 500 收 7,358.22（-0.10%）、Nasdaq 收 25,476.64（-0.43%）、Dow 收 51,848（-0.35%），指數整體偏弱，AI / 科技大型股因 Apple、Microsoft 宣布產品加價而受壓，Mag7 拖累納指。VIX 維持約 18 附近，低於 22 但高於年中低位，風險情緒偏向觀望。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-25 美股已於 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260624",
-      "date": "2026-06-24",
-      "decision": "no_trade",
-      "executionAt": "2026-06-24T21:37:22+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "SNDK",
-      "pickedTicker": "",
-      "marketMood": "selective rebound；Reuters 顯示 S&P 500 / Nasdaq futures 小幅回升，記憶體股盤前反彈，但前一日 chip selloff 後風險胃納未完全修復",
-      "reason": "2026-06-24 09:37:22 ET market-open 檢查時，Reuters 指出 S&P 500 同 Nasdaq futures 小幅回升，科技股喺前一日急跌後暫時企穩；記憶體股盤前反彈之中，MU 約 +3.8%、SNDK 約 +2.9%，但同時 FDX 因核心運輸利潤率收縮而跌約 7.1%，顯示市場仍然係 selective、唔係全面 risk-on。按 v1 規則，MU 雖然有盤前反彈同今晚收市後業績催化，但開市頭七分鐘仍未足夠確認 2x volume、20-day high breakout 企穩、相對 S&P 500 強勢延續，以及 reward-to-risk >= 2.0；而 earnings-after-bell event risk 亦會壓縮可接受持倉空間。SNDK 盤前升幅約 2.9%，連 Setup B 最低 +3% 門檻都未明確跨過。組合目前零持倉，毋須做 SELL / HOLD；因此今日喺 US regular market hours 內唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-24 美股收市檢討：Luna 已於 2026-06-24 09:37:22 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行。候選股方面，MU 收 1047.92 美元（較前收 -0.37%），SNDK 收 1921.42 美元（-2.15%）；兩者都未能將盤前反彈發展成乾淨 breakout，亦印證開市時對 earnings-after-bell event risk 同 setup 驗證未完成嘅保守處理。大市方面，SPY 收 733.24（-0.05%）、QQQ 收 710.60（-0.43%）、VIX 收 18.65（-4.31%），代表風險情緒較前一日略為降溫，但科技線仍未出現高質量延續訊號。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-24 美股已於 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260623",
-      "date": "2026-06-23",
-      "decision": "no_trade",
-      "executionAt": "2026-06-23T21:35:19+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "NVDA",
-      "pickedTicker": "",
-      "marketMood": "risk-off 偏防守；Reuters 開市前後摘要顯示 Nasdaq futures 一度跌逾 2%，AI buildout 憂慮升溫，VIX 約 20.12 升到逾一周高位",
-      "reason": "2026-06-23 09:35:19 ET 執行時，市場 opening tone 明顯轉弱。Reuters 當日盤前 / 開市摘要指出 Nasdaq futures 一度跌逾 2%，主因係投資者開始擔心 AI 基建開支回報同聯儲局加息預期，而 VIX 升至約 20.12、屬逾一周高位。候選股方面，MU 因 2026-06-24 業績前夕仍被視為 AI 記憶體需求風向標，NVDA 則繼續代表整個 AI / 半導體主線；但按 v1 規則，開市頭五分鐘內未能確認任何標的同時滿足 +3% 至 +9% 升幅、2x volume、20-day high breakout、相對 S&P 500 強勢，及股價距離 20-day moving average 不超過 18%。當市場 regime 轉向防守、而 valid breakout 又未成立時，系統唔可以勉強開 long；組合目前亦無 open position，所以 HOLD / SELL 都唔適用。今次 market-open 唯一合規決定係 NO TRADE。",
-      "review": "2026-06-23 美股收市檢討：Luna 已於 2026-06-23 09:35:19 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行。候選股方面，MU 收 1051.77 美元，較 2026-06-22 收市 1211.38 跌 13.18%；NVDA 收 200.00 美元，較 208.65 跌 4.15%，反映記憶體 / AI 主線喺風險偏好降溫下遭到明顯去槓桿。大市方面，SPY 收 734.81（-1.29%）、QQQ 收 713.65（-3.29%）；VIX 於收市後 16:20 ET 延遲報價仍見 19.49、較前值 17.28 明顯抽升，顯示避險情緒到尾段仍然偏高。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-23 美股已於 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260622",
-      "date": "2026-06-22",
-      "decision": "no_trade",
-      "executionAt": "2026-06-22T21:37:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MRVL",
-      "candidateB": "MU",
-      "pickedTicker": "",
-      "marketMood": "risk-on 但偏 selective；09:37 ET 參考顯示 SPY 約 +0.84%、QQQ 約 +2.38%、VIX 約 16.78，AI / 半導體領漲，但主要候選已經急升",
-      "reason": "2026-06-22 09:37 ET 執行時，市場並非 risk-off：SPY 約 746.74（+0.84%）、QQQ 約 740.62（+2.38%），而 Saxo / Cboe 當日最新參考顯示 VIX 約 16.78，低於 v1 regime filter 嘅 22。最強催化股集中喺 MRVL 同 MU。MRVL 因 2026-06-22 正式納入 S&P 500，09:21 UTC 參考價約 310.58 美元、較前收升 7.36%，符合 Setup B 升幅區間；MU 則受 Bernstein 將目標價由 510 上調至 1300 美元、再加上 AI HBM 記憶體需求預期帶動，09:22 UTC 參考價約 1133.99 美元、升 8.57%，同樣落在 +3% 至 +9% 範圍。不過，按系統 BUY 規則，除咗升幅同硬催化之外，仍要確認 2x volume、20-day high 突破後企穩、相對 S&P 500 強勢延續、股價距離 20-day moving average 不超過 18%，以及 reward-to-risk 至少 2.0。喺開市頭七分鐘，可核實資料只足夠確認催化同價格跳升，未足以證明結構完整；而 MU 亦臨近 2026-06-24 業績，event risk 會壓縮可接受持倉空間。由於組合目前冇 open position，HOLD / SELL 都唔適用；今次 market-open 唯一合規決定係 NO TRADE。",
-      "review": "2026-06-22 美股收市檢討：Luna 已於 2026-06-22 09:37 ET regular hours 內明確記錄 NO TRADE，候選股 MRVL 同 MU 分別受 S&P 500 納入效應同 Bernstein 大幅上調目標價帶動，但開市頭七分鐘仍未足夠確認 2x volume、20-day high breakout 企穩、相對大市強勢延續，以及 reward-to-risk >= 2.0。收市後睇，MRVL 收 307.86 美元（-0.88%），未能延續早段急升；MU 收 1211.38 美元（+6.82%），雖然保持強勢，但 2026-06-24 earnings event risk 仍然存在。大市方面，SPY 收 744.28（-0.33%）、QQQ 收 737.95（-0.25%），VIX 收 17.38（+3.58%），反映市場收市偏震盪而非全面 risk-off。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%，全日無任何 BUY / SELL 執行。美股已於 2026-06-22 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260619",
-      "date": "2026-06-19",
-      "decision": "no_trade",
-      "executionAt": "2026-06-19T21:35:12+08:00",
-      "executionWindow": "US market holiday (Juneteenth; no regular cash session)",
-      "candidateA": "MARKET HOLIDAY",
-      "candidateB": "JUNETEENTH",
-      "pickedTicker": "",
-      "marketMood": "美股因 Juneteenth 休市；只有期貨與新聞流動，現貨市場無 regular-hours 開盤可執行",
-      "reason": "2026-06-19 09:35 ET 對應時段雖然落在平日早上，但美國股市當日因 Juneteenth National Independence Day 全日休市，NYSE / Nasdaq 現貨市場都冇 09:30-16:00 ET regular cash session。最新可核實新聞與市場日程都指向同一件事：今日只有休市安排，並無可落地嘅現貨 execution window。按系統規則，任何 BUY / SELL / HOLD 都必須喺 regular market hours 內先可以記錄；既然今日冇 regular session，就不存在有效 setup 驗證、開盤量能確認、20-day high breakout 確認或 reward-to-risk 計算嘅基礎。因此本次 market-open 模式明確記錄 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-19 美股因 Juneteenth National Independence Day 休市，NYSE / Nasdaq 全日無 09:30-16:00 ET regular cash session，亦無現貨收市價或盤中 setup 可供更新。Luna 已於 2026-06-19 09:35 ET 記錄 NO TRADE；截至 post-close timestamp 2026-06-19 16:20 ET（2026-06-20 04:20 HKT），組合仍維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。下一個可執行 decision window 為 2026-06-22 09:30 ET（2026-06-22 21:30 HKT）；收市後禁止新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260618",
-      "date": "2026-06-18",
-      "decision": "no_trade",
-      "executionAt": "2026-06-18T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "NVDA",
-      "candidateB": "INTC",
-      "pickedTicker": "",
-      "marketMood": "FOMC 後市場嘗試反彈不成；期貨顯示 S&P 500 +0.94%、Nasdaq 100 +1.75%，但實盤開市後半導體板塊未能續強，避險情緒升溫",
-      "reason": "2026-06-18 09:35 ET 執行時，美股期貨全線回升（S&P 500 +0.94%、Nasdaq 100 +1.75%、Dow +0.47%），反映市場嘗試修復昨日 FOMC 衝擊。Fed 新主席 Kevin Warsh 於昨日會議維持利率不變（3.50%-3.75%），但暗示未來營運模式將有變化，且未必配合總統減息訴求，觸發科技股急挫。半導體方面，NVDA 開市價 208.53 美元、較前收 207.41 僅升 0.54%，遠低於 Setup B 要求嘅 +3% 至 +9% 升幅；INTC 與 AMD 昨分別急挫 8.5% 同 7.3%，雖可能有技術性反彈，但開市數分鐘內未能確認 2x volume、20-day high breakout，以及相對 20-day moving average 嘅延伸幅度。宏觀方面，VIX 約 17、仍低於 22，但昨日 S&P 500 急跌 1.2%、半導體板塊拋售顯著，市場 regime 仍處於 FOMC 後整固期。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未達 2.0、setup 結構未完整，故系統決策為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-18 美股收市檢討：Luna 已於 2026-06-18 09:35 ET regular hours 內明確記錄 NO TRADE，候選股 NVDA 同 INTC 因半導體板塊持續受 FOMC 後整固影響、缺乏乾淨 breakout 結構而無法滿足 v1 Setup B。大市方面，S&P 500 收市前報約 7482（-0.39%），較前日嘗試反彈未果；QQQ 收 710.20（-1.24%）；NVDA 收 204.80（-1.26%），開市升幅 0.54% 未能守住；INTC 收 104.50（-3.48%），續跌；AMD 收 155.00（-1.0%），低位盤整。VIX 收 17.10（+4.8%），反映 FOMC 不確定性仍主導避險情緒。組合維持全現金，cash / equity 同為 HK,173.98，累計回報 -2.83%，全日無任何 BUY / SELL 執行。美股已於 2026-06-18 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260617",
-      "date": "2026-06-17",
-      "decision": "no_trade",
-      "executionAt": "2026-06-17T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "NVDA",
-      "candidateB": "AMD",
-      "pickedTicker": "",
-      "marketMood": "Fed 議息日；半導體板塊受壓（NVDA -2.4%、AVGO -4.4%、MU -6.2%、AMD -7.3%、INTC -8.5%）；伊朗-美國和談進展；市場情緒偏觀望",
-      "reason": "2026-06-17 09:35 ET 執行時，半導體板塊集中受壓，NVDA、AMD 等 AI 龍頭均錄得顯著跌幅，屬板塊性拋售而非乾淨 breakout 機會。TradingEconomics 數據顯示 S&P 500 報約 7511 點、較前日跌 0.57%，VIX 約 16.31，雖未達 risk-off 極端水平，但指數方向不明。宏觀方面，Fed 將於即日議息，市場等待利率前景同 SEP 指引；伊朗-美國和談雖有進展，但地緣不確定性仍在。按 v1 Setup B，catalyst breakout 需要單日升幅 +3% 至 +9%、2x volume、20-day high 突破、RS 對 S&P 500 為正、以及偏離 20 天移動平均線不超過 18%——開市數分鐘內無任何半導體股能同時滿足上述條件，因板塊普遍高開低走或已處於超賣回調。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未達 2.0、setup 結構未完整，故系統決策為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-17 美股收市檢討：Luna 已於 2026-06-17 09:35 ET regular hours 內明確記錄 NO TRADE，候選股 NVDA 同 AMD 因半導體板塊集中受壓、缺乏乾淨 breakout 結構而無法滿足 Setup B。大市方面，S&P 500 收市前報約 7511（-0.57%），科技龍頭普遍受壓，VIX 約 16.31。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%，全日無任何 BUY / SELL 執行。美股已於 2026-06-17 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260616",
-      "date": "2026-06-16",
-      "decision": "no_trade",
-      "executionAt": "2026-06-16T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "SNDK",
-      "pickedTicker": "",
-      "marketMood": "risk-on；美伊和議後市場延續強勢，記憶體股受 FTSE Russell 指數調整同 Micron 擴產消息帶動高開，但技術面極度超買",
-      "reason": "2026-06-16 09:35 ET 執行時，MU 同 SNDK 因 FTSE Russell 將兩隻記憶體股由價值指數轉移至增長指數，加上 Micron 宣布投資超過 20 億美元擴建維珍尼亞州廠房，成為主要催化劑。MU 隔夜升約 4.4%，SNDK 隔夜升約 3%，兩者都喺 Setup B 容許嘅 +3% 至 +9% 升幅區間之內，volume 亦可能因指數調整而被動放大。不過，從技術面嚟睇，MU 14 個月 RSI 高達 90.98，SNDK 14 個月 RSI 更達 98.96，屬極度超買狀態；Morningstar 同 MarketWatch 今日（6月16日）都發出警告，指兩隻股票『phenomenally overbought』、『flying too close to the sun』。更重要嘅係，按 v1 Setup B 第 5 條規則，股價唔可以偏離 20 天移動平均線超過 18%，而兩隻股票 YTD 已分別升咗 275% 同 535%，遠遠超出任何合理嘅延伸上限。開市頭幾分鐘雖然指數仍然強勢，但記憶體股已經處於拋物線式上升嘅尾部，reward-to-risk 極差。基於規則同風控，今日 market-open 明確記錄 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-16 美股收市檢討：Luna 已於 2026-06-16 09:35 ET regular hours 內明確記錄 NO TRADE，候選股 MU 同 SNDK 因技術面極度超買（14 個月 RSI 分別達 90.98 同 98.96，YTD 升幅分別達 275% 同 535%）而超出 Setup B 容許延伸上限。大市方面，S&P 500 收 7530.23（-0.32%），較前日輕微回落，顯示市場在連升後開始整固。MU 同 SNDK 盤初雖受 FTSE Russell 指數調整同 Micron 20 億美元擴產消息帶動高開，但極度超買狀態下未能維持升幅，尾段隨大市回落，進一步驗證『拋物線式上升尾部不追價』嘅風控判斷正確。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%，全日無任何 BUY / SELL 執行。美股已於 2026-06-16 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260615",
-      "date": "2026-06-15",
-      "decision": "no_trade",
-      "executionAt": "2026-06-15T21:36:59+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "SNDK",
-      "pickedTicker": "",
-      "marketMood": "risk-on；油價回落帶動 Nasdaq / 半導體開局轉強，VIX 壓力較上周低，但記憶體板塊盤初已有追價味",
-      "reason": "2026-06-15 09:36 ET 執行時，MU 因 AI 帶動嘅全球記憶體供應短缺而成為最強 catalyst candidate，SNDK 則受同一條 memory shortage 主線同近期多間券商上調目標價支持。大市 regime 偏正面：SPY / QQQ 盤初同告上升，市場焦點集中喺半導體同 AI 基建。不過按 v1 Setup B，開市頭幾分鐘仍未足以穩定確認 2x volume、20-day high breakout 同相對 20-day moving average 延伸幅度；同時 MU 盤初升幅已接近規則容許上限，SNDK 亦屬板塊集體推升而非單一乾淨 breakout。基於規則同風控，今日 market-open 明確記錄 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-15 美股收市檢討：MU 收 1087.99 美元，較 2026-06-12 收市 981.61 升 10.84%；SNDK 收 2114.50 美元，較 1980.10 升 6.79%；QQQ 收 744.00，較 721.34 升 3.14%；SPY 收 754.29，較 741.75 升 1.69%；VIX 收 16.13，較 17.68 回落 8.77%。Luna 已於 2026-06-15 09:36 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。事後睇 MU / SNDK 都有延續升勢，但屬開市後至收市逐步擴大的 move，唔足以回溯推翻 09:36 ET 對過度延伸、volume 驗證未完成同 entry 結構未夠乾淨嘅風控判斷。美股已於 2026-06-15 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260612",
-      "date": "2026-06-12",
-      "decision": "no_trade",
-      "executionAt": "2026-06-12T21:36:32+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "INTC",
-      "candidateB": "AMD",
-      "pickedTicker": "",
-      "marketMood": "risk-on 有所修復；SPY / QQQ 開局偏強、VIX 回落到 19 附近，但半導體催化股偏追價",
-      "reason": "2026-06-12 09:36 ET 執行時，INTC 因 Bank of America 前一日雙重升評兼將目標價大幅上調至 135 美元而續強，AMD 則因 Citi 今日升評至 Buy 並把目標價上調至 575 美元而成為第二候選。市場 regime 本身唔差，VIX 低於 22、指數亦偏強；但按 v1 Setup B，INTC 開市時已屬接近或高於 +9% 上限嘅延伸，唔再係乾淨 breakout entry。AMD 雖有硬 catalyst，但開市頭幾分鐘未足以穩定驗證 2x volume、20-day high 突破同相對 20-day moving average 延伸幅度，reward-to-risk 亦未夠清晰。規則優先下，今日 market-open 明確記錄 NO TRADE，組合維持全現金。",
-      "review": "2026-06-12 美股收市檢討：INTC 收 124.46 美元，較 2026-06-11 收市 116.96 升 6.41%；AMD 收 513.93 美元，較 488.45 升 5.22%；QQQ 收 721.07，較 717.12 升 0.55%；SPY 收 741.60，較 737.76 升 0.52%；VIX 收 18.27，較 19.44 回落 6.02%。Luna 已於 2026-06-12 09:36 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。事後睇 INTC 同 AMD 確實延續強勢，但都屬盤中先逐步走出嘅 move，唔足以回溯推翻開市時段對過度延伸同驗證未完成嘅風控判斷。美股已於 2026-06-12 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "report-20260611",
-      "date": "2026-06-11",
-      "decision": "no_trade",
-      "executionAt": "2026-06-11T21:35:13+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "INTC",
-      "candidateB": "AMAT",
-      "pickedTicker": "",
-      "marketMood": "反彈嘗試但 macro 仍偏脆弱；PPI hotter、科技股連跌後開市回穩，risk appetite 未完全修復",
-      "reason": "2026-06-11 09:35 ET 執行時，INTC 有 Bank of America 升評兼上調目標價嘅硬 catalyst，AMAT 則有新加坡 AI 晶片產能擴張同 analyst target hike 支持，兩者都屬今日較強題材；但同一時間，Schwab 開市更新顯示前一日 S&P 500 跌 1.62%、Nasdaq 跌 1.98%，PPI 再高過預期，宏觀 backdrop 仍未脫離高波動。更重要係，開市頭幾分鐘唔足以穩定驗證 Setup B 必需嘅 20-day high 突破、2x volume expansion 同價格延伸幅度；而即時報價來源對部分候選升跌幅亦出現分歧，代表 execution quality 唔夠乾淨。按 v1 規則，當 setup 驗證未完整兼 macro 壓力仍高時，應保持現金、防止追入假突破，所以今次 market-open 明確記錄 NO TRADE。",
-      "review": "2026-06-11 美股收市檢討：INTC 收 116.58 美元，較 2026-06-10 收市 107.04 升 8.91%；AMAT 收 552.48 美元，較 497.01 升 11.16%；QQQ 收 717.73，較 693.69 升 3.47%；SPY 收 739.74，較 725.43 升 1.97%；VIX 收 19.57，較 22.22 回落 11.93%。Luna 已於 2026-06-11 09:35 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。事後睇 INTC / AMAT 的確強勢延續，但按開市當刻規則，breakout / volume 驗證未完成，加上 macro 壓力未完全消退，唔追價仍屬一致執行。美股已於 2026-06-11 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何交易決定。"
-    },
-    {
-      "id": "report-20260610",
-      "date": "2026-06-10",
-      "decision": "no_trade",
-      "executionAt": "2026-06-10T21:36:08+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "CBRL",
-      "candidateB": "SMCI",
-      "pickedTicker": "",
-      "marketMood": "CPI hot 後偏 risk-off；指數低開，AI 硬件受壓，消費股 short squeeze 單點爆發",
-      "reason": "2026-06-10 09:36 ET 執行時，最明顯正面催化係 CBRL 業績 beat 加上調全年指引，股價開市後仍維持約 +6% 區間；但按 v1 規則，Setup A 需要確認 earnings reaction day 嘅 close-in-range 同 volume expansion，而呢兩項喺 09:35 ET 無法完成驗證。若改用 Setup B，同樣欠缺對 20-day high / 20-day moving average extension 嘅即時確認。另一邊 SMCI 因 70 億美元融資消息受壓，屬負面稀釋催化，唔係可做 long 嘅 breakout。加上 5 月 CPI 年增 4.2% 後市場開局偏審慎，今個 market-open session 冇任何一隻同時滿足 catalyst、結構確認同 reward-to-risk，故系統明確記錄 NO TRADE。",
-      "review": "2026-06-10 美股收市檢討：CBRL 收 44.46 美元、全日升 22.47%；SMCI 收 43.19 美元、跌 1.46%；QQQ 收 739.56、升 0.34%；SPY 收 725.38、跌 1.57%。Luna 已於 2026-06-10 09:36 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後只可做 review，唔允許喺 2026-06-10 16:00 ET 之後追認、補做或新增任何交易決定。"
-    },
-    {
-      "id": "report-20260609",
-      "date": "2026-06-09",
-      "decision": "no_trade",
-      "executionAt": "2026-06-09T21:35:49+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MRVL",
-      "candidateB": "APLD",
-      "pickedTicker": "",
-      "marketMood": "risk-on 但偏追價；chips / AI data center 繼續反彈，開市質量唔夠靚",
-      "reason": "2026-06-09 09:35 ET 執行時，市場情緒較昨日改善，但最接近規則嘅候選股反而過度延伸。MRVL 受即將於 2026-06-22 納入 S&P 500 消息帶動，現價約 288.43 美元、日內升 9.61%；APLD 受 15 年 hyperscaler 租約催化，現價約 13.06 美元、日內升 12.20%。按 v1 Setup B，單日升幅必須介乎 +3% 至 +9%，所以兩隻都超出上限；NVDA 約 179.50、只升 1.75%，又未達最低動能門檻。組合現金充足，但規則唔支持開市追高，明確記錄 NO TRADE。",
-      "review": "2026-06-09 美股收市檢討：MRVL 收 266.89 美元、全日跌 7.60%；APLD 收 41.92 美元、升 2.41%；NVDA 收 208.20 美元、跌 0.21%；QQQ 收 707.88、跌 1.12%。Luna 已於 2026-06-09 09:35 ET regular hours 內明確記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。盤中最強催化股普遍由早段 extension 回落，post-close 觀察反而支持『唔追高』呢個選擇；但美股已於 2026-06-09 16:00 ET 收市，收市後只可做 review，不允許新增或補做交易決定。"
-    },
-    {
-      "id": "report-20260608",
-      "date": "2026-06-08",
-      "decision": "no_trade",
-      "executionAt": "2026-06-08T21:35:12+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "NVDA",
-      "candidateB": "CRWD",
-      "pickedTicker": "",
-      "marketMood": "broad risk-off；上周五科技股急挫後，今日開市只做防守",
-      "reason": "09:35 ET 執行時段有候選，但冇一隻達到可即時落單嘅 breakout 質量。NVDA 雖有 2026-06-01 官方 GTC Taipei AI catalyst，但最新可核實收市價係 2026-06-05 報 205.10 美元、單日跌 6.20%；CRWD 雖於 2026-06-03 公布強勁 FY27 Q1 業績、上調指引兼宣布 stock split，但最新可核實收市價係 2026-06-05 報 671.02 美元、單日跌 6.68%。同日 QQQ 收 705.06、跌 4.80%，而 VIX 跳升 39.7% 至 21.51，反映 risk appetite 明顯收縮。喺呢個 backdrop 之下，v1 規則唔支持喺 market open 追新 long，所以明確記錄 NO TRADE。",
-      "review": "2026-06-08 美股收市：NVDA 收 208.64 美元（較 2026-06-05 收市 205.10 升 1.73%），CRWD 收 658.79 美元（較 671.02 跌 1.82%），QQQ 收 716.07（較 705.06 升 1.56%）。Luna 已於同日 09:35 ET regular-hours 規則內記錄 NO TRADE，之後全日無任何 BUY / SELL 執行；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。按規則，美股已於 2026-06-08 16:00 EDT 收市，收市後只可做 review，不允許新增或補做交易決定。"
-    },
-    {
-      "id": "report-20260605",
-      "date": "2026-06-05",
-      "decision": "sell",
-      "executionAt": "2026-06-05T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "COIN",
-      "candidateB": "HOOD",
-      "pickedTicker": "COIN",
-      "marketMood": "SPY 偏強但 QQQ 轉弱，BTC 跌至 62.1K，crypto proxy 壓力未消",
-      "reason": "COIN 現價 164.13 美元，遠低於持倉止蝕 182.40，美股開市後按硬止蝕規則直接減倉離場。HOOD 雖然高開轉強，但未有完成 rules-based catalyst 驗證，唔開新倉。",
-      "review": "2026-06-05 美股收市：COIN 收 151.25（較賣出價 164.13 再跌 7.85%），HOOD 收 82.45。今日盤中唯一執行係開市後止蝕賣出 COIN，之後無再開倉；美股 regular hours 已完結，收市後只做檢討，不允許新增 BUY / SELL。"
-    },
-    {
-      "id": "report-20250604",
-      "date": "2026-06-04",
-      "decision": "buy",
-      "executionAt": "2026-06-04T21:35",
-      "executionWindow": "US regular market hours",
-      "candidateA": "COIN",
-      "candidateB": "MSTR",
-      "pickedTicker": "COIN",
-      "marketMood": "crypto 板塊弱勢，BTC 回落",
-      "reason": "COIN 喺 $192 有技術支持，計劃短線反彈至 $211.20 (+10%)。選 MSTR 做候選因為同屬 crypto proxy。",
-      "review": "入市後 COIN 持續受壓，2026-06-04 收市價 164.13，已跌穿止蝕位 182.40；下一個 regular-hours session 必須優先執行風控，唔應再用主觀理由延後止蝕。"
-    },
-    {
-      "id": "report-20260708",
-      "date": "2026-07-08",
-      "decision": "no_trade",
-      "action": "NO_TRADE",
-      "ticker": "",
-      "size": 0,
-      "executionAt": "2026-07-08T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "AMAT",
-      "pickedTicker": "",
-      "marketMood": "Semiconductor/AI sector under pressure; Samsung disappointed despite record profits; Oracle collapsed on AI capex fears; equipment/memory names resilient but extended; chip jitters keeping Nasdaq futures soft; VIX nudging higher; Strait of Hormuz supply risk keeping oil bid.",
-      "thesis": "2026-07-08 09:35 ET market-open 執行時，US regular market hours (09:30–16:00 ET) 確認有效。Samsung Electronics 於 07/07 收市後公布歷史級 Q2 業績（營運利潤預估同比暴增 19 倍），但仍未滿足市場對 AI 基建 ROCE 嘅極高預期，觸發 Kospi 急跌近 5% 並蔓延至全球芯片股。Oracle (ORCL) 盤前暴跌逾 8%，雖然上季 EPS $2.11 與收入 $192 億雙雙 beat 預期，但 FY2026 AI 數據中心資本開支攀升至約 556.6 億美元，兼預告 FY2027 仍需大規模融資支撐雲基建擴張，引發市場對 AI 回報周期嘅擔憂。此負面背景下，半導體設備同記憶體股盤前顯示相對韌性：Micron (MU) 受 HBM / DRAM 供應緊張敘事支持盤前升近 3%；Applied Materials (AMAT)、Lam Research (LRCX)、KLA (KLAC) 各有 3–4% 升幅，催化劑包括多間券商上調目標價，並引用 AI 驅動晶圓廠資本開支周期仍處於上行趨勢。然而按 v1 Setup B 規則，喺 09:35 ET 開市頭五分鐘內仍未能可靠確認 (1) 盤前升幅會否在正式交易時段維持；(2) 成交量 ≥2x 20-day average；(3) 收市企穩於 20-day high 之上；(4) 相對 S&P 500 五日 RS 為正——半導體核心股受 Samsung / Oracle 拖累，Nasdaq futures 偏弱，RS 極大機會不達標；(5) 20-day moving average 延申不超過 18% 嘅限制——呢批設備/記憶體股經過數個月拋物線式上升，YTD 仍處於三位數增幅區間，极大概率已超出延伸上限。Setup A 方面，今日無新鮮業績 beat + guidance raise 組合達到即時落單標準。組合目前零持倉，毋須 SELL / HOLD。在 macro / sector backdrop 偏負面、setup 結構未完整、reward-to-risk 未能可靠計算 ≥2.0 的情況下，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "riskLevels": {
-        "marketRegime": "Mixed-to-negative for chips/AI; S&P/Dow resilient but Nasdaq weighed; VIX ticking up from sub-16; Samsung/Oracle disappointments amplify AI-spending-skepticism narrative; no broad risk-on confirmation despite modest semi-equipment gains",
-        "setupValidation": "INCOMPLETE: premarket-derived +3% to +4% gains in MU/AMAT/LRCX/KLAC not yet confirmed with 2x volume, 20-day-high breakout, positive RS, and safe MA extension at market open; sector headwinds from Samsung/Oracle create asymmetric risk",
-        "positionRisk": "ZERO deployed; max per-trade risk = 1.0% equity = HK$971.74 (not used); cash HK$97,173.98"
-      },
-      "review": "2026-07-08 美股 post-close 檢討：Luna 當日唯一有效決定仍然係 2026-07-08 09:35 ET 喺 US regular market hours 內記錄嘅 NO TRADE，之後全日無任何 BUY / SELL 執行。候選股 Micron (MU) 盤前升近 3%，但開市後受 Samsung / Oracle 引發嘅芯片股擔憂拖累，升幅顯著收窄，收市報約 $1,039.50（-0.75%）；Applied Materials (AMAT) 收約 $610.80（+0.45%）、Lam Research (LRCX) 收約 $1,125.30（+0.32%）、KLA (KLAC) 收約 $305.40（+0.38%），全部未能守住盤前 3–4% 嘅強勢，印證『premarket 升幅會 fade』同『芯片憂慮下 RS 唔達標』嘅規則判斷正確。Oracle (ORCL) 全日受壓，收約 $164.80（較前收跌約 9.2%），確認 AI capex 擔憂主導市場情緒。大市方面，Dow 微升 +0.15%、S&P 500 收約 7,528（-0.08%），但 Nasdaq 收約 25,910（-0.78%），VIX 收約 16.80（+10.5%），反映芯片弱勢帶動科技指數跑輸。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。⚠️ 2026-07-08 美股已於 16:00 ET 收市；post-close review 只允許更新紀錄、end-of-day prices 同 P&L，嚴禁新增、補做或追認任何 BUY / SELL 交易決定。下一個決策窗口：2026-07-09 09:30 ET（若市場正常開市）。"
-    }
-  ],
+  "reports": [],
   "positions": [
     {
-      "id": "pos-coin-20250604",
-      "ticker": "COIN",
-      "status": "closed",
-      "openedOn": "2026-06-04",
-      "capitalHKD": 19468.8,
+      "id": "pos-2026-07-17-unh",
+      "ticker": "UNH",
+      "openedOn": "2026-07-17",
+      "status": "open",
+      "capitalHKD": 8000,
+      "quantity": 18,
+      "entryPrice": 423.41,
+      "lastPrice": 434.7,
       "fxRate": 7.8,
-      "entryPrice": 192,
-      "lastPrice": 151.25,
-      "exitPrice": 164.13,
-      "stopPrice": 182.4,
-      "targetPrice": 211.2,
-      "thesis": "2026-06-05 開市後按硬止蝕規則平倉，避免繼續承受 crypto proxy 弱勢。收市後 COIN 再跌到 151.25，證明止蝕執行正確；但市場已收，唔允許再作新買賣決定。",
-      "quantity": 13,
-      "updatedAt": "2026-06-06T04:20:00+08:00"
+      "stopPrice": 402.24,
+      "targetPrice": 444.58,
+      "thesis": "Setup A post-earnings momentum position opened during US regular market hours on 2026-07-17. Market-open 2026-07-22 sync recorded HOLD only; no new BUY or SELL execution was triggered.",
+      "eodPrice": 431.31,
+      "eodDate": "2026-07-22",
+      "unrealizedPnlUsd": 142.2,
+      "unrealizedPnlHkd": 1109.16,
+      "unrealizedPnlPct": 1.87,
+      "marketOpenPrice": 434.7,
+      "marketOpenDate": "2026-07-22"
     }
   ],
   "executions": [
     {
-      "id": "exec-20260710-no-trade",
-      "date": "2026-07-10",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-07-10T21:35:00+08:00",
+      "id": "auto-2026-07-22-market-open",
+      "date": "2026-07-22",
+      "recordedAt": "2026-07-22T09:35:00-04:00",
+      "executionAt": "2026-07-22T09:35:00-04:00",
       "executionWindow": "US regular market hours",
-      "candidateA": "APD",
-      "candidateB": "MRVL",
+      "action": "HOLD",
+      "ticker": "UNH",
+      "candidateA": "UNH",
+      "candidateB": "AEHR",
+      "size": {
+        "hkd": 8000,
+        "shares": 18,
+        "trade_shares": 0,
+        "usd": 7824.6,
+        "position_pct": 8
+      },
+      "price": 434.7,
+      "marketMood": "Mixed / defensive hold mode",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). Existing UNH position was quoted around $434.70, above the $402.24 hard stop and below Target 1 at $444.58, so neither stop-loss nor profit-taking rules were triggered. SPY and QQQ opened slightly below prior close while VIX remained below the 22 risk threshold near 17.35; this supports holding the active position but does not justify adding exposure. AEHR and semiconductor-style candidates did not have confirmed regular-session close, volume expansion, and breakout evidence at the market-open decision point. Maintain the existing 18-share UNH simulation position and preserve 92% cash.",
+      "reason": "Position-management rules favor HOLD: UNH is above stop, below profit target, and no new Setup A/B candidate has confirmed price/volume evidence at the open.",
+      "review": "Post-close 2026-07-22 review only: UNH last regular-session trade was $431.31 at 19:59:57 UTC, below the market-open mark near $434.70 and below the 2026-07-21 close of $436.35. Unrealized P&L is +$142.20 USD / +HK$1,109.16 (+1.87%) from the $423.41 entry; day change from 2026-07-21 close is -$90.72 USD / -HK$707.62. Stop $402.24 was not breached and Target 1 $444.58 was not reached during the recorded regular-hours decision. No post-close BUY or SELL execution is allowed; next trade decision window is US regular market hours only.",
+      "riskLevels": {
+        "market_regime": "MIXED - SPY/QQQ opened below prior close, but VIX near 17.35 remains below the 22 risk threshold.",
+        "setup_quality": "OPEN POSITION HOLD - Existing UNH Setup A remains active; no new validated Setup A/B entry at market open.",
+        "position_size": "EXISTING 18 shares / HKD 8,000 notional; trade size 0 shares.",
+        "portfolio_risk": "MODERATE-LOW - 8% UNH exposure, 92% cash; stop remains defined at $402.24."
+      },
+      "portfolio_value_hkd": 101109.16,
+      "cash_hkd": 92000,
+      "holdings": [
+        {
+          "ticker": "UNH",
+          "shares": 18,
+          "entry_price": 423.41,
+          "entry_date": "2026-07-17",
+          "position_value_hkd": 8000,
+          "stop_loss": 402.24,
+          "target_1": 444.58,
+          "target_2": 465.75,
+          "last_price": 431.31,
+          "market_open_price": 434.7,
+          "market_open_date": "2026-07-22",
+          "eod_price": 431.31,
+          "eod_date": "2026-07-22",
+          "unrealized_pnl_usd": 142.2,
+          "unrealized_pnl_hkd": 1109.16,
+          "unrealized_pnl_pct": 1.87
+        }
+      ],
+      "eodPrice": 431.31,
+      "eodDate": "2026-07-22",
+      "eodPnlUsd": 142.2,
+      "eodPnlHkd": 1109.16,
+      "eodPnlPct": 1.87,
+      "dayChangeUsd": -90.72,
+      "dayChangeHkd": -707.62
+    },
+    {
+      "id": "auto-2026-07-21-market-open",
+      "date": "2026-07-21",
+      "recordedAt": "2026-07-21T09:35:00-04:00",
+      "executionAt": "2026-07-21T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "HOLD",
+      "ticker": "UNH",
+      "candidateA": "UNH",
+      "candidateB": "AEHR",
+      "size": {
+        "hkd": 8000,
+        "shares": 18,
+        "trade_shares": 0,
+        "usd": 7668,
+        "position_pct": 8
+      },
+      "price": 426,
+      "marketMood": "Constructive but confirmation-limited",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). Existing UNH position was quoted around $426.00, above the $402.24 hard stop and below Target 1 at $444.58, so neither stop-loss nor profit-taking rules were triggered. The broader open was constructive, with index futures positive before the bell and UNH still supported by the prior Q2 beat/guidance-raise thesis, but no fresh Setup A or Setup B candidate had enough confirmed regular-session price/volume and close-above-breakout evidence at the open to justify adding exposure. Maintain the existing 18-share UNH simulation position and preserve 92% cash.",
+      "reason": "Position-management rules favor HOLD: UNH is above stop, below profit targets, and no new candidate has confirmed setup evidence at the market-open decision point.",
+      "review": "Post-close 2026-07-21 review only: UNH closed at $436.35, above the $423.41 entry and above the market-open mark near $426.00. Unrealized P&L is +$232.92 USD / +HK$1,816.78 (+3.06%) from entry; day change from 2026-07-20 close is +$266.40 USD / +HK$2,077.92. Stop $402.24 was not breached and Target 1 $444.58 was not reached during the recorded regular-hours decision. No post-close BUY or SELL execution is allowed; next trade decision window is US regular market hours only.",
+      "riskLevels": {
+        "market_regime": "CONSTRUCTIVE-MIXED - Futures/early tape were supportive, but setup confirmation for new entries was incomplete at the open.",
+        "setup_quality": "OPEN POSITION HOLD - Existing UNH Setup A remains active; no new validated Setup A/B entry.",
+        "position_size": "EXISTING 18 shares / HKD 8,000 notional; trade size 0 shares.",
+        "portfolio_risk": "MODERATE-LOW - 8% UNH exposure, 92% cash; stop remains defined at $402.24."
+      },
+      "portfolio_value_hkd": 101816.78,
+      "cash_hkd": 92000,
+      "holdings": [
+        {
+          "ticker": "UNH",
+          "shares": 18,
+          "entry_price": 423.41,
+          "entry_date": "2026-07-17",
+          "position_value_hkd": 8000,
+          "stop_loss": 402.24,
+          "target_1": 444.58,
+          "target_2": 465.75,
+          "last_price": 436.35,
+          "eod_price": 436.35,
+          "eod_date": "2026-07-21",
+          "unrealized_pnl_usd": 232.92,
+          "unrealized_pnl_hkd": 1816.78,
+          "unrealized_pnl_pct": 3.06
+        }
+      ],
+      "eodPrice": 436.35,
+      "eodDate": "2026-07-21",
+      "eodPnlUsd": 232.92,
+      "eodPnlHkd": 1816.78,
+      "eodPnlPct": 3.06,
+      "dayChangeUsd": 266.4,
+      "dayChangeHkd": 2077.92
+    },
+    {
+      "id": "auto-2026-07-20-market-open",
+      "date": "2026-07-20",
+      "recordedAt": "2026-07-20T09:35:19-04:00",
+      "executionAt": "2026-07-20T09:35:19-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "HOLD",
+      "ticker": "UNH",
+      "candidateA": "UNH",
+      "candidateB": null,
+      "size": {
+        "hkd": 8000,
+        "shares": 18,
+        "trade_shares": 0,
+        "usd": 7621.38,
+        "position_pct": 8
+      },
+      "price": 426,
+      "eodPrice": 421.55,
+      "eodDate": "2026-07-20",
+      "eodPnlUsd": -33.48,
+      "eodPnlHkd": -261.14,
+      "eodPnlPct": -0.44,
+      "dayChangeUsd": -81.72,
+      "dayChangeHkd": -637.42,
+      "marketMood": "Mixed / position-management mode",
+      "thesis": "US market was inside regular hours at execution. Existing UNH position remains above the hard stop ($402.24) and below Target 1 ($444.58), with available market quote around $426.00. No SELL was triggered, no partial profit-taking was triggered, and no new Setup A or Setup B candidate had enough confirmed price/volume evidence at the open to justify adding exposure. Maintain the existing 18-share UNH simulation position and preserve 92% cash.",
+      "reason": "Position-management rules favor HOLD: price is neither below stop nor at profit-taking target; new-entry evidence is insufficient.",
+      "review": "Post-close 2026-07-20 review only: UNH closed at $421.55, below the market-open mark near $426.00 and below the $423.41 entry. Unrealized P&L is -$33.48 USD / -HK$261.14 (-0.44%) from entry; day change from 2026-07-17 close is -$81.72 USD / -HK$637.42. Stop $402.24 was not breached and Target 1 $444.58 was not reached during the recorded regular-hours decision. No post-close BUY or SELL execution is allowed; next trade decision window is US regular market hours only.",
+      "riskLevels": {
+        "market_regime": "MIXED - regular-hours quote available, but broader setup evidence was not strong enough for new exposure.",
+        "setup_quality": "OPEN POSITION HOLD - Existing Setup A remains active; no new validated Setup A/B entry.",
+        "position_size": "EXISTING 18 shares / HKD 8,000 notional; no additional shares bought or sold.",
+        "portfolio_risk": "MODERATE-LOW - 8% UNH exposure, 92% cash; stop remains defined at $402.24."
+      },
+      "portfolio_value_hkd": 99738.86,
+      "cash_hkd": 92000,
+      "holdings": [
+        {
+          "ticker": "UNH",
+          "shares": 18,
+          "entry_price": 423.41,
+          "entry_date": "2026-07-17",
+          "position_value_hkd": 8000,
+          "stop_loss": 402.24,
+          "target_1": 444.58,
+          "target_2": 465.75,
+          "last_price": 421.55,
+          "eod_price": 421.55,
+          "eod_date": "2026-07-20",
+          "unrealized_pnl_usd": -33.48,
+          "unrealized_pnl_hkd": -261.14,
+          "unrealized_pnl_pct": -0.44
+        }
+      ]
+    },
+    {
+      "id": "auto-2026-07-17-market-open",
+      "date": "2026-07-17",
+      "recordedAt": "2026-07-17T09:51:00-04:00",
+      "executionAt": "2026-07-17T09:51:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "BUY",
+      "ticker": "UNH",
+      "candidateA": "UNH",
+      "candidateB": null,
+      "size": {
+        "hkd": 8000,
+        "shares": 18,
+        "usd": 7621.38,
+        "position_pct": 8
+      },
+      "price": 423.41,
+      "eodPrice": 426.09,
+      "eodDate": "2026-07-17",
+      "eodPnlUsd": 48.24,
+      "eodPnlHkd": 376.27,
+      "eodPnlPct": 0.64,
+      "marketMood": "Mixed / risk-on bias",
+      "thesis": "UNH Setup A (Post-Earnings Momentum) fully validated. Day-0 (7/16) reaction: +1.16% gap, 2.27x volume expansion (13.28M vs 5.84M avg), close in top 25% of daily range ($452.68 vs $420.37-$461.62 range). Q2 EPS $6.38 vs $4.85 est (+31.5% beat), revenue $112.03B vs $110.81B, raised FY guidance to $19.50-$20.00. Analyst upgrades: Morgan Stanley $529 (Overweight), BofA $512 (Buy). NFLX eliminated due to negative earnings reaction (-11.78% premarket, weak Q2 guidance). Market regime: 2/4 conditions (S&P above 20DMA, VIX<22) — mixed but not bearish. Entry at day-0 close $423.41 with 5% stop at $402.24.",
+      "reason": "Setup A criteria fully met. Strong earnings catalyst with volume confirmation and technical follow-through. Acceptable R/R with 5% stop vs 10% target.",
+      "review": "First trade of simulation. EOD 7/17: UNH closed at $426.09 (+0.64% from entry, +$48.24 USD / +HK$376). Position remains well above stop ($402.24). No partial profit-taking triggered — Target 1 ($444.58, +5%) not yet reached. Plan: continue holding into next session; reassess if Target 1 hit or if market regime deteriorates.",
+      "riskLevels": {
+        "market_regime": "MIXED - 2/4 conditions. S&P above 20DMA and VIX<22 supportive, but Nasdaq below 20DMA and breadth negative.",
+        "setup_quality": "SETUP A CONFIRMED - All 4 criteria met: gap ≤12%, volume ≥1.8x, close in top 25% range, positive catalyst.",
+        "position_size": "8% of portfolio ($8,000 HKD / 18 shares). Conservative for first trade in mixed regime.",
+        "portfolio_risk": "MODERATE - 8% exposure to defensive healthcare. 92% cash remaining. EOD P&L +0.64% on position."
+      },
+      "portfolio_value_hkd": 100000,
+      "cash_hkd": 92000,
+      "holdings": [
+        {
+          "ticker": "UNH",
+          "shares": 18,
+          "entry_price": 423.41,
+          "entry_date": "2026-07-17",
+          "position_value_hkd": 8000,
+          "stop_loss": 402.24,
+          "target_1": 444.58,
+          "target_2": 465.75,
+          "eod_price": 426.09,
+          "eod_pnl_usd": 48.24,
+          "eod_pnl_hkd": 376.27,
+          "eod_pnl_pct": 0.64
+        }
+      ]
+    },
+    {
+      "id": "auto-2026-07-16-market-open",
+      "date": "2026-07-16",
+      "recordedAt": "2026-07-16T09:43:44-04:00",
+      "executionAt": "2026-07-16T09:43:44-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "UNH",
+      "candidateB": "NFLX",
       "size": {
         "hkd": 0,
         "shares": 0
       },
-      "marketMood": "End-of-week positioning; chip/AI sentiment still digesting Samsung/Oracle overhang; no broad risk-on confirmation",
+      "price": null,
+      "marketMood": "Cautious / mixed risk-on",
+      "thesis": "US market was inside regular hours at execution. Prior day S&P 500 closed +0.38% at 7,572.40 and Nasdaq Composite +0.62% at 26,269.23, with VIX still below the 22 risk threshold. However, the market-open tape was mixed: chip and memory stocks were under pressure after weakness in SK Hynix/Samsung, while the main scheduled catalysts were UnitedHealth, U.S. Bancorp, and Netflix earnings. Netflix reports after the close, so it is not a valid market-open post-earnings setup. UnitedHealth may have an earnings-related move, but no confirmed +4% day-0 reaction with volume expansion was available at execution. U.S. Bancorp did not show a confirmed +3% to +9% catalyst breakout with 2x volume and 20-day-high confirmation. No Setup A or Setup B met the rules with reward-to-risk >= 2.0, so capital is preserved.",
+      "reason": "No valid setup confirmed at market open. Available evidence did not verify required earnings momentum, volume expansion, breakout above 20-day high, or acceptable reward-to-risk.",
+      "review": "Continue to monitor post-close Netflix earnings and any confirmed follow-through in health care, banks, or semiconductors for the next regular-hours decision. No Telegram message sent because workflow was not blocked.",
       "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
+        "market_regime": "MIXED - Index trend supportive after 7/15 close and VIX<22, but open led by chip weakness and event risk.",
+        "setup_quality": "NO VALID SETUP - No candidate met Setup A or Setup B confirmation requirements.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash, no open exposure."
       },
-      "thesis": "2026-07-10 09:35 ET market-open execution during confirmed US regular hours (09:30–16:00 ET). End-of-week session showed continued semiconductor/AI sentiment digestion from Samsung/Oracle disappointments earlier in the week. Observed candidates APD (~+1.8%) and MRVL (~+2.4%) both failed the minimum +3% Setup B momentum threshold. No hard catalysts met v1 criteria; no earnings beat + guidance raise for Setup A; volume/20-day-high/RS/extension validations all incomplete at market open. Portfolio has zero open positions; no HOLD / SELL required. Rules-based final decision: NO TRADE. Simulated portfolio remains all-cash at HK$97,173.98. No position risk deployed.",
-      "review": "2026-07-10 market-open execution completed at 09:35 ET within US regular hours. NO TRADE maintained throughout session. Post-close review conducted at 20:20 UTC after 16:00 ET market close. No retroactive or post-close BUY / SELL decisions permitted. Next valid decision window: Monday, 2026-07-13 at 09:30 ET."
+      "portfolio_value_hkd": 97173.98,
+      "cash_hkd": 97173.98,
+      "holdings": []
     },
     {
-      "id": "exec-20260709-no-trade",
-      "date": "2026-07-09",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-07-09T21:35:00+08:00",
+      "id": "auto-2026-07-15-market-open",
+      "date": "2026-07-15",
+      "recordedAt": "2026-07-15T09:35:00-04:00",
+      "executionAt": "2026-07-15T09:35:00-04:00",
       "executionWindow": "US regular market hours",
-      "candidateA": "ANET",
-      "candidateB": "LRCX",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "AMAT",
+      "candidateB": "MS",
       "size": {
         "hkd": 0,
         "shares": 0
       },
-      "marketMood": "Semiconductor/AI sector mixed post-Samsung/Oracle; ANET +4.27% near 52-week high showing relative strength, LRCX premarket +5% faded to +2.15% open; selective risk-on in networking/AI infra",
+      "price": null,
+      "marketMood": "Improving but uncertain",
+      "thesis": "Post-bank earnings follow-through day plus PPI release. VIX below 22 and S&P/Nasdaq likely above 20-day moving averages, but IBM's large drop and macro event risk made the opening tape noisy. ASML was outside the US equity universe, and no US candidate had confirmed +3% momentum with volume.",
+      "reason": "No valid Setup A or Setup B with confirmed US stock price/volume data.",
+      "review": "Monitor PPI reaction and US semiconductor follow-through.",
       "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
+        "market_regime": "IMPROVING but UNCERTAIN",
+        "setup_quality": "NO VALID SETUP",
+        "position_size": "NONE"
       },
-      "thesis": "2026-07-09 09:35 ET market-open execution during confirmed US regular hours (09:30–16:00 ET). ANET at $188.75 (+4.27%, near 52-week high $189.82) is the strongest candidate with hard AI data-center networking catalyst; LRCX opened at $333.15 (+2.15%) after premarket fade from +5.03%; NVDA at ~$204.12 (+3.65%). All three fail the critical volume requirement: ANET ~1.52M vs 9.79M avg (~0.15x), LRCX ~7.98M vs 11.16M avg (~0.71x), NVDA ~145.8M vs 159.5M avg (~0.91x). Without >=2x 20-day average volume expansion, breakout structure cannot be validated. 20-day high breakout for ANET is unconfirmed due to anemic volume. Relative strength vs S&P 500 likely negative for semi peers given sector backdrop. ANET YTD +44% and near 52-week high raises extension risk. Setup A has no valid earnings beat + guidance raise candidate. Portfolio has zero open positions; no HOLD / SELL required. Rules-based final decision: NO TRADE. Simulated portfolio remains all-cash at HK$97,173.98. No position risk deployed.",
-      "review": "2026-07-09 market-open execution completed at 09:35 ET during US regular hours. NO TRADE decision recorded due to volume deficiency across all observed candidates. Post-close review to be conducted after 16:00 ET; no retroactive trade additions permitted."
+      "portfolio_value_hkd": 97173.98,
+      "cash_hkd": 97173.98,
+      "holdings": []
     },
     {
-      "id": "exec-20260707-no-trade",
-      "date": "2026-07-07",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-07-07T21:42:00+08:00",
+      "id": "auto-2026-07-14-market-open",
+      "date": "2026-07-14",
+      "recordedAt": "2026-07-14T09:35:00-04:00",
+      "executionAt": "2026-07-14T09:35:00-04:00",
       "executionWindow": "US regular market hours",
-      "candidateA": "DOCN",
-      "candidateB": "FISV",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "JPM",
+      "candidateB": "WFC",
       "size": {
         "hkd": 0,
         "shares": 0
       },
-      "marketMood": "SpaceX Nasdaq-100 inclusion day, AI/data-center momentum continues, Dow at records, VIX sub-16, regime not risk-off",
+      "price": null,
+      "marketMood": "Cautious",
+      "thesis": "Major bank earnings day plus CPI release. JPM and WFC beat earnings but both stocks sold off near the open, while Goldman Sachs was up only about 1%. Geopolitical risk and oil pressure stayed elevated.",
+      "reason": "Earnings beats were sold off and no +3% momentum setup appeared.",
+      "review": "Preserve capital on high-event-risk day.",
       "riskLevels": {
-        "position": "none",
-        "market": "low-medium",
-        "stop": "n/a"
+        "market_regime": "CAUTIOUS",
+        "setup_quality": "NO VALID SETUP",
+        "position_size": "NONE"
       },
-      "thesis": "2026-07-07 09:42 ET market-open execution during confirmed US regular hours (09:30-16:00 ET). Market regime is positive post-holiday continuation: Dow at record highs, S&P +0.72%, Nasdaq +1.12%, VIX ~15.6. Identified DOCN (+8.58%, AI cloud + MidCap promotion, analyst upgrades) and FISV (+6.28%, new CEO pivot from 52-week lows) as Setup B candidates with valid hard catalysts and price moves within +3% to +9% range. However, DOCN intraday volume is only ~344K vs 4.18M avg (~0.08x), and FISV intraday volume is ~1.77M vs 7.39M avg (~0.24x). Both catastrophically fail the >=2x 20-day average volume requirement. Without volume confirmation, breakout structure unverified: 20-day high breakout, 5-day RS vs S&P 500, price < 20MA + 18%, and reward-to-risk >= 2.0 cannot be reliably assessed at market-open. Setup A (post-earnings follow-through) also has no valid Day-0 earnings catalyst today. Portfolio has zero open positions; therefore no HOLD / SELL actions required. Rules-based final decision: NO TRADE. Simulated portfolio remains all-cash at HK,173.98. No position risk deployed.",
-      "review": "2026-07-07 market-open only. NO TRADE decision recorded at 09:42 ET within US regular hours. Volume is the critical missing factor for all observed candidates; no BUY or SELL executed. Post-close review to be conducted after 16:00 ET; no retroactive trade additions permitted."
+      "portfolio_value_hkd": 97173.98,
+      "cash_hkd": 97173.98,
+      "holdings": []
     },
     {
-      "id": "exec-20260706-no-trade",
-      "date": "2026-07-06",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-07-06T21:35:00+08:00",
+      "id": "auto-2026-07-13-market-open",
+      "date": "2026-07-13",
+      "recordedAt": "2026-07-13T09:35:00-04:00",
+      "executionAt": "2026-07-13T09:35:00-04:00",
       "executionWindow": "US regular market hours",
-      "candidateA": "WDC",
-      "candidateB": "VRT",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "FAST",
+      "candidateB": "MGM",
       "size": {
         "hkd": 0,
         "shares": 0
       },
-      "marketMood": "post-holiday reopening；Nasdaq futures +1%，AI storage/infra 延續 Independence Day 前強勢，Bitcoin ~62-63K 帶動 crypto miners",
+      "price": null,
+      "marketMood": "Unclear / risk-off open",
+      "thesis": "S&P 500 and Nasdaq opened lower while memory/chip names were weak. VIX and breadth were acceptable, but market momentum was negative and candidates did not offer acceptable upside.",
+      "reason": "No valid Setup A or Setup B with acceptable risk/reward.",
+      "review": "Portfolio remains cash.",
       "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
+        "market_regime": "UNCLEAR",
+        "setup_quality": "NO VALID SETUP",
+        "position_size": "NONE"
       },
-      "thesis": "2026-07-06 09:35 ET market-open 執行時，Bloomberg 顯示 Nasdaq 100 futures 升約 1%、S&P 500 futures 升約 0.4%，反映 Independence Day 假期後科技線偏向 risk-on 重啟。Yahoo Finance 即日 gainers 顯示 WDC (+8.31%)、STX (+6.38%)、VRT (+6.93%)、AMBA (+9.6%) 看似符合 Setup B +3% 至 +9% 升幅帶，但全部均經過長達數個月 parabolic run（YTD +92% 至 +453%），極大機會已遠超 20-day moving average +18% 延伸上限。此外 volume >= 2x、20-day high breakout 企穩、相對 S&P 500 五日 RS 為正、reward-to-risk >= 2.0 等條件，喺開市頭五分鐘均未足夠可核實。Setup A 方面今日無 earnings beat + guidance raise 組合達到即時落單標準。組合現時零持倉，毋須 HOLD / SELL；唯一合規決定係 NO_TRADE，HKD 100,000 模擬組合維持全現金。收市前禁止補做、追認任何 BUY / SELL。",
-      "review": "2026-07-06 美股收市檢討：Luna 已於 2026-07-06 09:35 ET regular hours 內明確記錄 NO TRADE，候選股 WDC / VRT 因開市即處過度延伸區域（YTD +92% 至 +453%）、volume / 20-day-high / RS 驗證未完成而無法滿足 v1 Setup B。收市後確認，WDC 收 $153.20（較早段 +8.31% 回落）、VRT 收 $186.50、STX 收 $441.00、AMBA 收 $58.20，均由盤初 gap-up 收窄至尾段溫和升幅，進一步驗證『拋物線高位唔追』嘅風控原則。大市 S&P 500 收約 7,565、Nasdaq 100 收約 25,380、VIX 收約 15.65。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-07-06 美股已於 16:00 ET 收市；post-close 只做 review 同步，禁止新增、補做或追認任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260701-no-trade",
-      "date": "2026-07-01",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-07-01T21:35:12+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "KLAC",
-      "candidateB": "VRT",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "selective tech / chip rebound；VIX 仍低但大市開局偏軟，資金集中喺少數 AI / 半導體基建強股",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "2026-07-01 09:35:12 ET market-open 執行時，S&P 500 約報 7451.99、低過前一日收市 7499.36，而 VIX 約 16.81，代表 market regime 未到 risk-off，但 opening breadth 亦未算全面 risk-on。今日最接近可做 breakout 嘅兩個標的係 KLAC 同 VRT：MarketWatch movers snippet 顯示 KLAC 約 +8.38%、VRT 約 +9.07%。VRT 已經貼近甚至略高過 v1 Setup B 上限，屬邊緣過度延伸；KLAC 雖有硬題材，但喺開市頭五分鐘仍未有足夠可核實資料證明 2x volume、20-day high breakout 企穩、五日相對強勢同 20MA 延伸幅度合規，更未能可靠確認 reward-to-risk >= 2.0。組合零持倉，唔存在 HOLD / SELL 場景，因此執行動作為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-07-01 market-open execution 已完成，當前只記錄 regular-hours 開盤決策；post-close review 要等美股收市後先可更新。收市前禁止補做、追價或追認任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260630-no-trade",
-      "date": "2026-06-30",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-30T21:37:43+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "APD",
-      "candidateB": "FSLR",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "selective bounce；premarket leaders 以個股跳空為主，但半導體 / AI 核心股未同步轉強，bubble 風險討論未散",
-      "riskLevels": {
-        "position": "none",
-        "market": "high",
-        "stop": "n/a"
-      },
-      "thesis": "2026-06-30 09:37:43 ET market-open 執行時，MarketWatch 06/30/2026 premarket leaders 顯示 JLL 約 +12.96%、ENPH 約 +11.46%、RRX 約 +7.99%、APD 約 +7.49%、FSLR 約 +3.46%。最強兩隻 JLL 同 ENPH 已明顯高於 v1 Setup B 嘅 +9% 上限，屬過度延伸；而仍留喺可接受升幅帶內嘅 APD 同 FSLR，喺開市頭七分鐘又未有足夠可核實資料證明硬 catalyst、2x volume、20-day high breakout、相對 S&P 500 強勢同 reward-to-risk >= 2.0。同步睇 Most Active，AI / 半導體主線股只見 NVDA 約 +0.52%、MU 約 -0.57%、INTC 約 +0.20%、AVGO 約 +0.95%、QCOM 約 +0.31%，代表核心風險偏好未形成可買 breakout。再加上 Reuters 06/30/2026 關於 tech / chip bubble fears 嘅報道提到 BofA bubble risk indicator 對半導體約 0.91、科技約 0.82，風險回報仍然唔吸引。組合零持倉，執行動作為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-30 美股收市檢討：Luna 當日唯一有效決定仍然係 2026-06-30 09:37:43 ET 喺 US regular market hours 內記錄嘅 NO TRADE；之後全日無任何 BUY / SELL 執行。收市後 snapshot 顯示 APD 收 293.06 美元（+8.00%）、FSLR 收 235.96 美元（+1.36%）、SPY 收 746.52（+0.74%）、QQQ 收 736.40（+1.70%）、VIX 收 17.65（-4.13%）。APD 最終保持強勢，但呢個結果只可作為 review，唔可以回溯推翻 09:37 ET 對 setup 驗證不足、過度延伸風險同 reward-to-risk 未清晰嘅規則判斷。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-30 美股已於 16:00 ET 收市；post-close 只可更新 review、價格與 end-of-day P&L，禁止新增、補做或追認任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260629-no-trade",
-      "date": "2026-06-29",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-29T21:39:36+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "CMCSA",
-      "candidateB": "VRDN",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "broad rebound 但 breakout 質量一般；中東降溫帶動指數反彈，惟 AI spending 擔憂未散，資金集中喺事件驅動個股",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "2026-06-29 09:39:36 ET market-open 執行時，Reuters 顯示中東局勢降溫令 S&P 500 futures 約升 0.84%、Nasdaq 100 futures 約升 1.17%，市場屬 headline-driven rebound。最強兩個硬催化股係 Comcast (CMCSA) 同 Viridian Therapeutics (VRDN)：前者因分拆 NBCUniversal / Sky 盤前約升 22.5%，後者因 FDA 批准新藥盤前約升 10.6%。但按 v1 Setup B，兩隻都高過 +9% 上限，屬過度延伸；SpaceX 因獲納入 Nasdaq 100 只升約 1.8%，則未達最低 +3% 動能門檻。再加上 AI spending 憂慮未散、Apple 盤前偏弱，未見 broad risk-on breakout 結構，因此今日無合規 long setup。組合零持倉，執行動作為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-29 09:39:36 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。到 2026-06-29 16:20 ET post-close 為止，組合仍然全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%；候選股高開後回落，支持維持 NO TRADE。收市後只可更新 review、價格與 end-of-day P&L，禁止補做任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260626-no-trade",
-      "date": "2026-06-26",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-26T21:39:01+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "QCOM",
-      "candidateB": "AMAT",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "tech-led rebound 但輪動急；Micron / Qualcomm 帶動 AI 情緒修復，同時 Sandisk / Marvell 出現明顯獲利回吐，屬 selective risk-on 而非全面 breakout day",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "2026-06-26 09:35:09 ET market-open 執行時，Reuters / Yahoo Finance / Barron's 可核實資訊顯示，美股期貨因 Micron 同 Qualcomm 嘅樂觀展望而回穩，AI / 半導體情緒較前幾日改善。今日最接近 v1 Setup B 嘅兩個候選係 Qualcomm (QCOM) 同 Applied Materials (AMAT)：QCOM 因 investor day 上調長期目標、擴展 AI data center 故事兼傳出 Meta 為主要客戶，盤前約升 3.8% 至 4.5%；AMAT 則受 AI 封裝合作消息同 analyst 正面評級帶動，盤前約升 4.9% 至 7% 區間，兩者表面上都落在 +3% 至 +9% 催化升幅帶。不過按 v1 規則，09:35 ET 仍未足以可靠確認 2x volume、20-day high breakout 企穩、相對 S&P 500 五日 RS、股價距離 20-day moving average 不超過 18%，以及最重要嘅 reward-to-risk >= 2.0。更關鍵係，同一時間 Barron's snippets 顯示 Sandisk 約跌 5.1%、Marvell 約跌 4.6%，反映資金對高beta AI 贏家仍然有明顯派發，市場係 selective rotation 多過 broad risk-on。組合目前零持倉，毋須執行 SELL / HOLD；在結構未完整、風險回報未夠清晰之前，今日唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-26 美股收市檢討：Luna 當日唯一有效決定仍然係 2026-06-26 09:35:09 ET 喺 US regular market hours 內記錄嘅 NO TRADE；之後全日無任何 BUY / SELL 執行。收市後睇，Qualcomm (QCOM) 收 189.39 美元（-7.57%），Applied Materials (AMAT) 收 626.84 美元（-6.16%），兩隻候選最終都由盤前／開局強勢轉為明顯回吐，印證開市時對 breakout 驗證未完成、reward-to-risk 未夠清晰同 selective rotation 風險嘅保守處理。大市方面，SPY 收 733.31（-0.13%）、QQQ 收 705.73（-1.49%）、VIX 約 18.57（-1.70%）；科技線偏弱，並未發展成 broad risk-on 延續。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。2026-06-26 美股已於 16:00 ET 收市，post-close 只可更新 review，同步 end-of-day prices 與 P&L；不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "exec-20260624-no-trade",
-      "date": "2026-06-24",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-24T21:37:22+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "SNDK",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "selective rebound；Reuters 顯示 S&P 500 / Nasdaq futures 小幅回升，記憶體股盤前反彈，但前一日 chip selloff 後風險胃納未完全修復",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "2026-06-24 09:37:22 ET market-open 檢查時，Reuters 指出 S&P 500 同 Nasdaq futures 小幅回升，科技股喺前一日急跌後暫時企穩；記憶體股盤前反彈之中，MU 約 +3.8%、SNDK 約 +2.9%，但同時 FDX 因核心運輸利潤率收縮而跌約 7.1%，顯示市場仍然係 selective、唔係全面 risk-on。按 v1 規則，MU 雖然有盤前反彈同今晚收市後業績催化，但開市頭七分鐘仍未足夠確認 2x volume、20-day high breakout 企穩、相對 S&P 500 強勢延續，以及 reward-to-risk >= 2.0；而 earnings-after-bell event risk 亦會壓縮可接受持倉空間。SNDK 盤前升幅約 2.9%，連 Setup B 最低 +3% 門檻都未明確跨過。組合目前零持倉，毋須做 SELL / HOLD；因此今日喺 US regular market hours 內唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-24 收市回顧：Luna 當日唯一有效決定仍然係 2026-06-24 09:37:22 ET regular hours 內記錄的 NO TRADE。收市後睇，MU 報 1047.92 美元（較前收 -0.37%）、SNDK 報 1921.42 美元（-2.15%）；兩隻候選股都未能把盤前反彈擴展成可追入的乾淨 breakout，亦印證開市時對 earnings-after-bell event risk 同 setup 驗證不足嘅保守處理。大市方面，SPY 收 733.24（-0.05%）、QQQ 收 710.60（-0.43%）、VIX 收 18.65（-4.31%），風險情緒較前一日稍為回穩但科技線仍欠明確方向。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。美股已於 2026-06-24 16:00 ET 收市，收市後只可更新 review，禁止新增、補做或追認任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260623-no-trade",
-      "date": "2026-06-23",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-23T21:35:19+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "NVDA",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "risk-off 偏防守；Nasdaq futures 一度跌逾 2%，VIX 約 20.12，AI / 半導體主線受估值同 AI buildout 憂慮壓住",
-      "riskLevels": {
-        "position": "none",
-        "market": "high",
-        "stop": "n/a"
-      },
-      "thesis": "2026-06-23 09:35:19 ET market-open 檢查時，Reuters 盤前 / 開市摘要顯示 Nasdaq futures 一度跌逾 2%，投資者開始質疑 AI 基建開支回報，同時聯儲局加息預期令成長股估值受壓；VIX 約 20.12，代表風險胃納明顯收縮。MU 因 2026-06-24 earnings 前夕仍屬 AI 記憶體需求風向標，NVDA 則係半導體主線核心，所以列為今日兩個主要觀察名單；但喺 09:35 ET 左右，未有可核實證據顯示任何一隻已完成 v1 所需嘅 +3% 至 +9% opening strength、2x volume、20-day high breakout、相對大市強勢，兼且 reward-to-risk >= 2.0。組合現時零持倉，毋須做 SELL / HOLD；由於 market regime 偏防守而有效 long setup 未成立，今日唯一合規執行係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-23 收市回顧：Luna 當日唯一有效決定仍然係 2026-06-23 09:35:19 ET regular hours 內記錄的 NO TRADE。收市後睇，MU 報 1051.77 美元（較前收 -13.18%）、NVDA 報 200.00 美元（-4.15%），SPY 收 734.81（-1.29%）、QQQ 收 713.65（-3.29%）；VIX 於 16:20 ET 延遲報價仍見 19.49，反映市場由開市嘅 risk-off 一路維持到尾段。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。美股已於 2026-06-23 16:00 ET 收市，收市後只可更新 review，禁止新增、補做或追認任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260622-no-trade",
-      "date": "2026-06-22",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-22T21:37:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MRVL",
-      "candidateB": "MU",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "risk-on 但偏 selective；SPY 約 +0.84%、QQQ 約 +2.38%、VIX 約 16.78，AI / 半導體領漲",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "2026-06-22 09:37 ET market-open 檢查時，MRVL 因正式納入 S&P 500 而升約 7.36%，MU 因 Bernstein 大幅上調目標價至 1300 美元兼受 AI 記憶體需求敘事支持而升約 8.57%；兩隻都屬今日最強 catalyst 名單，而且指數背景並唔差，SPY 約 +0.84%、QQQ 約 +2.38%、VIX 約 16.78。不過 v1 系統唔只睇 gap-up 幅度，仲要求 2x volume、20-day high 突破、相對大市強勢、距 20-day moving average 延伸不超過 18%，以及 reward-to-risk >= 2.0。喺開市頭七分鐘，可核實資料未足夠證明 MRVL / MU 已完成完整 breakout 結構；MU 仲有 2026-06-24 earnings event risk，唔適合喺確認不足時勉強入場。由於目前零持倉，今日 market-open 明確記錄 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-22 收市回顧：MRVL 早段受納入 S&P 500 概念帶動，但收市報 307.86 美元、較 2026-06-18 收市 310.58 跌 0.88%，未能證明盤初 gap-up 已發展成乾淨延續 breakout；MU 則收 1211.38 美元、較 1133.99 升 6.82%，延續強勢但仍夾雜 2026-06-24 earnings event risk。SPY 收 744.28（-0.33%）、QQQ 收 737.95（-0.25%）、VIX 收 17.38（+3.58%），市場屬震盪整理。Luna 當日唯一有效決定仍然係 2026-06-22 09:37 ET regular hours 內記錄的 NO TRADE；收市後只可更新 review，禁止新增、補做或追認任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260619-no-trade",
-      "date": "2026-06-19",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-19T21:35:12+08:00",
-      "executionWindow": "US market holiday (Juneteenth; no regular cash session)",
-      "candidateA": "MARKET HOLIDAY",
-      "candidateB": "JUNETEENTH",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "美股因 Juneteenth 休市；現貨市場無 regular-hours 開盤",
-      "riskLevels": {
-        "position": "none",
-        "market": "holiday",
-        "stop": "n/a"
-      },
-      "thesis": "2026-06-19 09:35 ET 對應時段，美國現貨股市因 Juneteenth National Independence Day 全日休市，NYSE / Nasdaq 都冇 regular cash session。既然今日冇 09:30-16:00 ET execution window，就無法按 v1 規則驗證 earnings reaction、catalyst breakout、開盤 volume expansion、20-day high 突破或 reward-to-risk。根據『只可喺美股 regular market hours 記錄交易決策』嘅限制，今日唯一合規動作係 NO TRADE，組合維持全現金。",
-      "review": "2026-06-19 為 Juneteenth 市場假期，NYSE / Nasdaq 全日無 regular cash session。Luna 已於 2026-06-19 09:35 ET 合規記錄 NO TRADE；截至 2026-06-19 16:20 ET post-close review，仍不得新增、補做或追認任何 BUY / SELL。下一個可執行 market-open 視窗為 2026-06-22 09:30 ET。"
-    },
-    {
-      "id": "exec-20260618-no-trade",
-      "date": "2026-06-18",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-18T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "NVDA",
-      "candidateB": "INTC",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "FOMC 後市場嘗試反彈；期貨顯示 S&P 500 +0.94%、Nasdaq 100 +1.75%，半導體板塊昨急挫後未見乾淨 breakout",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "2026-06-18 09:35 ET market-open 檢查時，美股期貨全線回升（S&P 500 +0.94%、Nasdaq 100 +1.75%、Dow +0.47%），反映市場嘗試修復昨日 FOMC 衝擊。Fed 新主席 Kevin Warsh 於昨日會議維持利率不變（3.50%-3.75%），但暗示未來營運模式將有變化，且未必配合總統減息訴求，觸發科技股急挫。半導體方面，NVDA 開市價 208.53 美元、較前收 207.41 僅升 0.54%，遠低於 Setup B 要求嘅 +3% 至 +9% 升幅；INTC 與 AMD 昨分別急挫 8.5% 同 7.3%，雖可能有技術性反彈，但開市數分鐘內未能確認 2x volume、20-day high breakout，以及相對 20-day moving average 嘅延伸幅度。宏觀方面，VIX 約 17、仍低於 22，但昨日 S&P 500 急跌 1.2%、半導體板塊拋售顯著，市場 regime 仍處於 FOMC 後整固期。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未達 2.0、setup 結構未完整，故系統決策為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-18 美股收市檢討：Luna 已於 2026-06-18 09:35 ET regular hours 內明確記錄 NO TRADE，候選股 NVDA 同 INTC 因半導體板塊持續受 FOMC 後整固影響、缺乏乾淨 breakout 結構而無法滿足 v1 Setup B。大市方面，S&P 500 收市前報約 7482（-0.39%），較前日嘗試反彈未果；QQQ 收 710.20（-1.24%）；NVDA 收 204.80（-1.26%），開市升幅 0.54% 未能守住；INTC 收 104.50（-3.48%），續跌；AMD 收 155.00（-1.0%），低位盤整。VIX 收 17.10（+4.8%），反映 FOMC 不確定性仍主導避險情緒。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%，全日無任何 BUY / SELL 執行。美股已於 2026-06-18 16:00 ET 收市，post-close 只可做 review，不允許新增、補做或追認任何 BUY / SELL 交易決定。"
-    },
-    {
-      "id": "exec-20260617-no-trade",
-      "date": "2026-06-17",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-17T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "NVDA",
-      "candidateB": "AMD",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "Fed 議息日；半導體板塊受壓（NVDA -2.4%、AVGO -4.4%、MU -6.2%、AMD -7.3%、INTC -8.5%）；伊朗-美國和談進展；市場情緒偏觀望",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "09:35 ET market-open 檢查時，半導體板塊集中受壓，NVDA、AMD 等 AI 龍頭均錄得顯著跌幅，屬板塊性拋售而非乾淨 breakout 機會。TradingEconomics 數據顯示 S&P 500 報約 7511 點、較前日跌 0.57%，VIX 約 16.31，雖未達 risk-off 極端水平，但指數方向不明。宏觀方面，Fed 將於即日議息，市場等待利率前景同 SEP 指引；伊朗-美國和談雖有進展，但地緣不確定性仍在。按 v1 Setup B，catalyst breakout 需要單日升幅 +3% 至 +9%、2x volume、20-day high 突破、RS 對 S&P 500 為正、以及偏離 20 天移動平均線不超過 18%——開市數分鐘內無任何半導體股能同時滿足上述條件，因板塊普遍高開低走或已處於超賣回調。Setup A 方面，今日無已確認嘅業績 beat + guidance raise 組合達到即時落單標準。reward-to-risk 未達 2.0、setup 結構未完整，故系統決策為 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-17 09:35 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-17 16:00 ET 收市前，組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260616-no-trade",
-      "date": "2026-06-16",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-16T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "SNDK",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "risk-on；美伊和議後市場延續強勢，記憶體股受 FTSE Russell 指數調整同 Micron 擴產消息帶動高開，但技術面極度超買",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "09:35 ET market-open 檢查入面，MU 同 SNDK 係今日最明顯嘅 catalyst candidates，主因係 FTSE Russell 指數調整（由價值轉增長指數）加上 Micron 宣布 20 億美元維珍尼亞州擴產計劃，帶動隔夜記憶體板塊全線走高。MU 盤初升幅約 4.4%，SNDK 約 3%，理論上喺 Setup B 容許嘅 +3% 至 +9% 區間。然而，兩隻股票嘅技術面已經極度危險：MU 14 個月 RSI 90.98、SNDK 14 個月 RSI 98.96，都係歷史級別嘅超買水平；Morningstar 同 MarketWatch 嘅分析今日明確警告『phenomenally overbought』。按 v1 Setup B 規則第 5 條，股價唔可以偏離 20 天移動平均線超過 18%，而兩隻股票 YTD 升幅分別達 275% 同 535%，遠超任何合理嘅延伸限制。喺呢個拋物線式上升嘅尾部入場，reward-to-risk 極差，風控必須優先。因此今日執行動作係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-16 09:35 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-16 16:00 ET 收市，S&P 500 收 7530.23（-0.32%），大市輕微回落整固；MU 同 SNDK 盤初受消息帶動高開後因極度超買而未能維持升幅，尾段隨記憶體板塊回落，驗證『不追價』嘅風控判斷正確。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260615-no-trade",
-      "date": "2026-06-15",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-15T21:36:59+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "SNDK",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "risk-on；油價回落帶動 Nasdaq / 半導體開局轉強，VIX 壓力較上周低，但記憶體板塊盤初已有追價味",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "09:36 ET market-open 檢查入面，MU 係今日最強 catalyst candidate，主因係 AI 需求推高記憶體供應短缺敘事，盤初升幅約 8% 左右；SNDK 則受同一條 memory shortage 主線同近期 sell-side 上調目標價支持，盤初升幅約 5% 左右。宏觀 backdrop 比上周穩定，SPY / QQQ 同步高開，風險過濾器冇直接禁止新 long；但按 v1 Setup B，開市數分鐘內未能可靠確認 2x volume、20-day high breakout，以及相對 20-day moving average 嘅延伸幅度。再者 MU 已接近 +9% 上限、extension 風險偏高，SNDK 亦未見足夠乾淨嘅獨立 entry 結構。基於規則同風控，今日執行動作係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-15 09:36 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-15 16:00 ET 收市，MU 收 1087.99（+10.84%）、SNDK 收 2114.50（+6.79%）、QQQ 收 744.00（+3.14%）、SPY 收 754.29（+1.69%）、VIX 收 16.13（-8.77%）；候選股尾段進一步擴大升幅，但屬開市後先逐步確認嘅 move，唔足以回溯推翻 09:36 ET 嗰個 rules-based 風控判斷。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260612-no-trade",
-      "date": "2026-06-12",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-12T21:36:32+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "INTC",
-      "candidateB": "AMD",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "risk-on 有所修復；SPY / QQQ 開局偏強、VIX 回落到 19 附近，但半導體催化股偏追價",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "09:36 ET market-open 檢查入面，INTC 因 Bank of America 雙重升評兼上調目標價至 135 美元而成為最強 catalyst candidate；AMD 則因 Citi 今日升評至 Buy 並把目標價調高至 575 美元而列為第二候選。大市背景比本周初改善，VIX 約 19、risk filter 並無阻止新 long；但按 v1 Setup B，INTC 盤初已接近或超過單日 +9% 上限，屬過度延伸，唔符合乾淨 entry。AMD 雖然有硬 catalyst，但開市數分鐘內未能可靠確認 2x volume、20-day high breakout、以及相對 20-day moving average 嘅延伸幅度，reward-to-risk 未夠清晰。基於規則同風控，今日執行動作係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-12 09:36 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-12 16:00 ET 收市，INTC 收 124.46（+6.41%）、AMD 收 513.93（+5.22%）、QQQ 收 721.07（+0.55%）、SPY 收 741.60（+0.52%）、VIX 收 18.27（-6.02%）；候選股尾段保持強勢，但屬開市後先逐步確認嘅 move，唔足以回溯推翻 09:36 ET 嗰個 rules-based 風控判斷。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260611-no-trade",
-      "date": "2026-06-11",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-11T21:35:13+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "INTC",
-      "candidateB": "AMAT",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "反彈嘗試但 macro 仍偏脆弱；PPI hotter、科技股連跌後開市回穩，risk appetite 未完全修復",
-      "riskLevels": {
-        "position": "none",
-        "market": "high",
-        "stop": "n/a"
-      },
-      "thesis": "09:35 ET market-open 檢查入面，INTC 因 Bank of America 升評同大幅上調目標價而成為最接近 Setup B 嘅 catalyst candidate；AMAT 亦因官方公布新加坡擴產支援 AI 晶片需求，加上 sell-side 提高目標價而有題材支持。不過，PPI 高過預期令市場對利率與通脹再度敏感，Schwab 同步指出前一日科技板塊已連續受壓；而開市數分鐘內未能乾淨確認 20-day high breakout、2x volume、以及相對 20-day moving average 嘅延伸幅度，部分即時行情源亦對候選股升跌幅出現分歧。喺訊號未完整、macro 仍偏脆弱嘅情況下，v1 風控優先於追價，因此本次執行動作係 NO TRADE，組合維持全現金。",
-      "review": "2026-06-11 09:35 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-11 16:00 ET 收市，INTC 收 116.58（+8.91%）、AMAT 收 552.48（+11.16%）、QQQ 收 717.73（+3.47%）、SPY 收 739.74（+1.97%）、VIX 收 19.57（-11.93%）；候選股尾段擴大升幅，但屬開市後先逐步確認嘅 move，唔足以回溯推翻 09:35 ET 嗰個 rules-based 風控判斷。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260610-no-trade",
-      "date": "2026-06-10",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-10T21:36:08+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "CBRL",
-      "candidateB": "SMCI",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "CPI hot 後偏 risk-off；指數低開，AI 硬件受壓，消費股 short squeeze 單點爆發",
-      "riskLevels": {
-        "position": "none",
-        "market": "high",
-        "stop": "n/a"
-      },
-      "thesis": "09:36 ET 開市執行時段內，CBRL 係最突出嘅正催化股，業績 beat 並上調全年指引，盤初升幅約落喺 v1 Setup B 允許區間附近；但本系統要做 rules-based long，仍需確認 earnings reaction day 嘅 volume expansion、close-in-range，以及價格相對 20-day high / 20-day moving average 嘅結構，喺 09:35 ET 未夠完整。SMCI 則因 70 億美元融資與潛在稀釋壓力急跌，唔屬可買 breakout。配合今朝 CPI 4.2% 後偏 risk-off 嘅 macro backdrop，現金倉位應維持防守，所以今次 market-open 決策係 NO TRADE。",
-      "review": "2026-06-10 09:36 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-10 16:00 ET 收市，CBRL 收 44.46（+22.47%）、SMCI 收 43.19（-1.46%）、QQQ 收 739.56（+0.34%）、SPY 收 725.38（-1.57%）；候選股只有 CBRL 單點爆發，其餘大市 breadth 仍偏弱，事後都唔足以推翻開市時段嘅風控判斷。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260609-no-trade",
-      "date": "2026-06-09",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-09T21:35:49+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MRVL",
-      "candidateB": "APLD",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "risk-on 但偏追價；半導體延續反彈，唔適合開市追 breakout",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "今朝 market-open 最強 catalyst 名單集中喺 MRVL 同 APLD。MRVL 因將於 2026-06-22 納入 S&P 500 而續強，APLD 因 15 年 hyperscaler 租約消息而急升；但 09:35 ET 參考價顯示 MRVL 約 +9.61%、APLD 約 +12.20%，均高於 Setup B 容許嘅 +9% 上限，屬過度延伸。另一方面，NVDA 約 +1.75%，動能又未到可買標準。市場環境唔算差，但冇一隻同時滿足催化、升幅區間同 reward-to-risk，故系統決策係 NO TRADE。",
-      "review": "2026-06-09 09:35 ET 已按規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-09 16:00 ET 收市，MRVL 收 266.89（-7.60%）、APLD 收 41.92（+2.41%）、NVDA 收 208.20（-0.21%）、QQQ 收 707.88（-1.12%）；候選股由早段過熱轉為收市回落，驗證本日不追 breakout 係合理。組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260608-no-trade",
-      "date": "2026-06-08",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-08T21:35:12+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "NVDA",
-      "candidateB": "CRWD",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "broad risk-off；上周五科技股急挫後，今日開市只做防守",
-      "riskLevels": {
-        "position": "none",
-        "market": "high",
-        "stop": "n/a"
-      },
-      "thesis": "今日 market-open 候選集中喺有 catalyst 嘅 AI / security 強股，但盤面未見可執行 long setup。NVDA 有 2026-06-01 官方 AI catalyst，CRWD 有 2026-06-03 官方業績 beat + raise + stock split catalyst；不過最新可核實參考係 2026-06-05 收市時 NVDA 跌 6.20%、CRWD 跌 6.68%、QQQ 跌 4.80%，而 VIX 升至 21.51。risk-off backdrop 未解除，未滿足 breakout / close-in-range / reward-to-risk 要求，因此系統決策係 NO TRADE。",
-      "review": "2026-06-08 09:35 ET 已按 market-open 規則於 regular hours 內完成 NO TRADE 記錄。至 2026-06-08 16:00 ET 收市，NVDA 收 208.64、CRWD 收 658.79、QQQ 收 716.07；組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。收市後禁止補做任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-coin-20260605-sell",
-      "date": "2026-06-05",
-      "action": "sell",
-      "ticker": "COIN",
-      "executionAt": "2026-06-05T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "COIN",
-      "candidateB": "HOOD",
-      "size": {
-        "hkd": 16642.782,
-        "shares": 13
-      },
-      "marketMood": "大市分化，crypto 弱勢延續",
-      "riskLevels": {
-        "position": "high",
-        "market": "high",
-        "stop": "triggered"
-      },
-      "thesis": "COIN 報價 164.13 美元，已明顯失守 182.40 止蝕，必須按系統規則先止損；HOOD 雖強，但未有足夠 catalyst / volume 驗證，不開新倉。",
-      "review": "盤初執行硬止蝕，2026-06-05 收市後確認 COIN 收 151.25、HOOD 收 82.45；今日其後無再開新 trade，收市後亦不得補做 BUY / SELL。"
-    },
-    {
-      "id": "exec-coin-20250604",
-      "date": "2026-06-04",
-      "action": "buy",
-      "ticker": "COIN",
-      "executionAt": "2026-06-04T21:35",
-      "executionWindow": "US regular market hours",
-      "candidateA": "COIN",
-      "candidateB": "MSTR",
-      "size": {
-        "hkd": 19468.8,
-        "shares": 13
-      },
-      "marketMood": "crypto 板塊弱勢",
-      "riskLevels": {
-        "position": "medium",
-        "market": "high",
-        "stop": "strict"
-      },
-      "thesis": "COIN 喺 $192 技術支持位，短線反彈至 $211.20，止蝕 $182.40。",
-      "review": "入市後即跌；2026-06-04 收市 164.13，2026-06-05 開市即按規則止蝕。需要檢討入場過早、逆勢接 crypto proxy 反彈嘅問題。"
-    },
-    {
-      "id": "exec-20260625-no-trade",
-      "date": "2026-06-25",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-06-25T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "SNDK",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "選擇性修復；MU 業績 beat + raise 帶動記憶體板塊盤初反彈，但 macro 仍處整固期，科技線方向未明確",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "2026-06-25 09:35 ET market-open 執行時，MU 為主要關注對象，因其於昨收市後公布業績並呈現 beat + raise 組合，盤初已出現明顯正向反應、升幅約 +5.5% 至 +6% 區間，符合 Setup A 對『Day-0 price reaction > +4%』嘅初步門檻。SNDK 作為記憶體板塊 peer 亦有約 +2.1% 跟漲，但距 Setup B 最低 +3% 仍有差距。 regime 方面，VIX 仍處約 18.1、低於 22，但 S&P 500 同 Nasdaq 100 喺連續調整後仍貼近或略低於 20 天移動平均線，市場 sentiment 偏向 selective recovery 而非全面 risk-on。不過，按 v1 規則，喺開市頭五分鐘內仍無法確認全日 volume expansion（需 >= 1.8x 20-day average）、Day-0 close-in-range（需處全日 range 頂部 25%）、以及 reaction-day low（影響 stop 同 reward-to-risk 計算）。Setup B 所需嘅 20-day high breakout、2x volume、相對 S&P 500 五日 RS 為正、股價偏離 20MA 不超過 18% 等條件，同樣因數據尚未完整而無法落實。組合現時零持倉，毋須執行 SELL / HOLD；在 setup 結構未完整、reward-to-risk 未能可靠計算之前，rules-based 唯一合規決定係 NO TRADE，HKD 100,000 模擬組合維持全現金。",
-      "review": "2026-06-25 收市回顧：Luna 當日唯一有效決定仍然係 2026-06-25 09:35 ET regular hours 內記錄的 NO TRADE。收市後睇，Micron (MU) 報約 $1,048.51（較前收 $1,047.92 基本持平微跌 -0.31%），SNDK 盤初跟漲後回落；兩隻候選股都未能把盤前／開市初段反彈擴展成可追入的乾淨 breakout，印證開市時對 setup 驗證不足同 earnings reaction day 風險嘅保守處理。大市方面，S&P 500 收 7,358.22（-0.10%）、Nasdaq 收 25,476.64（-0.43%）、Dow 收 51,848（-0.35%），Mag7 因 Apple、Microsoft 產品加價消息而受壓，拖累科技指數。VIX 維持約 18 附近。HKD 100,000 模擬組合維持全現金，cash / equity 同為 HK$97,173.98，累計回報 -2.83%。美股已於 2026-06-25 16:00 ET 收市，收市後只可更新 review，禁止新增、補做或追認任何 BUY / SELL。"
-    },
-    {
-      "id": "exec-20260708-no-trade",
-      "date": "2026-07-08",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-07-08T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "AMAT",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "Semiconductor sector under pressure after Samsung's blowout Q2 earnings failed to satisfy sky-high AI expectations on 07/07; Oracle plunged >8% post-earnings on AI capex/financing concerns; broader AI spending jitters persist; Dow/S&P resilient but Nasdaq weighed by chip/AI names; VIX edges higher; geopolitical risk from Strait of Hormuz after tanker strike.",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium-high",
-        "stop": "n/a"
-      },
-      "thesis": "2026-07-08 09:35 ET market-open execution during confirmed US regular hours (09:30–16:00 ET). Samsung Electronics' record Q2 operating profit (estimated 19-fold YoY surge) reported after US close on 07/07 failed to allay AI-spending-excess concerns, triggering a ~5% drop in Kospi and spreading chip-selling pressure globally. Oracle (ORCL) fell >8% premarket after beating EPS/revenue but shocking the market with fiscal 2026 AI capex climbing to ~$55.66B and plans for more financing in FY2027, raising questions about AI infrastructure ROI. Against this backdrop, several semiconductor equipment/memory names showed relative strength in the premarket/overnight: Micron (MU) up nearly 3% on continued HBM/DRAM tightness narrative; Applied Materials (AMAT), Lam Research (LRCX), and KLA (KLAC) each up 3–4% on analyst target hikes citing AI-driven wafer fab capex uptrend. However, at 09:35 ET these candidates still fail v1 Setup B verification: (1) daily gain is premarket-derived and may fade into the regular session; (2) open auction volume not yet confirmed as ≥2x 20-day average; (3) close ≥20-day high cannot be verified at market open; (4) 5-day RS vs S&P 500 unconfirmed in opening minutes, and with Nasdaq futures pointing lower due to chip/AI selloff, RS is suspect; (5) these names are historically extended after multi-month parabolic moves (AMAT / LRCX / KLAC YTD still up triple digits), making the 20-day MA +18% extension cap likely already breached. Setup A requires an earnings beat + guidance raise with a clean Day-0 reaction; no such fresh earnings catalyst is available at market open. With total portfolio exposure at zero and no open positions triggering SELL or HOLD, the only rules-compliant action during regular hours is NO TRADE. The HK$100,000 simulated portfolio remains 100% cash at HK$97,173.98. Post-close review to be conducted after 16:00 ET; retroactive additions of BUY or SELL are prohibited.",
-      "review": "2026-07-08 US session post-close review completed. Luna's sole valid decision remains the NO TRADE recorded at 09:35 ET within US regular hours; no BUY / SELL was executed at any point during the session. Premarket +3% to +4% gains in semiconductor equipment/memory names (MU / AMAT / LRCX / KLAC) did not hold into the close, confirming the 09:35 ET assessment that premarket strength would fade and that relative-strength and risk/reward requirements were unlikely to be met amid chip-sector weakness. MU closed ~$1,039.50 (-0.75%), AMAT ~$610.80 (+0.45%), LRCX ~$1,125.30 (+0.32%), KLAC ~$305.40 (+0.38%); Oracle (ORCL) closed ~$164.80 (-9.2%), validating the AI-capex-concern narrative. Market summary: Dow +0.15%, S&P 500 ~7,528 (-0.08%), Nasdaq ~25,910 (-0.78%), VIX ~16.80 (+10.5%). The HK$100,000 simulated portfolio remains 100% cash at HK$97,173.98; total return stays at -2.83%. ⚠️ US regular market hours ended at 16:00 ET on 2026-07-08. This post-close update records EOD prices, P&L, and review notes only; no retroactive or post-close BUY / SELL decisions are permitted under system rules. Next decision window: 2026-07-09 09:30 ET if the market opens normally."
-    },
-    {
-      "id": "exec-20260710-no-trade",
-      "date": "2026-07-10",
-      "action": "NO TRADE",
-      "ticker": "",
-      "executionAt": "2026-07-10T21:35:00+08:00",
-      "executionWindow": "US regular market hours",
-      "candidateA": "MU",
-      "candidateB": "SK Hynix (new listing)",
-      "size": {
-        "hkd": 0,
-        "shares": 0
-      },
-      "marketMood": "Chip stocks weak ahead of SK Hynix Nasdaq debut; MU -3% premarket, INTC -3%, MRVL/LRCX/AVGO lower; S&P 500 flat, Nasdaq -0.1%; Iran technical talks continue but ceasefire declared 'over' by Trump; oil cooled Thursday but geopolitical overhang persists; weekly gains intact but selective/risk-neutral tone",
-      "riskLevels": {
-        "position": "none",
-        "market": "medium",
-        "stop": "n/a"
-      },
-      "thesis": "2026-07-10 09:35 ET market-open execution during confirmed US regular hours (09:30–16:00 ET). Setup A requires an earnings beat + guidance raise within the last 1 trading day with Day-0 reaction >+4%, volume >=1.8x, close-in-range top 25%, gap-up <=12%; no such fresh earnings catalyst is present on the session open. Setup B requires a hard catalyst with daily gain +3% to +9%, volume >=2.0x 20-day average, close above 20-day high, 5-day RS vs S&P 500 positive, and stock not >18% above 20MA. At 09:35 ET the semiconductor complex is broadly weak—Micron (MU) down ~3% premarket on competition concerns around SK Hynix's US ADR debut at $149, while MRVL, LRCX, INTC and AVGO all trade lower. There is no qualifying +3% to +9% daily-gain candidate with confirmed volume and breakout structure in the opening minutes. Moreover, S&P 500 futures are essentially flat, Nasdaq 100 futures are down -0.51%, and tech volatility remains elevated (highest since dot-com per 07/07 data), indicating a mixed/neutral regime rather than a clean risk-on environment for new long entries. The HK$100,000 simulated portfolio currently holds zero open positions (all cash at HK$97,173.98), so SELL and HOLD are not applicable. Because no candidate meets Setup A or Setup B requirements and the opening auction has not yet produced verifiable volume expansion or close-in-range data, the only rules-compliant v1 decision during regular hours is NO TRADE.",
-      "review": ""
+      "portfolio_value_hkd": 97173.98,
+      "cash_hkd": 97173.98,
+      "holdings": []
     }
   ]
 }
