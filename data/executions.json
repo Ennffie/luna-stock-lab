@@ -31,6 +31,86 @@
   ],
   "executions": [
     {
+      "id": "auto-2026-07-28-market-open",
+      "date": "2026-07-28",
+      "recordedAt": "2026-07-28T09:35:00-04:00",
+      "executionAt": "2026-07-28T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": null,
+      "candidateB": null,
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Risk-off / mixed open — chip-led weakness, Nasdaq futures down more than 1%, VIX futures near 19.2 but below 22 threshold",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). Portfolio is 100% cash with no open positions following the UNH time-stop exit on 2026-07-24. Earnings calendar for 2026-07-28 includes names such as Visa, Coca-Cola, KLA Corp, Seagate, Boeing, PayPal, Mondelez, Corning, UPS and NXP Semiconductors, but no reporting stock showed a confirmed +4% day-0 reaction with >=1.8x volume and a close in the top 25% of its intraday range at the decision point. Available price snippets (e.g. V +1.91%, KO +2.21%, KLAC -3.40%, STX -4.07%) are below the Setup A threshold or negative, and volume/relative-strength evidence is unavailable. Setup B candidates also lacked confirmed +3% to +9% breakout, >=2.0x volume, 20-day-high confirmation and positive relative strength. The broader tape was weak: Asian chip stocks sold off and Nasdaq futures were down more than 1% ahead of the US open, while VIX futures hovered near 19.2 (below 22). Because the market regime could not be verified as meeting at least 2 of 4 required conditions, and no Setup A/B candidate met the rules, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open; market regime is mixed/risk-off and cannot support new long entries. Portfolio remains in cash.",
+      "review": "Post-open review: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Next trade decision window is the next US regular market hours session. No post-market or after-hours execution is permitted.",
+      "riskLevels": {
+        "market_regime": "MIXED / RISK-OFF BIAS — Nasdaq futures down >1% on chip weakness; VIX futures near 19.2 remain below 22 but the tape is defensive. S&P 500 and breadth conditions could not be reliably verified at execution.",
+        "setup_quality": "NO VALID SETUP — No Setup A or Setup B candidate confirmed with required price/volume evidence.",
+        "position_size": "NONE — 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW — 100% cash; no open exposure."
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0
+    },
+    {
+      "id": "auto-2026-07-27-market-open",
+      "date": "2026-07-27",
+      "recordedAt": "2026-07-27T09:35:00-04:00",
+      "executionAt": "2026-07-27T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": null,
+      "candidateB": null,
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Data-limited / no confirmed setup",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The portfolio is 100% cash with no open positions following the UNH time-stop exit on 2026-07-24. No validated Setup A (post-earnings momentum) or Setup B (catalyst breakout) candidate could be confirmed from available data sources for the 2026-07-27 market open. Web search results for the date were inconsistent and included future-dated or placeholder earnings-calendar entries that could not be verified as live, confirmed price/volume events. Without a confirmed +4% earnings reaction with >=1.8x volume, or a +3% to +9% breakout above the 20-day high with >=2.0x volume and positive relative strength, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open. Portfolio remains in cash.",
+      "review": "Post-open review: no trade executed. Portfolio remains 100% cash at HK$99,769.04. Next trade decision window is the next US regular market hours session. No post-market or after-hours execution is permitted.",
+      "riskLevels": {
+        "market_regime": "UNVERIFIED - Live index and VIX data could not be reliably confirmed for the simulated execution timestamp.",
+        "setup_quality": "NO VALID SETUP - No Setup A or Setup B candidate confirmed with required price/volume evidence.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "postClose": {
+        "eodDate": "2026-07-27",
+        "portfolio_value_hkd": 99769.04,
+        "cash_hkd": 99769.04,
+        "open_positions": 0,
+        "realizedPnlUsd": 0,
+        "realizedPnlHkd": 0,
+        "realizedPnlPct": 0,
+        "review": "Post-close review only. The US regular session closed at 16:00 EDT on 2026-07-27 (04:00 HKT 2026-07-28). No open positions at EOD. Portfolio remains 100% cash. No post-close BUY or SELL execution allowed; next trade decision window is US regular market hours on 2026-07-28 (Tuesday)."
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0
+    },
+    {
       "id": "auto-2026-07-24-market-open",
       "date": "2026-07-24",
       "recordedAt": "2026-07-24T09:35:00-04:00",
