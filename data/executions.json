@@ -31,6 +31,41 @@
   ],
   "executions": [
     {
+      "id": "auto-2026-07-29-market-open",
+      "date": "2026-07-29",
+      "recordedAt": "2026-07-29T09:35:00-04:00",
+      "executionAt": "2026-07-29T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "APH",
+      "candidateB": "VRT",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Mixed / selective earnings tape — SPY slightly negative, QQQ slightly positive, VIX below 22 but rising; APH strong after pre-market earnings while VRT sold off.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). Portfolio is 100% cash with no open positions following the UNH time-stop exit on 2026-07-24. 2026-07-29 earnings calendar included pre-market reporters such as APH, VRT, PG, GD, ADP, JCI and AON, plus after-hours reporters such as MSFT, META, LRCX, ARM, QCOM, SBUX, FTNT and HOOD. At the decision point, APH was the closest long candidate, quoted around $156.28 versus prior close $144.00 (+8.53%) with an earnings catalyst, but the Setup A requirement for confirmed day-0 close in the top 25% of the intraday range and full volume expansion could not be verified at 09:35 EDT. VRT was not a valid long setup because it traded around $240.78 versus prior close $269.46 (-10.64%) after earnings. Other pre-market reporters were below the +4% Setup A reaction threshold or negative, and after-hours reporters were not eligible for market-open execution. Setup B candidates also lacked confirmed close above the 20-day high, >=2.0x volume and positive relative strength at the decision point. With no open position to manage and no fully validated Setup A/B, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open. APH had early earnings strength but lacked day-0 close and full volume confirmation; VRT was negative after earnings. Portfolio remains in cash.",
+      "review": "Post-open review: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Next trade decision window is the next US regular market-hours check. No pre-market, post-market or after-hours execution is permitted.",
+      "riskLevels": {
+        "market_regime": "MIXED — SPY was slightly negative near $740.03 versus $740.76 prior close, QQQ was slightly positive near $676.53 versus $675.49 prior close, and VIX was below the 22 risk threshold near 18.88 but rising from 18.21.",
+        "setup_quality": "NO VALID SETUP — APH was strong but incomplete under Setup A at 09:35 EDT because day-0 close/top-range and full volume confirmation were unavailable; VRT and other reporters did not meet long-entry criteria.",
+        "position_size": "NONE — 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW — 100% cash; no open exposure."
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0
+    },
+    {
       "id": "auto-2026-07-28-market-open",
       "date": "2026-07-28",
       "recordedAt": "2026-07-28T09:35:00-04:00",
