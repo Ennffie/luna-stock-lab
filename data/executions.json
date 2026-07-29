@@ -58,6 +58,21 @@
         "position_size": "NONE — 0 HKD / 0 shares.",
         "portfolio_risk": "LOW — 100% cash; no open exposure."
       },
+      "postClose": {
+        "eodDate": "2026-07-29",
+        "portfolio_value_hkd": 99769.04,
+        "cash_hkd": 99769.04,
+        "open_positions": 0,
+        "realizedPnlUsd": 0,
+        "realizedPnlHkd": 0,
+        "realizedPnlPct": 0,
+        "cumulativeReturnPct": -0.23,
+        "eodPrices": {
+          "held_positions": [],
+          "note": "No held positions at EOD, so no position-level closing prices were required. Public quote sources checked after close did not provide reliable 2026-07-29 EOD index/candidate prices during this cron run."
+        },
+        "review": "Post-close review only. The US regular session closed at 16:00 EDT on 2026-07-29 (04:00 HKT 2026-07-30). Market-open action was NO TRADE at 09:35 EDT during regular hours. APH was monitored as the closest earnings candidate at the open but was not eligible without day-0 close/top-range and full volume confirmation; VRT was negative after earnings and not a valid long setup. No open positions at EOD; portfolio remains 100% cash at HK$99,769.04. Realized P&L for the session is HK$0.00. No post-close BUY or SELL execution allowed; next trade decision window is US regular market hours on 2026-07-30 (Thursday)."
+      },
       "portfolio_value_hkd": 99769.04,
       "cash_hkd": 99769.04,
       "holdings": [],
