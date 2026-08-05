@@ -31,6 +31,320 @@
   ],
   "executions": [
     {
+      "id": "auto-2026-08-05-market-open",
+      "date": "2026-08-05",
+      "recordedAt": "2026-08-05T09:35:00-04:00",
+      "executionAt": "2026-08-05T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "PLTR",
+      "candidateB": "GLW",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Mixed open / Nasdaq 100 negative while S&P 500 and Dow slightly positive; VIX still below 22; pre-market tape dominated by post-earnings large-cap and chip/storage-related movers.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The simulation is based on HKD 100,000 starting capital; current ledger equity/cash is HK$99,769.04 with no open positions after the UNH time-stop exit on 2026-07-24. Public market-open sources for 2026-08-05 showed a selective pre-market tape: PLTR +15.40% pre-market to around $145.00 after its August 3 Q2 2026 earnings beat and raised guidance, but that is still above the strict 12% Setup A maximum gap and it is not a fresh day-0 post-earnings reaction. CAT was up +12.94% pre-market to around $937.40, but that also exceeds the 12% Setup A ceiling and the 3-9% Setup B range. GLW +7.63%, STX +6.56%, TER +5.73%, JBL +5.37%, INTC +5.29% and WDC +5.27% were inside the Setup B percentage range, but none had a verified hard catalyst, confirmed full-day volume expansion, breakout above the 20-day high, or positive 5-day relative strength at 09:35 EDT. The broader tape was mixed: available snapshots showed SPY roughly flat to slightly positive, Nasdaq 100 ($IUXX) negative, Dow positive, and VIX futures/spot below the 22 risk threshold. Setup A requires a fresh day-0 earnings reaction with confirmed close in the top 25% of the range and >=1.8x volume; Setup B requires a daily gain of +3% to +9%, >=2.0x volume, close above the 20-day high, and positive relative strength. Because none of the candidates meet the required rules and the broader regime could not be fully verified as having at least two of the four market-regime conditions, new long entries are not permitted. With no open position to manage and no fully validated Setup A or Setup B candidate, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open. PLTR still carries the strongest post-earnings catalyst but its post-earnings gap exceeds the 12% Setup A ceiling and it is not a fresh day-0 reaction; GLW and other potential Setup B names are inside the percentage range but lack verified catalyst, full-day volume, 20-day-high breakout and relative-strength evidence at 09:35 EDT. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Next trade decision window is the next US regular market-hours check. No pre-market, post-market or after-hours execution is permitted.",
+      "riskLevels": {
+        "market_regime": "MIXED / SELECTIVE — VIX and futures were below 22, S&P 500/Dow slightly positive in available snapshots, but Nasdaq 100 was negative and 20-day moving-average / breadth confirmations were not fully verified at 09:35 EDT.",
+        "setup_quality": "NO VALID SETUP — PLTR post-earnings gap is above the 12% Setup A limit and it is not a fresh day-0 reaction; GLW and other potential Setup B names lack confirmed full-day close, volume, 20-day-high and relative-strength evidence.",
+        "position_size": "NONE — 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW — 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Benzinga pre-market gainers",
+          "Investing.com pre-market gainers",
+          "Barchart index/futures snapshots",
+          "TradingView pre-market gainers",
+          "Yahoo Finance / CNBC VIX snapshots"
+        ],
+        "snapshots": {
+          "PLTR": {
+            "note": "Pre-market Aug 5 after Aug 3 Q2 2026 earnings beat; gap still above 12% Setup A ceiling",
+            "last": 145.0,
+            "change_pct": 15.4,
+            "prior_close": 125.65,
+            "session": "pre-market"
+          },
+          "CAT": {
+            "note": "Pre-market large-cap gainer; catalyst not fully verified",
+            "last": 937.4,
+            "change_pct": 12.94,
+            "session": "pre-market"
+          },
+          "GLW": {
+            "note": "Potential Setup B range (+3% to +9%) but catalyst/volume/20-day-high not verified",
+            "last": 157.83,
+            "change_pct": 7.63,
+            "session": "pre-market"
+          },
+          "SPY": {
+            "last": 738.93,
+            "change_pct": 0.1,
+            "session": "regular open snapshot"
+          },
+          "QQQ": {
+            "note": "Nasdaq 100 proxy $IUXX",
+            "last": 28128.34,
+            "change_pct": -1.15,
+            "session": "regular open snapshot"
+          },
+          "VIX": {
+            "note": "VIX futures Aug 26 open snapshot from CNBC",
+            "last": 17.95,
+            "change_pct": 0,
+            "session": "spot/futures snapshot"
+          }
+        },
+        "watchedCandidates": [
+          "PLTR",
+          "CAT",
+          "GLW",
+          "ZBRA",
+          "STX",
+          "TER",
+          "JBL",
+          "INTC",
+          "WDC",
+          "YPF",
+          "AMRC",
+          "AMIX"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0,
+      "postClose": {
+        "reportedAt": "2026-08-05T16:20:00-04:00",
+        "reportedAtHkt": "2026-08-06T04:20:00+08:00",
+        "mode": "post-close review only",
+        "noPostCloseExecution": true,
+        "note": "No new BUY or SELL decisions may be made after the US market close. All trade decisions must be made during US regular market hours (09:30-16:00 EDT).",
+        "eodSnapshots": {
+          "PLTR": {
+            "last": 162.66,
+            "change_pct": 29.45,
+            "prior_close": 125.65,
+            "session": "regular close",
+            "note": "Aug 5 day-0 reaction to Aug 3 Q2 2026 earnings beat. Gap is far above the 12% Setup A ceiling; no entry permitted."
+          },
+          "CAT": {
+            "last": 895.85,
+            "change_pct": 2.2,
+            "prior_close": 876.54,
+            "session": "regular close",
+            "note": "Pre-market +12.94% gap faded materially during the regular session; no valid Setup A or B close."
+          },
+          "GLW": {
+            "last": null,
+            "change_pct": null,
+            "prior_close": 138.25,
+            "day_range": "132.89 - 147.94",
+            "session": "regular close",
+            "note": "Public EOD close not fully verified in available snapshots; day range shows it did not sustain a clean Setup B breakout."
+          },
+          "SPY": {
+            "last": 771.69,
+            "change_pct": 0.05,
+            "session": "regular close"
+          },
+          "QQQ": {
+            "note": "Nasdaq 100 proxy $IUXX",
+            "last": 29609.19,
+            "change_pct": -0.42,
+            "session": "regular close"
+          },
+          "VIX": {
+            "last": 17.65,
+            "change_pct": -0.3,
+            "session": "regular close"
+          }
+        },
+        "review": "Post-close review confirms the market-open NO TRADE decision was correct. PLTR's Aug 5 day-0 reaction closed +29.45% from the prior close, far above the 12% Setup A gap ceiling. CAT faded from a pre-market +12.94% gap to roughly +2.2%, so no valid Setup A or B close was available. GLW and other chip/storage-related pre-market gainers lacked the verified catalyst, full-day volume expansion, 20-day-high breakout, and positive 5-day relative strength required by Setup B. With no open positions and no post-close execution permitted, the portfolio remains 100% cash at HK$99,769.04.",
+        "sources": [
+          "MarketWatch PLTR/CAT close snapshots",
+          "Yahoo Finance GLW/QQQ/SPY snapshots",
+          "Barchart S&P 500 / Nasdaq 100 / VIX snapshots",
+          "CBOE VIX futures close snapshots"
+        ]
+      }
+    },
+      "date": "2026-08-04",
+      "recordedAt": "2026-08-04T09:35:00-04:00",
+      "executionAt": "2026-08-04T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "PLTR",
+      "candidateB": "AMRC",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Constructive but selective open — VIX futures/spot near 16, S&P 500 and Nasdaq 100 slightly positive in early trading, while earnings-related reactions (PLTR) and pre-market gainers (AMRC, YPF) were the main focal points.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The simulation is based on HKD 100,000 starting capital; current ledger equity/cash is HK$99,769.04 with no open positions after the UNH time-stop exit on 2026-07-24. Public market-open sources showed PLTR gapping up strongly in extended hours after its August 3 Q2 2026 earnings beat (EPS $0.41 vs ~$0.34 estimate, revenue $1.94B vs ~$1.81B estimate) and raised full-year guidance; however, the post-earnings gap from the prior close of $125.65 to extended-hours/pre-market prices near $144.45 was about +14.97%, which is above the strict 12% Setup A gap ceiling. Setup A also requires a day-0 close in the top 25% of the intraday range, full-day volume >= 1.8x the 20-day average, and a stop/target risk-reward check, none of which could be confirmed at 09:35 EDT. AMRC and other pre-market gainers (YPF, AMIX, NUWE) showed large percentage moves but lacked verified catalyst, liquidity (>= $20M average daily dollar volume, price >= $10), and the full-day close/volume/relative-strength evidence required by Setup B. With no open position to manage and no fully validated Setup A or Setup B candidate, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open. PLTR had the strongest post-earnings catalyst and liquidity but failed the 12% gap filter and lacked required day-0 confirmation at 09:35 EDT; AMRC and other pre-market gainers lacked verified catalyst and liquidity. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Next trade decision window is the next US regular market-hours check. No pre-market, post-market or after-hours execution is permitted.",
+      "riskLevels": {
+        "market_regime": "CONSTRUCTIVE / SELECTIVE — VIX and futures were below 22, S&P 500 and Nasdaq 100 opened positive, but S&P 500/Nasdaq 100 20-day moving-average and breadth confirmations were not fully verified at 09:35 EDT.",
+        "setup_quality": "NO VALID SETUP — PLTR had a strong Q2 earnings beat and raised guidance but its post-earnings gap exceeded the 12% Setup A ceiling and day-0 close/range/volume confirmation was unavailable; AMRC and other pre-market movers lacked verified catalyst and liquidity.",
+        "position_size": "NONE — 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW — 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Benzinga pre-market gainers",
+          "Barchart index/futures snapshots",
+          "Public quote and earnings snippets"
+        ],
+        "snapshots": {
+          "PLTR": {
+            "note": "Extended-hours/pre-market after Aug 3 Q2 2026 earnings beat; prior close $125.65",
+            "last": 144.45,
+            "change_pct": 14.97,
+            "prior_close": 125.65,
+            "session": "after-hours / pre-market"
+          },
+          "AMRC": {
+            "note": "Pre-market gainer, catalyst not verified",
+            "last": 31.89,
+            "change_pct": 40.3,
+            "session": "pre-market"
+          },
+          "SPY": {
+            "last": 747.03,
+            "change_pct": 0.72,
+            "session": "regular open snapshot"
+          },
+          "QQQ": {
+            "note": "Nasdaq 100 proxy $IUXX",
+            "last": 28274.2,
+            "change_pct": 0.6,
+            "session": "regular open snapshot"
+          },
+          "VIX": {
+            "last": 15.86,
+            "change_pct": -0.81,
+            "session": "spot/futures snapshot"
+          }
+        },
+        "watchedCandidates": [
+          "PLTR",
+          "AMRC",
+          "YPF",
+          "AMIX",
+          "AMZN",
+          "ORCL"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0
+    },
+    {
+      "id": "auto-2026-08-03-market-open",
+      "date": "2026-08-03",
+      "recordedAt": "2026-08-03T09:35:00-04:00",
+      "executionAt": "2026-08-03T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "AMZN",
+      "candidateB": "MPWR",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Constructive but selective open — IBKR snapshots around the decision window showed SPY +0.63%, QQQ +0.44%, and VIX near 16.00, while public mover snippets were concentrated in earnings and mega-cap technology names.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The simulation is based on HKD 100,000 starting capital; current ledger equity/cash is HK$99,769.04 with no open positions after the UNH time-stop exit on 2026-07-24. Public market-open snippets highlighted AMZN, MPWR, ETN, MTD, WDC, INTC, DXCM, GLW, STX and GEV as large-cap pre-market gainers, with AMZN the closest high-liquidity candidate. IBKR market data showed AMZN trading around $284.15, +4.63% intraday, after a strong 2026-07-31 earnings reaction day that closed near the session high on expanded volume. However, the 2026-07-31 day-0 gap was about +12.5% from the prior close ($265.00 open vs $235.50 prior close), which is above the strict 12% Setup A gap ceiling. Setup B was also not valid at 09:35 because today's daily close, full-day volume, close above 20-day high and relative-strength confirmation were not yet available. MPWR and other mover snippets were either too extended, lacked confirmed full-day evidence, or had incomplete catalyst/risk-reward validation at the decision timestamp. With no open position to manage and no candidate fully passing Setup A or Setup B, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open. AMZN had the best liquidity and catalyst evidence, but its prior earnings reaction exceeded the 12% Setup A gap filter and today's Setup B close/volume confirmation was unavailable at 09:35 EDT. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Next trade decision window is the next US regular market-hours check. No pre-market, post-market or after-hours execution is permitted.",
+      "riskLevels": {
+        "market_regime": "CONSTRUCTIVE / SELECTIVE — SPY and QQQ were positive in IBKR snapshots and VIX was below 22 near 16, but breadth and 20-day moving-average confirmations were not fully verified at 09:35 EDT.",
+        "setup_quality": "NO VALID SETUP — AMZN was the closest candidate, with strong prior-session reaction and liquidity, but the 2026-07-31 day-0 gap exceeded the 12% Setup A ceiling; today's Setup B close/full-day volume/relative-strength evidence was not available at the decision timestamp.",
+        "position_size": "NONE — 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW — 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "IBKR snapshot",
+          "public web mover snippets"
+        ],
+        "snapshots": {
+          "AMZN": {
+            "last": 284.15,
+            "change_pct": 4.63,
+            "open": 278.9,
+            "high": 286.04,
+            "low": 278,
+            "volume": 13441807
+          },
+          "SPY": {
+            "last": 751.72,
+            "change_pct": 0.63,
+            "open": 749.44,
+            "high": 751.75,
+            "low": 748.8,
+            "volume": 3353991
+          },
+          "QQQ": {
+            "last": 690.99,
+            "change_pct": 0.44,
+            "open": 688.31,
+            "high": 690.99,
+            "low": 685.82,
+            "volume": 3614884
+          },
+          "VIX": {
+            "last": 16,
+            "change_pct": 0.06,
+            "high": 16.22,
+            "low": 15.9
+          }
+        },
+        "watchedCandidates": [
+          "AMZN",
+          "MPWR",
+          "ETN",
+          "MTD",
+          "WDC",
+          "INTC",
+          "DXCM",
+          "GLW",
+          "STX",
+          "GEV"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0
+    },
+    {
       "id": "auto-2026-07-31-market-open",
       "date": "2026-07-31",
       "recordedAt": "2026-07-31T09:35:15-04:00",
