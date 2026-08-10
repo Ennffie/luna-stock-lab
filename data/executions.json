@@ -31,6 +31,329 @@
   ],
   "executions": [
     {
+      "id": "auto-2026-08-10-market-open",
+      "date": "2026-08-10",
+      "recordedAt": "2026-08-10T09:35:00-04:00",
+      "executionAt": "2026-08-10T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "ABNB",
+      "candidateB": "MCHP",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Constructive but selective open - major US indexes were positive in available Aug 10 snapshots and VIX remained below the 22 risk threshold, but full 20-day moving-average and breadth confirmations were not fully verified at 09:35 EDT.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The simulation is based on HKD 100,000 starting capital; current ledger equity/cash is HK$99,769.04 with no open positions after the UNH time-stop exit on 2026-07-24. Public Aug 10 market-open and pre-market snippets highlighted ABNB and MCHP as the closest high-liquidity long candidates. ABNB traded around $178.07, +17.43%, after Q2 2026 earnings/outlook strength, but the earnings release was on Aug 6 and the Aug 10 move is a continuation rather than a fresh day-0 reaction; the move is also above the strict 12% Setup A gap ceiling. MCHP traded around $84.69, +13.89% in an Aug 10 snapshot, and Investing.com pre-market snippets earlier showed MCHP around $81.41, +9.48%, after Aug 6 Q1 FY2027 earnings beat and stronger guidance. However, at 09:35 EDT the setup still lacked confirmed day-0 close-in-top-25%-of-range, full-day volume >=1.8x average volume, and a complete stop/target reward-to-risk check for Setup A. Setup B also cannot be validated at the open because it requires a confirmed daily gain of +3% to +9%, volume >=2.0x 20-day average volume, close above the 20-day high, and positive 5-day relative strength. Other visible movers such as PLTR, MRNA, RKLB and AXON were either continuations, too extended, or lacked verified full setup evidence at the decision timestamp. With no open position to manage and no fully validated Setup A or Setup B candidate, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open. ABNB has a strong earnings/outlook catalyst but is a continuation from an Aug 6 report and is above the 12% Setup A gap cap. MCHP has an earnings and guidance catalyst but lacks open-time full-day close/range/volume, 20-day-high and relative-strength confirmation; its live snapshot also exceeded the 9% Setup B upper range. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close 2026-08-10 review was added after 16:00 EDT as review-only: no post-close BUY or SELL execution is allowed; next valid decision window is US regular market hours on 2026-08-11.",
+      "riskLevels": {
+        "market_regime": "CONSTRUCTIVE / SELECTIVE - available snapshots showed the S&P 500 and Nasdaq positive and VIX around 14.9-15.0, below the 22 risk threshold, but 20-day moving-average and breadth confirmations were not fully verified at 09:35 EDT.",
+        "setup_quality": "NO VALID SETUP - ABNB is too extended and not a fresh day-0 reaction; MCHP has a catalyst but lacks full-day setup confirmation at the open and exceeded the Setup B percentage ceiling in one live snapshot.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Benzinga premarket movers/news search snippet for Aug 10 2026",
+          "Investing.com pre-market and market mover search snippets for Aug 10 2026",
+          "Airbnb Q2 2026 earnings/outlook public snippets",
+          "Microchip earnings/guidance public snippets"
+        ],
+        "snapshots": {
+          "ABNB": {
+            "note": "Aug 10 visible mover after Q2 2026 earnings/outlook strength; report occurred Aug 6, so Aug 10 is not a fresh day-0 reaction and the move is above the 12% Setup A cap.",
+            "last": 178.07,
+            "change_pct": 17.43,
+            "prior_close": 151.64,
+            "session": "regular/open snapshot from public search snippet"
+          },
+          "MCHP": {
+            "note": "Aug 10 pre-market/open mover after Aug 6 Q1 FY2027 earnings beat and stronger guidance. Earlier pre-market snippet showed $81.41, +9.48%; later market mover snippet showed $84.69, +13.89%. Full-day close/range/volume and Setup B breakout evidence were not available at 09:35 EDT.",
+            "last": 84.69,
+            "change_pct": 13.89,
+            "prior_close": null,
+            "session": "pre-market / regular-open public snippets"
+          },
+          "SP500": {
+            "note": "Public Aug 10 snippets showed US 500/S&P 500 positive, around +0.22% to +0.56%, with another pre-market fair-value snippet slightly negative before the open.",
+            "last": 7753.4,
+            "change_pct": 0.56,
+            "session": "regular/open snapshot from public search snippet"
+          },
+          "Nasdaq": {
+            "note": "Public Aug 10 snippet showed Nasdaq positive.",
+            "last": 26518.88,
+            "change_pct": 0.65,
+            "session": "regular/open snapshot from public search snippet"
+          },
+          "VIX": {
+            "note": "Public Aug 10 snippets showed VIX below the 22 risk threshold.",
+            "last": 14.95,
+            "change_pct": -1.32,
+            "session": "regular/open snapshot from public search snippet"
+          }
+        },
+        "watchedCandidates": [
+          "ABNB",
+          "MCHP",
+          "FSLR",
+          "NEM",
+          "GRMN",
+          "AKAM",
+          "GLW",
+          "ENPH",
+          "TDY",
+          "TEL",
+          "PLTR",
+          "MRNA",
+          "RKLB",
+          "AXON"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0,
+      "postClose": {
+        "reportedAt": "2026-08-10T16:20:00-04:00",
+        "reportedAtHkt": "2026-08-11T04:20:00+08:00",
+        "mode": "post-close review only",
+        "noPostCloseExecution": true,
+        "note": "No new BUY or SELL decisions may be made after the US market close. All trade decisions must be made during US regular market hours (09:30-16:00 EDT). This 2026-08-10 post-close block is review-only and does not create, amend, or retroactively approve any trade execution.",
+        "eodSnapshots": {
+          "ABNB": {
+            "last": 178.07,
+            "change_pct": 17.43,
+            "prior_close": 151.64,
+            "session": "latest verified regular close before this post-close run",
+            "source_confidence": "verified through multiple public snippets as the 2026-08-07 close; no reliable 2026-08-10 regular-close row was available during the cron run",
+            "note": "ABNB remained the strongest watched earnings/outlook mover, but the verified close available to this run was the Aug 7 post-earnings close near $178.07. The Aug 10 market-open decision had already rejected ABNB because it was a continuation from the Aug 6 earnings release and above the 12% Setup A gap ceiling."
+          },
+          "MCHP": {
+            "last": 81.81,
+            "change_pct": -3.4,
+            "open": 85.55,
+            "high": 85.66,
+            "low": 81.48,
+            "volume": 2619707,
+            "session": "regular close candidate for 2026-08-10 from public historical snippet",
+            "source_confidence": "partial / conflicting; one public historical snippet showed Aug 10 OHLCV 85.55/85.66/81.48/81.81/2.62M, while another quote snippet still showed the earlier $84.69 +13.89% mover state",
+            "note": "Even if the lower Aug 10 close is accepted, MCHP did not produce the required confirmed Setup A/B evidence at the 09:35 EDT decision window. No post-close trade can be created from this data."
+          },
+          "SPY": {
+            "last": 773.25,
+            "change_pct": 0,
+            "session": "near-close / late-session public snapshot, 2026-08-10 around 15:07 EDT",
+            "source_confidence": "partial; public historical rows reliably showed Aug 7 close $773.26, and Seeking Alpha snippet showed SPY $773.25 at 15:07 EDT on Aug 10",
+            "note": "Broad market stayed constructive/flat-to-positive versus the prior verified close, but the portfolio had no open positions and no post-close entry is permitted."
+          },
+          "QQQ": {
+            "last": null,
+            "change_pct": null,
+            "session": "regular close not reliably fetched",
+            "source_confidence": "unverified; public snippets showed Aug 7 close around $723.03-$723.52 and Aug 10 intraday/market commentary around +1.17%, but no reliable 2026-08-10 official close row was available during the cron run",
+            "note": "Nasdaq/QQQ tone was positive in available snippets, but this remains review context only."
+          },
+          "VIX": {
+            "last": null,
+            "change_pct": null,
+            "session": "regular close not reliably fetched",
+            "source_confidence": "unverified; no reliable 2026-08-10 VIX close was retrieved during this cron run",
+            "note": "The market-open decision had VIX around 14.95, below the 22 risk threshold. No close-based trade decision is allowed after 16:00 EDT."
+          }
+        },
+        "portfolio": {
+          "cash_hkd": 99769.04,
+          "portfolio_value_hkd": 99769.04,
+          "open_positions": 0,
+          "realizedPnlUsd": 0,
+          "realizedPnlHkd": 0,
+          "realizedPnlPct": 0,
+          "cumulative_return_pct": -0.23
+        },
+        "review": "Post-close review for the 2026-08-10 US regular session. The only regular-hours stock-lab decision recorded today was the 09:35 EDT NO TRADE decision. ABNB was already rejected during regular hours because it was a continuation from the Aug 6 earnings release and exceeded the strict 12% Setup A gap ceiling. MCHP remained an earnings/guidance candidate but lacked confirmed full-day close/range/volume, 20-day-high breakout, relative-strength and reward-to-risk evidence at the regular-hours decision timestamp; post-close snippets were partial and conflicting. Available broad-market snippets were constructive, with SPY near $773.25 late in the session and QQQ commentary positive, but there were no open positions to mark. Portfolio remains 100% cash at HK$99,769.04. Realized P&L for 2026-08-10 is HK$0.00. No post-close BUY or SELL execution is allowed; the next valid trade decision window is US regular market hours on 2026-08-11.",
+        "sources": [
+          "OpenClaw web_search snippets for ABNB Yahoo Finance / Google Finance / MarketWatch, 2026-08-10 cron run",
+          "OpenClaw web_search snippets for MCHP historical and quote pages, 2026-08-10 cron run",
+          "OpenClaw web_search snippets for SPY / QQQ / Barchart / Seeking Alpha, 2026-08-10 cron run",
+          "Yahoo Finance chart endpoint attempted but returned Edge: Too Many Requests during this cron run"
+        ]
+      }
+    },
+    {
+      "id": "auto-2026-08-06-market-open",
+      "date": "2026-08-06",
+      "recordedAt": "2026-08-06T09:35:00-04:00",
+      "executionAt": "2026-08-06T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "SHOP",
+      "candidateB": "CRL",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Constructive / selective but mixed open — S&P 500 and Dow Jones were positive in early trading while the Nasdaq 100 was roughly flat to slightly negative; VIX remained below the 22 risk threshold.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The simulation is based on HKD 100,000 starting capital; current ledger equity/cash is HK$99,769.04 with no open positions after the UNH time-stop exit on 2026-07-24. Public market-open sources for 2026-08-06 highlighted strong pre-market/early-session earnings-related reactions: SHOP +21.70% to around $150.05 after its August 5 Q2 2026 earnings beat (EPS $0.42 vs $0.39 estimate, revenue $3.58B vs $3.45B estimate) and raised Q3 outlook; CRL +10.33% to around $258.30 after its August 5 Q2 beat and raised FY guidance; ANET +10.10% and BKNG +7.74% also showed post-earnings follow-through. However, none of these names meet the required Setup A or Setup B entry criteria at the decision timestamp. SHOP's August 6 pre-market/early gap from the prior close is above the strict 12% Setup A maximum gap and is not a fresh day-0 reaction; the day-0 reaction was August 5 and full close/range/volume confirmation was not available. CRL's August 5 day-0 volume was approximately 658K vs an average of ~893K (0.74x), below the 1.8x threshold, and its close was not in the top 25% of its intraday range. ANET and BKNG also lack verified full-day volume expansion and day-0 close/range evidence at the open. Setup B requires a confirmed daily gain of +3% to +9%, >=2.0x volume, close above the 20-day high, and positive relative strength, none of which can be verified at 09:35 EDT. The broader regime was mixed/constructive: S&P 500 and Dow were positive in available snapshots, Nasdaq 100 was flat to slightly negative, and VIX was below 22, but 20-day moving-average and breadth confirmations were not fully verified. With no open position to manage and no fully validated Setup A or Setup B candidate, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open. SHOP carries the strongest post-earnings catalyst but its August 6 pre-market gap exceeds the 12% Setup A ceiling and it is not a fresh day-0 reaction; CRL, ANET and BKNG have earnings catalysts but lack verified full-day volume expansion, close-in-top-range, and 20-day-high/relative-strength evidence. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Next trade decision window is the next US regular market-hours session. No pre-market, post-market or after-hours execution is permitted.",
+      "riskLevels": {
+        "market_regime": "MIXED / SELECTIVE — S&P 500 and Dow were positive in available early-regular-session snapshots, Nasdaq 100 was flat to slightly negative, VIX was below 22, but 20-day moving-average and breadth confirmations were not fully verified at 09:35 EDT.",
+        "setup_quality": "NO VALID SETUP — SHOP post-earnings gap is above the 12% Setup A limit and it is not a fresh day-0 reaction; CRL, ANET and BKNG have earnings catalysts but day-0 close/range/volume and relative-strength evidence are not fully verified.",
+        "position_size": "NONE — 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW — 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Investing.com pre-market gainers",
+          "Benzinga pre-market gainers",
+          "Barchart index/futures snapshots",
+          "Yahoo Finance / CNBC quote snapshots",
+          "Public earnings snippets"
+        ],
+        "snapshots": {
+          "SHOP": {
+            "note": "Pre-market Aug 6 after Aug 5 BMO Q2 2026 earnings beat and raised guidance; prior close around $123.30 (Aug 4). Day-0 reaction was Aug 5; this is a continuation gap that exceeds Setup A ceiling.",
+            "last": 150.05,
+            "change_pct": 21.7,
+            "prior_close": 123.3,
+            "session": "pre-market / early regular"
+          },
+          "CRL": {
+            "note": "Pre-market Aug 6 after Aug 5 BMO Q2 2026 revenue beat and raised FY guidance; prior close $234.12. Day-0 volume ~658K vs avg ~893K (0.74x), below 1.8x threshold.",
+            "last": 258.3,
+            "change_pct": 10.33,
+            "prior_close": 234.12,
+            "session": "pre-market / early regular"
+          },
+          "ANET": {
+            "note": "Post Aug 4 AMC Q2 2026 earnings beat; day-0 was Aug 5. Pre-market Aug 6 +10.10%. Full-day volume and close-in-range not verified as >=1.8x.",
+            "last": 209.75,
+            "change_pct": 10.1,
+            "prior_close": 180.35,
+            "session": "pre-market / early regular"
+          },
+          "BKNG": {
+            "note": "Post Aug 4 AMC Q2 2026 earnings; day-0 was Aug 5. Pre-market Aug 6 +7.74%. Volume below average; close/range/volume not verified.",
+            "last": 209.31,
+            "change_pct": 7.74,
+            "prior_close": 192.9,
+            "session": "pre-market / early regular"
+          },
+          "SPY": {
+            "last": 771.33,
+            "change_pct": 0.31,
+            "session": "regular open snapshot"
+          },
+          "QQQ": {
+            "note": "Nasdaq 100 proxy / QQQ proxy",
+            "last": 722.85,
+            "change_pct": -0.03,
+            "session": "regular open snapshot"
+          },
+          "VIX": {
+            "last": 15.51,
+            "change_pct": -0.64,
+            "session": "spot/futures snapshot"
+          }
+        },
+        "watchedCandidates": [
+          "SHOP",
+          "CRL",
+          "ANET",
+          "BKNG",
+          "ZBH",
+          "WYNN",
+          "NEM",
+          "DTE",
+          "LLY",
+          "DIS"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0,
+      "postClose": {
+        "reportedAt": "2026-08-06T16:20:00-04:00",
+        "reportedAtHkt": "2026-08-07T04:20:00+08:00",
+        "mode": "post-close review only",
+        "noPostCloseExecution": true,
+        "note": "No new BUY or SELL decisions may be made after the US market close. All trade decisions must be made during US regular market hours (09:30-16:00 EDT).",
+        "eodSnapshots": {
+          "SPY": {
+            "last": 771.54,
+            "change_pct": 0.23,
+            "session": "regular close",
+            "note": "EOD close for 2026-08-06 from Investing.com historical table."
+          },
+          "QQQ": {
+            "last": null,
+            "change_pct": null,
+            "session": "regular close",
+            "note": "Public EOD close for 2026-08-06 was not reliably fetched during this cron run; last verified close was 2026-08-05 at 717.30 (-0.90%)."
+          },
+          "SHOP": {
+            "last": 144.24,
+            "change_pct": 16.98,
+            "prior_close": 123.3,
+            "session": "regular close",
+            "note": "Latest available public EOD close at the time of fetch (source: MarketWatch/Investing.com). This is either 2026-08-05 or 2026-08-06 close; it reflects the continuation of the Aug 5 Q2 2026 earnings reaction. Either way, the gap is above the 12% Setup A ceiling and the move is not a fresh day-0 reaction."
+          },
+          "CRL": {
+            "last": 260.72,
+            "change_pct": 11.36,
+            "prior_close": 234.12,
+            "session": "regular close",
+            "note": "Latest available public EOD close at the time of fetch (source: MarketWatch). This is either 2026-08-05 or 2026-08-06 close; it reflects the continuation of the Aug 5 Q2 2026 earnings reaction. Not a fresh day-0 reaction at the 2026-08-06 market-open decision."
+          },
+          "ANET": {
+            "last": 197.31,
+            "change_pct": 3.57,
+            "prior_close": 190.53,
+            "session": "regular close",
+            "note": "Latest available public EOD close at the time of fetch (source: CNBC/MarketWatch). This is either 2026-08-05 or 2026-08-06 close; it reflects the continuation of the Aug 4 AMC Q2 2026 earnings reaction. Not a fresh day-0 reaction."
+          },
+          "BKNG": {
+            "last": 207.02,
+            "change_pct": 6.56,
+            "prior_close": 194.27,
+            "session": "regular close",
+            "note": "Latest available public EOD close at the time of fetch (source: MacroTrends). This is either 2026-08-05 or 2026-08-06 close; it reflects the continuation of the Aug 4 AMC Q2 2026 earnings reaction. Not a fresh day-0 reaction."
+          },
+          "VIX": {
+            "last": 17.95,
+            "change_pct": 0,
+            "session": "spot/futures snapshot",
+            "note": "Snapshot from public sources; VIX remained below the 22 risk threshold."
+          }
+        },
+        "review": "Post-close review for the 2026-08-06 US regular session. The market-open decision at 09:35 EDT was NO TRADE. The latest available EOD data confirms that SHOP, CRL, ANET and BKNG were continuations of prior-day (Aug 4 AMC / Aug 5 BMO) Q2 2026 earnings reactions, not fresh day-0 reactions at the 2026-08-06 decision window. SHOP remained far above the 12% Setup A gap ceiling; CRL, ANET and BKNG lacked the required fresh day-0 close-in-top-range, >=1.8x volume, 20-day-high breakout and positive relative-strength confirmation at 09:35 EDT. SPY closed roughly flat (+0.23%) while QQQ was not independently verified for 2026-08-06. VIX remained below 22. The portfolio remains 100% cash at HK$99,769.04 with no open positions. Realized P&L for the 2026-08-06 session is HK$0.00. No post-close BUY or SELL execution is permitted; the next trade decision window is the next US regular market-hours session.",
+        "sources": [
+          "Investing.com SPY/QQQ historical snapshots",
+          "MarketWatch SHOP/CRL/ANET close snapshots",
+          "Yahoo Finance SHOP/CRL/ANET/BKNG snapshots",
+          "MacroTrends BKNG historical snapshot",
+          "Barchart S&P 500 / Nasdaq 100 / VIX snapshots"
+        ]
+      }
+    },
+    {
       "id": "auto-2026-08-05-market-open",
       "date": "2026-08-05",
       "recordedAt": "2026-08-05T09:35:00-04:00",
@@ -69,7 +392,7 @@
         "snapshots": {
           "PLTR": {
             "note": "Pre-market Aug 5 after Aug 3 Q2 2026 earnings beat; gap still above 12% Setup A ceiling",
-            "last": 145.0,
+            "last": 145,
             "change_pct": 15.4,
             "prior_close": 125.65,
             "session": "pre-market"
@@ -180,6 +503,7 @@
         ]
       }
     },
+    {
       "date": "2026-08-04",
       "recordedAt": "2026-08-04T09:35:00-04:00",
       "executionAt": "2026-08-04T09:35:00-04:00",
