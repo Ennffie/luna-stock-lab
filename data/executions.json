@@ -31,6 +31,377 @@
   ],
   "executions": [
     {
+      "id": "auto-2026-08-12-market-open",
+      "date": "2026-08-12",
+      "recordedAt": "2026-08-12T09:35:00-04:00",
+      "executionAt": "2026-08-12T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "LITE",
+      "candidateB": "P",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Mixed / selective open - available public snippets around the decision window showed US 500/S&P 500 roughly flat to slightly negative near 7755.80 (-0.02%), Nasdaq around 26616.89 (-0.28%), SPY/QQQ also negative in one mover snapshot, and VIX near 15.36, below the 22 risk threshold. The tape was not risk-off, but it was not strong enough to override strict setup confirmation requirements.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The simulation is based on HKD 100,000 starting capital; current ledger equity/cash is HK$99,769.04 with no open positions after the UNH time-stop exit on 2026-07-24. Public Aug 12 snippets showed Lumentum (LITE) as an Aug 11 earnings reporter with EPS and revenue beats, and it appeared among S&P 500 gainers around +3.80% in one regular-session mover snapshot. That is below Setup A's required >+4% day-0 price reaction, and open-time snippets did not verify full-day volume >=1.8x 20-day average volume, close in the top 25% of the intraday range, or reward-to-risk. Everpure (P) appeared on Yahoo gainers around $97.98, +8.81%, with volume 4.345M versus 3.231M average, but the volume expansion was only about 1.35x, below Setup B's >=2.0x requirement, and no confirmed hard catalyst, 20-day-high close, or 5-day relative-strength proof was available at 09:35. Other visible movers including RBRK, NOG, RIG, VAL, TER, CRWV, NBIS, AXON, KLAC, ASML, CCEP, CEG, SNDK, MRVL and STX either lacked verified catalyst/volume/20-day-high evidence, were outside the strict percentage bands, or could not be fully validated during the market-open decision window. With no open position to manage and no fully validated Setup A or Setup B candidate, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open. LITE had earnings context but lacked the required >+4% day-0 reaction and full range/volume confirmation. P and other visible gainers lacked >=2.0x volume, confirmed hard catalyst, 20-day-high close, positive relative strength, and reward-to-risk evidence at 09:35 EDT. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close 2026-08-12 review was added after 16:00 EDT as review-only: no post-close BUY or SELL execution is allowed; next valid decision window is US regular market hours on 2026-08-13.",
+      "riskLevels": {
+        "market_regime": "MIXED / SELECTIVE - available index snippets were flat to slightly negative while VIX stayed below 22; not risk-off, but 20-day moving-average and breadth confirmations were not fully verified.",
+        "setup_quality": "NO VALID SETUP - closest visible candidates were LITE and P, but neither had all required Setup A/B evidence verified at 09:35 EDT.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "OpenClaw web_search snippets for Aug 12 2026 US market movers and SPY/QQQ/VIX, 2026-08-12 cron run",
+          "OpenClaw web_search snippets from Investing.com pre-market and United States top gainers pages, 2026-08-12 cron run",
+          "OpenClaw web_search snippet from Yahoo Finance gainers, 2026-08-12 cron run",
+          "OpenClaw web_search snippet from Slickcharts market movers, 2026-08-12 cron run"
+        ],
+        "snapshots": {
+          "SP500": {
+            "last": 7755.8,
+            "change_pct": -0.02,
+            "session": "regular/open public snippet"
+          },
+          "NasdaqComposite": {
+            "last": 26616.89,
+            "change_pct": -0.28,
+            "session": "regular/open public snippet"
+          },
+          "SPY": {
+            "change_pct": -0.32,
+            "session": "regular/open public mover snippet"
+          },
+          "QQQ": {
+            "change_pct": -0.34,
+            "session": "regular/open public mover snippet"
+          },
+          "VIX": {
+            "last": 15.36,
+            "change_pct": 3.09,
+            "session": "regular/open public snippet"
+          },
+          "LITE": {
+            "last": 844.44,
+            "change_pct": 3.8,
+            "session": "regular/open public mover snippet",
+            "note": "Aug 11 earnings beat context, but available move was below Setup A's >+4% price-reaction threshold and full day-0 range/volume confirmation was unavailable."
+          },
+          "P": {
+            "last": 97.98,
+            "change_pct": 8.81,
+            "volume": 4345000,
+            "avg_volume": 3231000,
+            "session": "regular/open public gainers snippet",
+            "note": "Inside Setup B percentage range, but volume was only about 1.35x average and catalyst/20-day-high/relative-strength evidence was not verified."
+          }
+        },
+        "watchedCandidates": [
+          "LITE",
+          "P",
+          "RBRK",
+          "NOG",
+          "RIG",
+          "VAL",
+          "TER",
+          "CRWV",
+          "NBIS",
+          "AXON",
+          "KLAC",
+          "ASML",
+          "CCEP",
+          "CEG",
+          "SNDK",
+          "MRVL",
+          "STX",
+          "NVDA",
+          "AAPL",
+          "PLTR",
+          "MSFT"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0,
+      "postClose": {
+        "reportedAt": "2026-08-12T16:20:00-04:00",
+        "reportedAtHkt": "2026-08-13T04:20:00+08:00",
+        "mode": "post-close review only",
+        "noPostCloseExecution": true,
+        "note": "No new BUY or SELL decisions may be made after the US market close. All trade decisions must be made during US regular market hours (09:30-16:00 EDT). This 2026-08-12 post-close block is review-only and does not create, amend, or retroactively approve any trade execution.",
+        "eodSnapshots": {
+          "LITE": {
+            "last": 901.1,
+            "change_pct": 9.81,
+            "session": "latest / close candidate for 2026-08-12 from public Finviz snippet",
+            "source_confidence": "partial; public snippets showed Aug 11 historical close at $820.59 and a later Finviz latest/last-close candidate of $901.10 on Aug 12, while Yahoo chart endpoint returned Edge: Too Many Requests during this cron run",
+            "note": "LITE was candidateA at the 09:35 EDT decision window but was rejected during regular hours because the available open-time evidence did not fully satisfy Setup A. The post-close strength does not create a retroactive BUY."
+          },
+          "P": {
+            "last": null,
+            "change_pct": null,
+            "session": "post-close candidate price not treated as execution-grade",
+            "source_confidence": "low for exact 2026-08-12 EOD; ticker P snippets conflicted across Yahoo gainers, StockInvest, Investing.com and legacy Pure Storage/Everpure references. The regular-hours record preserves the verified open-time snippet around $97.98 / +8.81% / 4.345M volume only.",
+            "alternate": {
+              "source": "StockInvest public snippet for prior trading day context",
+              "date": "2026-08-11",
+              "last": 109.42,
+              "change_pct": 11.63,
+              "open": 105.67,
+              "high": 109.54,
+              "low": 99.41,
+              "volume": 4781347
+            },
+            "note": "P was candidateB at the 09:35 EDT decision window but was rejected because volume expansion was only about 1.35x average and catalyst/20-day-high/relative-strength evidence was not verified. No post-close BUY can be created."
+          },
+          "SPY": {
+            "last": 772.34,
+            "change_pct": 0.23,
+            "open": 774.71,
+            "high": 774.9,
+            "low": 772.36,
+            "volume": 5861473,
+            "session": "regular close for 2026-08-12 from StockAnalysis historical snippet",
+            "source_confidence": "single-source public historical table; Yahoo chart endpoint was rate-limited during this cron run",
+            "note": "Broad-market review context only; no held SPY exposure."
+          },
+          "QQQ": {
+            "last": 724.28,
+            "change_pct": 0.81,
+            "open": 727.08,
+            "high": 727.25,
+            "low": 722.92,
+            "volume": 17084230,
+            "session": "regular close for 2026-08-12 from StockAnalysis historical snippet",
+            "source_confidence": "single-source public historical table; Yahoo chart endpoint was rate-limited during this cron run",
+            "note": "Nasdaq/QQQ closed higher in the available historical table; portfolio had no open exposure."
+          },
+          "VIX": {
+            "last": null,
+            "change_pct": null,
+            "session": "2026-08-12 exact close unavailable from verified snippet during this cron run",
+            "source_confidence": "low for exact Aug 12 close; Yahoo historical snippet exposed Aug 11 close 15.42 only, and option-chain snippets were not suitable for index close marking",
+            "note": "Open-time VIX was near 15.36, below the 22 risk threshold. Exact post-close VIX was not recorded as execution-grade data."
+          }
+        },
+        "portfolio": {
+          "cash_hkd": 99769.04,
+          "portfolio_value_hkd": 99769.04,
+          "open_positions": 0,
+          "realizedPnlUsd": 0,
+          "realizedPnlHkd": 0,
+          "realizedPnlPct": 0,
+          "cumulative_return_pct": -0.23
+        },
+        "review": "Post-close review for the 2026-08-12 US regular session. The only stock-lab decision recorded today was the 09:35:00 EDT NO TRADE decision. LITE and P were reviewed during regular hours as the closest visible candidates, but neither had complete Setup A or Setup B evidence at the decision timestamp. After the close, public snippets showed SPY around $772.34 and QQQ around $724.28; LITE had a later public latest/close candidate around $901.10, while exact P and VIX EOD data were not treated as execution-grade because snippets conflicted or were incomplete. Because the portfolio held no positions, there was no position-level mark-to-market change and realized P&L for 2026-08-12 is HK$0.00. Portfolio remains 100% cash at HK$99,769.04, cumulative return -0.23%. No post-close BUY or SELL execution is allowed; the next valid trade decision window is US regular market hours on 2026-08-13.",
+        "sources": [
+          "OpenClaw web_search snippet for LITE Finviz latest/last-close candidate, 2026-08-13 HKT post-close cron run",
+          "OpenClaw web_search snippets for LITE Yahoo Finance / StockAnalysis / MarketBeat historical data, 2026-08-13 HKT post-close cron run",
+          "OpenClaw web_search snippets for P Yahoo gainers, StockInvest, Investing.com and Yahoo Finance historical pages, 2026-08-13 HKT post-close cron run",
+          "OpenClaw web_search snippet for SPY StockAnalysis historical data, 2026-08-13 HKT post-close cron run",
+          "OpenClaw web_search snippet for QQQ StockAnalysis historical data, 2026-08-13 HKT post-close cron run",
+          "OpenClaw web_search snippet for VIX Yahoo Finance historical data, 2026-08-13 HKT post-close cron run",
+          "Yahoo Finance chart endpoint attempted but returned Edge: Too Many Requests during this cron run"
+        ]
+      }
+    },
+    {
+      "id": "auto-2026-08-11-market-open",
+      "date": "2026-08-11",
+      "recordedAt": "2026-08-11T09:35:14-04:00",
+      "executionAt": "2026-08-11T09:35:14-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "DELL",
+      "candidateB": "PLTR",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Mixed / selective open - Yahoo Finance snippets around the decision window showed SPY 773.03 (-0.03%), QQQ 720.87 (-0.30%), S&P 500 7753.11 (-0.06%), Nasdaq Composite 26605.36 (-0.32%), while VIX remained very low near 4.70. This is not a clear risk-off regime, but the early tape was not broad enough to relax setup validation.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The simulation is based on HKD 100,000 starting capital; current ledger equity/cash is HK$99,769.04 with no open positions after the UNH time-stop exit on 2026-07-24. Public Aug 11 market-open snippets showed a mixed broad market: SPY and QQQ were slightly negative, S&P 500 and Nasdaq Composite were also slightly negative, and VIX stayed below the 22 risk threshold. Investor's Business Daily highlighted Palantir strength, Dell Technologies breaking out, and SpaceX-related strength, while Investing.com pre-market snippets showed PLTR around $170.70 (-0.76%) at 09:29 and later around $175.23 (+1.87%) with 55.27M volume. PLTR therefore did not meet Setup B's required +3% to +9% daily gain at the decision timestamp, and no full close-above-20-day-high plus 5-day relative-strength confirmation was available at the open. DELL had an AI/backlog breakout narrative, but available snippets did not verify a fresh earnings-within-1-trading-day Setup A, 1.8x volume, close-in-top-25%-of-range, or a complete stop/target reward-to-risk check at 09:35. Other visible movers were either private/non-standard for this universe, too extended, low-liquidity, or lacked verified setup evidence. With no open position to manage and no fully validated Setup A or Setup B candidate, the rules require preserving capital.",
+      "reason": "No valid Setup A or Setup B candidate confirmed at market open. PLTR's available open-time move was below the Setup B +3% floor or negative in one pre-market snapshot; DELL's breakout narrative lacked the required regular-session volume, 20-day-high, relative-strength and reward-to-risk confirmations. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close 2026-08-11 review was added after 16:00 EDT as review-only: no post-close BUY or SELL execution is allowed; next valid decision window is US regular market hours on 2026-08-12.",
+      "riskLevels": {
+        "market_regime": "MIXED / SELECTIVE - major indexes were slightly negative in available open-time snippets, while VIX was far below the 22 risk threshold; not risk-off, but breadth and 20-day moving-average confirmations were not fully verified.",
+        "setup_quality": "NO VALID SETUP - DELL and PLTR were the closest large-cap candidates from public snippets, but neither had all required Setup A/B evidence verified at 09:35 EDT.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "OpenClaw web_search snippets for Aug 11 2026 US market movers and SPY/QQQ/VIX, 2026-08-11 cron run",
+          "OpenClaw web_search snippet from Investor's Business Daily Stock Market Today, 2026-08-11 cron run",
+          "OpenClaw web_search snippets from Investing.com pre-market movers, 2026-08-11 cron run",
+          "OpenClaw web_search snippets for DELL breakout context, 2026-08-11 cron run"
+        ],
+        "snapshots": {
+          "SPY": {
+            "last": 773.03,
+            "change_pct": -0.03,
+            "session": "open-time public snippet"
+          },
+          "QQQ": {
+            "last": 720.87,
+            "change_pct": -0.3,
+            "session": "open-time public snippet"
+          },
+          "SP500": {
+            "last": 7753.11,
+            "change_pct": -0.06,
+            "session": "open-time public snippet"
+          },
+          "NasdaqComposite": {
+            "last": 26605.36,
+            "change_pct": -0.32,
+            "session": "open-time public snippet"
+          },
+          "VIX": {
+            "last": 4.699,
+            "change_pct": 0.84,
+            "session": "open-time public snippet"
+          },
+          "PLTR": {
+            "last": 175.23,
+            "change_pct": 1.87,
+            "volume": 55270000,
+            "session": "regular / pre-market public snippets",
+            "note": "Investing.com snippet also showed PLTR around $170.70 (-0.76%) at 09:29:44; available positive snapshot remained below Setup B's +3% floor."
+          },
+          "DELL": {
+            "last": null,
+            "change_pct": null,
+            "session": "public breakout/news snippet",
+            "note": "IBD highlighted DELL breakout / AI backlog context, but open-time setup metrics were not fully verified."
+          }
+        },
+        "watchedCandidates": [
+          "DELL",
+          "PLTR",
+          "SPCX",
+          "RKLB",
+          "VRTX",
+          "HPE",
+          "MRNA",
+          "NVDA",
+          "MSFT",
+          "AAPL"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0,
+      "postClose": {
+        "reportedAt": "2026-08-11T16:20:00-04:00",
+        "reportedAtHkt": "2026-08-12T04:20:00+08:00",
+        "mode": "post-close review only",
+        "noPostCloseExecution": true,
+        "note": "No new BUY or SELL decisions may be made after the US market close. All trade decisions must be made during US regular market hours (09:30-16:00 EDT). This 2026-08-11 post-close block is review-only and does not create, amend, or retroactively approve any trade execution.",
+        "eodSnapshots": {
+          "DELL": {
+            "last": 435.96,
+            "change_pct": -4.79,
+            "open": 448.3,
+            "high": 452.3,
+            "low": 431.33,
+            "volume": 627130,
+            "session": "regular close candidate for 2026-08-11 from public historical snippet",
+            "source_confidence": "single-source public historical table from Investing.com; Yahoo chart endpoint was rate-limited during this cron run",
+            "note": "DELL was candidateA at the 09:35 EDT decision window. The post-close decline does not create a retroactive SELL or alter the regular-hours NO TRADE decision."
+          },
+          "PLTR": {
+            "last": 173.65,
+            "change_pct": -0.9,
+            "open": 174.52,
+            "high": 177.94,
+            "low": 172.72,
+            "volume": 22890694,
+            "session": "regular close candidate for 2026-08-11 from Yahoo Finance historical snippet",
+            "source_confidence": "conflicting public snippets: Yahoo Finance historical table showed close $173.65 / volume 22.89M, while Investing.com showed price $176.20 / volume 11.10M / +0.55%; recorded Yahoo table as primary and flagged conflict",
+            "alternate": {
+              "source": "Investing.com historical snippet",
+              "last": 176.2,
+              "change_pct": 0.55,
+              "open": 173.92,
+              "high": 176.81,
+              "low": 173.75,
+              "volume": 11100000
+            },
+            "note": "PLTR was candidateB at the 09:35 EDT decision window. Conflicting post-close price snippets are review context only; no post-close BUY can be created."
+          },
+          "SPY": {
+            "last": 772.25,
+            "change_pct": null,
+            "open": 772.64,
+            "high": 775.03,
+            "low": 771.89,
+            "volume": 39250000,
+            "session": "latest / near-close public quote for 2026-08-11 from Robinhood snippet",
+            "source_confidence": "partial; Robinhood snippet showed 2026-08-11 range and shares now at $772.25, while Barchart later showed last price $773.26 and Yahoo chart endpoint was rate-limited",
+            "note": "Broad-market review context only; no held SPY exposure."
+          },
+          "QQQ": {
+            "last": 718.16,
+            "change_pct": -0.38,
+            "open": 723.29,
+            "high": 723.35,
+            "low": 718.04,
+            "volume": 14476523,
+            "session": "regular close for 2026-08-11 from StockAnalysis historical snippet",
+            "source_confidence": "single-source public historical table; Yahoo chart endpoint was rate-limited during this cron run",
+            "note": "Nasdaq/QQQ closed weaker in the available historical table; portfolio had no open exposure."
+          },
+          "VIX": {
+            "last": 15.42,
+            "change_pct": -0.26,
+            "open": 15.42,
+            "high": 15.44,
+            "low": 15.4,
+            "session": "regular close for 2026-08-11 from Yahoo Finance historical snippet",
+            "source_confidence": "public historical snippet; VIX remained below the 22 risk threshold",
+            "note": "Risk backdrop stayed below the system risk-off threshold; this remains review context only."
+          }
+        },
+        "portfolio": {
+          "cash_hkd": 99769.04,
+          "portfolio_value_hkd": 99769.04,
+          "open_positions": 0,
+          "realizedPnlUsd": 0,
+          "realizedPnlHkd": 0,
+          "realizedPnlPct": 0,
+          "cumulative_return_pct": -0.23
+        },
+        "review": "Post-close review for the 2026-08-11 US regular session. The only regular-hours stock-lab decision recorded today was the 09:35:14 EDT NO TRADE decision. DELL and PLTR were reviewed during regular hours as the closest visible candidates, but neither had complete Setup A or Setup B evidence at the decision timestamp. After the close, public snippets showed DELL down to about $435.96 and PLTR close data was conflicting between Yahoo Finance ($173.65) and Investing.com ($176.20). QQQ closed weaker at about $718.16 and VIX remained low near 15.42. Because the portfolio held no positions, there was no position-level mark-to-market change and realized P&L for 2026-08-11 is HK$0.00. Portfolio remains 100% cash at HK$99,769.04, cumulative return -0.23%. No post-close BUY or SELL execution is allowed; the next valid trade decision window is US regular market hours on 2026-08-12.",
+        "sources": [
+          "OpenClaw web_search snippet for DELL Investing.com historical data, 2026-08-12 HKT post-close cron run",
+          "OpenClaw web_search snippets for PLTR Yahoo Finance and Investing.com historical data, 2026-08-12 HKT post-close cron run",
+          "OpenClaw web_search snippets for SPY Robinhood / Barchart / Twelvedata, 2026-08-12 HKT post-close cron run",
+          "OpenClaw web_search snippet for QQQ StockAnalysis historical data, 2026-08-12 HKT post-close cron run",
+          "OpenClaw web_search snippet for VIX Yahoo Finance historical data, 2026-08-12 HKT post-close cron run",
+          "Yahoo Finance chart endpoint attempted but returned Edge: Too Many Requests during this cron run"
+        ]
+      }
+    },
+    {
       "id": "auto-2026-08-10-market-open",
       "date": "2026-08-10",
       "recordedAt": "2026-08-10T09:35:00-04:00",
