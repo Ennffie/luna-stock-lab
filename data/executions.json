@@ -31,6 +31,233 @@
   ],
   "executions": [
     {
+      "id": "auto-2026-08-13-market-open",
+      "date": "2026-08-13",
+      "recordedAt": "2026-08-13T09:35:12-04:00",
+      "executionAt": "2026-08-13T09:35:12-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "EAT",
+      "candidateB": "DELL",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Constructive but data-conflicted open - available public snippets showed S&P 500/SPX positive around +0.26% to +0.31%, Nasdaq positive around +0.54% to +0.65%, QQQ around +0.73%, and VIX below 22 around 14.68 to 15.36. The regime was not risk-off, but market-open mover data had mixed timestamps and was not execution-grade enough to validate a new entry.",
+      "thesis": "US market was inside regular hours at execution (09:35:12 EDT / 21:35:12 HKT). The HKD 100,000 simulation ledger is currently all cash at HK$99,769.04, with no open positions after the UNH time-stop exit. Public Aug 13 snippets showed Brinker International (EAT) as the closest Setup A candidate after Aug 12 fiscal Q4 2026 earnings and FY2027 guidance; Yahoo gainers showed EAT around $245.89, +11.07%, with 2.465M volume versus 1.057M average, and company/press snippets confirmed revenue growth, Chili's comparable-sales strength, and FY2027 guidance. However, the available quote snippets carried conflicting time labels, including 08:30 AM EDT and 4:00 PM EDT, and no reliable 09:35 execution-grade day range / close-in-top-25%-of-range confirmation was available. DELL had an AI-server sympathy catalyst and +9.87% gain in Yahoo/news snippets, but volume was below average in one Yahoo quote snapshot and Setup B requires >=2.0x volume plus 20-day-high and relative-strength confirmation. SMCI and CRWV had strong catalyst/volume snippets but were far above Setup B's +3% to +9% daily-gain band; CIEN and EAT were also above the Setup B band. Because no candidate had complete Setup A or Setup B evidence with reward-to-risk >= 2.0 at the execution timestamp, the rules require preserving capital.",
+      "reason": "No valid setup confirmed at market open. EAT was the closest earnings/guidance momentum candidate, but 09:35 execution-grade range/close-quality data could not be verified and quote timestamps conflicted. DELL lacked >=2.0x volume confirmation. SMCI/CRWV/CIEN and other visible movers were either too extended, lacked full confirmation, or were not inside the strict setup bands.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close 2026-08-13 review was added after 16:00 EDT as review-only: no post-close BUY or SELL execution is allowed; next valid decision window is US regular market hours on 2026-08-14.",
+      "riskLevels": {
+        "market_regime": "RISK-ON / CONSTRUCTIVE BUT DATA-CONFLICTED - SPX/Nasdaq/QQQ snippets were positive and VIX was below 22, but source timestamps around movers were mixed.",
+        "setup_quality": "NO VALID SETUP - EAT was closest to Setup A, but complete execution-time range/close-quality validation was unavailable; DELL/SMCI/CRWV/CIEN failed one or more strict Setup B constraints.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "OpenClaw web_search snippet from Yahoo Finance top gainers / research-hub screener for Aug 13 2026 movers, 2026-08-13 market-open cron run",
+          "OpenClaw web_search snippets from Yahoo Finance quote/news pages for DELL and EAT, 2026-08-13 market-open cron run",
+          "OpenClaw web_search snippets from MarketWatch/Yahoo/Investing.com/Barchart for SPX/Nasdaq/QQQ/VIX, 2026-08-13 market-open cron run",
+          "OpenClaw web_search snippets from Brinker PRNewswire / StockTitan / Yahoo earnings-call transcript, 2026-08-13 market-open cron run",
+          "OpenClaw web_search snippets from SMCI public news / Yahoo / Simply Wall St / Tickeron, 2026-08-13 market-open cron run"
+        ],
+        "snapshots": {
+          "SP500": {
+            "last": 7748.5,
+            "change_pct": 0.26,
+            "session": "public index snippet near current session; MarketWatch snippet also showed S&P 500 around 7752.42 / +0.31%"
+          },
+          "NasdaqComposite": {
+            "last": 26588.49,
+            "change_pct": 0.54,
+            "session": "Yahoo trending indices snippet; MarketWatch snippet showed Nasdaq around 26618.35 / +0.65%"
+          },
+          "QQQ": {
+            "last": 723.7,
+            "change_pct": 0.73,
+            "session": "Yahoo/Barchart public snippet"
+          },
+          "VIX": {
+            "last": 14.69,
+            "change_pct": -3.93,
+            "session": "MarketWatch public snippet; Investing.com snippet also showed VIX around 15.36 / -0.65%"
+          },
+          "EAT": {
+            "last": 245.89,
+            "change_pct": 11.07,
+            "volume": 2465000,
+            "avg_volume": 1057000,
+            "session": "Yahoo gainers/research screener snippets with conflicting 08:30 AM / 4:00 PM EDT labels",
+            "note": "Closest Setup A candidate after Aug 12 earnings and FY2027 guidance, but execution-grade day range / close-in-top-25%-of-range confirmation was unavailable at 09:35 EDT."
+          },
+          "DELL": {
+            "last": 484.5,
+            "change_pct": 9.87,
+            "volume": 5512000,
+            "avg_volume": 8657000,
+            "session": "Yahoo gainers/news snippets; separate quote page showed volume below average",
+            "note": "AI-server sympathy/catalyst name, but volume was not >=2.0x average and full Setup B confirmation was unavailable."
+          },
+          "SMCI": {
+            "last": 37.61,
+            "change_pct": 19.02,
+            "volume": 164567000,
+            "avg_volume": 56221000,
+            "session": "Yahoo most-active/gainers snippets",
+            "note": "Strong catalyst/volume but too extended for Setup B daily-gain band and not entered under strict rules."
+          },
+          "CIEN": {
+            "last": 432.05,
+            "change_pct": 11.49,
+            "volume": 3420000,
+            "avg_volume": 2701000,
+            "session": "Yahoo gainers snippet",
+            "note": "Above Setup B +9% upper band and lacked complete execution-time validation."
+          }
+        },
+        "watchedCandidates": [
+          "EAT",
+          "DELL",
+          "SMCI",
+          "CRWV",
+          "CIEN",
+          "MSGE",
+          "DOCN",
+          "AEHR",
+          "NBIS",
+          "QNT",
+          "EROC",
+          "SHAZ",
+          "MRX",
+          "ATRO",
+          "SPCX",
+          "INTC",
+          "NOK",
+          "NVDA",
+          "PLUG",
+          "ONDS"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0,
+      "postClose": {
+        "reportedAt": "2026-08-13T16:20:00-04:00",
+        "reportedAtHkt": "2026-08-14T04:20:00+08:00",
+        "mode": "post-close review only",
+        "noPostCloseExecution": true,
+        "note": "No new BUY or SELL decisions may be made after the US market close. All trade decisions must be made during US regular market hours (09:30-16:00 EDT). This 2026-08-13 post-close block is review-only and does not create, amend, or retroactively approve any trade execution.",
+        "eodSnapshots": {
+          "EAT": {
+            "last": 244.5,
+            "change_pct": 10.7,
+            "open": 220.86,
+            "high": 252.52,
+            "low": 222,
+            "volume": 2460000,
+            "session": "latest close candidate from MarketBeat 08/12/2026 historical row; likely the earnings-reaction session visible during the Aug 13 market-open scan, but exact Aug 13 EOD labeling was not independently verified during this cron run",
+            "source_confidence": "partial; MarketBeat showed close $244.50 / +10.70% / high $252.52 / low $222.00 / 2.46M shares, CNBC showed matching high/low and volume context but did not expose an unambiguous Aug 13 regular-session close in the snippet",
+            "note": "EAT was candidateA at the 09:35 EDT decision window and remained review-only after close. It was rejected during regular hours because execution-grade 09:35 range / close-quality confirmation was unavailable and quote timestamps conflicted. No post-close BUY can be created."
+          },
+          "DELL": {
+            "last": 484.5,
+            "change_pct": 9.87,
+            "after_hours_last": 501,
+            "after_hours_change_pct": 3.41,
+            "volume": 5978248,
+            "session": "regular close from CNBC snippet; after-hours last shown separately and not used for EOD execution logic",
+            "source_confidence": "partial; CNBC snippet showed Close $484.50 / +43.53 / +9.87% with volume 5,978,248 and after-hours $501.00 at 09:17 EDT, while other snippets exposed older Aug 7-11 historical data",
+            "note": "DELL was candidateB at the 09:35 EDT decision window but lacked >=2.0x volume confirmation and full Setup B evidence. Post-close and after-hours strength does not create a retroactive BUY."
+          },
+          "SMCI": {
+            "last": 37.61,
+            "change_pct": 19.02,
+            "after_hours_last": 38,
+            "session": "regular close from MarketWatch snippet with after-hours/latest shown separately",
+            "source_confidence": "moderate for close/change from MarketWatch; Yahoo quote page after close showed previous close $37.61 and later intraday/pre-market range data, which suggests time-label rollover in snippets",
+            "note": "SMCI had strong catalyst/volume context during regular hours but was too extended for the strict Setup B daily-gain band. No post-close trade was created."
+          },
+          "CIEN": {
+            "last": 432.05,
+            "change_pct": 11.49,
+            "open": 414.51,
+            "high": 446.36,
+            "low": 409.24,
+            "volume": 3983800,
+            "alternate": {
+              "source": "MarketBeat / Investing.com snippets",
+              "last": 433.49,
+              "change_pct": 11.9
+            },
+            "session": "latest close candidate from Yahoo historical snippet for 08/12/2026; used as review context because Aug 13 exact EOD labeling was not independently verified",
+            "source_confidence": "partial/conflicting; Yahoo showed $432.05 / +11.49%, Investing.com showed $432.00 / +11.48%, and MarketBeat showed $433.49 / +11.90%",
+            "note": "CIEN was above the Setup B +9% upper band at the decision window and lacked full execution-time validation. No post-close BUY can be created."
+          },
+          "SPY": {
+            "last": 777.85,
+            "change_pct": 0.69,
+            "open": 774.87,
+            "high": 779.37,
+            "low": 774.11,
+            "volume": 9453107,
+            "session": "regular close for 2026-08-13 from StockAnalysis historical snippet",
+            "source_confidence": "single-source public historical table; Investing.com/Yahoo quote snippets showed near-matching live values around 776-778",
+            "note": "Broad-market review context only; portfolio had no held SPY exposure."
+          },
+          "QQQ": {
+            "last": 732.36,
+            "change_pct": 1.2,
+            "open": 725.13,
+            "high": 733.76,
+            "low": 724.04,
+            "volume": 14108688,
+            "session": "regular close for 2026-08-13 from Yahoo Finance historical snippet",
+            "source_confidence": "single-source public historical table; Investing.com snippet showed a near-matching real-time value around $732.32",
+            "note": "Nasdaq/QQQ closed stronger in the available historical table; portfolio had no open exposure."
+          },
+          "VIX": {
+            "last": 14.71,
+            "change_pct": 1.1,
+            "alternate": {
+              "source": "Investing.com real-time derived snippet",
+              "last": 14.65,
+              "change_pct": 0.69
+            },
+            "session": "post-close/latest public quote from MarketWatch; exact historical Aug 13 row not available from Yahoo snippet during this cron run",
+            "source_confidence": "partial; MarketWatch showed VIX 14.71 / +1.10% and Investing.com showed 14.65 / +0.69%; both remain below the 22 risk threshold",
+            "note": "Risk backdrop stayed below the system risk-off threshold. Review context only."
+          }
+        },
+        "portfolio": {
+          "cash_hkd": 99769.04,
+          "portfolio_value_hkd": 99769.04,
+          "open_positions": 0,
+          "realizedPnlUsd": 0,
+          "realizedPnlHkd": 0,
+          "realizedPnlPct": 0,
+          "cumulative_return_pct": -0.23
+        },
+        "review": "Post-close review for the 2026-08-13 US regular session. The only stock-lab decision recorded today was the 09:35:12 EDT NO TRADE decision. EAT and DELL were reviewed during regular hours as the closest visible candidates, while SMCI and CIEN were also monitored as extended movers; none had complete Setup A or Setup B evidence at the decision timestamp. After the close, public snippets showed SPY around $777.85 (+0.69%) and QQQ around $732.36 (+1.20%); VIX remained low around 14.65-14.71. EAT, DELL, SMCI and CIEN post-close/latest snippets were kept as review context only because several source timestamps were conflicting or incomplete. Because the portfolio held no positions, there was no position-level mark-to-market change and realized P&L for 2026-08-13 is HK$0.00. Portfolio remains 100% cash at HK$99,769.04, cumulative return -0.23%. No post-close BUY or SELL execution is allowed; the next valid trade decision window is US regular market hours on 2026-08-14.",
+        "sources": [
+          "OpenClaw web_search snippet for EAT MarketBeat chart / CNBC quote, 2026-08-14 HKT post-close cron run",
+          "OpenClaw web_search snippets for DELL CNBC / Investing.com / Yahoo Finance, 2026-08-14 HKT post-close cron run",
+          "OpenClaw web_search snippets for SMCI MarketWatch / Yahoo Finance / Benzinga, 2026-08-14 HKT post-close cron run",
+          "OpenClaw web_search snippets for CIEN Yahoo Finance / MarketBeat / Investing.com, 2026-08-14 HKT post-close cron run",
+          "OpenClaw web_search snippet for SPY StockAnalysis historical data, 2026-08-14 HKT post-close cron run",
+          "OpenClaw web_search snippet for QQQ Yahoo Finance historical data, 2026-08-14 HKT post-close cron run",
+          "OpenClaw web_search snippets for VIX MarketWatch / Investing.com / Yahoo Finance historical data, 2026-08-14 HKT post-close cron run"
+        ]
+      }
+    },
+    {
       "id": "auto-2026-08-12-market-open",
       "date": "2026-08-12",
       "recordedAt": "2026-08-12T09:35:00-04:00",
