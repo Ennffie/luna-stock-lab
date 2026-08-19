@@ -1,5 +1,153 @@
 {
-  "reports": [],
+  "reports": [
+    {
+      "id": "post-close-2026-08-19",
+      "date": "2026-08-19",
+      "decision": "no_trade",
+      "executionAt": "2026-08-19T09:35:00-04:00",
+      "executionWindow": "US regular market hours only; post-close review has no trade execution authority",
+      "candidateA": "N/A",
+      "candidateB": "PLTR",
+      "pickedTicker": "",
+      "marketMood": "Mixed-to-flat close; SPY +0.21%, QQQ -0.20% at the 16:00 EDT close. Nasdaq quote API secondaryData marked 'Closed at Aug 19, 2026 4:00 PM ET'; after-hours primaryData ignored for review.",
+      "reason": "During the valid decision window, Luna recorded NO TRADE at 09:35 EDT because no Setup A or Setup B candidate had complete execution-grade confirmation. PLTR was the closest watched candidate, but its +2.44% move was below the Setup B +3% minimum and the required volume, 20-day-breakout, hard catalyst, relative-strength, extension, and reward-to-risk evidence was incomplete at execution time.",
+      "review": "Post-close review only, recorded after the 2026-08-19 US close. No BUY or SELL may be created after 16:00 EDT. The no-trade choice preserved capital: PLTR closed 175.19 (+2.13%), remaining below the +3% threshold; SNDK closed 1568.87 (-3.50%) and SMCI 36.58 (-2.22%) weakened into the close. SPY managed a small gain (+0.21%) while QQQ finished slightly lower (-0.20%). Portfolio stays 100% cash at HK$99,769.04; realized P&L today HK$0.00; open positions 0.",
+      "createdAt": "2026-08-19T20:20:00Z",
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "open_positions": 0,
+      "eodPrices": {
+        "source": "Nasdaq quote API secondaryData, Closed at Aug 19, 2026 4:00 PM ET; after-hours primaryData ignored for review.",
+        "SPY": {
+          "close": 769.1,
+          "change": 1.65,
+          "change_pct": 0.21
+        },
+        "QQQ": {
+          "close": 716.08,
+          "change": -1.43,
+          "change_pct": -0.2
+        },
+        "MU": {
+          "close": 937.105,
+          "change": -3.655,
+          "change_pct": -0.39
+        },
+        "SNDK": {
+          "close": 1568.87,
+          "change": -56.91,
+          "change_pct": -3.5
+        },
+        "PLTR": {
+          "close": 175.19,
+          "change": 3.65,
+          "change_pct": 2.13
+        },
+        "SMCI": {
+          "close": 36.58,
+          "change": -0.83,
+          "change_pct": -2.22
+        }
+      }
+    },
+    {
+      "id": "post-close-2026-08-18",
+      "date": "2026-08-18",
+      "decision": "no_trade",
+      "executionAt": "2026-08-18T09:35:00-04:00",
+      "executionWindow": "US regular market hours only; post-close review has no trade execution authority",
+      "candidateA": "N/A",
+      "candidateB": "MU",
+      "pickedTicker": "",
+      "marketMood": "Risk-off close / semiconductor-storage reversal; SPY -0.69%, QQQ -1.69% at the 16:00 EDT close.",
+      "reason": "During the valid decision window, Luna recorded NO TRADE at 09:35 EDT because no Setup A or Setup B candidate had complete execution-grade confirmation. MU was the closest watched candidate, but required catalyst, volume, breakout, relative-strength, extension, and reward-to-risk checks were incomplete at execution time.",
+      "review": "Post-close review only, recorded after the 2026-08-18 US close. No BUY or SELL may be created after 16:00 EDT. The no-trade choice avoided a weak close in the watched momentum names: MU closed 940.76 (-7.02%), SNDK 1625.78 (-9.01%), SIMO 251.72 (-7.69%), OUST 42.99 (-10.68%), CIFR 16.095 (-13.00%), with QQQ down 1.69%. Portfolio stayed 100% cash at HK$99,769.04; realized P&L today HK$0.00; open positions 0.",
+      "createdAt": "2026-08-18T20:20:00Z",
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "open_positions": 0,
+      "eodPrices": {
+        "source": "Nasdaq quote API secondaryData, Closed at Aug 18, 2026 4:00 PM ET; after-hours primaryData ignored for review.",
+        "SPY": {
+          "close": 767.36,
+          "change": -5.31,
+          "change_pct": -0.69
+        },
+        "QQQ": {
+          "close": 717.51,
+          "change": -12.36,
+          "change_pct": -1.69
+        },
+        "MU": {
+          "close": 940.76,
+          "change": -70.99,
+          "change_pct": -7.02
+        },
+        "SNDK": {
+          "close": 1625.78,
+          "change": -161.07,
+          "change_pct": -9.01
+        },
+        "LFTO": {
+          "close": 19.66,
+          "change": 0.13,
+          "change_pct": 0.67
+        },
+        "SIMO": {
+          "close": 251.72,
+          "change": -20.98,
+          "change_pct": -7.69
+        },
+        "OUST": {
+          "close": 42.99,
+          "change": -5.14,
+          "change_pct": -10.68
+        },
+        "CPRT": {
+          "close": 31.51,
+          "change": -0.19,
+          "change_pct": -0.6
+        },
+        "USAR": {
+          "close": 18.51,
+          "change": -0.78,
+          "change_pct": -4.04
+        },
+        "CIFR": {
+          "close": 16.095,
+          "change": -2.405,
+          "change_pct": -13
+        },
+        "LUNR": {
+          "close": 19.31,
+          "change": -1.07,
+          "change_pct": -5.25
+        },
+        "AMAT": {
+          "close": 514.33,
+          "change": -20.98,
+          "change_pct": -3.92
+        },
+        "NVDA": {
+          "close": 219.74,
+          "change": -5.27,
+          "change_pct": -2.34
+        },
+        "AMD": {
+          "close": 484.39,
+          "change": -21.61,
+          "change_pct": -4.27
+        },
+        "SMCI": {
+          "close": 37.41,
+          "change": -0.87,
+          "change_pct": -2.27
+        }
+      }
+    }
+  ],
   "positions": [
     {
       "id": "pos-2026-07-17-unh",
@@ -30,6 +178,721 @@
     }
   ],
   "executions": [
+    {
+      "id": "auto-2026-08-19-market-open",
+      "date": "2026-08-19",
+      "recordedAt": "2026-08-19T09:35:00-04:00",
+      "executionAt": "2026-08-19T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": null,
+      "candidateB": "PLTR",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Constructive but data-limited open - Nasdaq quote snapshots at 09:35-09:36 ET showed SPY +0.30% and QQQ +0.35%, with no VIX confirmation from the Nasdaq endpoint. Market tone was firmer than the prior close, but not enough to waive setup evidence.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The HKD 100,000 simulation ledger remains all cash at HK$99,769.04, with no open positions after the closed UNH time-stop trade. Nasdaq real-time snapshots around 09:35-09:36 ET showed SPY 769.7564 (+0.30%), QQQ 720.02 (+0.35%), MU 941.35 (+0.06%), SNDK 1636.00 (+0.63%), PLTR 175.73 (+2.44%), and SMCI 37.19 (-0.59%). Search snippets also surfaced broader August momentum/watchlist names such as SMCI, U, PLTR, AAOI, MSFT, HNGE, XHG, QMCO and ABCL, but these were monthly/watchlist or incomplete snippets rather than execution-grade 09:35 setup evidence. Setup B requires a hard catalyst, +3% to +9% daily gain, >=2.0x average volume, close above the 20-day high, positive 5-day relative strength, acceptable extension versus the 20-day moving average, and reward-to-risk >= 2.0. PLTR was the closest watched liquid name from the available 09:36 quote, but its +2.44% move was below the +3% minimum and volume/20-day-breakout/RR checks were incomplete. MU and SNDK were positive but far below the Setup B gain threshold. Setup A was unavailable because no fresh post-earnings candidate had complete day-0 reaction, volume, top-range close, and gap confirmation at the execution timestamp. Per BACKTEST-V1, incomplete setup evidence requires preserving capital.",
+      "reason": "No valid setup confirmed at market open. PLTR was the closest visible liquid watchlist candidate, but its +2.44% move was below the Setup B +3% minimum and the required volume, breakout, catalyst, relative-strength, extension, and reward-to-risk evidence was incomplete. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close review/report will be handled later; no Telegram message sent because the workflow was not blocked.",
+      "riskLevels": {
+        "market_regime": "CONSTRUCTIVE / DATA-LIMITED - SPY +0.30% and QQQ +0.35% at 09:35-09:36 ET from Nasdaq quotes; VIX endpoint failed, so risk regime is not fully confirmed.",
+        "setup_quality": "NO VALID SETUP - no visible candidate had complete Setup A/B confirmation at 09:35 EDT.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Cron payload timestamp: 2026-08-19 13:35 UTC / 09:35 EDT / 21:35 HKT, inside US regular market hours",
+          "Nasdaq quote API primaryData snapshots for SPY, QQQ, MU, SNDK, PLTR and SMCI at Aug 19, 2026 9:35-9:36 AM ET",
+          "Yahoo Finance quote endpoint returned Edge: Too Many Requests during the run",
+          "Nasdaq VIX endpoint returned Symbol not exists during the run",
+          "Web search snippets reviewed for August 2026 momentum/watchlist names; snippets were not execution-grade market-open setup evidence"
+        ],
+        "snapshots": {
+          "SPY": {
+            "last": 769.7564,
+            "change": 2.3064,
+            "change_pct": 0.3,
+            "volume": 2972892.179761,
+            "timestamp": "Aug 19, 2026 9:36 AM ET",
+            "source": "Nasdaq quote API primaryData"
+          },
+          "QQQ": {
+            "last": 720.02,
+            "change": 2.51,
+            "change_pct": 0.35,
+            "volume": 3038671.013702,
+            "timestamp": "Aug 19, 2026 9:35 AM ET",
+            "source": "Nasdaq quote API primaryData"
+          },
+          "MU": {
+            "last": 941.35,
+            "change": 0.59,
+            "change_pct": 0.06,
+            "volume": 4624395.850732,
+            "day_range": "939.12 - 959.99",
+            "timestamp": "Aug 19, 2026 9:36 AM ET",
+            "note": "Below Setup B +3% minimum; no complete catalyst/breakout/RR evidence."
+          },
+          "SNDK": {
+            "last": 1636,
+            "change": 10.22,
+            "change_pct": 0.63,
+            "volume": 3460530.05461,
+            "day_range": "1,634.00 - 1,698.99",
+            "timestamp": "Aug 19, 2026 9:36 AM ET",
+            "note": "Below Setup B +3% minimum; no complete catalyst/breakout/RR evidence."
+          },
+          "PLTR": {
+            "last": 175.73,
+            "change": 4.19,
+            "change_pct": 2.44,
+            "volume": 4286473.060983,
+            "day_range": "172.15 - 176.53",
+            "timestamp": "Aug 19, 2026 9:36 AM ET",
+            "note": "Closest liquid watched candidate, but below Setup B +3% minimum and incomplete volume/breakout/RR evidence."
+          },
+          "SMCI": {
+            "last": 37.19,
+            "change": -0.22,
+            "change_pct": -0.59,
+            "volume": 3763169.888432,
+            "day_range": "36.60 - 37.49",
+            "timestamp": "Aug 19, 2026 9:36 AM ET",
+            "note": "Negative at the open; no long setup."
+          },
+          "VIX": {
+            "last_context": null,
+            "source_confidence": "unavailable - Nasdaq endpoint returned Symbol not exists"
+          }
+        },
+        "watchedCandidates": [
+          "PLTR",
+          "MU",
+          "SNDK",
+          "SMCI",
+          "U",
+          "AAOI",
+          "MSFT",
+          "HNGE",
+          "XHG",
+          "QMCO",
+          "ABCL",
+          "NVDA",
+          "AVGO",
+          "CLS",
+          "APP"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0
+    },
+    {
+      "id": "auto-2026-08-18-market-open",
+      "date": "2026-08-18",
+      "recordedAt": "2026-08-18T09:35:00-04:00",
+      "executionAt": "2026-08-18T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": null,
+      "candidateB": "MU",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Mixed / data-limited open - the cron timestamp maps to 09:35 EDT, inside US regular market hours. Public snippets showed a selective semiconductor/storage bid, but broad-market context was flat-to-soft and quote/source timestamps were not consistent enough for execution-grade confirmation.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The HKD 100,000 simulation ledger remains all cash at HK$99,769.04, with no open positions after the closed UNH time-stop trade. Public snippets around the run showed possible Setup B-style movers including MU around +4.24% to +5.87%, SNDK around +7.39% to +9.44%, LFTO +7.73%, SIMO +7.94%, OUST +7.93%, CPRT +7.55%, USAR +7.47%, CIFR +7.43%, plus LUNR +5.52% in one TradingView snippet. However, the run could not verify all required Setup B fields at the execution timestamp: hard catalyst, >=2.0x average volume for the specific regular-session snapshot, close above the 20-day high, positive 5-day relative strength, acceptable extension versus the 20-day moving average, and reward-to-risk >= 2.0. Setup A was also unavailable because no fresh post-earnings candidate had complete day-0 price reaction, volume, top-range close, and gap confirmation at 09:35 EDT. Per BACKTEST-V1, incomplete setup evidence requires preserving capital.",
+      "reason": "No valid setup confirmed at market open. MU was the closest regular-session candidate from visible snippets, but execution-grade volume, breakout, catalyst, relative-strength, extension, and reward-to-risk checks were incomplete. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close review/report will be handled later; no Telegram message sent because the workflow was not blocked.",
+      "riskLevels": {
+        "market_regime": "MIXED / DATA-LIMITED - broad-market snippets showed SPY/QQQ and major indexes flat-to-soft while VIX context stayed below the 22 risk threshold; source timestamps were inconsistent.",
+        "setup_quality": "NO VALID SETUP - visible movers did not have complete execution-grade Setup A/B confirmation at 09:35 EDT.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Cron payload timestamp: 2026-08-18 13:35 UTC / 09:35 EDT / 21:35 HKT, inside US regular market hours",
+          "Yahoo Finance top stock gainers web_search snippets for SIMO, OUST, LFTO, CPRT, USAR, CIFR, SNDK, IOVA, XNDU and related screener rows during the run",
+          "Investing.com pre-market / market-movers web_search snippets for SNDK, MU, SPCX, NVDA, AMD, AMZN and MSFT during the run",
+          "TradingView US gainers web_search snippets for MU, LUNR, AMAT and smaller-cap movers during the run",
+          "Yahoo Finance / Barchart / MarketWatch broad-market and VIX snippets reviewed during the run; source confidence is partial because timestamps and pages were inconsistent"
+        ],
+        "snapshots": {
+          "MU": {
+            "last": 1012.89,
+            "change_pct_range": "approximately +4.24% to +5.87% across visible snippets",
+            "volume": 5460000,
+            "avg_volume": null,
+            "session": "TradingView / Investing.com snippets during run",
+            "note": "Inside Setup B percentage band in visible snippets, but no verified >=2.0x average volume, hard catalyst, 20-day-high close, relative strength, extension, or reward-to-risk confirmation at 09:35."
+          },
+          "SNDK": {
+            "last_range": "1641.11 to 1796.00",
+            "change_pct_range": "+7.39% to +9.44%",
+            "volume_range": "11.28M to 21.0M in visible snippets",
+            "avg_volume": 13669000,
+            "session": "Yahoo Finance / Investing.com snippets during run",
+            "note": "Near or above the Setup B upper band depending on source; volume confirmation and breakout/RR checks were inconsistent, so no trade."
+          },
+          "LFTO": {
+            "last": 21.61,
+            "change_pct": 7.73,
+            "volume": 2388000,
+            "avg_volume": 1144000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside Setup B percentage band and about 2.09x average volume, but no verified hard catalyst, 20-day-high close, relative strength, extension, or reward-to-risk confirmation at 09:35."
+          },
+          "SIMO": {
+            "last": 268.9,
+            "change_pct": 7.94,
+            "volume": 1118000,
+            "avg_volume": 1080000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside percentage band but volume was only about 1.04x average, below Setup B >=2.0x requirement."
+          },
+          "OUST": {
+            "last": 48.71,
+            "change_pct": 7.93,
+            "volume": 3984000,
+            "avg_volume": 4565000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside percentage band but volume was below average, below Setup B >=2.0x requirement."
+          },
+          "CPRT": {
+            "last": 31.61,
+            "change_pct": 7.55,
+            "volume": 17358000,
+            "avg_volume": 12307000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside percentage band but volume was about 1.41x average, below Setup B >=2.0x requirement."
+          },
+          "USAR": {
+            "last": 20,
+            "change_pct": 7.47,
+            "volume": 16531000,
+            "avg_volume": 13828000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside percentage band but volume was about 1.20x average, below Setup B >=2.0x requirement."
+          },
+          "CIFR": {
+            "last": 17.85,
+            "change_pct": 7.43,
+            "volume": 38127000,
+            "avg_volume": 27590000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside percentage band but volume was about 1.38x average, below Setup B >=2.0x requirement."
+          },
+          "SPY": {
+            "last_range": "approximately 772.67 to 776.01 in visible snippets",
+            "change_pct_range": "-0.47% to near flat / data-limited",
+            "source_confidence": "partial"
+          },
+          "QQQ": {
+            "last_range": "approximately 729.87 to 731.07 in visible snippets",
+            "change_pct_range": "-0.16% to -0.14%",
+            "source_confidence": "partial"
+          },
+          "VIX": {
+            "last_context": "visible VIX snippets stayed below the 22 stock-lab risk threshold, though some Yahoo values were inconsistent with index scale",
+            "source_confidence": "partial"
+          }
+        },
+        "watchedCandidates": [
+          "MU",
+          "SNDK",
+          "LFTO",
+          "SIMO",
+          "OUST",
+          "CPRT",
+          "USAR",
+          "CIFR",
+          "LUNR",
+          "AMAT",
+          "NVDA",
+          "AMD",
+          "SMCI"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0
+    },
+    {
+      "id": "auto-2026-08-17-market-open",
+      "date": "2026-08-17",
+      "recordedAt": "2026-08-17T09:35:00-04:00",
+      "executionAt": "2026-08-17T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": null,
+      "candidateB": "LFTO",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Constructive / data-limited open - the cron timestamp maps to 09:35 EDT, inside US regular market hours. Public snippets showed several +3% to +9% gainers and VIX-related context remained below the 22 risk threshold, but broad-market 09:35 SPY/QQQ quotes were not available from the rate-limited direct quote API during this run.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The HKD 100,000 simulation ledger remains all cash at HK$99,769.04, with no open positions after the closed UNH time-stop trade. Visible Yahoo Finance / Investing.com snippets around the run showed Setup B-style percentage movers including LFTO +7.73% on 2.388M volume versus 1.144M average, SIMO +7.94% on 1.118M versus 1.08M average, OUST +7.93% on 3.984M versus 4.565M average, CPRT +7.55% on 17.358M versus 12.307M average, USAR +7.47% on 16.531M versus 13.828M average, CIFR +7.43% on 38.127M versus 27.59M average, plus Investing.com snippets for NBIS +8.88%, AMD +6.50%, and STX +5.65%. LFTO was closest on the volume filter, but the run could not verify a hard catalyst, close above the 20-day high, positive 5-day relative strength, extension versus the 20-day moving average, or reward-to-risk >= 2.0 at the execution timestamp. Setup A was also unavailable because no fresh post-earnings candidate had complete day-0 price reaction, volume, top-range close, and gap confirmation at 09:35 EDT. Per BACKTEST-V1, incomplete setup evidence requires preserving capital.",
+      "reason": "No valid setup confirmed at market open. Some candidates were inside the Setup B percentage band, but none had complete execution-grade confirmation for all required Setup B fields; Setup A confirmation was also incomplete. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close 2026-08-17 review was added after 16:00 EDT as review-only: no post-close BUY or SELL execution is allowed; next valid decision window is US regular market hours on 2026-08-18.",
+      "riskLevels": {
+        "market_regime": "CONSTRUCTIVE / DATA-LIMITED - VIX context was below 22 and visible gainers showed risk appetite, but direct 09:35 SPY/QQQ quote fetches were rate-limited.",
+        "setup_quality": "NO VALID SETUP - percentage and volume snippets were insufficient without hard catalyst, 20-day-high close, relative strength, extension, and reward-to-risk confirmation.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Cron payload timestamp: 2026-08-17 13:35 UTC / 09:35 EDT / 21:35 HKT, inside US regular market hours",
+          "Yahoo Finance top stock gainers web_search snippet for SIMO, OUST, LFTO, CPRT, USAR, CIFR, SNDK, IOVA and XNDU",
+          "Investing.com pre-market / movers web_search snippet for NBIS, CPRT, SNDK, AMD, FOX, STX and FOXA",
+          "Yahoo Finance / VIX web_search snippets showing VIX-related context below the stock-lab risk threshold; direct quote endpoints returned rate-limit responses during this run"
+        ],
+        "snapshots": {
+          "LFTO": {
+            "last": 21.61,
+            "change_pct": 7.73,
+            "volume": 2388000,
+            "avg_volume": 1144000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside Setup B percentage band and above 2x average volume, but no verified hard catalyst, 20-day-high close, relative strength, 20-day-MA extension, or reward-to-risk confirmation at 09:35."
+          },
+          "SIMO": {
+            "last": 268.9,
+            "change_pct": 7.94,
+            "volume": 1118000,
+            "avg_volume": 1080000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside percentage band but volume was only about 1.04x average, below Setup B >=2.0x requirement."
+          },
+          "OUST": {
+            "last": 48.71,
+            "change_pct": 7.93,
+            "volume": 3984000,
+            "avg_volume": 4565000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside percentage band but volume was below average, below Setup B >=2.0x requirement."
+          },
+          "CPRT": {
+            "last": 31.61,
+            "change_pct": 7.55,
+            "volume": 17358000,
+            "avg_volume": 12307000,
+            "session": "Yahoo Finance / Investing.com snippets during run",
+            "note": "Inside percentage band but volume was about 1.41x average, below Setup B >=2.0x requirement."
+          },
+          "USAR": {
+            "last": 20,
+            "change_pct": 7.47,
+            "volume": 16531000,
+            "avg_volume": 13828000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside percentage band but volume was about 1.20x average, below Setup B >=2.0x requirement."
+          },
+          "CIFR": {
+            "last": 17.85,
+            "change_pct": 7.43,
+            "volume": 38127000,
+            "avg_volume": 27590000,
+            "session": "Yahoo Finance top gainers snippet during run",
+            "note": "Inside percentage band but volume was about 1.38x average, below Setup B >=2.0x requirement."
+          }
+        },
+        "watchedCandidates": [
+          "LFTO",
+          "SIMO",
+          "OUST",
+          "CPRT",
+          "USAR",
+          "CIFR",
+          "SNDK",
+          "IOVA",
+          "XNDU",
+          "NBIS",
+          "AMD",
+          "STX",
+          "FOX",
+          "FOXA"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0,
+      "postClose": {
+        "reportedAt": "2026-08-17T16:57:00-04:00",
+        "reportedAtHkt": "2026-08-18T04:57:00+08:00",
+        "sessionDate": "2026-08-17",
+        "executionAllowed": false,
+        "note": "No new BUY or SELL decisions may be made after the US market close. All trade decisions must be made during US regular market hours (09:30-16:00 EDT). This 2026-08-17 post-close block is review-only and does not create, amend, or retroactively approve any trade execution.",
+        "marketData": {
+          "prices": {
+            "SPY": {
+              "close": 776.34,
+              "change_pct": -0.2,
+              "session": "Yahoo Finance public snippet available during the 2026-08-17 post-close run; source still exposed some Aug 14/weekly rows, so retained as broad-market context only.",
+              "source_confidence": "partial"
+            },
+            "QQQ": {
+              "close": 731.07,
+              "change_pct": -0.14,
+              "session": "Yahoo Finance public snippet available during the 2026-08-17 post-close run; exact official 16:00 timestamp was not independently fetched.",
+              "source_confidence": "partial"
+            },
+            "VIX": {
+              "close": 14.95,
+              "change_pct": 4.91,
+              "session": "GuruFocus daily VIX snippet for latest period 2026-08-17; other public snippets around the run ranged near 14.25-14.95 and stayed below the 22 risk threshold.",
+              "source_confidence": "medium"
+            },
+            "LFTO": {
+              "close": 21.61,
+              "change": 1.55,
+              "change_pct": 7.73,
+              "volume": 2388000,
+              "avg_volume": 1144000,
+              "session": "Yahoo Finance top-gainers public snippet during 2026-08-17 post-close run.",
+              "source_confidence": "medium",
+              "note": "Watched during the 09:35 EDT regular-hours decision; not a post-close entry candidate."
+            },
+            "SIMO": {
+              "close": 268.9,
+              "change": 19.78,
+              "change_pct": 7.94,
+              "volume": 1118000,
+              "avg_volume": 1080000,
+              "session": "Yahoo Finance top-gainers public snippet during 2026-08-17 post-close run.",
+              "source_confidence": "medium",
+              "note": "Inside percentage band but volume remained below Setup B >=2.0x requirement."
+            },
+            "OUST": {
+              "close": 48.71,
+              "change": 3.58,
+              "change_pct": 7.93,
+              "volume": 3984000,
+              "avg_volume": 4565000,
+              "session": "Yahoo Finance top-gainers public snippet during 2026-08-17 post-close run.",
+              "source_confidence": "medium",
+              "note": "Inside percentage band but volume remained below average and below Setup B >=2.0x requirement."
+            },
+            "CPRT": {
+              "close": 31.61,
+              "change": 2.22,
+              "change_pct": 7.55,
+              "volume": 17358000,
+              "avg_volume": 12307000,
+              "session": "Yahoo Finance top-gainers public snippet during 2026-08-17 post-close run.",
+              "source_confidence": "medium",
+              "note": "Inside percentage band but volume was about 1.41x average, below Setup B >=2.0x requirement."
+            },
+            "USAR": {
+              "close": 20,
+              "change": 1.39,
+              "change_pct": 7.47,
+              "volume": 16531000,
+              "avg_volume": 13828000,
+              "session": "Yahoo Finance top-gainers public snippet during 2026-08-17 post-close run.",
+              "source_confidence": "medium",
+              "note": "Inside percentage band but volume was about 1.20x average, below Setup B >=2.0x requirement."
+            },
+            "CIFR": {
+              "close": 17.85,
+              "change": 1.24,
+              "change_pct": 7.43,
+              "volume": 38127000,
+              "avg_volume": 27590000,
+              "session": "Yahoo Finance top-gainers public snippet during 2026-08-17 post-close run.",
+              "source_confidence": "medium",
+              "note": "Inside percentage band but volume was about 1.38x average, below Setup B >=2.0x requirement."
+            }
+          },
+          "portfolio": {
+            "cash_hkd": 99769.04,
+            "portfolio_value_hkd": 99769.04,
+            "open_positions": 0,
+            "realized_pnl_hkd": 0,
+            "unrealized_pnl_hkd": 0,
+            "daily_pnl_hkd": 0,
+            "cumulative_return_pct": -0.23
+          },
+          "review": "Post-close review for the 2026-08-17 US regular session. The only stock-lab decision recorded today was the 09:35:00 EDT NO TRADE decision. LFTO was watched as the closest visible Setup B-style name during regular hours, while SIMO, OUST, CPRT, USAR and CIFR were also tracked from public gainer snippets. At post-close, the same public Yahoo gainer snippets showed LFTO 21.61 (+7.73%), SIMO 268.90 (+7.94%), OUST 48.71 (+7.93%), CPRT 31.61 (+7.55%), USAR 20.00 (+7.47%) and CIFR 17.85 (+7.43%); these are recorded as EOD/latest public context only, not as execution signals. The portfolio held no positions, so no mark-to-market change occurred and realized P&L for 2026-08-17 is HK$0.00. Portfolio remains 100% cash at HK$99,769.04, cumulative return -0.23%. No post-close BUY or SELL execution is allowed; the next valid trade decision window is US regular market hours on 2026-08-18.",
+          "sources": [
+            "Yahoo Finance top stock gainers web_search snippets for SIMO, OUST, LFTO, CPRT, USAR, CIFR, SNDK, IOVA and XNDU during the 2026-08-17 post-close run",
+            "Yahoo Finance broad-market / ETF public snippets for SPY and QQQ during the 2026-08-17 post-close run",
+            "GuruFocus VIX daily snippet showing latest period 2026-08-17; Investing.com/Yahoo public VIX snippets also reviewed",
+            "Yahoo Finance chart and quote direct endpoints attempted during the 2026-08-17 post-close run and returned Edge: Too Many Requests"
+          ]
+        }
+      }
+    },
+    {
+      "id": "auto-2026-08-14-market-open",
+      "date": "2026-08-14",
+      "recordedAt": "2026-08-14T09:35:00-04:00",
+      "executionAt": "2026-08-14T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": "AVAV",
+      "candidateB": "HTFL",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Constructive index tape but weak setup confirmation - SPY real-time quote was around $778.21 (+0.05%) at 09:35:31 EDT, Yahoo index context showed S&P 500 +0.65% and Nasdaq Composite +0.81%, and VIX remained below 22 around 15.36 in Investing.com public snippets. Risk regime was not a blocker, but visible movers did not validate the stock-lab setup rules at the execution timestamp.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The HKD 100,000 simulation ledger is currently all cash at HK$99,769.04, with no open positions after the closed UNH time-stop trade. Yahoo Finance gainers at the decision window showed HTFL +23.28%, AEHR +15.97%, NU +15.17%, RDDT +13.47% and LUNR +12.41%, all above the strict Setup B +3% to +9% daily-gain band and without Setup A close/range confirmation at 09:35. AVAV was the closest visible Setup B-style candidate at +8.95%, but its 233,726 volume was far below 1.636M average volume and therefore failed the >=2.0x volume requirement. STDN was just above the band at +9.08% and also had very low volume versus average. Public Investing.com/news snippets mentioned earnings winners including FIGS and an unnamed AI-linked network demand/guidance-raise mover, but those quoted premarket moves were too extended and not supported by execution-grade regular-session volume/range evidence. Because no candidate had complete Setup A or Setup B evidence with reward-to-risk >= 2.0 at 09:35 EDT, the rules require preserving capital.",
+      "reason": "No valid setup confirmed at market open. The broader market was constructive, but the visible gainers were either too extended, lacked volume expansion, lacked hard catalyst confirmation, or lacked execution-time range/close-quality evidence. AVAV was closest on percentage move but failed the volume filter; HTFL and AEHR were above the permitted daily-gain band and had below-average volume.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close 2026-08-14 review was added after 16:00 EDT as review-only: no post-close BUY or SELL execution is allowed; next valid decision window is US regular market hours on 2026-08-17.",
+      "riskLevels": {
+        "market_regime": "CONSTRUCTIVE / RISK-ON - SPY and broad index snippets were positive, Nasdaq was positive, and VIX was below 22.",
+        "setup_quality": "NO VALID SETUP - visible candidates failed strict Setup A/B confirmation, mainly because moves were too extended, volume was below requirement, or 09:35 regular-session confirmation was unavailable.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Yahoo Finance SPY quote fetched 2026-08-14T13:36:18Z, showing SPY $778.21 +0.05% as of 09:35:31 EDT",
+          "Yahoo Finance top gainers page fetched 2026-08-14T13:36:09Z for HTFL, AEHR, NU, RDDT, LUNR, STDN and AVAV snapshots",
+          "Yahoo Finance VIX/index page fetched 2026-08-14T13:36:23Z for S&P 500 and Nasdaq Composite index context",
+          "OpenClaw web_search snippets from Investing.com / MarketWatch / Chartmill for Aug 14 2026 premarket movers and earnings winners",
+          "OpenClaw web_search snippet from Investing.com VIX page showing VIX around 15.36, below 22"
+        ],
+        "snapshots": {
+          "SPY": {
+            "last": 778.21,
+            "change_pct": 0.05,
+            "session": "Yahoo Finance real-time quote as of 09:35:31 EDT; market open"
+          },
+          "SP500": {
+            "last": 7798.99,
+            "change_pct": 0.65,
+            "session": "Yahoo Finance index context snippet from VIX page"
+          },
+          "NasdaqComposite": {
+            "last": 26803.03,
+            "change_pct": 0.81,
+            "session": "Yahoo Finance index context snippet from VIX page"
+          },
+          "VIX": {
+            "last": 15.36,
+            "change_pct": -0.65,
+            "session": "Investing.com public search snippet; below 22 risk threshold"
+          },
+          "HTFL": {
+            "last": 38.23,
+            "change_pct": 23.28,
+            "volume": 736712,
+            "avg_volume": 1473000,
+            "session": "Yahoo Finance gainers page fetched during decision window",
+            "note": "Too extended for Setup B and below average volume; no complete Setup A confirmation at 09:35."
+          },
+          "AEHR": {
+            "last": 142.99,
+            "change_pct": 15.97,
+            "volume": 554052,
+            "avg_volume": 2493000,
+            "session": "Yahoo Finance gainers page fetched during decision window",
+            "note": "Too extended and below average volume."
+          },
+          "AVAV": {
+            "last": 206.38,
+            "change_pct": 8.95,
+            "volume": 233726,
+            "avg_volume": 1636000,
+            "session": "Yahoo Finance gainers page fetched during decision window",
+            "note": "Closest Setup B percentage band candidate, but volume was far below the >=2.0x requirement."
+          },
+          "STDN": {
+            "last": 13.1,
+            "change_pct": 9.08,
+            "volume": 75522,
+            "avg_volume": 1337000,
+            "session": "Yahoo Finance gainers page fetched during decision window",
+            "note": "Slightly above Setup B band and volume far below requirement."
+          }
+        },
+        "watchedCandidates": [
+          "AVAV",
+          "HTFL",
+          "AEHR",
+          "NU",
+          "RDDT",
+          "LUNR",
+          "STDN",
+          "FIGS",
+          "TEAM",
+          "SMCI",
+          "GLW",
+          "TER",
+          "LRCX",
+          "KLAC",
+          "STX",
+          "MU",
+          "WDC",
+          "ORCL",
+          "AMAT"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "holdings": [],
+      "realizedPnlUsd": 0,
+      "realizedPnlHkd": 0,
+      "realizedPnlPct": 0,
+      "postClose": {
+        "reportedAt": "2026-08-14T16:20:00-04:00",
+        "reportedAtHkt": "2026-08-15T04:20:00+08:00",
+        "mode": "post-close review only",
+        "noPostCloseExecution": true,
+        "note": "No new BUY or SELL decisions may be made after the US market close. All trade decisions must be made during US regular market hours (09:30-16:00 EDT). This 2026-08-14 post-close block is review-only and does not create, amend, or retroactively approve any trade execution.",
+        "eodSnapshots": {
+          "SPY": {
+            "last": 776.34,
+            "change_pct": -0.2,
+            "after_hours_last": 775.8,
+            "after_hours_change_pct": -0.07,
+            "open": 778.54,
+            "high": 778.8,
+            "low": 775.43,
+            "volume": 25381140,
+            "session": "regular close from Yahoo Finance quote fetched 2026-08-14T20:22Z; after-hours shown separately and not used for execution logic",
+            "source_confidence": "moderate; Yahoo quote explicitly showed At close: 4:00:00 PM EDT, while some search snippets still exposed older Aug 13 historical rows",
+            "note": "Broad-market review context only; portfolio held no SPY exposure."
+          },
+          "QQQ": {
+            "last": 729.62,
+            "change_pct": -0.33,
+            "open": 733.26,
+            "high": 734.39,
+            "low": 728.32,
+            "volume": 15269556,
+            "session": "late-session Yahoo Finance quote as of 14:15:30 EDT; not an official close in the fetched page",
+            "source_confidence": "partial; Yahoo fetch did not expose a 16:00 close during this cron run, and other snippets still showed Aug 13 historical close data",
+            "note": "Nasdaq/QQQ softened versus prior close in the late-session quote. Review context only; portfolio had no open exposure."
+          },
+          "VIX": {
+            "last": 14.55,
+            "change_pct": -0.55,
+            "open": 14.64,
+            "high": 14.66,
+            "low": 14.46,
+            "session": "Google Finance public quote around 2026-08-14 10:29 GMT-5 plus broad-market snippets; exact 16:00 close was not independently fetched",
+            "source_confidence": "partial; Google/MarketWatch snippets ranged around 14.32-14.55, all below the 22 risk threshold",
+            "note": "Risk backdrop remained below the system risk-off threshold. Review context only."
+          },
+          "HTFL": {
+            "last": 42.08,
+            "change_pct": 35.7,
+            "after_hours_last": 42.13,
+            "after_hours_change_pct": 0.12,
+            "previous_close": 31.01,
+            "open": 39.06,
+            "high": 42.99,
+            "low": 36.04,
+            "volume": 9893816,
+            "avg_volume": 1473009,
+            "session": "regular close from Yahoo Finance quote fetched 2026-08-14T20:21Z; after-hours shown separately",
+            "source_confidence": "high for Yahoo quote fields at fetch time",
+            "note": "HTFL was candidateB at the 09:35 EDT decision window but was already too extended / lacked complete Setup A execution-time confirmation. The strong post-close result does not create a retroactive BUY."
+          },
+          "AEHR": {
+            "last": 134.06,
+            "change_pct": 8.73,
+            "after_hours_last": 133.26,
+            "after_hours_change_pct": -0.6,
+            "previous_close": 123.3,
+            "open": 133.61,
+            "high": 147.4,
+            "low": 131.21,
+            "volume": 3267995,
+            "avg_volume": 2493209,
+            "session": "regular close from Yahoo Finance quote fetched 2026-08-14T20:22Z; after-hours shown separately",
+            "source_confidence": "high for Yahoo quote fields at fetch time",
+            "note": "AEHR finished inside the Setup B percentage band but volume was about 1.31x average, below the >=2.0x requirement; no post-close BUY can be created."
+          },
+          "AVAV": {
+            "last": 192.92,
+            "change_pct": 1.84,
+            "open": 202,
+            "high": 207.83,
+            "low": 188.14,
+            "volume": 1361434,
+            "avg_volume": 1636090,
+            "session": "late-session Yahoo Finance quote as of 15:52:10 EDT; not an official close in the fetched page",
+            "source_confidence": "partial; page was still marked Market Open shortly before close, so stored as late-session context rather than official EOD close",
+            "note": "AVAV was the closest market-open Setup B percentage candidate, but by late session it was only +1.84% and volume remained below average; no valid setup was created after close."
+          },
+          "LUNR": {
+            "last": 18.91,
+            "change_pct": 7.72,
+            "open": 19.17,
+            "high": 20.47,
+            "low": 18.71,
+            "volume": 15789719,
+            "alternate_late_quote": {
+              "last": 18.85,
+              "change_pct": 7.32,
+              "volume": 16825586
+            },
+            "session": "Yahoo historical row for Aug 14 2026 from web_search; Yahoo quote fetch also showed a near-matching late-session value at 15:52 EDT",
+            "source_confidence": "moderate; historical row and late-session quote were close but volume differed due to timing/source refresh",
+            "note": "LUNR remained review-only. It was above the strict execution-time confirmation threshold at the open and no post-close trade can be retroactively created."
+          }
+        },
+        "portfolio": {
+          "cash_hkd": 99769.04,
+          "portfolio_value_hkd": 99769.04,
+          "open_positions": 0,
+          "realizedPnlUsd": 0,
+          "realizedPnlHkd": 0,
+          "realizedPnlPct": 0,
+          "cumulative_return_pct": -0.23
+        },
+        "review": "Post-close review for the 2026-08-14 US regular session. The only stock-lab decision recorded today was the 09:35:00 EDT NO TRADE decision. AVAV was the closest Setup B percentage candidate at the open but failed the volume filter; HTFL, AEHR, NU, RDDT and LUNR were watched but lacked complete Setup A/B evidence at the decision timestamp or were too extended / under-confirmed. After the close, Yahoo showed SPY closed at $776.34 (-0.20%) while HTFL closed at $42.08 (+35.70%) and AEHR at $134.06 (+8.73%); AVAV and LUNR late-session / historical snippets were kept as review context only. VIX stayed well below the 22 risk threshold in available snippets. Because the portfolio held no positions, there was no mark-to-market change and realized P&L for 2026-08-14 is HK$0.00. Portfolio remains 100% cash at HK$99,769.04, cumulative return -0.23%. No post-close BUY or SELL execution is allowed; the next valid trade decision window is US regular market hours on 2026-08-17.",
+        "sources": [
+          "Yahoo Finance SPY quote fetched 2026-08-14T20:22Z",
+          "Yahoo Finance HTFL quote fetched 2026-08-14T20:21Z",
+          "Yahoo Finance AEHR quote fetched 2026-08-14T20:22Z",
+          "Yahoo Finance AVAV quote fetched 2026-08-14T20:21Z",
+          "Yahoo Finance / web_search LUNR quote and historical snippets fetched during 2026-08-14 post-close cron run",
+          "Google Finance / public snippets for VIX fetched during 2026-08-14 post-close cron run",
+          "Yahoo Finance chart endpoint attempted during 2026-08-14 post-close cron run and returned Edge: Too Many Requests"
+        ]
+      }
+    },
     {
       "id": "auto-2026-08-13-market-open",
       "date": "2026-08-13",
