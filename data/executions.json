@@ -1,6 +1,148 @@
 {
   "reports": [
     {
+      "id": "post-close-2026-08-21",
+      "date": "2026-08-21",
+      "decision": "no_trade",
+      "executionAt": "2026-08-21T09:35:00-04:00",
+      "executionWindow": "US regular market hours only; post-close review has no trade execution authority",
+      "candidateA": "N/A",
+      "candidateB": "MRNA",
+      "pickedTicker": "",
+      "marketMood": "Constructive close after a constructive but setup-incomplete open; SPY +0.40% and QQQ +0.35% at the 16:00 EDT close. Nasdaq quote API secondaryData marked 'Closed at Aug 21, 2026 4:00 PM ET'; after-hours primaryData ignored for review.",
+      "reason": "During the valid decision window, Luna recorded NO TRADE at 09:35:00 EDT because no Setup A or Setup B candidate had complete execution-grade confirmation. MRNA was the closest direct market-open candidate, but it was slightly above the strict Setup B +3% to +9% daily-gain band at +9.29% and failed the >=2.0x average-volume requirement. FCX had a breakout-like print near its 52-week high but also lacked volume expansion, while TEM had conflicting snippet versus direct Nasdaq quote evidence at execution time.",
+      "review": "Post-close review only, recorded after the 2026-08-21 US close. No BUY or SELL may be created after 16:00 EDT. The no-trade choice preserved process discipline despite a constructive close: SPY closed 765.62 (+0.40%) and QQQ closed 713.44 (+0.35%). MRNA closed 145.13 (+8.86%), inside the Setup B gain band by the close but still not eligible for a post-close trade because the decision window had passed and market-open volume/setup evidence was incomplete. UUUU closed 15.13 (+8.85%) and FCX 76.67 (+7.65%) stayed strong, while TEM 72.69 (+9.06%) and BTDR 11.37 (+9.01%) finished just above the +9% upper band, HOOD 108.13 (+13.70%) was too extended, and HUT 80.86 (-8.79%) reversed. Portfolio stays 100% cash at HK$99,769.04; realized P&L today HK$0.00; open positions 0.",
+      "createdAt": "2026-08-21T20:20:00Z",
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "open_positions": 0,
+      "eodPrices": {
+        "source": "Nasdaq quote API secondaryData, Closed at Aug 21, 2026 4:00 PM ET; after-hours primaryData ignored for review.",
+        "SPY": {
+          "close": 765.62,
+          "change": 3.02,
+          "change_pct": 0.4
+        },
+        "QQQ": {
+          "close": 713.44,
+          "change": 2.51,
+          "change_pct": 0.35
+        },
+        "MRNA": {
+          "close": 145.13,
+          "change": 11.81,
+          "change_pct": 8.86
+        },
+        "UUUU": {
+          "close": 15.13,
+          "change": 1.23,
+          "change_pct": 8.85
+        },
+        "FCX": {
+          "close": 76.67,
+          "change": 5.45,
+          "change_pct": 7.65
+        },
+        "TEM": {
+          "close": 72.69,
+          "change": 6.04,
+          "change_pct": 9.06
+        },
+        "BTDR": {
+          "close": 11.37,
+          "change": 0.94,
+          "change_pct": 9.01
+        },
+        "MARA": {
+          "close": 11.26,
+          "change": 0.11,
+          "change_pct": 0.99
+        },
+        "PURR": {
+          "close": 10.58,
+          "change": 0.5,
+          "change_pct": 4.96
+        },
+        "HOOD": {
+          "close": 108.13,
+          "change": 13.03,
+          "change_pct": 13.7
+        },
+        "COIN": {
+          "close": 186.49,
+          "change": 14.14,
+          "change_pct": 8.2
+        },
+        "CRCL": {
+          "close": 87.91,
+          "change": 4.25,
+          "change_pct": 5.08
+        },
+        "QBTS": {
+          "close": 20.39,
+          "change": 1.59,
+          "change_pct": 8.46
+        },
+        "HUT": {
+          "close": 80.86,
+          "change": -7.79,
+          "change_pct": -8.79
+        }
+      }
+    },
+    {
+      "id": "post-close-2026-08-20",
+      "date": "2026-08-20",
+      "decision": "no_trade",
+      "executionAt": "2026-08-20T09:35:12-04:00",
+      "executionWindow": "US regular market hours only; post-close review has no trade execution authority",
+      "candidateA": "N/A",
+      "candidateB": "HTFL",
+      "pickedTicker": "",
+      "marketMood": "Weak close after a soft, data-conflicted open; SPY -0.82% and QQQ -0.72% at the 16:00 EDT close. Nasdaq quote API secondaryData marked 'Closed at Aug 20, 2026 4:00 PM ET'; after-hours primaryData ignored for review.",
+      "reason": "During the valid decision window, Luna recorded NO TRADE at 09:35:12 EDT because no Setup A or Setup B candidate had complete execution-grade confirmation. HTFL was the closest watched candidate, but direct Nasdaq 09:37 ET quote showed only +1.30%, below the Setup B +3% minimum, and the required catalyst, >=2.0x average volume, 20-day-high breakout, positive 5-day relative strength, extension, and reward-to-risk evidence was incomplete.",
+      "review": "Post-close review only, recorded after the 2026-08-20 US close. No BUY or SELL may be created after 16:00 EDT. The no-trade choice preserved capital on a weaker session: SPY closed 762.78 (-0.82%) and QQQ closed 710.93 (-0.72%). HTFL improved into the close at 46.80 (+2.79%) but still finished below the Setup B +3% minimum, while UGI closed 37.88 (-1.74%), SPOT 533.13 (-0.04%), and LEGN 21.26 (-5.93%). Portfolio stays 100% cash at HK$99,769.04; realized P&L today HK$0.00; open positions 0.",
+      "createdAt": "2026-08-20T20:20:00Z",
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "open_positions": 0,
+      "eodPrices": {
+        "source": "Nasdaq quote API secondaryData, Closed at Aug 20, 2026 4:00 PM ET; after-hours primaryData ignored for review.",
+        "SPY": {
+          "close": 762.78,
+          "change": -6.28,
+          "change_pct": -0.82
+        },
+        "QQQ": {
+          "close": 710.93,
+          "change": -5.15,
+          "change_pct": -0.72
+        },
+        "HTFL": {
+          "close": 46.8,
+          "change": 1.27,
+          "change_pct": 2.79
+        },
+        "UGI": {
+          "close": 37.88,
+          "change": -0.67,
+          "change_pct": -1.74
+        },
+        "SPOT": {
+          "close": 533.13,
+          "change": -0.24,
+          "change_pct": -0.04
+        },
+        "LEGN": {
+          "close": 21.26,
+          "change": -1.34,
+          "change_pct": -5.93
+        }
+      }
+    },
+    {
       "id": "post-close-2026-08-19",
       "date": "2026-08-19",
       "decision": "no_trade",
@@ -178,6 +320,217 @@
     }
   ],
   "executions": [
+    {
+      "id": "auto-2026-08-21-market-open",
+      "date": "2026-08-21",
+      "recordedAt": "2026-08-21T09:35:00-04:00",
+      "executionAt": "2026-08-21T09:35:00-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": null,
+      "candidateB": "MRNA",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Constructive but setup-incomplete open - Nasdaq quote snapshots at 09:35 ET showed SPY +0.27% and QQQ +0.20%, while the Nasdaq VIX endpoint returned Symbol not exists. Broad-market tone did not block new longs, but no candidate had complete Setup A or Setup B evidence at the execution timestamp.",
+      "thesis": "US market was inside regular hours at execution (09:35 EDT / 21:35 HKT). The HKD 100,000 simulation ledger remains all cash at HK$99,769.04, with no open positions after the closed UNH time-stop trade. Direct Nasdaq quotes showed SPY 764.68 (+0.27%) and QQQ 712.33 (+0.20%) at 09:35 ET. Yahoo Finance day-gainer data around the run surfaced MRNA 145.705 (+9.29%) on 6.90M volume versus 11.54M average, UUUU 15.14 (+8.89%) on 1.62M versus 8.72M average, BTDR 11.27 (+8.05%) on 2.18M versus 12.13M average, MARA 12.035 (+7.94%) on 11.98M versus 45.03M average, PURR 10.77 (+6.85%) on 5.10M versus 14.50M average, FCX 75.65 (+6.16%) near a 52-week high but on 3.27M versus 14.03M average, and HOOD 101.51 (+6.74%) on 5.87M versus 25.99M average. MRNA was the closest direct candidate, but it was slightly above the strict Setup B +3% to +9% daily-gain band and failed the >=2.0x average-volume requirement. FCX had a constructive breakout-like print but also failed the volume expansion requirement, and the remaining visible candidates likewise lacked 2x volume, verified hard catalyst, 20-day-high breakout confirmation, 5-day relative strength, extension, and reward-to-risk evidence. TradingView/Yahoo snippets showed TEM as a possible +8.82% mover with heavy volume, but direct Nasdaq quote at 09:37 ET showed TEM 66.56 (-0.14%), so that conflicting evidence was not execution-grade. Setup A was unavailable because no fresh post-earnings candidate had complete day-0 reaction, volume, top-range close, and gap confirmation at the execution timestamp. Per BACKTEST-V1, incomplete or conflicting setup evidence requires preserving capital.",
+      "reason": "No valid setup confirmed at market open. MRNA was the closest visible candidate from direct regular-session data, but it was slightly above the Setup B upper gain band and did not meet the 2x average-volume filter; other movers also lacked full Setup A/B confirmation and reward-to-risk >= 2.0. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close review/report will be handled later; no Telegram message sent because the workflow was not blocked.",
+      "riskLevels": {
+        "market_regime": "CONSTRUCTIVE / DATA-LIMITED - SPY +0.27% and QQQ +0.20% at 09:35 ET from Nasdaq quotes; VIX endpoint failed, so risk regime is not fully confirmed.",
+        "setup_quality": "NO VALID SETUP - MRNA was closest but outside/at the edge of the Setup B gain band and below 2x volume; other candidates lacked complete catalyst, breakout, relative-strength, extension, and reward-to-risk confirmation.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Cron payload timestamp: 2026-08-21 13:35 UTC / 09:35 EDT / 21:35 HKT, inside US regular market hours",
+          "Nasdaq quote API primaryData snapshots for SPY and QQQ at Aug 21, 2026 9:35 AM ET",
+          "Nasdaq quote API primaryData snapshots for MRNA and TEM at Aug 21, 2026 9:37 AM ET",
+          "Yahoo Finance predefined day_gainers screener during the run",
+          "Web search snippets reviewed from Yahoo Finance, TradingView, Investing.com and StockAnalysis; conflicting snippets were not used as execution-grade confirmation"
+        ],
+        "snapshots": {
+          "SPY": {
+            "last": 764.68,
+            "change": 2.08,
+            "change_pct": 0.27,
+            "volume": 2342625.056587,
+            "timestamp": "Aug 21, 2026 9:35 AM ET",
+            "source": "Nasdaq quote API primaryData"
+          },
+          "QQQ": {
+            "last": 712.33,
+            "change": 1.4,
+            "change_pct": 0.2,
+            "volume": 2470617.556462,
+            "timestamp": "Aug 21, 2026 9:35 AM ET",
+            "source": "Nasdaq quote API primaryData"
+          },
+          "MRNA": {
+            "last": 145.705,
+            "change": 12.385,
+            "change_pct": 9.29,
+            "volume": 6895766.304139,
+            "avg_volume_3m": 11539425,
+            "day_range": "132.43 - 146.37",
+            "timestamp": "Aug 21, 2026 9:37 AM ET",
+            "note": "Closest direct candidate, but slightly above the strict Setup B +9% upper band and below the >=2.0x average-volume requirement."
+          },
+          "UUUU": {
+            "last": 15.14,
+            "change_pct": 8.89,
+            "volume": 1619561,
+            "avg_volume_3m": 8722324,
+            "note": "Inside Setup B gain band but volume was far below 2x average."
+          },
+          "FCX": {
+            "last": 75.65,
+            "change_pct": 6.16,
+            "volume": 3271130,
+            "avg_volume_3m": 14033009,
+            "fifty_two_week_high": 76.125,
+            "note": "Breakout-like metal/mining move near 52-week high, but volume was far below 2x average and full Setup B evidence was incomplete."
+          },
+          "TEM": {
+            "last": 66.56,
+            "change_pct": -0.14,
+            "volume": 994262.539,
+            "timestamp": "Aug 21, 2026 9:37 AM ET",
+            "note": "Web/Yahoo snippets suggested a strong mover, but direct Nasdaq quote contradicted that, so it was excluded."
+          },
+          "VIX": {
+            "last_context": null,
+            "source_confidence": "unavailable - Nasdaq endpoint returned Symbol not exists"
+          }
+        },
+        "watchedCandidates": [
+          "MRNA",
+          "UUUU",
+          "BTDR",
+          "MARA",
+          "FIGR",
+          "PURR",
+          "SBSW",
+          "FCX",
+          "HOOD",
+          "COIN",
+          "TEM",
+          "CRCL",
+          "QBTS",
+          "HUT"
+        ]
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "open_positions": 0,
+      "holdings": []
+    },
+    {
+      "id": "auto-2026-08-20-market-open",
+      "date": "2026-08-20",
+      "recordedAt": "2026-08-20T09:35:12-04:00",
+      "executionAt": "2026-08-20T09:35:12-04:00",
+      "executionWindow": "US regular market hours",
+      "action": "NO TRADE",
+      "ticker": null,
+      "candidateA": null,
+      "candidateB": "HTFL",
+      "size": {
+        "hkd": 0,
+        "shares": 0,
+        "trade_shares": 0,
+        "usd": 0,
+        "position_pct": 0
+      },
+      "price": null,
+      "marketMood": "Soft and data-conflicted open - Nasdaq quote snapshots at 09:36-09:37 ET showed SPY -0.18% and QQQ -0.21%, with no VIX confirmation from the Nasdaq endpoint. Yahoo/TradingView gainer snippets showed several +5% to +9% movers, but direct Nasdaq regular-session quotes for the same names did not confirm those moves at the execution timestamp.",
+      "thesis": "US market was inside regular hours at execution (09:35:12 EDT / 21:35:12 HKT). The HKD 100,000 simulation ledger remains all cash at HK$99,769.04, with no open positions after the closed UNH time-stop trade. Nasdaq real-time snapshots around 09:36-09:37 ET showed SPY 767.665 (-0.18%) and QQQ 714.61 (-0.21%), while the Nasdaq VIX endpoint returned null. Web-search snippets from Yahoo/TradingView surfaced potential Setup B-style gainers including UGI, HTFL, DOO, NUVB, CCC, BBWI, LEGN, SRRK, CLMT and SPOT, but direct Nasdaq 09:36-09:37 ET quotes for those same candidates did not confirm a valid +3% to +9% regular-session breakout: HTFL +1.30%, SPOT +1.48%, LEGN +2.43%, and most others were flat or negative. The Yahoo snippet listed HTFL +7.84% with roughly 1.97x-2.47x volume, but this conflicted with the execution-time Nasdaq quote and still lacked complete hard-catalyst, close-above-20-day-high, 5-day relative-strength, extension, and reward-to-risk confirmation. UGI was above the Setup B upper band in the snippet (+9.40%) and also showed only -0.19% in the direct 09:37 ET Nasdaq quote. Setup A was unavailable because no fresh post-earnings candidate had complete day-0 reaction, volume, top-range close, and gap confirmation at the execution timestamp. Per BACKTEST-V1, incomplete or conflicting setup evidence requires preserving capital.",
+      "reason": "No valid setup confirmed at market open. The strongest visible gainer snippets were not confirmed by direct Nasdaq 09:36-09:37 ET quotes, and no candidate had complete Setup A or Setup B evidence with reward-to-risk >= 2.0. Portfolio remains in cash.",
+      "review": "Market-open execution only: no trade executed. Portfolio remains 100% cash at HK$99,769.04. No open positions. Post-close review/report will be handled later; no Telegram message sent because the workflow was not blocked.",
+      "riskLevels": {
+        "market_regime": "MIXED / SOFT - SPY -0.18% and QQQ -0.21% at 09:36 ET from Nasdaq quotes; VIX endpoint returned null, so risk regime is only partially verified.",
+        "setup_quality": "NO VALID SETUP - visible gainer snippets conflicted with direct 09:36-09:37 ET Nasdaq quotes and lacked complete Setup A/B confirmation.",
+        "position_size": "NONE - 0 HKD / 0 shares.",
+        "portfolio_risk": "LOW - 100% cash; no open exposure."
+      },
+      "marketData": {
+        "sources": [
+          "Cron payload timestamp: 2026-08-20 13:35 UTC / 09:35 EDT / 21:35 HKT, inside US regular market hours",
+          "Nasdaq quote API primaryData snapshots for SPY, QQQ and candidate tickers at Aug 20, 2026 9:36-9:37 AM ET",
+          "Nasdaq VIX endpoint returned null during the run",
+          "Web search snippets reviewed from Yahoo Finance and TradingView gainers; snippets conflicted with direct Nasdaq execution-time quotes"
+        ],
+        "snapshots": {
+          "SPY": {
+            "last": 767.665,
+            "change": -1.395,
+            "change_pct": -0.18,
+            "volume": 2152683.257822,
+            "timestamp": "Aug 20, 2026 9:36 AM ET",
+            "source": "Nasdaq quote API primaryData"
+          },
+          "QQQ": {
+            "last": 714.61,
+            "change": -1.47,
+            "change_pct": -0.21,
+            "volume": 3249451.380134,
+            "timestamp": "Aug 20, 2026 9:36 AM ET",
+            "source": "Nasdaq quote API primaryData"
+          },
+          "HTFL": {
+            "last": 46.12,
+            "change": 0.59,
+            "change_pct": 1.3,
+            "volume": 58055.063155,
+            "timestamp": "Aug 20, 2026 9:37 AM ET",
+            "note": "Closest snippet candidate from Yahoo/TradingView, but direct Nasdaq quote was below Setup B +3% minimum and lacked complete catalyst/breakout/RR evidence."
+          },
+          "UGI": {
+            "last": 38.475,
+            "change": -0.075,
+            "change_pct": -0.19,
+            "volume": 26646.715328,
+            "timestamp": "Aug 20, 2026 9:37 AM ET",
+            "note": "Yahoo/TradingView snippets showed +9.40%, above the Setup B upper band; direct Nasdaq quote showed no breakout at execution."
+          },
+          "SPOT": {
+            "last": 541.26,
+            "change": 7.89,
+            "change_pct": 1.48,
+            "volume": 124202.249922,
+            "timestamp": "Aug 20, 2026 9:36 AM ET",
+            "note": "Below Setup B +3% minimum in direct execution-time quote."
+          },
+          "LEGN": {
+            "last": 23.15,
+            "change": 0.55,
+            "change_pct": 2.43,
+            "volume": 255981.228352,
+            "timestamp": "Aug 20, 2026 9:37 AM ET",
+            "note": "Below Setup B +3% minimum in direct execution-time quote."
+          },
+          "VIX": {
+            "last": null,
+            "change_pct": null,
+            "timestamp": "Aug 20, 2026 9:35-9:36 AM ET",
+            "note": "Nasdaq VIX endpoint returned null."
+          }
+        }
+      },
+      "portfolio_value_hkd": 99769.04,
+      "cash_hkd": 99769.04,
+      "realized_pnl_hkd": 0,
+      "open_positions": 0,
+      "holdings": []
+    },
     {
       "id": "auto-2026-08-19-market-open",
       "date": "2026-08-19",
